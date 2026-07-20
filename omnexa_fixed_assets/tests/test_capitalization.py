@@ -20,36 +20,41 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 		self.category = frappe.get_doc(
 			{
 				"doctype": "Fixed Asset Category",
-				"category_code": f"C{sfx}",
-				"category_name": f"Category {sfx}",
+				"category_code": f"C{sfx
+	}",
+				"category_name": f"Category {sfx
+	}",
 				"company": self.company,
 				"is_group": 0,
 				"asset_gl_account": self._gl_asset,
 				"accumulated_depreciation_gl_account": self._gl_accum,
-				"depreciation_expense_gl_account": self._gl_exp,
-			}
+				"depreciation_expense_gl_account": self._gl_exp
+	}
 		).insert(ignore_permissions=True)
 
 	def _ensure_geo(self):
 		if not frappe.db.exists("Currency", "EGP"):
 			frappe.get_doc(
-				{"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1}
+				{"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1
+	}
 			).insert(ignore_permissions=True)
 		if not frappe.db.exists("Country", "Egypt"):
 			frappe.get_doc(
-				{"doctype": "Country", "country_name": "Egypt", "code": "EG"}
+				{"doctype": "Country", "country_name": "Egypt", "code": "EG"
+	}
 			).insert(ignore_permissions=True)
 
 	def _create_company(self, abbr: str):
 		doc = frappe.get_doc(
 			{
 				"doctype": "Company",
-				"company_name": f"Test Co {abbr}",
+				"company_name": f"Test Co {abbr
+	}",
 				"abbr": abbr[:10],
 				"default_currency": "EGP",
 				"country": "Egypt",
-				"status": "Active",
-			}
+				"status": "Active"
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		return doc.name
@@ -61,8 +66,8 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 				"company": company,
 				"branch_name": name,
 				"branch_code": code,
-				"status": "Active",
-			}
+				"status": "Active"
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		return doc.name
@@ -85,8 +90,8 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 				"company": self.company,
 				"branch": self.branch,
 				"category": self.category.name,
-				"status": "draft",
-			}
+				"status": "draft"
+	}
 		).insert(ignore_permissions=True)
 
 	def test_acquisition_posts_journal_and_updates_asset(self):
@@ -100,8 +105,8 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 				"posting_date": today(),
 				"fixed_asset": asset.name,
 				"capitalization_amount": 1500,
-				"credit_account": self._gl_cash,
-			}
+				"credit_account": self._gl_cash
+	}
 		)
 		acq.insert(ignore_permissions=True)
 		acq.submit()
@@ -133,8 +138,8 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 				"posting_date": today(),
 				"fixed_asset": asset.name,
 				"capitalization_amount": 800,
-				"credit_account": self._gl_cash,
-			}
+				"credit_account": self._gl_cash
+	}
 		)
 		acq.insert(ignore_permissions=True)
 		acq.submit()

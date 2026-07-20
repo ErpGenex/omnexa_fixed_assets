@@ -16,7 +16,7 @@ add_to_apps_screen = [
 		"name": "omnexa_fixed_assets",
 		"logo": "/assets/omnexa_fixed_assets/logo.png",
 		"title": "Fixed Assets",
-		"route": "/app/fixed-assets",
+		"route": "/app/fixed-assets"
 	}
 ]
 
@@ -45,8 +45,8 @@ app_include_js = "/assets/omnexa_fixed_assets/js/fixed_assets_desk_sidebar.js"
 doctype_js = {
 	"Fixed Asset Auto Depreciation Policy": "public/js/fixed_asset_auto_depreciation_policy.js",
 	"Fixed Asset": "public/js/fixed_asset.js",
-	"Asset Work Order": "public/js/asset_work_order_maintenance_core.js",
-}
+	"Asset Work Order": "public/js/asset_work_order_maintenance_core.js"
+	}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -158,8 +158,8 @@ permission_query_conditions = {
 	"Hotel Functional Area": "omnexa_fixed_assets.permissions.hotel_functional_area_query_conditions",
 	"RFID Scan Log": "omnexa_fixed_assets.permissions.rfid_scan_log_query_conditions",
 	"Hotel Asset Inspection": "omnexa_fixed_assets.permissions.hotel_asset_inspection_query_conditions",
-	"Hotel Asset Transfer": "omnexa_fixed_assets.permissions.hotel_asset_transfer_query_conditions",
-}
+	"Hotel Asset Transfer": "omnexa_fixed_assets.permissions.hotel_asset_transfer_query_conditions"
+	}
 
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -179,144 +179,143 @@ permission_query_conditions = {
 
 doc_events = {
 	"Fixed Asset Category": {
-		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context"
 	},
 	"Fixed Asset": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Acquisition": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Depreciation Entry": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Disposal": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Auto Depreciation Policy": {
-		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context"
 	},
 	"Fixed Asset Transfer": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Write-Off": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Revaluation": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Maintenance": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Inspection": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Movement Log": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Fixed Asset Location": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Meter Reading": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Failure Event": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Condition Snapshot": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Reliability Trend": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Alert": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Recommendation": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Relationship": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Inspection": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Risk Matrix": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Threshold Profile": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Health Rule": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Functional Location": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Maintenance Strategy": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Work Order": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Asset Inspection Template": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Hotel Property": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Hotel Room": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Hotel Functional Area": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"RFID Scan Log": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Hotel Asset Inspection": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Hotel Asset Transfer": {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
-		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
 	"Company": {
 		"after_insert": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical",
-		"on_update": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical",
-	},
-}
+		"on_update": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical"}
+	}
 
 # Scheduled Tasks
 # ---------------
@@ -327,8 +326,8 @@ scheduler_events = {
 		"omnexa_fixed_assets.tasks.run_daily_reliability_jobs",
 		"omnexa_fixed_assets.tasks.run_daily_hotel_asset_jobs",
 	],
-	"monthly": ["omnexa_fixed_assets.tasks.run_month_end_depreciation_jobs"],
-}
+	"monthly": ["omnexa_fixed_assets.tasks.run_month_end_depreciation_jobs"]
+	}
 
 # Testing
 # -------
@@ -347,8 +346,8 @@ scheduler_events = {
 # along with any modifications made in other Frappe apps
 override_doctype_dashboards = {
 	"Hotel Property": ["omnexa_fixed_assets.dashboard.hotel_dashboards.extend_hotel_property_dashboard"],
-	"Hotel Room": ["omnexa_fixed_assets.dashboard.hotel_dashboards.extend_hotel_room_dashboard"],
-}
+	"Hotel Room": ["omnexa_fixed_assets.dashboard.hotel_dashboards.extend_hotel_room_dashboard"]
+	}
 
 # exempt linked doctypes from being automatically cancelled
 #
@@ -374,22 +373,22 @@ override_doctype_dashboards = {
 
 # user_data_fields = [
 # 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
+# 		"redact_fields": ["{}", "{}"],
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_2}",
-# 		"filter_by": "{filter_by}",
+# 		"doctype": "{}",
+# 		"filter_by": "{}",
 # 		"partial": 1,
 # 	},
 # 	{
-# 		"doctype": "{doctype_3}",
+# 		"doctype": "{}",
 # 		"strict": False,
 # 	},
 # 	{
-# 		"doctype": "{doctype_4}"
+# 		"doctype": "{}"
 # 	}
 # ]
 

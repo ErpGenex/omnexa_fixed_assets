@@ -21,7 +21,8 @@ def execute(filters=None):
 	has_hk = "housekeeping_status" in fa_cols
 	has_eng = "engineering_status" in fa_cols
 
-	params = {"company": filters.company}
+	params = {"company": filters.company
+	}
 	conditions = ["fa.company = %(company)s"]
 	if has_hotel:
 		conditions.append("IFNULL(fa.hotel_property, '') != ''")
@@ -79,12 +80,18 @@ def execute(filters=None):
 	data = frappe.db.sql(sql, params, as_dict=True)
 
 	columns = [
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200},
-		{"label": _("Total Assets"), "fieldname": "total_assets", "fieldtype": "Int", "width": 120},
-		{"label": _("Missing Scan"), "fieldname": "missing_scan", "fieldtype": "Int", "width": 120},
-		{"label": _("Scan Mismatch"), "fieldname": "scan_mismatch", "fieldtype": "Int", "width": 120},
-		{"label": _("Housekeeping Attention"), "fieldname": "housekeeping_attention", "fieldtype": "Int", "width": 160},
-		{"label": _("Engineering Attention"), "fieldname": "engineering_attention", "fieldtype": "Int", "width": 160},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200
+	},
+		{"label": _("Total Assets"), "fieldname": "total_assets", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("Missing Scan"), "fieldname": "missing_scan", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("Scan Mismatch"), "fieldname": "scan_mismatch", "fieldtype": "Int", "width": 120
+	},
+		{"label": _("Housekeeping Attention"), "fieldname": "housekeeping_attention", "fieldtype": "Int", "width": 160
+	},
+		{"label": _("Engineering Attention"), "fieldname": "engineering_attention", "fieldtype": "Int", "width": 160
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

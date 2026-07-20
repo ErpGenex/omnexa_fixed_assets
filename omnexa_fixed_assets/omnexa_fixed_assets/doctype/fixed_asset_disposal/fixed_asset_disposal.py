@@ -71,15 +71,20 @@ class FixedAssetDisposal(Document):
 		proceeds = flt(self.proceeds)
 		gain = proceeds + accum - cost
 		lines = [
-			{"account": asset.accumulated_depreciation_gl_account, "debit": accum, "credit": 0},
-			{"account": asset.asset_gl_account, "debit": 0, "credit": cost},
+			{"account": asset.accumulated_depreciation_gl_account, "debit": accum, "credit": 0
+	},
+			{"account": asset.asset_gl_account, "debit": 0, "credit": cost
+	},
 		]
 		if proceeds > 0.005:
-			lines.insert(1, {"account": self.cash_account, "debit": proceeds, "credit": 0})
+			lines.insert(1, {"account": self.cash_account, "debit": proceeds, "credit": 0
+	})
 		if gain > 0.005:
-			lines.append({"account": self.gain_or_loss_account, "debit": 0, "credit": gain})
+			lines.append({"account": self.gain_or_loss_account, "debit": 0, "credit": gain
+	})
 		elif gain < -0.005:
-			lines.append({"account": self.gain_or_loss_account, "debit": -gain, "credit": 0})
+			lines.append({"account": self.gain_or_loss_account, "debit": -gain, "credit": 0
+	})
 
 		je = post_gl_journal(
 			company=self.company,

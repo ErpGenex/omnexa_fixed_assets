@@ -67,70 +67,108 @@ def ensure_enterprise_eam_custom_fields():
 				"fieldname": "eam_hierarchy_section",
 				"label": "Enterprise Hierarchy",
 				"fieldtype": "Section Break",
-				"insert_after": "tab_break_enterprise",
-			},
-			{"fieldname": "parent_asset", "label": "Parent Asset", "fieldtype": "Link", "options": "Fixed Asset", "insert_after": "eam_hierarchy_section"},
-			{"fieldname": "asset_path", "label": "Asset Path", "fieldtype": "Data", "read_only": 1, "insert_after": "parent_asset"},
-			{"fieldname": "asset_level", "label": "Asset Level", "fieldtype": "Int", "read_only": 1, "insert_after": "asset_path"},
-			{"fieldname": "column_break_eam_h1", "fieldtype": "Column Break", "insert_after": "asset_level"},
-			{"fieldname": "functional_location", "label": "Functional Location", "fieldtype": "Link", "options": "Functional Location", "insert_after": "column_break_eam_h1"},
-			{"fieldname": "system_group", "label": "System Group", "fieldtype": "Data", "insert_after": "functional_location"},
-			{"fieldname": "network_path", "label": "Network Path", "fieldtype": "Data", "insert_after": "system_group"},
+				"insert_after": "tab_break_enterprise"
+	},
+			{"fieldname": "parent_asset", "label": "Parent Asset", "fieldtype": "Link", "options": "Fixed Asset", "insert_after": "eam_hierarchy_section"
+	},
+			{"fieldname": "asset_path", "label": "Asset Path", "fieldtype": "Data", "read_only": 1, "insert_after": "parent_asset"
+	},
+			{"fieldname": "asset_level", "label": "Asset Level", "fieldtype": "Int", "read_only": 1, "insert_after": "asset_path"
+	},
+			{"fieldname": "column_break_eam_h1", "fieldtype": "Column Break", "insert_after": "asset_level"
+	},
+			{"fieldname": "functional_location", "label": "Functional Location", "fieldtype": "Link", "options": "Functional Location", "insert_after": "column_break_eam_h1"
+	},
+			{"fieldname": "system_group", "label": "System Group", "fieldtype": "Data", "insert_after": "functional_location"
+	},
+			{"fieldname": "network_path", "label": "Network Path", "fieldtype": "Data", "insert_after": "system_group"
+	},
 			{
 				"fieldname": "tab_break_eam_health",
 				"label": "Health",
 				"fieldtype": "Tab Break",
-				"insert_after": "network_path",
-			},
-			{"fieldname": "eam_reliability_section", "label": "Reliability & Health", "fieldtype": "Section Break", "insert_after": "tab_break_eam_health"},
-			{"fieldname": "mtbf", "label": "MTBF (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "eam_reliability_section"},
-			{"fieldname": "mttr", "label": "MTTR (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "mtbf"},
-			{"fieldname": "availability", "label": "Availability %", "fieldtype": "Percent", "read_only": 1, "insert_after": "mttr"},
-			{"fieldname": "downtime", "label": "Downtime (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "availability"},
-			{"fieldname": "uptime", "label": "Uptime (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "downtime"},
-			{"fieldname": "failure_frequency", "label": "Failure Frequency", "fieldtype": "Float", "read_only": 1, "insert_after": "uptime"},
-			{"fieldname": "reliability_score", "label": "Reliability Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "failure_frequency"},
-			{"fieldname": "column_break_eam_r1", "fieldtype": "Column Break", "insert_after": "reliability_score"},
-			{"fieldname": "health_score", "label": "Health Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "column_break_eam_r1"},
-			{"fieldname": "health_status", "label": "Health Status", "fieldtype": "Select", "options": "\nCritical\nPoor\nFair\nGood\nExcellent", "read_only": 1, "insert_after": "health_score"},
-			{"fieldname": "condition_state", "label": "Condition State", "fieldtype": "Select", "options": "\nUnknown\nNormal\nWatch\nAlert\nCritical", "insert_after": "health_status"},
-			{"fieldname": "degradation_index", "label": "Degradation Index", "fieldtype": "Percent", "read_only": 1, "insert_after": "condition_state"},
-			{"fieldname": "risk_score", "label": "Risk Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "degradation_index"},
-			{"fieldname": "confidence_score", "label": "Confidence Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "risk_score"},
+				"insert_after": "network_path"
+	},
+			{"fieldname": "eam_reliability_section", "label": "Reliability & Health", "fieldtype": "Section Break", "insert_after": "tab_break_eam_health"
+	},
+			{"fieldname": "mtbf", "label": "MTBF (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "eam_reliability_section"
+	},
+			{"fieldname": "mttr", "label": "MTTR (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "mtbf"
+	},
+			{"fieldname": "availability", "label": "Availability %", "fieldtype": "Percent", "read_only": 1, "insert_after": "mttr"
+	},
+			{"fieldname": "downtime", "label": "Downtime (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "availability"
+	},
+			{"fieldname": "uptime", "label": "Uptime (hours)", "fieldtype": "Float", "read_only": 1, "insert_after": "downtime"
+	},
+			{"fieldname": "failure_frequency", "label": "Failure Frequency", "fieldtype": "Float", "read_only": 1, "insert_after": "uptime"
+	},
+			{"fieldname": "reliability_score", "label": "Reliability Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "failure_frequency"
+	},
+			{"fieldname": "column_break_eam_r1", "fieldtype": "Column Break", "insert_after": "reliability_score"
+	},
+			{"fieldname": "health_score", "label": "Health Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "column_break_eam_r1"
+	},
+			{"fieldname": "health_status", "label": "Health Status", "fieldtype": "Select", "options": "\nCritical\nPoor\nFair\nGood\nExcellent", "read_only": 1, "insert_after": "health_score"
+	},
+			{"fieldname": "condition_state", "label": "Condition State", "fieldtype": "Select", "options": "\nUnknown\nNormal\nWatch\nAlert\nCritical", "insert_after": "health_status"
+	},
+			{"fieldname": "degradation_index", "label": "Degradation Index", "fieldtype": "Percent", "read_only": 1, "insert_after": "condition_state"
+	},
+			{"fieldname": "risk_score", "label": "Risk Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "degradation_index"
+	},
+			{"fieldname": "confidence_score", "label": "Confidence Score", "fieldtype": "Percent", "read_only": 1, "insert_after": "risk_score"
+	},
 			{
 				"fieldname": "tab_break_eam_monitoring",
 				"label": "Monitoring",
 				"fieldtype": "Tab Break",
-				"insert_after": "confidence_score",
-			},
-			{"fieldname": "eam_operations_section", "label": "Operational Monitoring", "fieldtype": "Section Break", "insert_after": "tab_break_eam_monitoring"},
-			{"fieldname": "runtime_hours", "label": "Runtime Hours", "fieldtype": "Float", "insert_after": "eam_operations_section"},
-			{"fieldname": "operating_cycles", "label": "Operating Cycles", "fieldtype": "Int", "insert_after": "runtime_hours"},
-			{"fieldname": "sensor_state", "label": "Sensor State", "fieldtype": "Select", "options": "\nUnknown\nOnline\nDegraded\nOffline\nSilent", "insert_after": "operating_cycles"},
-			{"fieldname": "monitoring_enabled", "label": "Monitoring Enabled", "fieldtype": "Check", "default": "0", "insert_after": "sensor_state"},
-			{"fieldname": "inspection_due", "label": "Inspection Due", "fieldtype": "Date", "insert_after": "monitoring_enabled"},
+				"insert_after": "confidence_score"
+	},
+			{"fieldname": "eam_operations_section", "label": "Operational Monitoring", "fieldtype": "Section Break", "insert_after": "tab_break_eam_monitoring"
+	},
+			{"fieldname": "runtime_hours", "label": "Runtime Hours", "fieldtype": "Float", "insert_after": "eam_operations_section"
+	},
+			{"fieldname": "operating_cycles", "label": "Operating Cycles", "fieldtype": "Int", "insert_after": "runtime_hours"
+	},
+			{"fieldname": "sensor_state", "label": "Sensor State", "fieldtype": "Select", "options": "\nUnknown\nOnline\nDegraded\nOffline\nSilent", "insert_after": "operating_cycles"
+	},
+			{"fieldname": "monitoring_enabled", "label": "Monitoring Enabled", "fieldtype": "Check", "default": "0", "insert_after": "sensor_state"
+	},
+			{"fieldname": "inspection_due", "label": "Inspection Due", "fieldtype": "Date", "insert_after": "monitoring_enabled"
+	},
 			{
 				"fieldname": "tab_break_eam_cost",
 				"label": "Lifecycle",
 				"fieldtype": "Tab Break",
-				"insert_after": "inspection_due",
-			},
-			{"fieldname": "eam_cost_intelligence_section", "label": "Lifecycle Cost Intelligence", "fieldtype": "Section Break", "insert_after": "tab_break_eam_cost"},
-			{"fieldname": "lifecycle_cost", "label": "Lifecycle Cost", "fieldtype": "Currency", "read_only": 1, "insert_after": "eam_cost_intelligence_section"},
-			{"fieldname": "maintenance_burden", "label": "Maintenance Burden", "fieldtype": "Percent", "read_only": 1, "insert_after": "lifecycle_cost"},
-			{"fieldname": "replacement_projection", "label": "Replacement Projection", "fieldtype": "Currency", "read_only": 1, "insert_after": "maintenance_burden"},
-			{"fieldname": "repair_efficiency", "label": "Repair Efficiency", "fieldtype": "Percent", "read_only": 1, "insert_after": "replacement_projection"},
-			{"fieldname": "capital_risk", "label": "Capital Risk", "fieldtype": "Percent", "read_only": 1, "insert_after": "repair_efficiency"},
+				"insert_after": "inspection_due"
+	},
+			{"fieldname": "eam_cost_intelligence_section", "label": "Lifecycle Cost Intelligence", "fieldtype": "Section Break", "insert_after": "tab_break_eam_cost"
+	},
+			{"fieldname": "lifecycle_cost", "label": "Lifecycle Cost", "fieldtype": "Currency", "read_only": 1, "insert_after": "eam_cost_intelligence_section"
+	},
+			{"fieldname": "maintenance_burden", "label": "Maintenance Burden", "fieldtype": "Percent", "read_only": 1, "insert_after": "lifecycle_cost"
+	},
+			{"fieldname": "replacement_projection", "label": "Replacement Projection", "fieldtype": "Currency", "read_only": 1, "insert_after": "maintenance_burden"
+	},
+			{"fieldname": "repair_efficiency", "label": "Repair Efficiency", "fieldtype": "Percent", "read_only": 1, "insert_after": "replacement_projection"
+	},
+			{"fieldname": "capital_risk", "label": "Capital Risk", "fieldtype": "Percent", "read_only": 1, "insert_after": "repair_efficiency"
+	},
 			{
 				"fieldname": "tab_break_eam_strategy",
 				"label": "Strategy",
 				"fieldtype": "Tab Break",
-				"insert_after": "capital_risk",
-			},
-			{"fieldname": "eam_strategy_section", "label": "Strategy", "fieldtype": "Section Break", "insert_after": "tab_break_eam_strategy"},
-			{"fieldname": "criticality", "label": "Criticality", "fieldtype": "Select", "options": "\nLow\nMedium\nHigh\nSafety Critical", "insert_after": "eam_strategy_section"},
-			{"fieldname": "maintenance_strategy", "label": "Maintenance Strategy", "fieldtype": "Link", "options": "Maintenance Strategy", "insert_after": "criticality"},
-			{"fieldname": "replacement_recommendation", "label": "Replacement Recommendation", "fieldtype": "Small Text", "insert_after": "maintenance_strategy"},
+				"insert_after": "capital_risk"
+	},
+			{"fieldname": "eam_strategy_section", "label": "Strategy", "fieldtype": "Section Break", "insert_after": "tab_break_eam_strategy"
+	},
+			{"fieldname": "criticality", "label": "Criticality", "fieldtype": "Select", "options": "\nLow\nMedium\nHigh\nSafety Critical", "insert_after": "eam_strategy_section"
+	},
+			{"fieldname": "maintenance_strategy", "label": "Maintenance Strategy", "fieldtype": "Link", "options": "Maintenance Strategy", "insert_after": "criticality"
+	},
+			{"fieldname": "replacement_recommendation", "label": "Replacement Recommendation", "fieldtype": "Small Text", "insert_after": "maintenance_strategy"
+	},
 		]
 	}
 	create_custom_fields(custom_fields, update=True)
@@ -152,39 +190,39 @@ def ensure_hotel_asset_management_custom_fields():
 				"fieldname": "tab_break_hotel",
 				"label": "Hotel",
 				"fieldtype": "Tab Break",
-				"insert_after": "replacement_recommendation",
-			},
+				"insert_after": "replacement_recommendation"
+	},
 			{
 				"fieldname": "hotel_asset_section",
 				"label": "Hotel Asset Management",
 				"fieldtype": "Section Break",
-				"insert_after": "tab_break_hotel",
-			},
+				"insert_after": "tab_break_hotel"
+	},
 			{
 				"fieldname": "hotel_property",
 				"label": "Hotel Property",
 				"fieldtype": "Link",
 				"options": "Hotel Property",
-				"insert_after": "hotel_asset_section",
-			},
+				"insert_after": "hotel_asset_section"
+	},
 			{
 				"fieldname": "hotel_room",
 				"label": "Hotel Room",
 				"fieldtype": "Link",
 				"options": "Hotel Room",
-				"insert_after": "hotel_property",
-			},
+				"insert_after": "hotel_property"
+	},
 			{
 				"fieldname": "hotel_zone",
 				"label": "Hotel Zone",
 				"fieldtype": "Data",
-				"insert_after": hotel_zone_insert_after,
-			},
+				"insert_after": hotel_zone_insert_after
+	},
 			{
 				"fieldname": "column_break_hotel_1",
 				"fieldtype": "Column Break",
-				"insert_after": "hotel_zone",
-			},
+				"insert_after": "hotel_zone"
+	},
 			{
 				"fieldname": "scan_status",
 				"label": "Scan Status",
@@ -192,103 +230,103 @@ def ensure_hotel_asset_management_custom_fields():
 				"options": "\nNot Scanned\nSeen\nMissing\nMismatch",
 				"default": "Not Scanned",
 				# rfid_tag is a native Fixed Asset field (Identification tab); do not duplicate as Custom Field.
-				"insert_after": "column_break_hotel_1",
-			},
+				"insert_after": "column_break_hotel_1"
+	},
 			{
 				"fieldname": "housekeeping_status",
 				"label": "Housekeeping Status",
 				"fieldtype": "Select",
 				"options": "\nReady\nDirty\nOut of Service",
-				"insert_after": "scan_status",
-			},
+				"insert_after": "scan_status"
+	},
 			{
 				"fieldname": "engineering_status",
 				"label": "Engineering Status",
 				"fieldtype": "Select",
 				"options": "\nNormal\nOpen Work Order\nCritical",
-				"insert_after": "housekeeping_status",
-			},
+				"insert_after": "housekeeping_status"
+	},
 			{
 				"fieldname": "inspection_frequency_days",
 				"label": "Inspection Frequency (Days)",
 				"fieldtype": "Int",
-				"insert_after": "engineering_status",
-			},
+				"insert_after": "engineering_status"
+	},
 			{
 				"fieldname": "hotel_asset_ops_section",
 				"label": "Hotel Asset Operations",
 				"fieldtype": "Section Break",
-				"insert_after": "inspection_frequency_days",
-			},
+				"insert_after": "inspection_frequency_days"
+	},
 			{
 				"fieldname": "maintenance_cost_to_date",
 				"label": "Maintenance Cost to Date",
 				"fieldtype": "Currency",
 				"read_only": 1,
 				"insert_after": "hotel_asset_ops_section",
-				"description": "Auto-calculated from Fixed Asset Maintenance records.",
-			},
+				"description": "Auto-calculated from Fixed Asset Maintenance records."
+	},
 			{
 				"fieldname": "maintenance_event_count",
 				"label": "Maintenance Events",
 				"fieldtype": "Int",
 				"read_only": 1,
-				"insert_after": "maintenance_cost_to_date",
-			},
+				"insert_after": "maintenance_cost_to_date"
+	},
 			{
 				"fieldname": "column_break_hotel_ops_1",
 				"fieldtype": "Column Break",
-				"insert_after": "maintenance_event_count",
-			},
+				"insert_after": "maintenance_event_count"
+	},
 			{
 				"fieldname": "inventory_scan_count",
 				"label": "Inventory Scan Count",
 				"fieldtype": "Int",
 				"read_only": 1,
 				"insert_after": "column_break_hotel_ops_1",
-				"description": "Auto-calculated from RFID scan logs.",
-			},
+				"description": "Auto-calculated from RFID scan logs."
+	},
 			{
 				"fieldname": "last_inventory_scan_at",
 				"label": "Last Inventory Scan",
 				"fieldtype": "Datetime",
 				"read_only": 1,
-				"insert_after": "inventory_scan_count",
-			},
+				"insert_after": "inventory_scan_count"
+	},
 			{
 				"fieldname": "hotel_asset_media_section",
 				"label": "Asset Media & Attachments",
 				"fieldtype": "Section Break",
-				"insert_after": "last_inventory_scan_at",
-			},
+				"insert_after": "last_inventory_scan_at"
+	},
 			{
 				"fieldname": "image_count",
 				"label": "Image Count",
 				"fieldtype": "Int",
 				"read_only": 1,
 				"insert_after": "hotel_asset_media_section",
-				"description": "Auto-calculated from media rows where type is Image.",
-			},
+				"description": "Auto-calculated from media rows where type is Image."
+	},
 			{
 				"fieldname": "attachment_count",
 				"label": "Total Attachments",
 				"fieldtype": "Int",
 				"read_only": 1,
 				"insert_after": "image_count",
-				"description": "Auto-calculated from all media rows.",
-			},
+				"description": "Auto-calculated from all media rows."
+	},
 			{
 				"fieldname": "column_break_hotel_media_1",
 				"fieldtype": "Column Break",
-				"insert_after": "attachment_count",
-			},
+				"insert_after": "attachment_count"
+	},
 			{
 				"fieldname": "asset_media_attachments",
 				"label": "Media Files (Images, Videos, Documents)",
 				"fieldtype": "Table",
 				"options": "Asset Media Attachment",
-				"insert_after": "column_break_hotel_media_1",
-			},
+				"insert_after": "column_break_hotel_media_1"
+	},
 		]
 	}
 
@@ -301,8 +339,8 @@ def ensure_hotel_asset_management_custom_fields():
 				"label": "Hotel Functional Area",
 				"fieldtype": "Link",
 				"options": "Hotel Functional Area",
-				"insert_after": "hotel_room",
-			},
+				"insert_after": "hotel_room"
+	},
 		)
 	create_custom_fields(custom_fields, update=True)
 
@@ -324,7 +362,8 @@ def ensure_hotel_workspace_links():
 		existing_cards.add(label)
 		ws.append(
 			"links",
-			{"type": "Card Break", "label": label, "hidden": 0, "onboard": 0, "link_count": 0},
+			{"type": "Card Break", "label": label, "hidden": 0, "onboard": 0, "link_count": 0
+	},
 		)
 
 	def add_link(label: str, link_type: str, link_to: str, is_query_report: int = 0):
@@ -342,8 +381,8 @@ def ensure_hotel_workspace_links():
 				"is_query_report": is_query_report,
 				"hidden": 0,
 				"onboard": 0,
-				"link_count": 0,
-			},
+				"link_count": 0
+	},
 		)
 
 	add_card("Hotel Asset Management")
@@ -484,8 +523,7 @@ def ensure_hotel_report_roles():
 			"Housekeeping Supervisor",
 			"Finance Asset Controller",
 			"Auditor",
-		],
-	}
+		]}
 	for report_name, roles in report_roles.items():
 		if not frappe.db.exists("Report", report_name):
 			continue
@@ -493,7 +531,8 @@ def ensure_hotel_report_roles():
 		doc.roles = []
 		for role in roles:
 			if frappe.db.exists("Role", role):
-				doc.append("roles", {"role": role})
+				doc.append("roles", {"role": role
+	})
 		doc.save(ignore_permissions=True)
 
 

@@ -14,7 +14,8 @@ Desk (recommended): open **Company**, menu group **أصول الفنادق — �
 CLI::
 
 	bench --site YOUR_SITE execute omnexa_fixed_assets.scripts.seed_hotel_asset_movements.run \\
-	  --kwargs '{"company": "My Company"}'
+	  --kwargs '{"company": "My Company"
+	}'
 
 Optional kwargs:
   count (int, default 50)
@@ -34,7 +35,8 @@ from frappe.utils import flt, now_datetime
 def _branch_for_company(company: str) -> str:
 	branches = frappe.get_all(
 		"Branch",
-		filters={"company": company},
+		filters={"company": company
+	},
 		pluck="name",
 		order_by="name asc",
 		limit=20,
@@ -54,7 +56,8 @@ def _leaf_category(company: str) -> str:
 		  AND IFNULL(depreciation_expense_gl_account, '') != ''
 		ORDER BY name LIMIT 1
 		""",
-		{"c": company},
+		{"c": company
+	},
 	)
 	if not row:
 		frappe.throw(
@@ -90,16 +93,19 @@ def _credit_account(company: str, *exclude: str) -> str:
 		return None
 
 	for account_type in ("Bank", "Cash"):
-		n = _first_match({"company": company, "account_type": account_type, "is_group": 0})
+		n = _first_match({"company": company, "account_type": account_type, "is_group": 0
+	})
 		if n:
 			return n
 	for account_type in ("Stock Received But Not Billed", "Payable", "Current Liability", "Equity"):
-		n = _first_match({"company": company, "account_type": account_type, "is_group": 0})
+		n = _first_match({"company": company, "account_type": account_type, "is_group": 0
+	})
 		if n:
 			return n
 	for row in frappe.get_all(
 		"GL Account",
-		filters={"company": company, "is_group": 0},
+		filters={"company": company, "is_group": 0
+	},
 		fields=["name", "account_type"],
 		order_by="name asc",
 		limit_page_length=500,
@@ -123,8 +129,8 @@ def _ensure_hotel_property(company: str, branch: str, property_name: str) -> str
 			"property_name": property_name,
 			"operational_status": "Operational",
 			"is_active": 1,
-			"total_rooms": 99,
-		}
+			"total_rooms": 99
+	}
 	)
 	doc.insert(ignore_permissions=True)
 	return doc.name
@@ -150,8 +156,8 @@ def _ensure_room(
 			"room_number": room_number,
 			"room_type": room_type,
 			"floor": floor_label or "",
-			"status": "Available",
-		}
+			"status": "Available"
+	}
 	)
 	doc.insert(ignore_permissions=True)
 	return doc.name
@@ -253,7 +259,8 @@ def _run_seed_body(
 		room_names.append(_ensure_room(company, branch, hp, num, rtype))
 
 	n_locs = len(room_names)
-	results = {"company": company, "hotel_property": hp, "assets": [], "errors": []}
+	results = {"company": company, "hotel_property": hp, "assets": [], "errors": []
+	}
 
 	for i in range(count):
 		idx = i % n_locs
@@ -267,14 +274,15 @@ def _run_seed_body(
 					"doctype": "Fixed Asset",
 					"company": company,
 					"branch": branch,
-					"asset_name": f"أصل تجريبي فندقي {i + 1}",
+					"asset_name": f"أصل تجريبي فندقي {i + 1
+	}",
 					"category": category,
 					"status": "draft",
 					"measurement_model": "Cost Model",
 					"hotel_property": hp,
 					"hotel_room": initial_room,
-					"hotel_zone": zone_label,
-				}
+					"hotel_zone": zone_label
+	}
 			)
 			fa.insert(ignore_permissions=True)
 
@@ -287,8 +295,8 @@ def _run_seed_body(
 					"fixed_asset": fa.name,
 					"capitalization_amount": flt(5000 + (i % 40) * 250),
 					"credit_account": credit_gl,
-					"remarks": "Demo seed — hotel capitalisation",
-				}
+					"remarks": "Demo seed — hotel capitalisation"
+	}
 			)
 			faa.insert(ignore_permissions=True)
 			faa.submit()
@@ -309,8 +317,8 @@ def _run_seed_body(
 						"reader_device": "DEMO-GATE-01",
 						"location_text": initial_room,
 						"scan_result": "Seen",
-						"notes": "Seed RFID scan",
-					}
+						"notes": "Seed RFID scan"
+	}
 				)
 				scan.insert(ignore_permissions=True)
 
@@ -327,15 +335,16 @@ def _run_seed_body(
 						"to_hotel_property": hp,
 						"to_hotel_room": transfer_target,
 						"approval_status": "Approved",
-						"notes": "Demo seed — transfer between admin zone / guest room",
-					}
+						"notes": "Demo seed — transfer between admin zone / guest room"
+	}
 				)
 				hat.insert(ignore_permissions=True)
 				hat.submit()
 
 			results["assets"].append(fa.name)
 		except Exception as e:
-			results["errors"].append({"index": i + 1, "error": str(e)})
+			results["errors"].append({"index": i + 1, "error": str(e)
+	})
 			frappe.log_error(title="Hotel seed row failed", message=frappe.get_traceback())
 
 	if results["errors"]:

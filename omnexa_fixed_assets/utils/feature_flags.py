@@ -39,7 +39,8 @@ def site_has_any_hotel_assets_company() -> bool:
 		WHERE business_activity = %(m)s OR industry_sector = %(m)s OR production_demo_activity = %(m)s
 		LIMIT 1
 		""",
-		{"m": h},
+		{"m": h
+	},
 	)
 	return bool(row)
 

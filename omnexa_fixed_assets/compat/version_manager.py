@@ -123,8 +123,8 @@ class VersionManager:
             "node": str(self.node_version),
             "redis": str(self.redis_version),
             "mariadb": str(self.mariadb_version),
-            "yarn": str(self.yarn_version),
-        }
+            "yarn": str(self.yarn_version)
+	}
 
     def snapshot_json(self) -> str:
         return json.dumps(self.snapshot(), indent=2, sort_keys=True)

@@ -97,8 +97,10 @@ class FixedAssetDepreciationEntry(Document):
 			remarks=self.remarks
 			or _("Depreciation {0} — {1}").format(self.name, self.fixed_asset),
 			lines=[
-				{"account": asset.depreciation_expense_gl_account, "debit": amt, "credit": 0},
-				{"account": asset.accumulated_depreciation_gl_account, "debit": 0, "credit": amt},
+				{"account": asset.depreciation_expense_gl_account, "debit": amt, "credit": 0
+	},
+				{"account": asset.accumulated_depreciation_gl_account, "debit": 0, "credit": amt
+	},
 			],
 		)
 		self.db_set("journal_entry", je, update_modified=False)

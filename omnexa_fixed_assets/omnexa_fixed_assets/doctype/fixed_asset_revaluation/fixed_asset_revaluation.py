@@ -67,8 +67,8 @@ def _safe_audit_log(doc, previous_nbv, surplus, action: str = "submit"):
 				"fixed_asset": doc.fixed_asset,
 				"revalued_amount": flt(doc.revalued_amount),
 				"previous_nbv": previous_nbv,
-				"surplus": surplus,
-			},
+				"surplus": surplus
+	},
 			amount=flt(doc.revalued_amount),
 		)
 	except Exception:

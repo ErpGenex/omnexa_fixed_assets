@@ -33,12 +33,18 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Asset"), "fieldname": "asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Category"), "fieldname": "category", "fieldtype": "Data", "width": 140},
-		{"label": _("Cause"), "fieldname": "cause", "fieldtype": "Data", "width": 200},
-		{"label": _("Failure Count"), "fieldname": "failure_count", "fieldtype": "Int", "width": 110},
-		{"label": _("Downtime (h)"), "fieldname": "total_downtime_hours", "fieldtype": "Float", "width": 110},
+		{"label": _("Asset"), "fieldname": "asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Category"), "fieldname": "category", "fieldtype": "Data", "width": 140
+	},
+		{"label": _("Cause"), "fieldname": "cause", "fieldtype": "Data", "width": 200
+	},
+		{"label": _("Failure Count"), "fieldname": "failure_count", "fieldtype": "Int", "width": 110
+	},
+		{"label": _("Downtime (h)"), "fieldname": "total_downtime_hours", "fieldtype": "Float", "width": 110
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

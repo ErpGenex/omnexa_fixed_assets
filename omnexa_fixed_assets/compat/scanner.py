@@ -44,8 +44,8 @@ class CompatibilityScanner:
             "app": self.app_name,
             "score": score,
             "versions": self.version_manager.snapshot(),
-            "findings": [asdict(finding) for finding in self.findings],
-        }
+            "findings": [asdict(finding) for finding in self.findings]
+	}
 
     def write_report(self, output: Path | None = None) -> Path:
         output = output or self.package_root / "compat" / "compatibility_report.json"

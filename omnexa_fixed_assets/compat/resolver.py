@@ -12,8 +12,7 @@ API_MAP: dict[str, tuple[str, ...]] = {
     "publish_realtime": ("frappe.publish_realtime", "frappe.realtime.publish_realtime"),
     "get_cached_doc": ("frappe.get_cached_doc", "frappe.get_doc"),
     "get_all": ("frappe.get_all",),
-    "get_list": ("frappe.get_list",),
-}
+    "get_list": ("frappe.get_list",)}
 
 MODULE_MAP: dict[str, str] = {}
 

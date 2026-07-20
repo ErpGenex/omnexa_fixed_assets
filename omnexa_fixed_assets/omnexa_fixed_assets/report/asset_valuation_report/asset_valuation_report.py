@@ -32,12 +32,18 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 150},
-		{"label": _("Acquisition Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 140},
-		{"label": _("Accum. Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 140},
-		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 140},
+		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 150
+	},
+		{"label": _("Acquisition Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 140
+	},
+		{"label": _("Accum. Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 140
+	},
+		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 140
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

@@ -35,7 +35,8 @@ class HotelFunctionalArea(Document):
 			return
 		row = frappe.db.get_value(
 			"Hotel Functional Area",
-			{"hotel_property": self.hotel_property, "area_code": code},
+			{"hotel_property": self.hotel_property, "area_code": code
+	},
 			"name",
 		)
 		if row and (self.is_new() or row != self.name):

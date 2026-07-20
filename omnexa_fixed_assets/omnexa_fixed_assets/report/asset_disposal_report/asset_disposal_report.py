@@ -36,13 +36,20 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Disposal"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset Disposal", "width": 150},
-		{"label": _("Disposal Date"), "fieldname": "disposal_date", "fieldtype": "Date", "width": 120},
-		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Carrying Amount"), "fieldname": "carrying_amount_snapshot", "fieldtype": "Currency", "width": 140},
-		{"label": _("Proceeds"), "fieldname": "proceeds", "fieldtype": "Currency", "width": 130},
-		{"label": _("Gain / Loss"), "fieldname": "gain_or_loss", "fieldtype": "Currency", "width": 130},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120},
+		{"label": _("Disposal"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset Disposal", "width": 150
+	},
+		{"label": _("Disposal Date"), "fieldname": "disposal_date", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Carrying Amount"), "fieldname": "carrying_amount_snapshot", "fieldtype": "Currency", "width": 140
+	},
+		{"label": _("Proceeds"), "fieldname": "proceeds", "fieldtype": "Currency", "width": 130
+	},
+		{"label": _("Gain / Loss"), "fieldname": "gain_or_loss", "fieldtype": "Currency", "width": 130
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

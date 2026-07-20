@@ -26,10 +26,16 @@ def execute(filters=None):
 	)
 
 	return [
-		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200},
-		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 170},
-		{"label": _("Scan Status"), "fieldname": "scan_status", "fieldtype": "Data", "width": 120},
-		{"label": _("Last Update"), "fieldname": "modified", "fieldtype": "Datetime", "width": 170},
+		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200
+	},
+		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 170
+	},
+		{"label": _("Scan Status"), "fieldname": "scan_status", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Last Update"), "fieldname": "modified", "fieldtype": "Datetime", "width": 170
+	},
 	], data

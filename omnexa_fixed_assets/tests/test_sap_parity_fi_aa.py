@@ -18,8 +18,8 @@ class TestSapParityFiAa(FrappeTestCase):
 				"branch": "_Test Branch",
 				"fixed_asset": "_Test Asset",
 				"revalued_amount": 0,
-				"posting_date": "2026-05-20",
-			}
+				"posting_date": "2026-05-20"
+	}
 		)
 		with self.assertRaises(frappe.ValidationError):
 			doc.validate()

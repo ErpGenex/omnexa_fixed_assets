@@ -15,8 +15,8 @@ WO_TYPE_MAP = {
 	"Preventive": "Preventive",
 	"Predictive": "Predictive",
 	"Inspection-Triggered": "Inspection",
-	"Emergency": "Emergency",
-}
+	"Emergency": "Emergency"
+	}
 
 STATUS_MAP = {
 	"Draft": "Draft",
@@ -24,8 +24,8 @@ STATUS_MAP = {
 	"Assigned": "Planned",
 	"In Progress": "In Progress",
 	"Completed": "Completed",
-	"Cancelled": "Cancelled",
-}
+	"Cancelled": "Cancelled"
+	}
 
 
 def execute():
@@ -36,13 +36,15 @@ def execute():
 
 	aw_names = frappe.get_all(
 		"Asset Work Order",
-		filters={"docstatus": 1},
+		filters={"docstatus": 1
+	},
 		pluck="name",
 		order_by="creation asc",
 	)
 
 	for aw_name in aw_names:
-		if frappe.db.exists("Core Work Order", {"legacy_asset_work_order": aw_name}):
+		if frappe.db.exists("Core Work Order", {"legacy_asset_work_order": aw_name
+	}):
 			continue
 
 		aw = frappe.get_doc("Asset Work Order", aw_name)

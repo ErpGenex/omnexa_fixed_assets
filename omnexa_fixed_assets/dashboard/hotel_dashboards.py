@@ -22,8 +22,8 @@ def extend_hotel_property_dashboard(data=None):
 			"Hotel Room": "hotel_property",
 			"Hotel Functional Area": "hotel_property",
 			"Fixed Asset": "hotel_property",
-			"Hotel Asset Inspection": "hotel_property",
-		}
+			"Hotel Asset Inspection": "hotel_property"
+	}
 	)
 	data.non_standard_fieldnames = ns
 	return data
@@ -37,8 +37,8 @@ def extend_hotel_room_dashboard(data=None):
 	ns.update(
 		{
 			"Fixed Asset": "hotel_room",
-			"Hotel Asset Inspection": "hotel_room",
-		}
+			"Hotel Asset Inspection": "hotel_room"
+	}
 	)
 	data.non_standard_fieldnames = ns
 	return data

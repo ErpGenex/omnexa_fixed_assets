@@ -56,10 +56,16 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130},
-		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 180},
-		{"label": _("Assets"), "fieldname": "asset_count", "fieldtype": "Int", "width": 90},
-		{"label": _("Acquisition Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 140},
-		{"label": _("Accumulated Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 170},
-		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 140},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130
+	},
+		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 180
+	},
+		{"label": _("Assets"), "fieldname": "asset_count", "fieldtype": "Int", "width": 90
+	},
+		{"label": _("Acquisition Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 140
+	},
+		{"label": _("Accumulated Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 170
+	},
+		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 140
+	},
 	]

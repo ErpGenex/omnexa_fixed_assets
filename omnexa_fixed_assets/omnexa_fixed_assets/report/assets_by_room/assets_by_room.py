@@ -15,7 +15,8 @@ def execute(filters=None):
 	if not filters.get("company"):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 
-	params = {"company": filters.company}
+	params = {"company": filters.company
+	}
 	conditions = ["fa.company = %(company)s"]
 	if filters.get("hotel_property"):
 		params["hotel_property"] = filters.hotel_property
@@ -36,9 +37,12 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 220},
-		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 200},
-		{"label": _("Assets"), "fieldname": "asset_count", "fieldtype": "Int", "width": 110},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 220
+	},
+		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 200
+	},
+		{"label": _("Assets"), "fieldname": "asset_count", "fieldtype": "Int", "width": 110
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

@@ -21,7 +21,7 @@ def execute(filters=None):
 	params = {
 		"company": filters.company,
 		"from_date": getdate(filters.from_date),
-		"to_date": getdate(filters.to_date),
+		"to_date": getdate(filters.to_date)
 	}
 	conditions = [
 		"de.company = %(company)s",
@@ -52,12 +52,18 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120},
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180},
-		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150},
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200},
-		{"label": _("Depreciation"), "fieldname": "depreciation_amount", "fieldtype": "Currency", "width": 140},
+		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180
+	},
+		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150
+	},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200
+	},
+		{"label": _("Depreciation"), "fieldname": "depreciation_amount", "fieldtype": "Currency", "width": 140
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

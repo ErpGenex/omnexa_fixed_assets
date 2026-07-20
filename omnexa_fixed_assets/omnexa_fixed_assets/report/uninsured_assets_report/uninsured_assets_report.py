@@ -14,7 +14,8 @@ def execute(filters=None):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 
 	today = getdate()
-	params = {"company": filters.company, "today": today}
+	params = {"company": filters.company, "today": today
+	}
 	extra = ""
 	if filters.get("fixed_asset_category"):
 		params["category"] = filters.fixed_asset_category
@@ -46,10 +47,14 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200},
-		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 160},
-		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200
+	},
+		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 160
+	},
+		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

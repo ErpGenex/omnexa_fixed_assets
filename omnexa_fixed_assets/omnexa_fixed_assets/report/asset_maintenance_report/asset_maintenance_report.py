@@ -34,13 +34,20 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Maintenance"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset Maintenance", "width": 150},
-		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120},
-		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Type"), "fieldname": "maintenance_type", "fieldtype": "Data", "width": 120},
-		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120},
-		{"label": _("Cost"), "fieldname": "cost_amount", "fieldtype": "Currency", "width": 130},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120},
+		{"label": _("Maintenance"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset Maintenance", "width": 150
+	},
+		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Type"), "fieldname": "maintenance_type", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Cost"), "fieldname": "cost_amount", "fieldtype": "Currency", "width": 130
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

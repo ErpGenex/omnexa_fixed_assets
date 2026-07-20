@@ -21,7 +21,7 @@ def execute(filters=None):
 	params = {
 		"company": filters.company,
 		"from_date": getdate(filters.from_date),
-		"to_date": getdate(filters.to_date),
+		"to_date": getdate(filters.to_date)
 	}
 	conditions = [
 		"hi.company = %(company)s",
@@ -49,11 +49,16 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200},
-		{"label": _("Result Action"), "fieldname": "inspection_result_action", "fieldtype": "Data", "width": 120},
-		{"label": _("Condition"), "fieldname": "condition_status", "fieldtype": "Data", "width": 110},
-		{"label": _("Inspections"), "fieldname": "inspection_count", "fieldtype": "Int", "width": 110},
-		{"label": _("Last Inspection"), "fieldname": "last_inspection_date", "fieldtype": "Date", "width": 130},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 200
+	},
+		{"label": _("Result Action"), "fieldname": "inspection_result_action", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Condition"), "fieldname": "condition_status", "fieldtype": "Data", "width": 110
+	},
+		{"label": _("Inspections"), "fieldname": "inspection_count", "fieldtype": "Int", "width": 110
+	},
+		{"label": _("Last Inspection"), "fieldname": "last_inspection_date", "fieldtype": "Date", "width": 130
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

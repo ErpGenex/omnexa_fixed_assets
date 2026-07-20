@@ -55,8 +55,8 @@ def ensure_asset_insurance_dashboard_charts() -> None:
 			"number_of_groups": 14,
 			"type": "Donut",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 	_upsert_dashboard_chart(
 		{
@@ -69,8 +69,8 @@ def ensure_asset_insurance_dashboard_charts() -> None:
 			"number_of_groups": 14,
 			"type": "Donut",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 	_upsert_dashboard_chart(
 		{
@@ -83,8 +83,8 @@ def ensure_asset_insurance_dashboard_charts() -> None:
 			"number_of_groups": 20,
 			"type": "Bar",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 	_upsert_dashboard_chart(
 		{
@@ -98,8 +98,8 @@ def ensure_asset_insurance_dashboard_charts() -> None:
 			"time_interval": "Monthly",
 			"type": "Line",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 	_upsert_dashboard_chart(
 		{
@@ -113,8 +113,8 @@ def ensure_asset_insurance_dashboard_charts() -> None:
 			"time_interval": "Monthly",
 			"type": "Line",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 
 
@@ -134,8 +134,8 @@ def ensure_asset_insurance_number_cards() -> None:
 			"is_public": 1,
 			"show_percentage_stats": 1,
 			"stats_time_interval": "Monthly",
-			"show_full_number": 1,
-		},
+			"show_full_number": 1
+	},
 	)
 	_upsert_number_card_named(
 		"Active Policies",
@@ -154,8 +154,8 @@ def ensure_asset_insurance_number_cards() -> None:
 			"is_public": 1,
 			"show_percentage_stats": 1,
 			"stats_time_interval": "Monthly",
-			"show_full_number": 1,
-		},
+			"show_full_number": 1
+	},
 	)
 	_upsert_number_card_named(
 		"Open Claims",
@@ -174,8 +174,8 @@ def ensure_asset_insurance_number_cards() -> None:
 			"is_public": 1,
 			"show_percentage_stats": 1,
 			"stats_time_interval": "Monthly",
-			"show_full_number": 1,
-		},
+			"show_full_number": 1
+	},
 	)
 	_upsert_number_card_named(
 		"Annual Premium",
@@ -194,8 +194,8 @@ def ensure_asset_insurance_number_cards() -> None:
 			"module": _MODULE,
 			"is_public": 1,
 			"show_percentage_stats": 0,
-			"show_full_number": 1,
-		},
+			"show_full_number": 1
+	},
 	)
 
 
@@ -247,8 +247,8 @@ def ensure_asset_insurance_on_fixed_assets_workspace() -> None:
 				"url": url,
 				"label": "Asset Insurance",
 				"color": "Blue",
-				"doc_view": "",
-			},
+				"doc_view": ""
+	},
 		)
 		changed = True
 
@@ -269,8 +269,8 @@ def ensure_asset_insurance_on_fixed_assets_workspace() -> None:
 				"link_type": "DocType",
 				"link_to": "Insurance Policy",
 				"link_count": 0,
-				"icon": "shield",
-			},
+				"icon": "shield"
+	},
 		)
 		changed = True
 

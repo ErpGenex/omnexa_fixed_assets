@@ -13,7 +13,8 @@ def execute(filters=None):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 
 	conditions = ["ic.company = %(company)s", "ic.docstatus < 2"]
-	params = {"company": filters.company}
+	params = {"company": filters.company
+	}
 
 	if filters.get("claim_status"):
 		conditions.append("ic.claim_status = %(claim_status)s")
@@ -37,13 +38,20 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Insurance Claim"), "fieldname": "insurance_claim", "fieldtype": "Link", "options": "Insurance Claim", "width": 160},
-		{"label": _("Claim Date"), "fieldname": "claim_date", "fieldtype": "Date", "width": 110},
-		{"label": _("Status"), "fieldname": "claim_status", "fieldtype": "Data", "width": 120},
-		{"label": _("Claim Amount"), "fieldname": "claim_amount", "fieldtype": "Currency", "width": 130},
-		{"label": _("Insurance Policy"), "fieldname": "insurance_policy", "fieldtype": "Link", "options": "Insurance Policy", "width": 160},
-		{"label": _("Insurance Incident"), "fieldname": "insurance_incident", "fieldtype": "Link", "options": "Insurance Incident", "width": 160},
-		{"label": _("Docstatus"), "fieldname": "docstatus", "fieldtype": "Int", "width": 80},
+		{"label": _("Insurance Claim"), "fieldname": "insurance_claim", "fieldtype": "Link", "options": "Insurance Claim", "width": 160
+	},
+		{"label": _("Claim Date"), "fieldname": "claim_date", "fieldtype": "Date", "width": 110
+	},
+		{"label": _("Status"), "fieldname": "claim_status", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Claim Amount"), "fieldname": "claim_amount", "fieldtype": "Currency", "width": 130
+	},
+		{"label": _("Insurance Policy"), "fieldname": "insurance_policy", "fieldtype": "Link", "options": "Insurance Policy", "width": 160
+	},
+		{"label": _("Insurance Incident"), "fieldname": "insurance_incident", "fieldtype": "Link", "options": "Insurance Incident", "width": 160
+	},
+		{"label": _("Docstatus"), "fieldname": "docstatus", "fieldtype": "Int", "width": 80
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

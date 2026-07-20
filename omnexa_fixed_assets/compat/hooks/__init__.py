@@ -11,7 +11,8 @@ def _run_hook(name: str, *args: Any, **kwargs: Any) -> dict[str, Any]:
     log_event(name, args=[str(arg) for arg in args], kwargs={key: str(value) for key, value in kwargs.items()})
     if name in {"before_migrate", "after_migrate", "before_tests"}:
         return CompatibilityScanner().scan()
-    return {"status": "ok", "hook": name}
+    return {"status": "ok", "hook": name
+	}
 
 
 def before_install(*args: Any, **kwargs: Any) -> dict[str, Any]:

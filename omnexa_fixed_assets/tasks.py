@@ -36,7 +36,8 @@ def run_month_end_depreciation_jobs(posting_date=None):
 	target_date = getdate(posting_date) if posting_date else _resolve_target_posting_date()
 	policies = frappe.get_all(
 		"Fixed Asset Auto Depreciation Policy",
-		filters={"enabled": 1},
+		filters={"enabled": 1
+	},
 		fields=["name", "company", "branch", "submit_entries", "max_assets_per_run"],
 	)
 
@@ -62,8 +63,8 @@ def run_month_end_depreciation_jobs(posting_date=None):
 					"last_target_posting_date": str(target_date),
 					"last_run_at": get_datetime(),
 					"last_run_status": status,
-					"last_run_message": message,
-				},
+					"last_run_message": message
+	},
 				update_modified=False,
 			)
 		except Exception:
@@ -78,8 +79,8 @@ def run_month_end_depreciation_jobs(posting_date=None):
 					"last_target_posting_date": str(target_date),
 					"last_run_at": get_datetime(),
 					"last_run_status": "Failed",
-					"last_run_message": "See Error Log for traceback.",
-				},
+					"last_run_message": "See Error Log for traceback."
+	},
 				update_modified=False,
 			)
 
@@ -92,7 +93,8 @@ def run_daily_reliability_jobs():
 		return
 	assets = frappe.get_all(
 		"Fixed Asset",
-		filters={"monitoring_enabled": 1},
+		filters={"monitoring_enabled": 1
+	},
 		fields=["name"],
 		limit_page_length=5000,
 	)
@@ -139,8 +141,8 @@ def _create_scheduler_alert_if_missing(work_order_row, severity: str, message: s
 			"asset": work_order_row.asset,
 			"status": "Open",
 			"alert_type": alert_type,
-			"message": message,
-		},
+			"message": message
+	},
 	)
 	if exists:
 		return
@@ -157,8 +159,8 @@ def _create_scheduler_alert_if_missing(work_order_row, severity: str, message: s
 			"message": message,
 			"source": "scheduler_capacity",
 			"reference_doctype": "Asset Work Order",
-			"reference_name": work_order_row.name,
-		}
+			"reference_name": work_order_row.name
+	}
 	).insert(ignore_permissions=True)
 
 
@@ -168,14 +170,16 @@ def run_hourly_condition_monitoring_jobs():
 		return
 	profiles = frappe.get_all(
 		"Asset Threshold Profile",
-		filters={"enabled": 1},
+		filters={"enabled": 1
+	},
 		fields=["name", "company", "branch", "meter_type", "warning_threshold", "critical_threshold", "comparison_operator"],
 		limit_page_length=5000,
 	)
 	for p in profiles:
 		latest = frappe.get_all(
 			"Asset Meter Reading",
-			filters={"company": p.company, "meter_type": p.meter_type},
+			filters={"company": p.company, "meter_type": p.meter_type
+	},
 			fields=["name", "asset", "company", "branch", "value", "reading_time"],
 			order_by="reading_time desc",
 			limit_page_length=1,
@@ -210,7 +214,8 @@ def run_hourly_condition_monitoring_jobs():
 		msg = f"{p.meter_type} value {value} breached {severity.lower()} threshold."
 		exists = frappe.db.exists(
 			"Asset Alert",
-			{"asset": r.asset, "status": "Open", "alert_type": "Threshold Breach", "message": msg},
+			{"asset": r.asset, "status": "Open", "alert_type": "Threshold Breach", "message": msg
+	},
 		)
 		if exists:
 			continue
@@ -227,8 +232,8 @@ def run_hourly_condition_monitoring_jobs():
 				"message": msg,
 				"source": "hourly_monitor",
 				"reference_doctype": "Asset Meter Reading",
-				"reference_name": r.name,
-			}
+				"reference_name": r.name
+	}
 		).insert(ignore_permissions=True)
 
 

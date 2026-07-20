@@ -14,4 +14,5 @@ def export_fa_global_audit() -> dict:
 	for n, d in (("LIVE_SCORE.json", score), ("GAP_REGISTER.json", gaps)):
 		with open(os.path.join(root, n), "w", encoding="utf-8") as fh:
 			json.dump(d, fh, ensure_ascii=False, indent=2)
-	return {"path": root, "weighted_score": score.get("weighted_score"), "gaps_open": gaps.get("gaps_open")}
+	return {"path": root, "weighted_score": score.get("weighted_score"), "gaps_open": gaps.get("gaps_open")
+	}

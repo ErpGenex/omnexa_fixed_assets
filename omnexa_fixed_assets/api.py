@@ -45,8 +45,7 @@ def run_monthly_depreciation_batch(
 		"measurement_model": "Cost Model",
 		"depreciation_method": ["not in", ["", "None"]],
 		"status": ["in", ["acquired", "tagged", "in_use", "transferred", "under_maintenance"]],
-		"capitalization_journal_entry": ["is", "set"],
-	}
+		"capitalization_journal_entry": ["is", "set"]}
 	if branch:
 		filters["branch"] = branch
 
@@ -79,11 +78,12 @@ def run_monthly_depreciation_batch(
 			{
 				"docstatus": 1,
 				"fixed_asset": a.name,
-				"posting_date": pd,
-			},
+				"posting_date": pd
+	},
 		)
 		if exists:
-			skipped.append({"asset": a.name, "reason": "already_posted_on_date"})
+			skipped.append({"asset": a.name, "reason": "already_posted_on_date"
+	})
 			continue
 
 		amount = suggest_monthly_depreciation(
@@ -97,7 +97,8 @@ def run_monthly_depreciation_batch(
 			units_this_period=None,
 		)
 		if amount <= 0:
-			skipped.append({"asset": a.name, "reason": "zero_or_no_remaining_depreciation"})
+			skipped.append({"asset": a.name, "reason": "zero_or_no_remaining_depreciation"
+	})
 			continue
 
 		doc = frappe.get_doc(
@@ -108,8 +109,8 @@ def run_monthly_depreciation_batch(
 				"branch": a.branch,
 				"posting_date": pd,
 				"fixed_asset": a.name,
-				"depreciation_amount": amount,
-			}
+				"depreciation_amount": amount
+	}
 		)
 		doc.insert()
 		created.append(doc.name)
@@ -124,7 +125,7 @@ def run_monthly_depreciation_batch(
 		"skipped_count": len(skipped),
 		"created": created,
 		"submitted": submitted,
-		"skipped": skipped,
+		"skipped": skipped
 	}
 
 
@@ -187,13 +188,14 @@ def ingest_asset_meter_reading(
 			"unit": unit,
 			"source": source or "api",
 			"quality_score": flt(quality_score) if quality_score is not None else None,
-			"payload_json": payload_json,
-		}
+			"payload_json": payload_json
+	}
 	)
 	doc.insert(ignore_permissions=True)
 	if meter_type == "Runtime":
 		asset_doc.db_set("runtime_hours", flt(asset_doc.runtime_hours) + flt(value), update_modified=False)
-	return {"ok": True, "reading": doc.name, "asset": asset}
+	return {"ok": True, "reading": doc.name, "asset": asset
+	}
 
 
 @frappe.whitelist(methods=["GET", "POST"])
@@ -201,7 +203,8 @@ def get_asset_health_payload(asset: str):
 	if not asset:
 		frappe.throw(_("Asset is required."))
 	if not frappe.db.exists("Fixed Asset", asset):
-		return {"ok": False, "message": "Asset not found"}
+		return {"ok": False, "message": "Asset not found"
+	}
 	fields = [
 		"name",
 		"asset_name",
@@ -220,22 +223,26 @@ def get_asset_health_payload(asset: str):
 		"inspection_due",
 	]
 	row = frappe.db.get_value("Fixed Asset", asset, fields, as_dict=True)
-	return {"ok": True, "asset": row}
+	return {"ok": True, "asset": row
+	}
 
 
 @frappe.whitelist(methods=["POST"])
 def run_asset_reliability_recompute(asset: str | None = None, limit: int | str = 100):
 	"""On-demand reliability/health recompute endpoint."""
 	if not is_reliability_enabled() and not is_health_engine_enabled():
-		return {"ok": False, "message": "Reliability and health engines are disabled by feature flags."}
+		return {"ok": False, "message": "Reliability and health engines are disabled by feature flags."
+	}
 	out = []
 	if asset:
 		out.append(recompute_asset_reliability_and_health(asset))
 	else:
-		rows = frappe.get_all("Fixed Asset", filters={"monitoring_enabled": 1}, fields=["name"], limit_page_length=max(1, cint(limit)))
+		rows = frappe.get_all("Fixed Asset", filters={"monitoring_enabled": 1
+	}, fields=["name"], limit_page_length=max(1, cint(limit)))
 		for r in rows:
 			out.append(recompute_asset_reliability_and_health(r.name))
-	return {"ok": True, "processed": len(out), "results": out}
+	return {"ok": True, "processed": len(out), "results": out
+	}
 
 
 @frappe.whitelist(methods=["GET"])
@@ -245,7 +252,7 @@ def get_eam_feature_flags():
 		"enable_condition_monitoring": is_condition_monitoring_enabled(),
 		"enable_reliability": is_reliability_enabled(),
 		"enable_health_engine": is_health_engine_enabled(),
-		"enable_hotel_asset_management": is_hotel_asset_management_enabled(),
+		"enable_hotel_asset_management": is_hotel_asset_management_enabled()
 	}
 
 
@@ -293,7 +300,7 @@ def seed_hotel_demo_assets_from_company(
 		"created_count": n,
 		"company": out.get("company"),
 		"branch": branch,
-		"hotel_property": out.get("hotel_property"),
+		"hotel_property": out.get("hotel_property")
 	}
 
 
@@ -320,8 +327,8 @@ def scan_asset(
 			"reader_device": reader_device,
 			"location_text": location_text,
 			"signal_strength": signal_strength,
-			"scan_result": scan_result,
-		}
+			"scan_result": scan_result
+	}
 	)
 	if not normalized.asset:
 		frappe.throw(_("Asset is required."))
@@ -336,12 +343,13 @@ def scan_asset(
 			"reader_device": normalized.reader_device,
 			"location_text": normalized.location_text,
 			"signal_strength": normalized.signal_strength if normalized.signal_strength is not None else None,
-			"scan_result": normalized.scan_result or "Seen",
-		}
+			"scan_result": normalized.scan_result or "Seen"
+	}
 	)
 	log.insert(ignore_permissions=True)
 	asset_doc.db_set("scan_status", log.scan_result, update_modified=False)
-	return {"ok": True, "scan_log": log.name, "asset": asset_doc.name, "scan_status": log.scan_result}
+	return {"ok": True, "scan_log": log.name, "asset": asset_doc.name, "scan_status": log.scan_result
+	}
 
 
 @frappe.whitelist(methods=["GET"])
@@ -357,26 +365,31 @@ def locate_asset(asset: str):
 		as_dict=True,
 	)
 	if not asset_row:
-		return {"ok": False, "message": "Asset not found"}
+		return {"ok": False, "message": "Asset not found"
+	}
 	last_scan = frappe.get_all(
 		"RFID Scan Log",
-		filters={"fixed_asset": asset},
+		filters={"fixed_asset": asset
+	},
 		fields=["name", "scan_time", "location_text", "reader_device", "scan_result"],
 		order_by="scan_time desc",
 		limit_page_length=1,
 	)
-	return {"ok": True, "asset": asset_row, "last_scan": last_scan[0] if last_scan else None}
+	return {"ok": True, "asset": asset_row, "last_scan": last_scan[0] if last_scan else None
+	}
 
 
 @frappe.whitelist(methods=["GET", "POST"])
 def get_qr_svg_data_uri(payload: str):
 	"""Generate QR SVG as a data-uri for Desk form rendering."""
 	if not payload:
-		return {"data_uri": None}
+		return {"data_uri": None
+	}
 	try:
 		from pyqrcode import create as qrcreate
 	except Exception:
-		return {"data_uri": None}
+		return {"data_uri": None
+	}
 
 	url = qrcreate(payload)
 	stream = BytesIO()
@@ -403,7 +416,8 @@ def update_condition(asset: str, housekeeping_status: str | None = None, enginee
 	if notes:
 		current = (doc.get("replacement_recommendation") or "").strip()
 		doc.db_set("replacement_recommendation", f"{current}\n{notes}".strip(), update_modified=False)
-	return {"ok": True, "asset": doc.name, "housekeeping_status": housekeeping_status, "engineering_status": engineering_status}
+	return {"ok": True, "asset": doc.name, "housekeeping_status": housekeeping_status, "engineering_status": engineering_status
+	}
 
 
 @frappe.whitelist(methods=["POST"])
@@ -431,12 +445,13 @@ def submit_inspection(
 			"inspection_date": inspection_date or today(),
 			"inspector": frappe.session.user,
 			"condition_status": condition_status,
-			"notes": notes,
-		}
+			"notes": notes
+	}
 	)
 	ins.insert(ignore_permissions=True)
 	asset_doc.db_set("condition_state", condition_status, update_modified=False)
-	return {"ok": True, "inspection": ins.name, "asset": asset_doc.name, "condition_status": condition_status}
+	return {"ok": True, "inspection": ins.name, "asset": asset_doc.name, "condition_status": condition_status
+	}
 
 
 @frappe.whitelist(methods=["GET", "POST"])
@@ -444,7 +459,8 @@ def get_asset_command_center(company: str, branch: str | None = None):
 	"""Command Center payload: critical assets, alerts, health/risk and compliance KPIs."""
 	if not company:
 		frappe.throw(_("Company is required."))
-	asset_filters = {"company": company}
+	asset_filters = {"company": company
+	}
 	if branch:
 		asset_filters["branch"] = branch
 
@@ -457,7 +473,8 @@ def get_asset_command_center(company: str, branch: str | None = None):
 	)
 	open_alerts = frappe.get_all(
 		"Asset Alert",
-		filters={**asset_filters, "status": "Open"},
+		filters={**asset_filters, "status": "Open"
+	},
 		fields=["name", "asset", "alert_type", "severity", "alert_time", "message"],
 		order_by="alert_time desc",
 		limit_page_length=30,
@@ -491,7 +508,7 @@ def get_asset_command_center(company: str, branch: str | None = None):
 		"critical_assets": critical_assets,
 		"active_alerts": open_alerts,
 		"health_distribution": health_distribution,
-		"inspection_compliance_rate": compliance_rate,
+		"inspection_compliance_rate": compliance_rate
 	}
 
 
@@ -500,7 +517,8 @@ def get_reliability_analytics_workbench(company: str, branch: str | None = None,
 	"""Reliability workbench payload: mtbf/mttr trends + failure pareto."""
 	if not company:
 		frappe.throw(_("Company is required."))
-	filters = {"company": company}
+	filters = {"company": company
+	}
 	if branch:
 		filters["branch"] = branch
 	if from_date:
@@ -529,7 +547,8 @@ def get_reliability_analytics_workbench(company: str, branch: str | None = None,
 		(company, branch) if branch else (company,),
 		as_dict=True,
 	)
-	return {"ok": True, "trends": trends, "failure_pareto": failure_pareto}
+	return {"ok": True, "trends": trends, "failure_pareto": failure_pareto
+	}
 
 
 @frappe.whitelist(methods=["GET", "POST"])
@@ -537,7 +556,8 @@ def get_scheduler_board_payload(company: str, branch: str | None = None):
 	"""Maximo-style scheduling board payload for calendar/gantt/technician assignments."""
 	if not company:
 		frappe.throw(_("Company is required."))
-	filters = {"company": company}
+	filters = {"company": company
+	}
 	if branch:
 		filters["branch"] = branch
 	work_orders = frappe.get_all(
@@ -561,7 +581,8 @@ def get_scheduler_board_payload(company: str, branch: str | None = None):
 	for wo in work_orders:
 		user = wo.get("assigned_to") or "Unassigned"
 		capacity[user] = capacity.get(user, 0) + 1
-	return {"ok": True, "work_orders": work_orders, "capacity": capacity}
+	return {"ok": True, "work_orders": work_orders, "capacity": capacity
+	}
 
 
 @frappe.whitelist(methods=["GET", "POST"])
@@ -569,7 +590,8 @@ def get_condition_monitoring_console(company: str, branch: str | None = None, as
 	"""Condition monitoring payload: latest readings, alerts, and trend samples."""
 	if not company:
 		frappe.throw(_("Company is required."))
-	filters = {"company": company}
+	filters = {"company": company
+	}
 	if branch:
 		filters["branch"] = branch
 	if asset:
@@ -583,12 +605,14 @@ def get_condition_monitoring_console(company: str, branch: str | None = None, as
 	)
 	alerts = frappe.get_all(
 		"Asset Alert",
-		filters={**filters, "status": "Open"},
+		filters={**filters, "status": "Open"
+	},
 		fields=["name", "asset", "alert_type", "severity", "alert_time", "message"],
 		order_by="alert_time desc",
 		limit_page_length=100,
 	)
-	return {"ok": True, "readings": readings, "alerts": alerts}
+	return {"ok": True, "readings": readings, "alerts": alerts
+	}
 
 
 @frappe.whitelist(methods=["POST"])
@@ -598,7 +622,8 @@ def create_work_order_from_alert(alert_name: str, work_order_type: str = "Inspec
 		frappe.throw(_("Alert name is required."))
 	alert = frappe.get_doc("Asset Alert", alert_name)
 	if alert.status == "Closed":
-		return {"ok": False, "message": "Alert is already closed."}
+		return {"ok": False, "message": "Alert is already closed."
+	}
 	wo = frappe.get_doc(
 		{
 			"doctype": "Asset Work Order",
@@ -609,12 +634,13 @@ def create_work_order_from_alert(alert_name: str, work_order_type: str = "Inspec
 			"work_order_type": work_order_type,
 			"priority": priority,
 			"status": "Planned",
-			"description": f"Auto-created from alert {alert.name}: {alert.message or ''}",
-		}
+			"description": f"Auto-created from alert {alert.name}: {alert.message or ''}"
+	}
 	)
 	wo.insert(ignore_permissions=True)
 	alert.db_set("status", "Acknowledged", update_modified=False)
-	return {"ok": True, "work_order": wo.name, "alert": alert.name}
+	return {"ok": True, "work_order": wo.name, "alert": alert.name
+	}
 
 
 @frappe.whitelist()

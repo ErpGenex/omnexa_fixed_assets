@@ -27,14 +27,17 @@ def _upsert_dashboard_chart(doc_dict: dict) -> None:
 
 def _upsert_number_card(doc_dict: dict) -> None:
 	label = doc_dict["label"]
-	name = frappe.db.get_value("Number Card", {"label": label}, "name")
+	name = frappe.db.get_value("Number Card", {"label": label
+	}, "name")
 	if name:
-		frappe.db.set_value("Number Card", name, {"is_public": 1}, update_modified=False)
+		frappe.db.set_value("Number Card", name, {"is_public": 1
+	}, update_modified=False)
 		return
 	doc = frappe.new_doc("Number Card")
 	doc.update(doc_dict)
 	doc.insert(ignore_permissions=True)
-	frappe.db.set_value("Number Card", doc.name, {"is_public": 1}, update_modified=False)
+	frappe.db.set_value("Number Card", doc.name, {"is_public": 1
+	}, update_modified=False)
 
 
 def _ensure_chart_documents():
@@ -49,8 +52,8 @@ def _ensure_chart_documents():
 			"number_of_groups": 14,
 			"type": "Donut",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 
 	_upsert_dashboard_chart(
@@ -64,8 +67,8 @@ def _ensure_chart_documents():
 			"number_of_groups": 14,
 			"type": "Bar",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 
 	if frappe.db.has_column("Fixed Asset", "hotel_property"):
@@ -80,8 +83,8 @@ def _ensure_chart_documents():
 				"number_of_groups": 14,
 				"type": "Bar",
 				"is_public": 1,
-				"custom_options": PALETTE,
-			}
+				"custom_options": PALETTE
+	}
 		)
 
 	_upsert_dashboard_chart(
@@ -96,8 +99,8 @@ def _ensure_chart_documents():
 			"time_interval": "Monthly",
 			"type": "Line",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 
 	_upsert_dashboard_chart(
@@ -112,8 +115,8 @@ def _ensure_chart_documents():
 			"time_interval": "Monthly",
 			"type": "Line",
 			"is_public": 1,
-			"custom_options": PALETTE,
-		}
+			"custom_options": PALETTE
+	}
 	)
 
 
@@ -126,8 +129,8 @@ def _ensure_number_card_documents():
 			"function": "Count",
 			"filters_json": json.dumps([["docstatus", "<", 2]]),
 			"is_public": 1,
-			"show_percentage_stats": 0,
-		}
+			"show_percentage_stats": 0
+	}
 	)
 
 	if frappe.db.has_column("Fixed Asset", "net_book_value"):
@@ -140,8 +143,8 @@ def _ensure_number_card_documents():
 				"aggregate_function_based_on": "net_book_value",
 				"filters_json": json.dumps([["docstatus", "<", 2]]),
 				"is_public": 1,
-				"show_percentage_stats": 0,
-			}
+				"show_percentage_stats": 0
+	}
 		)
 
 	if frappe.db.has_column("Fixed Asset", "hotel_property"):
@@ -153,8 +156,8 @@ def _ensure_number_card_documents():
 				"function": "Count",
 				"filters_json": json.dumps([["docstatus", "<", 2], ["hotel_property", "!=", ""]]),
 				"is_public": 1,
-				"show_percentage_stats": 0,
-			}
+				"show_percentage_stats": 0
+	}
 		)
 
 	if frappe.db.exists("DocType", "Asset Alert"):
@@ -166,8 +169,8 @@ def _ensure_number_card_documents():
 				"function": "Count",
 				"filters_json": json.dumps([["status", "=", "Open"]]),
 				"is_public": 1,
-				"show_percentage_stats": 0,
-			}
+				"show_percentage_stats": 0
+	}
 		)
 
 
@@ -193,7 +196,8 @@ def _attach_to_workspace():
 	existing_charts = {row.chart_name for row in ws.charts}
 	for chart_name, lbl in chart_specs:
 		if frappe.db.exists("Dashboard Chart", chart_name) and chart_name not in existing_charts:
-			ws.append("charts", {"chart_name": chart_name, "label": lbl})
+			ws.append("charts", {"chart_name": chart_name, "label": lbl
+	})
 
 	card_specs = [
 		("OMX FA Total Active Assets", _("Total active assets")),
@@ -203,9 +207,11 @@ def _attach_to_workspace():
 	]
 	existing_nc = {row.number_card_name for row in ws.number_cards}
 	for nc_label, wlbl in card_specs:
-		nc_name = frappe.db.get_value("Number Card", {"label": nc_label}, "name")
+		nc_name = frappe.db.get_value("Number Card", {"label": nc_label
+	}, "name")
 		if nc_name and nc_name not in existing_nc:
-			ws.append("number_cards", {"number_card_name": nc_name, "label": wlbl})
+			ws.append("number_cards", {"number_card_name": nc_name, "label": wlbl
+	})
 
 	ws.save(ignore_permissions=True)
 
@@ -237,12 +243,15 @@ def attach_analytics_bundle(workspace_name: str, chart_names: list[tuple[str, st
 	existing_charts = {row.chart_name for row in ws.charts}
 	for chart_name, lbl in chart_names:
 		if frappe.db.exists("Dashboard Chart", chart_name) and chart_name not in existing_charts:
-			ws.append("charts", {"chart_name": chart_name, "label": lbl})
+			ws.append("charts", {"chart_name": chart_name, "label": lbl
+	})
 
 	existing_nc = {row.number_card_name for row in ws.number_cards}
 	for nc_label, wlbl in number_card_labels:
-		nc_name = frappe.db.get_value("Number Card", {"label": nc_label}, "name")
+		nc_name = frappe.db.get_value("Number Card", {"label": nc_label
+	}, "name")
 		if nc_name and nc_name not in existing_nc:
-			ws.append("number_cards", {"number_card_name": nc_name, "label": wlbl})
+			ws.append("number_cards", {"number_card_name": nc_name, "label": wlbl
+	})
 
 	ws.save(ignore_permissions=True)

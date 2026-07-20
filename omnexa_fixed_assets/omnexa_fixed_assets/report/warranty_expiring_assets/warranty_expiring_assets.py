@@ -24,8 +24,7 @@ def execute(filters=None):
 	params = {
 		"company": filters.company,
 		"today": today,
-		"end": add_days(today, days_ahead),
-	}
+		"end": add_days(today, days_ahead)}
 	conditions = [
 		"fa.company = %(company)s",
 		"fa.docstatus < 2",
@@ -56,13 +55,20 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200},
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180},
-		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150},
-		{"label": _("Warranty Supplier"), "fieldname": "warranty_supplier", "fieldtype": "Link", "options": "Supplier", "width": 170},
-		{"label": _("Warranty End Date"), "fieldname": "warranty_end_date", "fieldtype": "Date", "width": 130},
-		{"label": _("Days Remaining"), "fieldname": "days_remaining", "fieldtype": "Int", "width": 120},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200
+	},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180
+	},
+		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150
+	},
+		{"label": _("Warranty Supplier"), "fieldname": "warranty_supplier", "fieldtype": "Link", "options": "Supplier", "width": 170
+	},
+		{"label": _("Warranty End Date"), "fieldname": "warranty_end_date", "fieldtype": "Date", "width": 130
+	},
+		{"label": _("Days Remaining"), "fieldname": "days_remaining", "fieldtype": "Int", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

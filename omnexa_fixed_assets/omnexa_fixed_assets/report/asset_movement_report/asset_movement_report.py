@@ -37,14 +37,22 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 110},
-		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Movement Type"), "fieldname": "movement_type", "fieldtype": "Data", "width": 130},
-		{"label": _("From Location"), "fieldname": "from_location", "fieldtype": "Link", "options": "Fixed Asset Location", "width": 130},
-		{"label": _("To Location"), "fieldname": "to_location", "fieldtype": "Link", "options": "Fixed Asset Location", "width": 130},
-		{"label": _("Reference DocType"), "fieldname": "reference_doctype", "fieldtype": "Data", "width": 130},
-		{"label": _("Reference Name"), "fieldname": "reference_name", "fieldtype": "Data", "width": 150},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120},
+		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 110
+	},
+		{"label": _("Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Movement Type"), "fieldname": "movement_type", "fieldtype": "Data", "width": 130
+	},
+		{"label": _("From Location"), "fieldname": "from_location", "fieldtype": "Link", "options": "Fixed Asset Location", "width": 130
+	},
+		{"label": _("To Location"), "fieldname": "to_location", "fieldtype": "Link", "options": "Fixed Asset Location", "width": 130
+	},
+		{"label": _("Reference DocType"), "fieldname": "reference_doctype", "fieldtype": "Data", "width": 130
+	},
+		{"label": _("Reference Name"), "fieldname": "reference_name", "fieldtype": "Data", "width": 150
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

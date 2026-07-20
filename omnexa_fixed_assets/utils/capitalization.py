@@ -52,8 +52,10 @@ def post_capitalization_journal_entry(
 	je.posting_date = posting_date
 	je.reference = reference
 	je.remarks = remarks
-	je.append("accounts", {"account": debit_account, "debit": amt, "credit": 0})
-	je.append("accounts", {"account": credit_account, "debit": 0, "credit": amt})
+	je.append("accounts", {"account": debit_account, "debit": amt, "credit": 0
+	})
+	je.append("accounts", {"account": credit_account, "debit": 0, "credit": amt
+	})
 	_set_journal_entry_currency_from_company(je)
 	je.insert()
 	je.submit()
@@ -82,8 +84,8 @@ def post_gl_journal(
 			{
 				"account": row["account"],
 				"debit": flt(row.get("debit") or 0),
-				"credit": flt(row.get("credit") or 0),
-			},
+				"credit": flt(row.get("credit") or 0)
+	},
 		)
 	_set_journal_entry_currency_from_company(je)
 	je.insert()

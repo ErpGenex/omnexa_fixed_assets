@@ -35,13 +35,20 @@ def execute(filters=None):
 	)
 
 	columns = [
-		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 120},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120},
-		{"label": _("Inspection Due"), "fieldname": "inspection_due", "fieldtype": "Date", "width": 120},
-		{"label": _("Last Inspection"), "fieldname": "last_inspection_date", "fieldtype": "Datetime", "width": 150},
-		{"label": _("Compliance"), "fieldname": "compliance_status", "fieldtype": "Data", "width": 120},
+		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 120
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
+		{"label": _("Inspection Due"), "fieldname": "inspection_due", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Last Inspection"), "fieldname": "last_inspection_date", "fieldtype": "Datetime", "width": 150
+	},
+		{"label": _("Compliance"), "fieldname": "compliance_status", "fieldtype": "Data", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

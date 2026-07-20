@@ -54,7 +54,8 @@ class SafeUpgradePipeline:
             "generate_report",
         ]
         self.plan.steps = steps
-        payload = {"plan": self.plan.__dict__, "compatibility": report}
+        payload = {"plan": self.plan.__dict__, "compatibility": report
+	}
         self.logger.info("upgrade_plan_generated %s", payload)
         return payload
 

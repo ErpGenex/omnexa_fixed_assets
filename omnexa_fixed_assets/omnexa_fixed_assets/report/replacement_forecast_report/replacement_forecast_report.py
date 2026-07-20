@@ -30,15 +30,24 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Criticality"), "fieldname": "criticality", "fieldtype": "Data", "width": 110},
-		{"label": _("Health Status"), "fieldname": "health_status", "fieldtype": "Data", "width": 110},
-		{"label": _("Health Score"), "fieldname": "health_score", "fieldtype": "Percent", "width": 95},
-		{"label": _("Risk Score"), "fieldname": "risk_score", "fieldtype": "Percent", "width": 95},
-		{"label": _("Replacement Projection"), "fieldname": "replacement_projection", "fieldtype": "Currency", "width": 145},
-		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 130},
-		{"label": _("Recommendation"), "fieldname": "replacement_recommendation", "fieldtype": "Small Text", "width": 240},
+		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Criticality"), "fieldname": "criticality", "fieldtype": "Data", "width": 110
+	},
+		{"label": _("Health Status"), "fieldname": "health_status", "fieldtype": "Data", "width": 110
+	},
+		{"label": _("Health Score"), "fieldname": "health_score", "fieldtype": "Percent", "width": 95
+	},
+		{"label": _("Risk Score"), "fieldname": "risk_score", "fieldtype": "Percent", "width": 95
+	},
+		{"label": _("Replacement Projection"), "fieldname": "replacement_projection", "fieldtype": "Currency", "width": 145
+	},
+		{"label": _("Net Book Value"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 130
+	},
+		{"label": _("Recommendation"), "fieldname": "replacement_recommendation", "fieldtype": "Small Text", "width": 240
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

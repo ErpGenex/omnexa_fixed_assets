@@ -22,5 +22,5 @@ def preview_impairment_adjustment(
 		"recoverable_amount": recoverable,
 		"impairment_loss": loss,
 		"requires_posting": loss > 0,
-		"sap_module": "FI-AA",
+		"sap_module": "FI-AA"
 	}

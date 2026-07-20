@@ -45,7 +45,8 @@ def create_warranty_expiry_alerts(lookahead_days: int = 30) -> int:
 	for a in assets:
 		if frappe.db.exists(
 			"Asset Alert",
-			{"asset": a.name, "alert_type": "Warranty Warning", "status": "Open"},
+			{"asset": a.name, "alert_type": "Warranty Warning", "status": "Open"
+	},
 		):
 			continue
 		doc = frappe.get_doc(
@@ -62,8 +63,8 @@ def create_warranty_expiry_alerts(lookahead_days: int = 30) -> int:
 					formatdate(a.warranty_end_date),
 					a.asset_name or a.name,
 				),
-				"source": "Hotel Asset Scheduler",
-			}
+				"source": "Hotel Asset Scheduler"
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		created += 1

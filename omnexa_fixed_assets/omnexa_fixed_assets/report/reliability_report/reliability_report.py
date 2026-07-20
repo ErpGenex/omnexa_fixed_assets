@@ -36,16 +36,26 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Asset"), "fieldname": "asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 120},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120},
-		{"label": _("As Of"), "fieldname": "as_of_date", "fieldtype": "Date", "width": 100},
-		{"label": _("MTBF (h)"), "fieldname": "mtbf", "fieldtype": "Float", "width": 95},
-		{"label": _("MTTR (h)"), "fieldname": "mttr", "fieldtype": "Float", "width": 95},
-		{"label": _("Availability %"), "fieldname": "availability", "fieldtype": "Percent", "width": 110},
-		{"label": _("Failure Freq"), "fieldname": "failure_frequency", "fieldtype": "Float", "width": 100},
-		{"label": _("Reliability %"), "fieldname": "reliability_score", "fieldtype": "Percent", "width": 110},
+		{"label": _("Asset"), "fieldname": "asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 150
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 120
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
+		{"label": _("As Of"), "fieldname": "as_of_date", "fieldtype": "Date", "width": 100
+	},
+		{"label": _("MTBF (h)"), "fieldname": "mtbf", "fieldtype": "Float", "width": 95
+	},
+		{"label": _("MTTR (h)"), "fieldname": "mttr", "fieldtype": "Float", "width": 95
+	},
+		{"label": _("Availability %"), "fieldname": "availability", "fieldtype": "Percent", "width": 110
+	},
+		{"label": _("Failure Freq"), "fieldname": "failure_frequency", "fieldtype": "Float", "width": 100
+	},
+		{"label": _("Reliability %"), "fieldname": "reliability_score", "fieldtype": "Percent", "width": 110
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

@@ -16,7 +16,8 @@ def execute(filters=None):
 	if not filters.get("company"):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 
-	params: dict = {"company": filters.company}
+	params: dict = {"company": filters.company
+	}
 	conditions = ["t.company = %(company)s", "t.docstatus < 2"]
 
 	if filters.get("fixed_asset"):
@@ -50,15 +51,24 @@ def execute(filters=None):
 	)
 
 	columns = [
-		{"label": _("Transfer"), "fieldname": "transfer", "fieldtype": "Link", "options": "Hotel Asset Transfer", "width": 160},
-		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120},
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Approval"), "fieldname": "approval_status", "fieldtype": "Data", "width": 110},
-		{"label": _("From Property"), "fieldname": "from_hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 170},
-		{"label": _("From Room"), "fieldname": "from_hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 160},
-		{"label": _("To Property"), "fieldname": "to_hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 170},
-		{"label": _("To Room"), "fieldname": "to_hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 160},
-		{"label": _("Notes"), "fieldname": "notes", "fieldtype": "Small Text", "width": 220},
+		{"label": _("Transfer"), "fieldname": "transfer", "fieldtype": "Link", "options": "Hotel Asset Transfer", "width": 160
+	},
+		{"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Approval"), "fieldname": "approval_status", "fieldtype": "Data", "width": 110
+	},
+		{"label": _("From Property"), "fieldname": "from_hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 170
+	},
+		{"label": _("From Room"), "fieldname": "from_hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 160
+	},
+		{"label": _("To Property"), "fieldname": "to_hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 170
+	},
+		{"label": _("To Room"), "fieldname": "to_hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 160
+	},
+		{"label": _("Notes"), "fieldname": "notes", "fieldtype": "Small Text", "width": 220
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

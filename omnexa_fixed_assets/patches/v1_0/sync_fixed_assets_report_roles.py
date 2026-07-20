@@ -40,7 +40,8 @@ def execute():
 		doc = frappe.get_doc("Report", name)
 		doc.roles = []
 		for role in roles:
-			doc.append("roles", {"role": role})
+			doc.append("roles", {"role": role
+	})
 		doc.save(ignore_permissions=True)
 
 	frappe.clear_cache()

@@ -54,7 +54,8 @@ def compute_health_score(
 def compute_reliability_metrics(asset: str) -> ReliabilityMetrics:
 	failures = frappe.get_all(
 		"Asset Failure Event",
-		filters={"asset": asset},
+		filters={"asset": asset
+	},
 		fields=["event_time", "downtime_hours"],
 		order_by="event_time asc",
 		limit_page_length=50000,
@@ -142,8 +143,8 @@ def recompute_asset_reliability_and_health(asset_name: str) -> dict:
 			"mttr": metrics.mttr,
 			"availability": metrics.availability,
 			"failure_frequency": metrics.failure_frequency,
-			"reliability_score": metrics.reliability_score,
-		}
+			"reliability_score": metrics.reliability_score
+	}
 	).insert(ignore_permissions=True)
 
 	frappe.get_doc(
@@ -159,8 +160,8 @@ def recompute_asset_reliability_and_health(asset_name: str) -> dict:
 			"health_status": health_status,
 			"risk_score": max(0.0, min(100.0, 100.0 - health_score)),
 			"confidence_score": asset.confidence_score,
-			"source": "scheduler",
-		}
+			"source": "scheduler"
+	}
 	).insert(ignore_permissions=True)
 
 	return {
@@ -168,12 +169,13 @@ def recompute_asset_reliability_and_health(asset_name: str) -> dict:
 		"asset": asset.name,
 		"reliability_score": metrics.reliability_score,
 		"health_score": health_score,
-		"health_status": health_status,
+		"health_status": health_status
 	}
 
 
 def total_meter_readings(asset_name: str) -> int:
-	return frappe.db.count("Asset Meter Reading", {"asset": asset_name}) or 0
+	return frappe.db.count("Asset Meter Reading", {"asset": asset_name
+	}) or 0
 
 
 def run_predictive_rules_for_asset(asset_name: str) -> dict:
@@ -187,13 +189,14 @@ def run_predictive_rules_for_asset(asset_name: str) -> dict:
 				"priority": "High",
 				"details": "Failure frequency is rising while health score is declining. Evaluate replacement.",
 				"source": "predictive_rules",
-				"confidence": 75,
-			}
+				"confidence": 75
+	}
 		)
 
 	latest_temp = frappe.get_all(
 		"Asset Meter Reading",
-		filters={"asset": asset.name, "meter_type": "Temperature"},
+		filters={"asset": asset.name, "meter_type": "Temperature"
+	},
 		fields=["value", "reading_time"],
 		order_by="reading_time desc",
 		limit_page_length=5,
@@ -207,8 +210,8 @@ def run_predictive_rules_for_asset(asset_name: str) -> dict:
 					"priority": "Medium",
 					"details": "Temperature trend is rising; inspection required.",
 					"source": "predictive_rules",
-					"confidence": 70,
-				}
+					"confidence": 70
+	}
 			)
 
 	created = []
@@ -225,9 +228,10 @@ def run_predictive_rules_for_asset(asset_name: str) -> dict:
 				"status": "Open",
 				"details": r["details"],
 				"source": r["source"],
-				"confidence": r["confidence"],
-			}
+				"confidence": r["confidence"]
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		created.append(doc.name)
-	return {"ok": True, "asset": asset.name, "created": created}
+	return {"ok": True, "asset": asset.name, "created": created
+	}

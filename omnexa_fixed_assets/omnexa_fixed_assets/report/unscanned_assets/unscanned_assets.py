@@ -20,7 +20,8 @@ def execute(filters=None):
 	min_gap = max(0, cint(filters.get("min_gap_days") or 7))
 	include_never = cint(filters.get("include_never_scanned") or 0) == 1
 
-	params = {"company": filters.company, "as_of": as_of, "min_gap": min_gap}
+	params = {"company": filters.company, "as_of": as_of, "min_gap": min_gap
+	}
 	where = [
 		"fa.company = %(company)s",
 		"fa.docstatus < 2",
@@ -55,13 +56,20 @@ def execute(filters=None):
 	)
 
 	columns = [
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180},
-		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150},
-		{"label": _("RFID Tag"), "fieldname": "rfid_tag", "fieldtype": "Data", "width": 140},
-		{"label": _("Last Scan"), "fieldname": "last_scan_time", "fieldtype": "Datetime", "width": 170},
-		{"label": _("Days Since"), "fieldname": "days_since_scan", "fieldtype": "Int", "width": 110},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Hotel Property"), "fieldname": "hotel_property", "fieldtype": "Link", "options": "Hotel Property", "width": 180
+	},
+		{"label": _("Hotel Room"), "fieldname": "hotel_room", "fieldtype": "Link", "options": "Hotel Room", "width": 150
+	},
+		{"label": _("RFID Tag"), "fieldname": "rfid_tag", "fieldtype": "Data", "width": 140
+	},
+		{"label": _("Last Scan"), "fieldname": "last_scan_time", "fieldtype": "Datetime", "width": 170
+	},
+		{"label": _("Days Since"), "fieldname": "days_since_scan", "fieldtype": "Int", "width": 110
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

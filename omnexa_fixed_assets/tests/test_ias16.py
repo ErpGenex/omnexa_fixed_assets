@@ -44,38 +44,43 @@ class TestIAS16Posting(FrappeTestCase):
 		self.category = frappe.get_doc(
 			{
 				"doctype": "Fixed Asset Category",
-				"category_code": f"I{sfx}",
-				"category_name": f"Cat {sfx}",
+				"category_code": f"I{sfx
+	}",
+				"category_name": f"Cat {sfx
+	}",
 				"company": self.company,
 				"is_group": 0,
 				"asset_gl_account": self._gl_asset,
 				"accumulated_depreciation_gl_account": self._gl_accum,
 				"depreciation_expense_gl_account": self._gl_exp,
 				"default_useful_life_months": 12,
-				"default_depreciation_method": "Straight Line",
-			}
+				"default_depreciation_method": "Straight Line"
+	}
 		).insert(ignore_permissions=True)
 
 	def _ensure_geo(self):
 		if not frappe.db.exists("Currency", "EGP"):
 			frappe.get_doc(
-				{"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1}
+				{"doctype": "Currency", "currency_name": "EGP", "symbol": "E£", "enabled": 1
+	}
 			).insert(ignore_permissions=True)
 		if not frappe.db.exists("Country", "Egypt"):
 			frappe.get_doc(
-				{"doctype": "Country", "country_name": "Egypt", "code": "EG"}
+				{"doctype": "Country", "country_name": "Egypt", "code": "EG"
+	}
 			).insert(ignore_permissions=True)
 
 	def _create_company(self, abbr: str):
 		doc = frappe.get_doc(
 			{
 				"doctype": "Company",
-				"company_name": f"Co {abbr}",
+				"company_name": f"Co {abbr
+	}",
 				"abbr": abbr[:10],
 				"default_currency": "EGP",
 				"country": "Egypt",
-				"status": "Active",
-			}
+				"status": "Active"
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		return doc.name
@@ -87,8 +92,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"company": company,
 				"branch_name": name,
 				"branch_code": code,
-				"status": "Active",
-			}
+				"status": "Active"
+	}
 		)
 		doc.insert(ignore_permissions=True)
 		return doc.name
@@ -114,8 +119,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"status": "draft",
 				"depreciation_method": "Straight Line",
 				"useful_life_months": 12,
-				"depreciation_start_date": today(),
-			}
+				"depreciation_start_date": today()
+	}
 		).insert(ignore_permissions=True)
 		acq = frappe.get_doc(
 			{
@@ -126,8 +131,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"posting_date": today(),
 				"fixed_asset": asset.name,
 				"capitalization_amount": amount,
-				"credit_account": self._gl_cash,
-			}
+				"credit_account": self._gl_cash
+	}
 		)
 		acq.insert(ignore_permissions=True)
 		acq.submit()
@@ -146,8 +151,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"branch": self.branch,
 				"posting_date": today(),
 				"fixed_asset": asset.name,
-				"depreciation_amount": 1000.0,
-			}
+				"depreciation_amount": 1000.0
+	}
 		)
 		dep.insert(ignore_permissions=True)
 		dep.submit()
@@ -166,8 +171,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"fixed_asset": asset.name,
 				"proceeds": 5000.0,
 				"cash_account": self._gl_cash,
-				"gain_or_loss_account": self._gl_pl,
-			}
+				"gain_or_loss_account": self._gl_pl
+	}
 		)
 		dsp.insert(ignore_permissions=True)
 		dsp.submit()
@@ -215,8 +220,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"enabled": 1,
 				"branch": self.branch,
 				"submit_entries": 1,
-				"max_assets_per_run": 100,
-			}
+				"max_assets_per_run": 100
+	}
 		).insert(ignore_permissions=True)
 
 		run_month_end_depreciation_jobs(posting_date=today())
@@ -232,8 +237,8 @@ class TestIAS16Posting(FrappeTestCase):
 				"enabled": 1,
 				"branch": self.branch,
 				"submit_entries": 1,
-				"max_assets_per_run": 100,
-			}
+				"max_assets_per_run": 100
+	}
 		).insert(ignore_permissions=True)
 
 		result = run_auto_depreciation_policy_now(policy.name, posting_date=today())

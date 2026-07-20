@@ -64,14 +64,24 @@ def execute(filters=None):
 
 def _columns():
 	return [
-		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 120},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 160},
-		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 130},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 110},
-		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 100},
-		{"label": _("Acquisition Date"), "fieldname": "acquisition_date", "fieldtype": "Date", "width": 110},
-		{"label": _("Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 120},
-		{"label": _("Accum. Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 140},
-		{"label": _("NBV"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 120},
-		{"label": _("Disposal Date"), "fieldname": "disposal_date", "fieldtype": "Date", "width": 110},
+		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 120
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 160
+	},
+		{"label": _("Category"), "fieldname": "category", "fieldtype": "Link", "options": "Fixed Asset Category", "width": 130
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 110
+	},
+		{"label": _("Status"), "fieldname": "status", "fieldtype": "Data", "width": 100
+	},
+		{"label": _("Acquisition Date"), "fieldname": "acquisition_date", "fieldtype": "Date", "width": 110
+	},
+		{"label": _("Cost"), "fieldname": "acquisition_cost", "fieldtype": "Currency", "width": 120
+	},
+		{"label": _("Accum. Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 140
+	},
+		{"label": _("NBV"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 120
+	},
+		{"label": _("Disposal Date"), "fieldname": "disposal_date", "fieldtype": "Date", "width": 110
+	},
 	]

@@ -21,8 +21,7 @@ def execute(filters=None):
 	params = {
 		"company": filters.company,
 		"today": today,
-		"end": add_days(today, days_ahead),
-	}
+		"end": add_days(today, days_ahead)}
 	conditions = [
 		"ip.company = %(company)s",
 		"ip.docstatus = 1",
@@ -54,14 +53,22 @@ def execute(filters=None):
 		as_dict=True,
 	)
 	columns = [
-		{"label": _("Insurance Policy"), "fieldname": "insurance_policy", "fieldtype": "Link", "options": "Insurance Policy", "width": 160},
-		{"label": _("Insurance Company"), "fieldname": "insurance_company", "fieldtype": "Link", "options": "Insurance Company", "width": 170},
-		{"label": _("Coverage Type"), "fieldname": "coverage_type", "fieldtype": "Link", "options": "Insurance Coverage Type", "width": 160},
-		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180},
-		{"label": _("Branch"), "fieldname": "asset_branch", "fieldtype": "Link", "options": "Branch", "width": 120},
-		{"label": _("End Date"), "fieldname": "end_date", "fieldtype": "Date", "width": 120},
-		{"label": _("Days to Expiry"), "fieldname": "days_to_expiry", "fieldtype": "Int", "width": 120},
+		{"label": _("Insurance Policy"), "fieldname": "insurance_policy", "fieldtype": "Link", "options": "Insurance Policy", "width": 160
+	},
+		{"label": _("Insurance Company"), "fieldname": "insurance_company", "fieldtype": "Link", "options": "Insurance Company", "width": 170
+	},
+		{"label": _("Coverage Type"), "fieldname": "coverage_type", "fieldtype": "Link", "options": "Insurance Coverage Type", "width": 160
+	},
+		{"label": _("Fixed Asset"), "fieldname": "fixed_asset", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 180
+	},
+		{"label": _("Branch"), "fieldname": "asset_branch", "fieldtype": "Link", "options": "Branch", "width": 120
+	},
+		{"label": _("End Date"), "fieldname": "end_date", "fieldtype": "Date", "width": 120
+	},
+		{"label": _("Days to Expiry"), "fieldname": "days_to_expiry", "fieldtype": "Int", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

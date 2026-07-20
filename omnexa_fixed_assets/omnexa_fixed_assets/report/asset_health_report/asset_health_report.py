@@ -34,16 +34,26 @@ def execute(filters=None):
 	)
 
 	columns = [
-		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 160},
-		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200},
-		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 130},
-		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130},
-		{"label": _("Criticality"), "fieldname": "criticality", "fieldtype": "Data", "width": 120},
-		{"label": _("Health Status"), "fieldname": "health_status", "fieldtype": "Data", "width": 120},
-		{"label": _("Health Score"), "fieldname": "health_score", "fieldtype": "Percent", "width": 110},
-		{"label": _("Risk Score"), "fieldname": "risk_score", "fieldtype": "Percent", "width": 100},
-		{"label": _("Reliability Score"), "fieldname": "reliability_score", "fieldtype": "Percent", "width": 130},
-		{"label": _("Inspection Due"), "fieldname": "inspection_due", "fieldtype": "Date", "width": 120},
+		{"label": _("Asset"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset", "width": 160
+	},
+		{"label": _("Asset Name"), "fieldname": "asset_name", "fieldtype": "Data", "width": 200
+	},
+		{"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 130
+	},
+		{"label": _("Branch"), "fieldname": "branch", "fieldtype": "Link", "options": "Branch", "width": 130
+	},
+		{"label": _("Criticality"), "fieldname": "criticality", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Health Status"), "fieldname": "health_status", "fieldtype": "Data", "width": 120
+	},
+		{"label": _("Health Score"), "fieldname": "health_score", "fieldtype": "Percent", "width": 110
+	},
+		{"label": _("Risk Score"), "fieldname": "risk_score", "fieldtype": "Percent", "width": 100
+	},
+		{"label": _("Reliability Score"), "fieldname": "reliability_score", "fieldtype": "Percent", "width": 130
+	},
+		{"label": _("Inspection Due"), "fieldname": "inspection_due", "fieldtype": "Date", "width": 120
+	},
 	]
 	chart = auto_chart_for_columns(data, columns)
 	return columns, data, None, chart

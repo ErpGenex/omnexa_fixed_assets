@@ -1,0 +1,6 @@
+ERPGenex Omnexa Fixed Assets License
+
+Copyright (c) 2026 Omnexa. All rights reserved.
+
+This software is proprietary and confidential. Unauthorized copying
+of this file, via any medium, is strictly prohibited.
