@@ -1,0 +1,194 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "naming_series:",
+	"creation": "2026-04-16 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"company",
+		"branch",
+		"posting_date",
+		"column_break_omnexa_1",
+		"fixed_asset",
+		"asset_display",
+		"tab_break_details",
+		"suggested_depreciation",
+		"depreciation_amount",
+		"column_break_omnexa_2",
+		"units_produced",
+		"posting_reference",
+		"journal_entry",
+		"remarks",
+		"asset_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"default": "FADP-.#####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "FADP-.#####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"default": "Today",
+			"fieldname": "posting_date",
+			"fieldtype": "Date",
+			"label": "Posting date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"label": "Fixed Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fetch_from": "fixed_asset.asset_name",
+			"fieldname": "asset_display",
+			"fieldtype": "Data",
+			"label": "Asset name",
+			"read_only": 1
+		},
+		{
+			"fieldname": "suggested_depreciation",
+			"fieldtype": "Currency",
+			"label": "Suggested (IAS 16)",
+			"read_only": 1,
+			"description": "System suggestion for this period; adjust posting date or units (UoP) and match your policy."
+		},
+		{
+			"fieldname": "depreciation_amount",
+			"fieldtype": "Currency",
+			"label": "Depreciation amount",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "units_produced",
+			"fieldtype": "Int",
+			"label": "Units this run (UoP)",
+			"description": "For units-of-production method only."
+		},
+		{
+			"fieldname": "posting_reference",
+			"fieldtype": "Data",
+			"label": "Posting Reference"
+		},
+		{
+			"fieldname": "journal_entry",
+			"fieldtype": "Link",
+			"label": "Journal Entry",
+			"options": "Journal Entry",
+			"read_only": 1
+		},
+		{
+			"fieldname": "remarks",
+			"fieldtype": "Small Text",
+			"label": "Remarks"
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Depreciation Entry",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

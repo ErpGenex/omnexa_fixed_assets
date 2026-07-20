@@ -1,0 +1,24 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "width": "180px"},
+  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date", "width": "130px"},
+  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date", "width": "130px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Reliability Report",
+ "ref_doctype": "Asset Reliability Trend",
+ "report_name": "Reliability Report",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Accounts Manager"},
+  {"role": "Accounts User"}
+ ]
+}

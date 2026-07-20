@@ -1,0 +1,14 @@
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+
+.DS_Store
+
+# build / tooling
+dist/
+build/
+*.egg-info/
+*.py[cod]
+.ruff_cache/

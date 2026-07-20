@@ -1,0 +1,13 @@
+[pre_model_sync]
+# Patches added in this section will be executed before doctypes are migrated
+# Read docs to understand patches: https://frappeframework.com/docs/v14/user/en/database-migrations
+
+[post_model_sync]
+# Patches added in this section will be executed after doctypes are migrated
+omnexa_fixed_assets.patches.v1_0.sync_fixed_assets_report_roles
+omnexa_fixed_assets.patches.v1_0.backfill_eam_fixed_asset_metrics
+omnexa_fixed_assets.patches.v1_1.bootstrap_hotel_asset_management
+omnexa_fixed_assets.patches.v1_1.remove_duplicate_fixed_assets_workspace
+omnexa_fixed_assets.patches.v1_2.migrate_asset_work_orders_to_core
+omnexa_fixed_assets.patches.v1_3.ensure_asset_insurance_sidebar
+omnexa_fixed_assets.patches.v1_4.asset_insurance_sidebar_expand

@@ -1,0 +1,262 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "naming_series:",
+	"creation": "2026-04-16 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"company",
+		"branch",
+		"column_break_omnexa_1",
+		"disposal_date",
+		"fixed_asset",
+		"asset_display",
+		"tab_break_1",
+		"section_carrying",
+		"gross_book_value",
+		"accumulated_depreciation_snapshot",
+		"carrying_amount_snapshot",
+		"tab_break_2",
+		"section_proceeds",
+		"proceeds",
+		"cash_account",
+		"column_break_omnexa_2",
+		"gain_or_loss_account",
+		"disposal_reason_code",
+		"tab_break_3",
+		"section_posting",
+		"journal_entry",
+		"previous_status",
+		"column_break_omnexa_3",
+		"remarks",
+		"asset_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Carrying amount"
+		},
+		{
+			"fieldname": "tab_break_2",
+			"fieldtype": "Tab Break",
+			"label": "Proceeds & GL"
+		},
+		{
+			"fieldname": "tab_break_3",
+			"fieldtype": "Tab Break",
+			"label": "Posting"
+		},
+		{
+			"default": "FADIS-.#####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "FADIS-.#####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"default": "Today",
+			"fieldname": "disposal_date",
+			"fieldtype": "Date",
+			"label": "Disposal date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"label": "Fixed Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fetch_from": "fixed_asset.asset_name",
+			"fieldname": "asset_display",
+			"fieldtype": "Data",
+			"label": "Asset name",
+			"read_only": 1
+		},
+		{
+			"fieldname": "section_carrying",
+			"fieldtype": "Section Break",
+			"label": "Carrying amount (IAS 16.67–72)"
+		},
+		{
+			"fieldname": "gross_book_value",
+			"fieldtype": "Currency",
+			"label": "Gross carrying amount",
+			"read_only": 1,
+			"description": "Asset cost in books at validation time."
+		},
+		{
+			"fieldname": "accumulated_depreciation_snapshot",
+			"fieldtype": "Currency",
+			"label": "Accumulated depreciation",
+			"read_only": 1
+		},
+		{
+			"fieldname": "carrying_amount_snapshot",
+			"fieldtype": "Currency",
+			"label": "Carrying amount",
+			"read_only": 1,
+			"description": "Gross less accumulated depreciation before derecognition."
+		},
+		{
+			"fieldname": "section_proceeds",
+			"fieldtype": "Section Break",
+			"label": "Proceeds & GL"
+		},
+		{
+			"default": "0",
+			"fieldname": "proceeds",
+			"fieldtype": "Currency",
+			"label": "Proceeds (cash)",
+			"description": "IAS 16.72 — Consideration received."
+		},
+		{
+			"fieldname": "cash_account",
+			"fieldtype": "Link",
+			"label": "Cash / bank account",
+			"options": "GL Account",
+			"reqd": 1
+		},
+		{
+			"fieldname": "gain_or_loss_account",
+			"fieldtype": "Link",
+			"label": "Gain or loss on disposal (P&L)",
+			"options": "GL Account",
+			"reqd": 1,
+			"description": "Credit for gain, debit for loss (balancing line)."
+		},
+		{
+			"fieldname": "disposal_reason_code",
+			"fieldtype": "Data",
+			"label": "Disposal Reason Code"
+		},
+		{
+			"fieldname": "section_posting",
+			"fieldtype": "Section Break",
+			"label": "Posting"
+		},
+		{
+			"fieldname": "journal_entry",
+			"fieldtype": "Link",
+			"label": "Journal Entry",
+			"options": "Journal Entry",
+			"read_only": 1
+		},
+		{
+			"fieldname": "previous_status",
+			"fieldtype": "Data",
+			"label": "Previous asset status",
+			"read_only": 1,
+			"hidden": 1
+		},
+		{
+			"fieldname": "remarks",
+			"fieldtype": "Small Text",
+			"label": "Remarks"
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_3",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Disposal",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

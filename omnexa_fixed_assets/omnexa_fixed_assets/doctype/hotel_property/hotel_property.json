@@ -1,0 +1,184 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "field:property_name",
+	"creation": "2026-05-05 22:20:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"company",
+		"branch",
+		"property_name",
+		"brand",
+		"location",
+		"property_type",
+		"star_rating",
+		"number_of_floors",
+		"total_rooms",
+		"operational_status",
+		"is_active",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "property_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Property Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "brand",
+			"fieldtype": "Data",
+			"label": "Brand"
+		},
+		{
+			"fieldname": "location",
+			"fieldtype": "Data",
+			"label": "Location",
+			"description": "City / address or geographic label"
+		},
+		{
+			"fieldname": "property_type",
+			"fieldtype": "Select",
+			"label": "Property Type",
+			"options": "\nHotel\nResort\nServiced Apartments\nConvention Center\nMixed Use\nOther"
+		},
+		{
+			"fieldname": "star_rating",
+			"fieldtype": "Select",
+			"label": "Star Classification",
+			"options": "\nUnrated\n1 Star\n2 Star\n3 Star\n4 Star\n5 Star\n5 Star Deluxe"
+		},
+		{
+			"fieldname": "number_of_floors",
+			"fieldtype": "Int",
+			"label": "Number of Floors"
+		},
+		{
+			"fieldname": "total_rooms",
+			"fieldtype": "Int",
+			"label": "Total Rooms"
+		},
+		{
+			"default": "Operational",
+			"fieldname": "operational_status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Operational Status",
+			"options": "Operational\nPartial Shutdown\nClosed"
+		},
+		{
+			"default": "1",
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Hotel Property",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Hotel Asset Admin",
+			"write": 1
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Engineering Manager",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Housekeeping Supervisor",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Finance Asset Controller",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Auditor",
+			"write": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

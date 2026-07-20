@@ -1,0 +1,587 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "naming_series:",
+	"creation": "2026-04-16 10:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"asset_name",
+		"company",
+		"column_break_omnexa_1",
+		"branch",
+		"category",
+		"status",
+		"section_overview_media",
+		"overview_media_gallery",
+		"tab_break_financial",
+		"section_ifrs",
+		"measurement_model",
+		"section_cost",
+		"acquisition_cost",
+		"capitalization_date",
+		"tab_break_depreciation",
+		"section_depreciation",
+		"depreciation_method",
+		"accounting_depreciation_book",
+		"depreciation_start_date",
+		"useful_life_months",
+		"column_break_omnexa_2",
+		"salvage_value",
+		"depreciable_amount",
+		"declining_balance_rate_annual",
+		"total_estimated_units",
+		"column_break_omnexa_3",
+		"units_depreciated_to_date",
+		"accumulated_depreciation",
+		"net_book_value",
+		"last_depreciation_posting_date",
+		"tab_break_gl",
+		"section_accounts",
+		"asset_gl_account",
+		"accumulated_depreciation_gl_account",
+		"depreciation_expense_gl_account",
+		"tab_break_identification",
+		"section_tracking",
+		"asset_tag",
+		"internal_code",
+		"qr_payload",
+		"qr_code_image",
+		"column_break_omnexa_4",
+		"barcode",
+		"rfid_tag",
+		"tab_break_warranty_supply",
+		"section_warranty",
+		"warranty_supplier",
+		"warranty_start_date",
+		"warranty_end_date",
+		"warranty_reference",
+		"column_break_ws_1",
+		"warranty_terms",
+		"nfc_identifier",
+		"section_procurement",
+		"purchase_order",
+		"stock_item",
+		"tab_break_accounting",
+		"section_accounting",
+		"capitalization_journal_entry",
+		"compliance_reference",
+		"column_break_omnexa_5",
+		"notes",
+		"asset_owner",
+		"tab_break_enterprise"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"default": "FA-.#####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "FA-.#####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "asset_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Asset Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "category",
+			"fieldtype": "Link",
+			"label": "Category",
+			"options": "Fixed Asset Category",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"default": "draft",
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "draft\nacquired\ntagged\nin_use\ntransferred\nunder_maintenance\nfully_depreciated\ndisposed",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "section_overview_media",
+			"fieldtype": "Section Break",
+			"label": "Photos & documents"
+		},
+		{
+			"fieldname": "overview_media_gallery",
+			"fieldtype": "HTML",
+			"label": "Gallery",
+			"options": "<div class=\"text-muted\">—</div>",
+			"read_only": 1
+		},
+		{
+			"fieldname": "tab_break_financial",
+			"fieldtype": "Tab Break",
+			"label": "IFRS & cost"
+		},
+		{
+			"fieldname": "section_ifrs",
+			"fieldtype": "Section Break",
+			"label": "IAS 16 / IFRS",
+			"description": "Property, plant and equipment — cost or revaluation model; depreciate depreciable amount over useful life."
+		},
+		{
+			"default": "Cost Model",
+			"fieldname": "measurement_model",
+			"fieldtype": "Select",
+			"label": "Measurement model",
+			"options": "Cost Model\nRevaluation Model",
+			"description": "IAS 16.30–31 — After recognition, measure at cost or revalued amount. Revaluation ledger is not automated in this version."
+		},
+		{
+			"fieldname": "section_cost",
+			"fieldtype": "Section Break",
+			"label": "Cost & dates"
+		},
+		{
+			"default": "0",
+			"fieldname": "acquisition_cost",
+			"fieldtype": "Currency",
+			"label": "Acquisition cost",
+			"description": "Set by capitalization posting; may be zero until acquisition is submitted."
+		},
+		{
+			"fieldname": "capitalization_date",
+			"fieldtype": "Date",
+			"label": "Capitalization date"
+		},
+		{
+			"fieldname": "tab_break_depreciation",
+			"fieldtype": "Tab Break",
+			"label": "Depreciation"
+		},
+		{
+			"fieldname": "section_depreciation",
+			"fieldtype": "Section Break",
+			"label": "Depreciation",
+			"description": "IAS 16.43–59 — Systematic allocation of depreciable amount over useful life."
+		},
+		{
+			"default": "None",
+			"fieldname": "depreciation_method",
+			"fieldtype": "Select",
+			"label": "Depreciation method",
+			"options": "None\nStraight Line\nDeclining Balance\nUnits of Production",
+			"reqd": 1,
+			"description": "IAS 16.43 — Choose a systematic basis when the asset is ready for use; None until policy is applied."
+		},
+		{
+			"default": "Local",
+			"fieldname": "accounting_depreciation_book",
+			"fieldtype": "Select",
+			"label": "Depreciation book",
+			"options": "Local\nIFRS\nTax",
+			"description": "Parallel depreciation ledger (SAP FI-AA multi-book). Default Local — existing assets unchanged."
+		},
+		{
+			"fieldname": "depreciation_start_date",
+			"fieldtype": "Date",
+			"label": "Depreciation start date"
+		},
+		{
+			"fieldname": "useful_life_months",
+			"fieldtype": "Int",
+			"label": "Useful life (months)"
+		},
+		{
+			"default": "0",
+			"fieldname": "salvage_value",
+			"fieldtype": "Currency",
+			"label": "Residual value",
+			"description": "IAS 16.6 — Estimated amount currently obtainable from disposal less costs, if asset were already of age and condition at end of useful life."
+		},
+		{
+			"fieldname": "depreciable_amount",
+			"fieldtype": "Currency",
+			"label": "Depreciable amount",
+			"read_only": 1,
+			"description": "IAS 16.53 — Cost less residual value (cost model)."
+		},
+		{
+			"fieldname": "declining_balance_rate_annual",
+			"fieldtype": "Percent",
+			"label": "Declining balance annual rate %",
+			"description": "Annual percentage applied to carrying amount (monthly = annual / 12). Used when method is Declining Balance."
+		},
+		{
+			"fieldname": "total_estimated_units",
+			"fieldtype": "Int",
+			"label": "Total estimated units (UoP)",
+			"description": "IAS 16.56 — Total expected production units for units-of-production method."
+		},
+		{
+			"default": "0",
+			"fieldname": "units_depreciated_to_date",
+			"fieldtype": "Int",
+			"label": "Units depreciated to date",
+			"read_only": 1,
+			"description": "Running total of units posted via depreciation entries (UoP)."
+		},
+		{
+			"default": "0",
+			"fieldname": "accumulated_depreciation",
+			"fieldtype": "Currency",
+			"label": "Accumulated depreciation",
+			"read_only": 1
+		},
+		{
+			"fieldname": "net_book_value",
+			"fieldtype": "Currency",
+			"label": "Carrying amount",
+			"read_only": 1,
+			"description": "IAS 16.6 — Under cost model: cost less accumulated depreciation and impairment (impairment not automated here)."
+		},
+		{
+			"fieldname": "last_depreciation_posting_date",
+			"fieldtype": "Date",
+			"label": "Last depreciation posting",
+			"read_only": 1
+		},
+		{
+			"fieldname": "tab_break_gl",
+			"fieldtype": "Tab Break",
+			"label": "GL accounts"
+		},
+		{
+			"fieldname": "section_accounts",
+			"fieldtype": "Section Break",
+			"label": "GL accounts (override)"
+		},
+		{
+			"fieldname": "asset_gl_account",
+			"fieldtype": "Link",
+			"label": "Asset account",
+			"options": "GL Account"
+		},
+		{
+			"fieldname": "accumulated_depreciation_gl_account",
+			"fieldtype": "Link",
+			"label": "Accumulated depreciation account",
+			"options": "GL Account"
+		},
+		{
+			"fieldname": "depreciation_expense_gl_account",
+			"fieldtype": "Link",
+			"label": "Depreciation expense account",
+			"options": "GL Account"
+		},
+		{
+			"fieldname": "tab_break_identification",
+			"fieldtype": "Tab Break",
+			"label": "Identification"
+		},
+		{
+			"fieldname": "section_tracking",
+			"fieldtype": "Section Break",
+			"label": "Identification (no inventory link)"
+		},
+		{
+			"fieldname": "asset_tag",
+			"fieldtype": "Data",
+			"label": "Serial Number",
+			"description": "Serial number or physical tag on the asset label."
+		},
+		{
+			"fieldname": "internal_code",
+			"fieldtype": "Data",
+			"label": "Internal Code",
+			"read_only": 1,
+			"description": "Auto-numbered asset code (equals document name)."
+		},
+		{
+			"fieldname": "qr_payload",
+			"fieldtype": "Data",
+			"label": "QR Code",
+			"description": "Stable identifier for mobile scan APIs (e.g. FA name or UUID)."
+		},
+		{
+			"fieldname": "qr_code_image",
+			"fieldtype": "HTML",
+			"label": "QR Code Image"
+		},
+		{
+			"fieldname": "barcode",
+			"fieldtype": "Barcode",
+			"label": "Barcode Image",
+			"options": "{\"format\":\"CODE128\"}"
+		},
+		{
+			"fieldname": "rfid_tag",
+			"fieldtype": "Data",
+			"label": "RFID"
+		},
+		{
+			"fieldname": "tab_break_warranty_supply",
+			"fieldtype": "Tab Break",
+			"label": "Warranty & supply chain"
+		},
+		{
+			"fieldname": "section_warranty",
+			"fieldtype": "Section Break",
+			"label": "Warranty"
+		},
+		{
+			"fieldname": "warranty_supplier",
+			"fieldtype": "Link",
+			"label": "Warranty vendor",
+			"options": "Supplier"
+		},
+		{
+			"fieldname": "warranty_start_date",
+			"fieldtype": "Date",
+			"label": "Warranty start"
+		},
+		{
+			"fieldname": "warranty_end_date",
+			"fieldtype": "Date",
+			"label": "Warranty end"
+		},
+		{
+			"fieldname": "warranty_reference",
+			"fieldtype": "Data",
+			"label": "Warranty reference / policy"
+		},
+		{
+			"fieldname": "column_break_ws_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "warranty_terms",
+			"fieldtype": "Small Text",
+			"label": "Warranty terms / coverage"
+		},
+		{
+			"fieldname": "nfc_identifier",
+			"fieldtype": "Data",
+			"label": "NFC identifier",
+			"description": "NFC tag UID or NDEF payload reference (mobile readiness)."
+		},
+		{
+			"fieldname": "section_procurement",
+			"fieldtype": "Section Break",
+			"label": "Procurement link"
+		},
+		{
+			"fieldname": "purchase_order",
+			"fieldtype": "Link",
+			"label": "Purchase Order",
+			"options": "Purchase Order"
+		},
+		{
+			"fieldname": "stock_item",
+			"fieldtype": "Link",
+			"label": "Stock item",
+			"options": "Item"
+		},
+		{
+			"fieldname": "tab_break_accounting",
+			"fieldtype": "Tab Break",
+			"label": "Accounting"
+		},
+		{
+			"fieldname": "section_accounting",
+			"fieldtype": "Section Break",
+			"label": "Accounting"
+		},
+		{
+			"fieldname": "capitalization_journal_entry",
+			"fieldtype": "Link",
+			"label": "Capitalization journal entry",
+			"options": "Journal Entry",
+			"read_only": 1
+		},
+		{
+			"fieldname": "compliance_reference",
+			"fieldtype": "Data",
+			"label": "Compliance Reference"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "tab_break_enterprise",
+			"fieldtype": "Tab Break",
+			"label": "Hierarchy"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_3",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_4",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_5",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-08 12:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		},
+		{
+			"role": "Hotel Asset Admin",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Engineering Manager",
+			"read": 1,
+			"write": 1,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		},
+		{
+			"role": "Housekeeping Supervisor",
+			"read": 1,
+			"write": 1,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		},
+		{
+			"role": "Finance Asset Controller",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		},
+		{
+			"role": "RFID Operator",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		},
+		{
+			"role": "Auditor",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

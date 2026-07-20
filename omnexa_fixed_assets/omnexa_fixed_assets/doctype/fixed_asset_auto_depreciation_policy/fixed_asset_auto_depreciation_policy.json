@@ -1,0 +1,173 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "format:{company}",
+	"creation": "2026-04-16 14:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"company",
+		"enabled",
+		"branch",
+		"column_break_omnexa_1",
+		"submit_entries",
+		"max_assets_per_run",
+		"execution_window",
+		"tab_break_1",
+		"section_audit",
+		"last_target_posting_date",
+		"last_run_at",
+		"column_break_omnexa_2",
+		"last_run_status",
+		"last_run_message",
+		"policy_reference"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"default": "1",
+			"fieldname": "enabled",
+			"fieldtype": "Check",
+			"in_list_view": 1,
+			"label": "Enable monthly auto depreciation"
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch filter (optional)",
+			"options": "Branch",
+			"description": "If set, only this branch is processed; otherwise all company branches."
+		},
+		{
+			"default": "1",
+			"fieldname": "submit_entries",
+			"fieldtype": "Check",
+			"label": "Submit entries automatically"
+		},
+		{
+			"default": "500",
+			"fieldname": "max_assets_per_run",
+			"fieldtype": "Int",
+			"label": "Max assets per run",
+			"description": "Safety cap per monthly run."
+		},
+		{
+			"fieldname": "execution_window",
+			"fieldtype": "Select",
+			"label": "Execution Window",
+			"options": "Month End\nMonth Start\nCustom",
+			"default": "Month End"
+		},
+		{
+			"fieldname": "section_audit",
+			"fieldtype": "Section Break",
+			"label": "Last run"
+		},
+		{
+			"fieldname": "last_target_posting_date",
+			"fieldtype": "Date",
+			"label": "Last target posting date",
+			"read_only": 1
+		},
+		{
+			"fieldname": "last_run_at",
+			"fieldtype": "Datetime",
+			"label": "Last run at",
+			"read_only": 1
+		},
+		{
+			"fieldname": "last_run_status",
+			"fieldtype": "Select",
+			"label": "Last run status",
+			"options": "\nSuccess\nNo Data\nFailed",
+			"read_only": 1
+		},
+		{
+			"fieldname": "last_run_message",
+			"fieldtype": "Small Text",
+			"label": "Last run message",
+			"read_only": 1
+		},
+		{
+			"fieldname": "policy_reference",
+			"fieldtype": "Data",
+			"label": "Policy Reference"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Auto Depreciation Policy",
+	"naming_rule": "Expression",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

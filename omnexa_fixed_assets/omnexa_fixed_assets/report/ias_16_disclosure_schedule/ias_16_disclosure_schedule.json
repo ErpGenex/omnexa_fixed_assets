@@ -1,0 +1,21 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2026-05-21 12:00:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "width": "140px"},
+  {"fieldname": "category", "fieldtype": "Link", "label": "Category", "options": "Fixed Asset Category", "width": "160px"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "\nIn Use\nUnder Maintenance\nDisposed\n", "width": "120px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "IAS 16 Disclosure Schedule",
+ "ref_doctype": "Fixed Asset",
+ "report_name": "IAS 16 Disclosure Schedule",
+ "report_type": "Script Report",
+ "roles": [{"role": "System Manager"}, {"role": "Desk User"}]
+}

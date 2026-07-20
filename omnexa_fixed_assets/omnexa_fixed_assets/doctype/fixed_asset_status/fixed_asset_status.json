@@ -1,0 +1,100 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "field:status_name",
+	"creation": "2026-04-18 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"status_name",
+		"is_active",
+		"lifecycle_stage",
+		"description",
+		"asset_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "status_name",
+			"fieldtype": "Data",
+			"label": "Status Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"default": "1",
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "lifecycle_stage",
+			"fieldtype": "Select",
+			"label": "Lifecycle Stage",
+			"options": "Acquisition\nOperations\nDisposal"
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Small Text",
+			"label": "Description"
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Status",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

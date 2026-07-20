@@ -1,0 +1,117 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"asset",
+		"company",
+		"branch",
+		"inspection_date",
+		"inspector",
+		"result",
+		"score",
+		"requires_work_order",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch"
+		},
+		{
+			"fieldname": "inspection_date",
+			"fieldtype": "Datetime",
+			"label": "Inspection Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "inspector",
+			"fieldtype": "Link",
+			"label": "Inspector",
+			"options": "User"
+		},
+		{
+			"fieldname": "result",
+			"fieldtype": "Select",
+			"label": "Result",
+			"options": "\nPass\nMinor Issue\nMajor Issue\nCritical Failure",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "score",
+			"fieldtype": "Percent",
+			"label": "Score"
+		},
+		{
+			"fieldname": "requires_work_order",
+			"fieldtype": "Check",
+			"label": "Requires Work Order",
+			"default": "0"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Inspection",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "inspection_date",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

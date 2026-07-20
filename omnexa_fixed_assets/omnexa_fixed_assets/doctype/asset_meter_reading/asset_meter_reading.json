@@ -1,0 +1,135 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"asset",
+		"company",
+		"branch",
+		"reading_time",
+		"meter_type",
+		"tab_break_details",
+		"value",
+		"unit",
+		"source",
+		"quality_score",
+		"payload_json"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "reading_time",
+			"fieldtype": "Datetime",
+			"label": "Reading Time",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "meter_type",
+			"fieldtype": "Select",
+			"label": "Meter Type",
+			"options": "\nRuntime\nTemperature\nPressure\nVibration\nEnergy\nLoad\nUtilization",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "value",
+			"fieldtype": "Float",
+			"label": "Value",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "unit",
+			"fieldtype": "Data",
+			"label": "Unit"
+		},
+		{
+			"fieldname": "source",
+			"fieldtype": "Data",
+			"label": "Source"
+		},
+		{
+			"fieldname": "quality_score",
+			"fieldtype": "Percent",
+			"label": "Quality Score"
+		},
+		{
+			"fieldname": "payload_json",
+			"fieldtype": "Long Text",
+			"label": "Payload JSON"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Meter Reading",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "reading_time",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

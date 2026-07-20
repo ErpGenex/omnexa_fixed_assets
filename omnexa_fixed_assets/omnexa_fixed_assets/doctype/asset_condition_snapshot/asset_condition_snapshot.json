@@ -1,0 +1,134 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"asset",
+		"company",
+		"branch",
+		"snapshot_time",
+		"condition_state",
+		"tab_break_details",
+		"degradation_index",
+		"health_score",
+		"health_status",
+		"risk_score",
+		"confidence_score",
+		"source"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "snapshot_time",
+			"fieldtype": "Datetime",
+			"label": "Snapshot Time",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "condition_state",
+			"fieldtype": "Select",
+			"label": "Condition State",
+			"options": "\nUnknown\nNormal\nWatch\nAlert\nCritical"
+		},
+		{
+			"fieldname": "degradation_index",
+			"fieldtype": "Percent",
+			"label": "Degradation Index"
+		},
+		{
+			"fieldname": "health_score",
+			"fieldtype": "Percent",
+			"label": "Health Score"
+		},
+		{
+			"fieldname": "health_status",
+			"fieldtype": "Select",
+			"label": "Health Status",
+			"options": "\nCritical\nPoor\nFair\nGood\nExcellent"
+		},
+		{
+			"fieldname": "risk_score",
+			"fieldtype": "Percent",
+			"label": "Risk Score"
+		},
+		{
+			"fieldname": "confidence_score",
+			"fieldtype": "Percent",
+			"label": "Confidence Score"
+		},
+		{
+			"fieldname": "source",
+			"fieldtype": "Data",
+			"label": "Source"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Condition Snapshot",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "snapshot_time",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

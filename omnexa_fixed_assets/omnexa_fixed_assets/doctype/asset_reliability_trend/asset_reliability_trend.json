@@ -1,0 +1,114 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"asset",
+		"company",
+		"branch",
+		"as_of_date",
+		"mtbf",
+		"mttr",
+		"availability",
+		"failure_frequency",
+		"reliability_score"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "as_of_date",
+			"fieldtype": "Date",
+			"label": "As Of Date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "mtbf",
+			"fieldtype": "Float",
+			"label": "MTBF (hours)"
+		},
+		{
+			"fieldname": "mttr",
+			"fieldtype": "Float",
+			"label": "MTTR (hours)"
+		},
+		{
+			"fieldname": "availability",
+			"fieldtype": "Percent",
+			"label": "Availability %"
+		},
+		{
+			"fieldname": "failure_frequency",
+			"fieldtype": "Float",
+			"label": "Failure Frequency"
+		},
+		{
+			"fieldname": "reliability_score",
+			"fieldtype": "Percent",
+			"label": "Reliability Score"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Reliability Trend",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "as_of_date",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

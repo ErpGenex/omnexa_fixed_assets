@@ -1,0 +1,151 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "format:INS-POL-{#####}",
+	"creation": "2026-05-11 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_overview",
+		"company",
+		"insurance_company",
+		"coverage_type",
+		"column_break_o1",
+		"fixed_asset",
+		"policy_number",
+		"posting_date",
+		"section_dates",
+		"start_date",
+		"column_break_o2",
+		"end_date",
+		"annual_premium",
+		"column_break_o3",
+		"policy_status",
+		"amended_from"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "insurance_company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Insurance Company",
+			"options": "Insurance Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "coverage_type",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Coverage Type",
+			"options": "Insurance Coverage Type",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_o1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"label": "Fixed Asset",
+			"options": "Fixed Asset"
+		},
+		{
+			"fieldname": "policy_number",
+			"fieldtype": "Data",
+			"label": "Policy Number"
+		},
+		{
+			"default": "Today",
+			"fieldname": "posting_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Posting Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "section_dates",
+			"fieldtype": "Section Break",
+			"label": "Coverage period"
+		},
+		{
+			"fieldname": "start_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Start Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_o2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "end_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "End Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "annual_premium",
+			"fieldtype": "Currency",
+			"in_list_view": 1,
+			"label": "Annual Premium",
+			"options": "Company:company:default_currency",
+			"reqd": 1
+		},
+		{
+			"fieldname": "column_break_o3",
+			"fieldtype": "Column Break"
+		},
+		{
+			"default": "Draft",
+			"fieldname": "policy_status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"in_standard_filter": 1,
+			"label": "Policy Status",
+			"options": "Draft\nSubmitted\nActive\nExpired\nCancelled"
+		},
+		{
+			"fieldname": "amended_from",
+			"fieldtype": "Link",
+			"label": "Amended From",
+			"no_copy": 1,
+			"options": "Insurance Policy",
+			"print_hide": 1,
+			"read_only": 1
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2026-05-11 12:00:00",
+	"modified_by": "Administrator",
+	"module": "Omnexa Fixed Assets",
+	"name": "Insurance Policy",
+	"owner": "Administrator",
+	"permissions": [
+		{"amend": 1, "cancel": 1, "create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "submit": 1, "write": 1},
+		{"amend": 1, "cancel": 1, "create": 1, "delete": 0, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Accounts Manager", "share": 1, "submit": 1, "write": 1},
+		{"amend": 0, "cancel": 0, "create": 1, "delete": 0, "email": 0, "export": 0, "print": 1, "read": 1, "report": 1, "role": "Accounts User", "share": 0, "submit": 1, "write": 1},
+		{"amend": 0, "cancel": 0, "create": 0, "delete": 0, "email": 0, "export": 0, "print": 1, "read": 1, "report": 1, "role": "Desk User", "share": 0, "submit": 0, "write": 0}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Fixed Assets",
+	"name": "fixed-assets-finance-desk",
+	"page_name": "fixed-assets-finance-desk",
+	"standard": "Yes",
+	"title": "Finance Desk",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}

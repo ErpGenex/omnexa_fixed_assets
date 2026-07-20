@@ -1,0 +1,2 @@
+[post_model_sync]
+omnexa_fixed_assets.patches.v1_0.sync_fa_workspace_full

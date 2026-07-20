@@ -1,0 +1,211 @@
+{
+ "charts": [
+  {
+   "chart_name": "OMX FA INS — Policies by status",
+   "label": "Policies by status"
+  },
+  {
+   "chart_name": "OMX FA INS — Claims by status",
+   "label": "Claims by status"
+  },
+  {
+   "chart_name": "OMX FA INS — Policies by coverage",
+   "label": "Policies by coverage"
+  },
+  {
+   "chart_name": "OMX FA INS — Claims filed trend",
+   "label": "Claims filed trend"
+  },
+  {
+   "chart_name": "OMX FA INS — New policies trend",
+   "label": "New policies trend"
+  }
+ ],
+ "content": "[{\"id\":\"ai-onb\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"ERPGENEX \\u2014 Asset Insurance\",\"col\":12}},{\"id\":\"ai-h\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Asset Insurance</b></span>\",\"col\":12}},{\"id\":\"ai-oph\",\"type\":\"header\",\"data\":{\"text\":\"<b>\\ud83d\\udccc Shortcuts</b>\",\"col\":12}},{\"id\":\"ai-sc0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Insurance Policy\",\"col\":4}},{\"id\":\"ai-sc1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Claims\",\"col\":4}},{\"id\":\"ai-sc2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Assets\",\"col\":4}},{\"id\":\"ai-sc3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Insurance Register\",\"col\":4}},{\"id\":\"ai-rph\",\"type\":\"header\",\"data\":{\"text\":\"<b>\\ud83d\\udcca Report shortcuts</b>\",\"col\":12}},{\"id\":\"ai-rp0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expiring Policies Report\",\"col\":4}},{\"id\":\"ai-rp1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Uninsured Assets Report\",\"col\":4}},{\"id\":\"ai-rp2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Claims Register\",\"col\":4}},{\"id\":\"ai-kph\",\"type\":\"header\",\"data\":{\"text\":\"<b>\\ud83d\\udcca KPIs</b>\",\"col\":12}},{\"id\":\"ai-nc0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Submitted Policies\",\"col\":4}},{\"id\":\"ai-nc1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Policies\",\"col\":4}},{\"id\":\"ai-nc2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Claims\",\"col\":4}},{\"id\":\"ai-nc3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Annual Premium\",\"col\":4}},{\"id\":\"ai-chh\",\"type\":\"header\",\"data\":{\"text\":\"<b>\\ud83d\\udcc8 Charts</b>\",\"col\":12}},{\"id\":\"ai-ch0\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Policies by status\",\"col\":4}},{\"id\":\"ai-ch1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Claims by status\",\"col\":4}},{\"id\":\"ai-ch2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Policies by coverage\",\"col\":4}},{\"id\":\"ai-ch3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Claims filed trend\",\"col\":4}},{\"id\":\"ai-ch4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"New policies trend\",\"col\":4}},{\"id\":\"ai-moreh\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5 text-muted\\\"><b>All modules & links</b></span>\",\"col\":12}},{\"id\":\"ai-c0\",\"type\":\"card\",\"data\":{\"card_name\":\"Master data\",\"col\":4}},{\"id\":\"ai-c1\",\"type\":\"card\",\"data\":{\"card_name\":\"Operations\",\"col\":4}},{\"id\":\"ai-c2\",\"type\":\"card\",\"data\":{\"card_name\":\"Analytics\",\"col\":4}}]",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "es-line-shield",
+ "is_hidden": 0,
+ "label": "Asset Insurance",
+ "links": [
+  {
+   "hidden": 0,
+   "label": "Master data",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "organization",
+   "label": "Insurance Company",
+   "link_to": "Insurance Company",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "tag",
+   "label": "Insurance Coverage Type",
+   "link_to": "Insurance Coverage Type",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Operations",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "file",
+   "label": "Insurance Policy",
+   "link_to": "Insurance Policy",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "refresh",
+   "label": "Insurance Renewal",
+   "link_to": "Insurance Renewal",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "warning",
+   "label": "Insurance Incident",
+   "link_to": "Insurance Incident",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "issue",
+   "label": "Insurance Claim",
+   "link_to": "Insurance Claim",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "label": "Analytics",
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "icon": "dashboard",
+   "is_query_report": 1,
+   "label": "Asset Insurance Register",
+   "link_to": "Asset Insurance Register",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "dashboard",
+   "is_query_report": 1,
+   "label": "Expiring Policies Report",
+   "link_to": "Expiring Policies Report",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "dashboard",
+   "is_query_report": 1,
+   "label": "Uninsured Assets Report",
+   "link_to": "Uninsured Assets Report",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "dashboard",
+   "is_query_report": 1,
+   "label": "Claims Register",
+   "link_to": "Claims Register",
+   "link_type": "Report",
+   "type": "Link"
+  }
+ ],
+ "module": "Omnexa Fixed Assets",
+ "name": "Asset Insurance",
+ "parent_page": "Fixed Assets",
+ "number_cards": [
+  {
+   "label": "Submitted Policies",
+   "number_card_name": "Submitted Policies"
+  },
+  {
+   "label": "Active Policies",
+   "number_card_name": "Active Policies"
+  },
+  {
+   "label": "Open Claims",
+   "number_card_name": "Open Claims"
+  },
+  {
+   "label": "Annual Premium",
+   "number_card_name": "Annual Premium"
+  }
+ ],
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 7.63,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "New Insurance Policy",
+   "link_to": "Insurance Policy",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Insurance Claims",
+   "link_to": "Insurance Claim",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Fixed Assets",
+   "link_to": "/app/fixed-assets",
+   "type": "URL"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Asset Insurance Register",
+   "link_to": "/app/query-report/Asset%20Insurance%20Register",
+   "type": "URL"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Expiring Policies Report",
+   "link_to": "Expiring Policies Report",
+   "type": "Report"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Uninsured Assets Report",
+   "link_to": "Uninsured Assets Report",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Claims Register",
+   "link_to": "Claims Register",
+   "type": "Report"
+  }
+ ],
+ "title": "Asset Insurance"
+}

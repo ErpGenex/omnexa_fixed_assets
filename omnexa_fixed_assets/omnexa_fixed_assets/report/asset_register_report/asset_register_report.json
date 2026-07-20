@@ -1,0 +1,24 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-04-18 12:00:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch", "width": "180px"},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "\ndraft\nacquired\ntagged\nin_use\ntransferred\nunder_maintenance\nfully_depreciated\ndisposed", "width": "180px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Asset Register Report",
+ "ref_doctype": "Fixed Asset",
+ "report_name": "Asset Register Report",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Accounts Manager"},
+  {"role": "Accounts User"}
+ ]
+}

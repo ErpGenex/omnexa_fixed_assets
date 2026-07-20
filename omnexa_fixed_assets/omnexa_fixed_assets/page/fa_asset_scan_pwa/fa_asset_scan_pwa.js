@@ -1,0 +1,1 @@
+frappe.pages["fa-asset-scan-pwa"].on_page_load = function(w){ frappe.ui.make_app_page({parent:w, title:"fa-asset-scan-pwa", single_column:1}); };

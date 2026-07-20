@@ -1,0 +1,198 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "naming_series:",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"company",
+		"branch",
+		"asset",
+		"work_order_type",
+		"priority",
+		"status",
+		"tab_break_schedule",
+		"planned_start",
+		"planned_end",
+		"assigned_to",
+		"maintenance_strategy",
+		"estimated_cost",
+		"actual_cost",
+		"sla_due",
+		"completion_date",
+		"tab_break_notes",
+		"description",
+		"resolution_notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_schedule",
+			"fieldtype": "Tab Break",
+			"label": "Schedule & costs"
+		},
+		{
+			"fieldname": "tab_break_notes",
+			"fieldtype": "Tab Break",
+			"label": "Description"
+		},
+		{
+			"default": "FAWO-.#####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "FAWO-.#####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "work_order_type",
+			"fieldtype": "Select",
+			"label": "Work Order Type",
+			"options": "\nCorrective\nPreventive\nPredictive\nInspection-Triggered\nEmergency",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "priority",
+			"fieldtype": "Select",
+			"label": "Priority",
+			"options": "\nLow\nMedium\nHigh\nCritical",
+			"default": "Medium",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Draft\nPlanned\nAssigned\nIn Progress\nCompleted\nCancelled",
+			"default": "Draft",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "planned_start",
+			"fieldtype": "Datetime",
+			"label": "Planned Start"
+		},
+		{
+			"fieldname": "planned_end",
+			"fieldtype": "Datetime",
+			"label": "Planned End"
+		},
+		{
+			"fieldname": "assigned_to",
+			"fieldtype": "Link",
+			"label": "Assigned To",
+			"options": "User"
+		},
+		{
+			"fieldname": "maintenance_strategy",
+			"fieldtype": "Link",
+			"label": "Maintenance Strategy",
+			"options": "Maintenance Strategy"
+		},
+		{
+			"fieldname": "estimated_cost",
+			"fieldtype": "Currency",
+			"label": "Estimated Cost"
+		},
+		{
+			"fieldname": "actual_cost",
+			"fieldtype": "Currency",
+			"label": "Actual Cost"
+		},
+		{
+			"fieldname": "sla_due",
+			"fieldtype": "Datetime",
+			"label": "SLA Due"
+		},
+		{
+			"fieldname": "completion_date",
+			"fieldtype": "Datetime",
+			"label": "Completion Date"
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Small Text",
+			"label": "Description"
+		},
+		{
+			"fieldname": "resolution_notes",
+			"fieldtype": "Small Text",
+			"label": "Resolution Notes"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Work Order",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 0,
+			"cancel": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

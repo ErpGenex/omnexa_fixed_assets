@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Fixed Assets",
+	"name": "fa-asset-scan-pwa",
+	"page_name": "fa-asset-scan-pwa",
+	"standard": "Yes",
+	"title": "Digital Channel",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "All"
+		}
+	]
+}

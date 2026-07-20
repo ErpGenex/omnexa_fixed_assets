@@ -1,0 +1,236 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:{company}-{category_code}",
+	"creation": "2026-04-16 10:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"category_code",
+		"category_name",
+		"company",
+		"column_break_omnexa_1",
+		"classification_code",
+		"is_group",
+		"parent_fixed_asset_category",
+		"tab_break_1",
+		"section_defaults",
+		"default_useful_life_months",
+		"default_depreciation_method",
+		"column_break_omnexa_3",
+		"default_declining_balance_rate",
+		"default_total_estimated_units",
+		"tab_break_2",
+		"section_gl",
+		"asset_gl_account",
+		"accumulated_depreciation_gl_account",
+		"depreciation_expense_gl_account",
+		"column_break_omnexa_2",
+		"lft",
+		"rgt",
+		"old_parent",
+		"asset_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Default depreciation"
+		},
+		{
+			"fieldname": "tab_break_2",
+			"fieldtype": "Tab Break",
+			"label": "GL & hierarchy"
+		},
+		{
+			"fieldname": "category_code",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Category Code",
+			"reqd": 1
+		},
+		{
+			"fieldname": "category_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Category Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "classification_code",
+			"fieldtype": "Data",
+			"label": "Classification Code"
+		},
+		{
+			"default": "0",
+			"fieldname": "is_group",
+			"fieldtype": "Check",
+			"label": "Is Group"
+		},
+		{
+			"fieldname": "parent_fixed_asset_category",
+			"fieldtype": "Link",
+			"label": "Parent Category",
+			"options": "Fixed Asset Category"
+		},
+		{
+			"fieldname": "section_defaults",
+			"fieldtype": "Section Break",
+			"label": "Default depreciation (IAS 16)",
+			"description": "Optional defaults copied to new assets in this category (can be overridden per asset)."
+		},
+		{
+			"fieldname": "default_useful_life_months",
+			"fieldtype": "Int",
+			"label": "Default useful life (months)"
+		},
+		{
+			"fieldname": "default_depreciation_method",
+			"fieldtype": "Select",
+			"label": "Default depreciation method",
+			"options": "\nNone\nStraight Line\nDeclining Balance\nUnits of Production"
+		},
+		{
+			"fieldname": "default_declining_balance_rate",
+			"fieldtype": "Percent",
+			"label": "Default declining balance rate % (annual)"
+		},
+		{
+			"fieldname": "default_total_estimated_units",
+			"fieldtype": "Int",
+			"label": "Default total units (UoP)"
+		},
+		{
+			"fieldname": "section_gl",
+			"fieldtype": "Section Break",
+			"label": "Default GL accounts (IAS 16)",
+			"description": "Leaf categories should define all three; used when creating assets unless overridden on the asset."
+		},
+		{
+			"fieldname": "asset_gl_account",
+			"fieldtype": "Link",
+			"label": "Asset account",
+			"options": "GL Account",
+			"description": "Capitalized cost (Dr on acquisition)"
+		},
+		{
+			"fieldname": "accumulated_depreciation_gl_account",
+			"fieldtype": "Link",
+			"label": "Accumulated depreciation",
+			"options": "GL Account",
+			"description": "Contra-asset (Cr on depreciation)"
+		},
+		{
+			"fieldname": "depreciation_expense_gl_account",
+			"fieldtype": "Link",
+			"label": "Depreciation expense",
+			"options": "GL Account",
+			"description": "Profit and loss expense (Dr on depreciation)"
+		},
+		{
+			"fieldname": "lft",
+			"fieldtype": "Int",
+			"hidden": 1,
+			"label": "Left",
+			"read_only": 1
+		},
+		{
+			"fieldname": "rgt",
+			"fieldtype": "Int",
+			"hidden": 1,
+			"label": "Right",
+			"read_only": 1
+		},
+		{
+			"fieldname": "old_parent",
+			"fieldtype": "Link",
+			"hidden": 1,
+			"label": "Old Parent",
+			"options": "Fixed Asset Category",
+			"read_only": 1
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_3",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"is_tree": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Category",
+	"nsm_parent_field": "parent_fixed_asset_category",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "name",
+	"sort_order": "ASC",
+	"states": [],
+	"track_changes": 1
+}

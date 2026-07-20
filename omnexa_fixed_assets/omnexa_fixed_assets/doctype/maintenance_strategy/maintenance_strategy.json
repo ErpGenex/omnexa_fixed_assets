@@ -1,0 +1,96 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "field:strategy_name",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"strategy_name",
+		"company",
+		"branch",
+		"strategy_type",
+		"sla_hours",
+		"description"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "strategy_name",
+			"fieldtype": "Data",
+			"label": "Strategy Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch"
+		},
+		{
+			"fieldname": "strategy_type",
+			"fieldtype": "Select",
+			"label": "Strategy Type",
+			"options": "\nCorrective\nPreventive\nPredictive\nInspection-Triggered\nEmergency",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "sla_hours",
+			"fieldtype": "Float",
+			"label": "SLA Hours"
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Small Text",
+			"label": "Description"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Maintenance Strategy",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

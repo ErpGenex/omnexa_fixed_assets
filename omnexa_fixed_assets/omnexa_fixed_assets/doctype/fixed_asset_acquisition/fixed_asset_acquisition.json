@@ -1,0 +1,194 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "naming_series:",
+	"creation": "2026-04-16 10:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"company",
+		"column_break_omnexa_2",
+		"branch",
+		"posting_date",
+		"tab_break_1",
+		"procurement_section",
+		"fixed_asset",
+		"asset_name_display",
+		"capitalization_amount",
+		"credit_account",
+		"column_break_omnexa_1",
+		"supplier_reference",
+		"journal_entry",
+		"remarks",
+		"asset_owner"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_1",
+			"fieldtype": "Tab Break",
+			"label": "Capitalization"
+		},
+		{
+			"default": "FAA-.#####",
+			"fieldname": "naming_series",
+			"fieldtype": "Select",
+			"label": "Series",
+			"options": "FAA-.#####",
+			"reqd": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"default": "Today",
+			"fieldname": "posting_date",
+			"fieldtype": "Date",
+			"label": "Posting date",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "procurement_section",
+			"fieldtype": "Section Break",
+			"label": "Procurement Reference"
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"label": "Fixed Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fetch_from": "fixed_asset.asset_name",
+			"fieldname": "asset_name_display",
+			"fieldtype": "Data",
+			"label": "Asset name",
+			"read_only": 1
+		},
+		{
+			"fieldname": "capitalization_amount",
+			"fieldtype": "Currency",
+			"label": "Capitalization amount",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "credit_account",
+			"fieldtype": "Link",
+			"label": "Credit account (cash / payables)",
+			"options": "GL Account",
+			"reqd": 1,
+			"description": "Source of funding: e.g. bank or accounts payable (Cr on acquisition)."
+		},
+		{
+			"fieldname": "supplier_reference",
+			"fieldtype": "Data",
+			"label": "Supplier Reference"
+		},
+		{
+			"fieldname": "journal_entry",
+			"fieldtype": "Link",
+			"label": "Journal Entry",
+			"options": "Journal Entry",
+			"read_only": 1
+		},
+		{
+			"fieldname": "remarks",
+			"fieldtype": "Small Text",
+			"label": "Remarks"
+		},
+		{
+			"fieldname": "asset_owner",
+			"fieldtype": "Link",
+			"label": "Asset Owner",
+			"options": "User"
+		},
+		{
+			"fieldname": "column_break_omnexa_1",
+			"fieldtype": "Column Break"
+		},
+		{
+			"fieldname": "column_break_omnexa_2",
+			"fieldtype": "Column Break"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Fixed Asset Acquisition",
+	"naming_rule": "By \"Naming Series\" field",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 1,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 1,
+			"report": 1,
+			"export": 1,
+			"share": 0,
+			"print": 1,
+			"email": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"submit": 1,
+			"cancel": 0,
+			"report": 1,
+			"export": 0,
+			"share": 0,
+			"print": 1,
+			"email": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

@@ -1,0 +1,97 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "field:functional_location_name",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"functional_location_name",
+		"company",
+		"branch",
+		"parent_location",
+		"location_path",
+		"criticality"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "functional_location_name",
+			"fieldtype": "Data",
+			"label": "Functional Location Name",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "parent_location",
+			"fieldtype": "Link",
+			"label": "Parent Location",
+			"options": "Functional Location"
+		},
+		{
+			"fieldname": "location_path",
+			"fieldtype": "Data",
+			"label": "Location Path",
+			"read_only": 1
+		},
+		{
+			"fieldname": "criticality",
+			"fieldtype": "Select",
+			"label": "Criticality",
+			"options": "\nLow\nMedium\nHigh\nSafety Critical"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Functional Location",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

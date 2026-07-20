@@ -1,0 +1,162 @@
+{
+	"actions": [],
+	"allow_rename": 1,
+	"autoname": "format:{hotel_property}-{area_code}",
+	"creation": "2026-05-06 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"company",
+		"branch",
+		"hotel_property",
+		"area_code",
+		"area_name",
+		"area_type",
+		"is_active",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "hotel_property",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Hotel Property",
+			"options": "Hotel Property",
+			"reqd": 1
+		},
+		{
+			"fieldname": "area_code",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Area Code",
+			"reqd": 1
+		},
+		{
+			"fieldname": "area_name",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Area Name",
+			"reqd": 1
+		},
+		{
+			"fieldname": "area_type",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Area Type",
+			"options": "Lobby\nGuest Rooms\nRestaurant\nSpa\nSwimming Pool\nService Area\nEngineering Zone\nParking\nBack of House\nOther",
+			"reqd": 1
+		},
+		{
+			"default": "1",
+			"fieldname": "is_active",
+			"fieldtype": "Check",
+			"label": "Is Active"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 12:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Hotel Functional Area",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Hotel Asset Admin",
+			"write": 1
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Engineering Manager",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Housekeeping Supervisor",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Finance Asset Controller",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Auditor",
+			"write": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

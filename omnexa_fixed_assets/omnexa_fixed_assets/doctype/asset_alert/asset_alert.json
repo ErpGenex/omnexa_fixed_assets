@@ -1,0 +1,193 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"asset",
+		"company",
+		"branch",
+		"alert_time",
+		"alert_type",
+		"tab_break_details",
+		"severity",
+		"status",
+		"message",
+		"source",
+		"reference_doctype",
+		"reference_name"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "asset",
+			"fieldtype": "Link",
+			"label": "Asset",
+			"options": "Fixed Asset",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"label": "Branch",
+			"options": "Branch",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "alert_time",
+			"fieldtype": "Datetime",
+			"label": "Alert Time",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "alert_type",
+			"fieldtype": "Select",
+			"label": "Alert Type",
+			"options": "\nThreshold Breach\nPattern Drift\nRapid Degradation\nSensor Silence\nFailure Spike\nMissing Asset\nUnauthorized Movement\nInspection Failure\nWarranty Warning\nSLA Breach\nCapacity Warning",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "severity",
+			"fieldtype": "Select",
+			"label": "Severity",
+			"options": "\nLow\nMedium\nHigh\nCritical",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "status",
+			"fieldtype": "Select",
+			"label": "Status",
+			"options": "Open\nAcknowledged\nClosed",
+			"default": "Open",
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "message",
+			"fieldtype": "Small Text",
+			"label": "Message"
+		},
+		{
+			"fieldname": "source",
+			"fieldtype": "Data",
+			"label": "Source"
+		},
+		{
+			"fieldname": "reference_doctype",
+			"fieldtype": "Data",
+			"label": "Reference Doctype"
+		},
+		{
+			"fieldname": "reference_name",
+			"fieldtype": "Data",
+			"label": "Reference Name"
+		}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Alert",
+	"permissions": [
+		{
+			"role": "System Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Accounts User",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1
+		},
+		{
+			"role": "Hotel Asset Admin",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 1,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Engineering Manager",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Housekeeping Supervisor",
+			"read": 1,
+			"write": 1,
+			"create": 1,
+			"delete": 0,
+			"report": 1,
+			"export": 0
+		},
+		{
+			"role": "RFID Operator",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 0
+		},
+		{
+			"role": "Finance Asset Controller",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		},
+		{
+			"role": "Auditor",
+			"read": 1,
+			"write": 0,
+			"create": 0,
+			"delete": 0,
+			"report": 1,
+			"export": 1
+		}
+	],
+	"sort_field": "alert_time",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

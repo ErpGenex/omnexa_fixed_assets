@@ -1,0 +1,178 @@
+{
+	"actions": [],
+	"creation": "2026-05-05 22:24:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"company",
+		"branch",
+		"fixed_asset",
+		"rfid_tag",
+		"scan_time",
+		"tab_break_details",
+		"reader_device",
+		"location_text",
+		"signal_strength",
+		"scan_result",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "tab_break_details",
+			"fieldtype": "Tab Break",
+			"label": "Details"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Fixed Asset",
+			"options": "Fixed Asset",
+			"reqd": 1
+		},
+		{
+			"fieldname": "rfid_tag",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "RFID Tag"
+		},
+		{
+			"default": "Now",
+			"fieldname": "scan_time",
+			"fieldtype": "Datetime",
+			"in_list_view": 1,
+			"label": "Scan Time",
+			"reqd": 1
+		},
+		{
+			"fieldname": "reader_device",
+			"fieldtype": "Data",
+			"label": "Reader Device"
+		},
+		{
+			"fieldname": "location_text",
+			"fieldtype": "Data",
+			"label": "Location"
+		},
+		{
+			"fieldname": "signal_strength",
+			"fieldtype": "Float",
+			"label": "Signal Strength"
+		},
+		{
+			"default": "Seen",
+			"fieldname": "scan_result",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Scan Result",
+			"options": "Seen\nMissing\nMismatch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"grid_page_length": 50,
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "RFID Scan Log",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "RFID Operator",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Hotel Asset Admin",
+			"write": 1
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Engineering Manager",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Housekeeping Supervisor",
+			"write": 0
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Auditor",
+			"write": 0
+		}
+	],
+	"sort_field": "scan_time",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

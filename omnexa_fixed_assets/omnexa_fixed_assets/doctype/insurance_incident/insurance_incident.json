@@ -1,0 +1,72 @@
+{
+	"actions": [],
+	"allow_rename": 0,
+	"autoname": "hash",
+	"creation": "2026-05-11 12:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": ["insurance_policy", "company", "incident_date", "title", "severity", "description"],
+	"fields": [
+		{
+			"fieldname": "insurance_policy",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Insurance Policy",
+			"options": "Insurance Policy",
+			"reqd": 1
+		},
+		{
+			"fetch_from": "insurance_policy.company",
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"label": "Company",
+			"options": "Company",
+			"read_only": 1
+		},
+		{
+			"default": "Today",
+			"fieldname": "incident_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Incident Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "title",
+			"fieldtype": "Data",
+			"in_list_view": 1,
+			"label": "Title",
+			"reqd": 1
+		},
+		{
+			"default": "Medium",
+			"fieldname": "severity",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Severity",
+			"options": "Low\nMedium\nHigh\nCritical"
+		},
+		{
+			"fieldname": "description",
+			"fieldtype": "Text Editor",
+			"label": "Description"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-11 12:00:00",
+	"modified_by": "Administrator",
+	"module": "Omnexa Fixed Assets",
+	"name": "Insurance Incident",
+	"owner": "Administrator",
+	"permissions": [
+		{"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1},
+		{"create": 1, "delete": 0, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Accounts Manager", "share": 1, "write": 1},
+		{"create": 1, "delete": 0, "email": 0, "export": 0, "print": 1, "read": 1, "report": 1, "role": "Accounts User", "share": 0, "write": 1},
+		{"create": 0, "delete": 0, "email": 0, "export": 0, "print": 1, "read": 1, "report": 1, "role": "Desk User", "share": 0, "write": 0}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

@@ -1,0 +1,25 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-05-11 12:00:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "days_ahead", "fieldtype": "Int", "label": "Days Ahead", "default": "90", "width": "120px"},
+  {"fieldname": "insurance_company", "fieldtype": "Link", "label": "Insurance Company", "options": "Insurance Company", "width": "200px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Expiring Policies Report",
+ "ref_doctype": "Insurance Policy",
+ "report_name": "Expiring Policies Report",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Accounts Manager"},
+  {"role": "Accounts User"},
+  {"role": "Desk User"}
+ ]
+}

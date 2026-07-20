@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create",
+ "creation": "2026-06-13 03:17:07.246120",
+ "description": "Create or review your first **Fixed Asset** record from this workspace.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-07-11 14:37:26.892797",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-fixed_assets-04-fixed_asset",
+ "owner": "Administrator",
+ "reference_document": "Fixed Asset",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Get started with Fixed Asset",
+ "validate_action": 1
+}

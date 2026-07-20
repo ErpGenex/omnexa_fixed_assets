@@ -1,0 +1,78 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-04-30 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"check_item",
+		"response_type",
+		"is_mandatory",
+		"min_value",
+		"max_value",
+		"allow_photo",
+		"allow_signature",
+		"branch_condition"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "check_item",
+			"fieldtype": "Data",
+			"label": "Check Item",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "response_type",
+			"fieldtype": "Select",
+			"label": "Response Type",
+			"options": "Boolean\nNumeric\nPhoto\nSignature\nText",
+			"reqd": 1,
+			"in_list_view": 1
+		},
+		{
+			"fieldname": "is_mandatory",
+			"fieldtype": "Check",
+			"label": "Mandatory",
+			"default": "1"
+		},
+		{
+			"fieldname": "min_value",
+			"fieldtype": "Float",
+			"label": "Minimum Value"
+		},
+		{
+			"fieldname": "max_value",
+			"fieldtype": "Float",
+			"label": "Maximum Value"
+		},
+		{
+			"fieldname": "allow_photo",
+			"fieldtype": "Check",
+			"label": "Allow Photo",
+			"default": "0"
+		},
+		{
+			"fieldname": "allow_signature",
+			"fieldtype": "Check",
+			"label": "Allow Signature",
+			"default": "0"
+		},
+		{
+			"fieldname": "branch_condition",
+			"fieldtype": "Data",
+			"label": "Conditional Branch Rule"
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Inspection Template Line",
+	"permissions": [],
+	"track_changes": 1
+}

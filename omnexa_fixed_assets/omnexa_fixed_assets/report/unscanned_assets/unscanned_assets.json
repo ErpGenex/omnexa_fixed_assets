@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-05-05 23:36:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "as_of", "fieldtype": "Date", "label": "As Of", "width": "120px"},
+  {"default": "7", "fieldname": "min_gap_days", "fieldtype": "Int", "label": "Flag if no scan within (days)", "width": "220px"},
+  {"default": "1", "fieldname": "include_never_scanned", "fieldtype": "Check", "label": "Include assets never scanned"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Unscanned Assets",
+ "ref_doctype": "Fixed Asset",
+ "report_name": "Unscanned Assets",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Hotel Asset Admin"},
+  {"role": "Engineering Manager"},
+  {"role": "Housekeeping Supervisor"},
+  {"role": "RFID Operator"},
+  {"role": "Finance Asset Controller"},
+  {"role": "Auditor"}
+ ]
+}

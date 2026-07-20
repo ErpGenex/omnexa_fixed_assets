@@ -1,0 +1,191 @@
+{
+	"actions": [],
+	"creation": "2026-05-05 22:30:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"company",
+		"branch",
+		"fixed_asset",
+		"hotel_property",
+		"hotel_room",
+		"inspection_date",
+		"inspector",
+		"condition_status",
+		"tab_break_results",
+		"inspection_result_action",
+		"recommendations",
+		"inspection_attachment",
+		"inspector_sign_off",
+		"notes"
+	],
+	"fields": [
+		{
+			"fieldname": "tab_break_overview",
+			"fieldtype": "Tab Break",
+			"label": "Overview"
+		},
+		{
+			"fieldname": "company",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Company",
+			"options": "Company",
+			"reqd": 1
+		},
+		{
+			"fieldname": "branch",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Branch",
+			"options": "Branch",
+			"reqd": 1
+		},
+		{
+			"fieldname": "fixed_asset",
+			"fieldtype": "Link",
+			"in_list_view": 1,
+			"label": "Fixed Asset",
+			"options": "Fixed Asset",
+			"reqd": 1
+		},
+		{
+			"fieldname": "hotel_property",
+			"fieldtype": "Link",
+			"label": "Hotel Property",
+			"options": "Hotel Property"
+		},
+		{
+			"fieldname": "hotel_room",
+			"fieldtype": "Link",
+			"label": "Hotel Room",
+			"options": "Hotel Room"
+		},
+		{
+			"default": "Today",
+			"fieldname": "inspection_date",
+			"fieldtype": "Date",
+			"in_list_view": 1,
+			"label": "Inspection Date",
+			"reqd": 1
+		},
+		{
+			"fieldname": "inspector",
+			"fieldtype": "Link",
+			"label": "Inspector",
+			"options": "User"
+		},
+		{
+			"default": "Good",
+			"fieldname": "condition_status",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Condition",
+			"options": "Excellent\nGood\nFair\nPoor\nCritical",
+			"reqd": 1
+		},
+		{
+			"fieldname": "tab_break_results",
+			"fieldtype": "Tab Break",
+			"label": "Results & evidence"
+		},
+		{
+			"default": "Pass",
+			"fieldname": "inspection_result_action",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Result action",
+			"options": "Pass\nRepair\nReplace\nRetire",
+			"reqd": 1
+		},
+		{
+			"fieldname": "recommendations",
+			"fieldtype": "Small Text",
+			"label": "Recommendations"
+		},
+		{
+			"fieldname": "inspection_attachment",
+			"fieldtype": "Attach",
+			"label": "Photo / attachment"
+		},
+		{
+			"fieldname": "inspector_sign_off",
+			"fieldtype": "Data",
+			"label": "Inspector sign-off",
+			"description": "Typed name or reference; use attachment for captured signature image."
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"index_web_pages_for_search": 1,
+	"links": [],
+	"modified": "2026-05-06 20:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Hotel Asset Inspection",
+	"owner": "Administrator",
+	"permissions": [
+		{
+			"create": 1,
+			"delete": 1,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "System Manager",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 1,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Hotel Asset Admin",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Engineering Manager",
+			"write": 1
+		},
+		{
+			"create": 1,
+			"delete": 0,
+			"email": 0,
+			"export": 0,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Housekeeping Supervisor",
+			"write": 1
+		},
+		{
+			"create": 0,
+			"delete": 0,
+			"email": 0,
+			"export": 1,
+			"print": 1,
+			"read": 1,
+			"report": 1,
+			"role": "Auditor",
+			"write": 0
+		}
+	],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"states": [],
+	"track_changes": 1
+}

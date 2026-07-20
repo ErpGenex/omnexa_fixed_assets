@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Fixed Assets",
+	"name": "fixed-assets-customer-portal",
+	"page_name": "fixed-assets-customer-portal",
+	"standard": "Yes",
+	"title": "Customer Portal",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}

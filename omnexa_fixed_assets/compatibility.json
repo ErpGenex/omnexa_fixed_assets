@@ -1,0 +1,10 @@
+{
+  "auto_migrate": true,
+  "auto_patch": true,
+  "compatible_from": "14.0.0",
+  "compatible_to": "*",
+  "name": "omnexa_fixed_assets",
+  "requires_build": true,
+  "requires_restart": true,
+  "test_level": "full"
+}

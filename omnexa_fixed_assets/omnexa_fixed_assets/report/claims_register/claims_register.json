@@ -1,0 +1,24 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2026-05-11 12:00:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "claim_status", "fieldtype": "Select", "label": "Claim Status", "options": "\nOpen\nUnder Review\nApproved\nSettled\nRejected\nClosed", "width": "160px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Claims Register",
+ "ref_doctype": "Insurance Claim",
+ "report_name": "Claims Register",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Accounts Manager"},
+  {"role": "Accounts User"},
+  {"role": "Desk User"}
+ ]
+}

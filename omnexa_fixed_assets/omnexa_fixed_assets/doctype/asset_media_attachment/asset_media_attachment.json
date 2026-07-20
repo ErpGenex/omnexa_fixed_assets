@@ -1,0 +1,49 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-05-07 00:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"media_type",
+		"media_file",
+		"caption",
+		"uploaded_by"
+	],
+	"fields": [
+		{
+			"fieldname": "media_type",
+			"fieldtype": "Select",
+			"in_list_view": 1,
+			"label": "Media Type",
+			"options": "Image\nVideo\nDocument\nOther",
+			"reqd": 1
+		},
+		{
+			"fieldname": "media_file",
+			"fieldtype": "Attach",
+			"in_list_view": 1,
+			"label": "File",
+			"reqd": 1
+		},
+		{
+			"fieldname": "caption",
+			"fieldtype": "Data",
+			"label": "Caption"
+		},
+		{
+			"fieldname": "uploaded_by",
+			"fieldtype": "Link",
+			"label": "Uploaded By",
+			"options": "User",
+			"read_only": 1
+		}
+	],
+	"istable": 1,
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Media Attachment",
+	"permissions": [],
+	"sort_field": "modified",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

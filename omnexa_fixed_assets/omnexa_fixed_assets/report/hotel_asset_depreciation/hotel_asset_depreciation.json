@@ -1,0 +1,26 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2026-05-06 00:20:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
+  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date", "reqd": 1, "width": "120px"},
+  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date", "reqd": 1, "width": "120px"},
+  {"fieldname": "hotel_property", "fieldtype": "Link", "label": "Hotel Property", "options": "Hotel Property", "width": "220px"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Hotel Asset Depreciation",
+ "ref_doctype": "Fixed Asset Depreciation Entry",
+ "report_name": "Hotel Asset Depreciation",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Hotel Asset Admin"},
+  {"role": "Finance Asset Controller"},
+  {"role": "Auditor"}
+ ]
+}

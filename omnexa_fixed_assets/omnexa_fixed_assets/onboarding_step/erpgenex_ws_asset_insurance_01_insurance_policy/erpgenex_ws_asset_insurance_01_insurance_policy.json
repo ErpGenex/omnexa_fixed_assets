@@ -1,0 +1,21 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create",
+ "creation": "2026-05-11 01:22:00.051281",
+ "description": "Create or review your first **Insurance Policy** record from this workspace.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-07-11 14:37:21.141392",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-asset_insurance-01-insurance_policy",
+ "owner": "Administrator",
+ "reference_document": "Insurance Policy",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Get started with Insurance Policy",
+ "validate_action": 1
+}

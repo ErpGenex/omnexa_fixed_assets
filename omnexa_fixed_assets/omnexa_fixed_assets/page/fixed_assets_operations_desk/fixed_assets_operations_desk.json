@@ -1,0 +1,16 @@
+{
+	"doctype": "Page",
+	"module": "Omnexa Fixed Assets",
+	"name": "fixed-assets-operations-desk",
+	"page_name": "fixed-assets-operations-desk",
+	"standard": "Yes",
+	"title": "Operations Desk",
+	"roles": [
+		{
+			"role": "System Manager"
+		},
+		{
+			"role": "Company Admin"
+		}
+	]
+}
