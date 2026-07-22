@@ -255,5 +255,6 @@
  "restrict_to_domain": "",
  "roles": [],
  "sequence_id": 7.65,
- "title": "Fixed Assets"
+ "title": "Fixed Assets",
+ "category": "ERP"
 }
