@@ -6,6 +6,7 @@ from __future__ import annotations
 import frappe
 
 from omnexa_core.omnexa_core.feature_flags import is_feature_enabled
+from omnexa_core.omnexa_core.company_activity_utils import company_activity_fields, first_company_activity_value
 
 # Must match Option rows on Company business_activity / industry_sector / production_demo_activity.
 HOTEL_ASSETS_ACTIVITY_OPTION = "Hotel Assets (إدارة أصول الفنادق)"
@@ -14,18 +15,7 @@ HOTEL_ASSETS_ACTIVITY_OPTION = "Hotel Assets (إدارة أصول الفنادق
 def company_has_hotel_assets_activity(company_name: str | None) -> bool:
 	if not company_name:
 		return False
-	row = frappe.db.get_value(
-		"Company",
-		company_name,
-		["business_activity", "industry_sector", "production_demo_activity"],
-		as_dict=True,
-	)
-	if not row:
-		return False
-	for fn in ("business_activity", "industry_sector", "production_demo_activity"):
-		if (row.get(fn) or "").strip() == HOTEL_ASSETS_ACTIVITY_OPTION:
-			return True
-	return False
+	return first_company_activity_value(company_name) == HOTEL_ASSETS_ACTIVITY_OPTION
 
 
 def site_has_any_hotel_assets_company() -> bool:
@@ -33,10 +23,14 @@ def site_has_any_hotel_assets_company() -> bool:
 	if is_feature_enabled("enable_hotel_asset_management", default=False):
 		return True
 	h = HOTEL_ASSETS_ACTIVITY_OPTION
+	fields = company_activity_fields()
+	if not fields:
+		return False
+	conditions = " OR ".join(f"`{field}` = %(m)s" for field in fields)
 	row = frappe.db.sql(
-		"""
+		f"""
 		SELECT name FROM `tabCompany`
-		WHERE business_activity = %(m)s OR industry_sector = %(m)s OR production_demo_activity = %(m)s
+		WHERE {conditions}
 		LIMIT 1
 		""",
 		{"m": h
