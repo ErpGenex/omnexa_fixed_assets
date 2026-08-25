@@ -1,0 +1,23 @@
+{
+ "action": "Go to Page",
+ "action_label": "Open",
+ "callback_message": "Use the journey sidebar and work scenarios on this page, then click Continue.",
+ "callback_title": "Analytics Dashboard",
+ "creation": "2026-08-24 00:14:08.665438",
+ "description": "Jump to the **Analytics Dashboard** page.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-08-25 18:02:38.880867",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-fixed_assets-03-page-fixed_assets_analytics_dashboard",
+ "owner": "Administrator",
+ "path": "fixed-assets-analytics-dashboard",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Open Analytics Dashboard",
+ "validate_action": 1
+}

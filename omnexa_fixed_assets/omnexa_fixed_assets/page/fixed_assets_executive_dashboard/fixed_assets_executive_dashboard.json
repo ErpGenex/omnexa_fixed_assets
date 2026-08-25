@@ -1,16 +1,26 @@
 {
-	"doctype": "Page",
-	"module": "Omnexa Fixed Assets",
-	"name": "fixed-assets-executive-dashboard",
-	"page_name": "fixed-assets-executive-dashboard",
-	"standard": "Yes",
-	"title": "Executive Dashboard",
-	"roles": [
-		{
-			"role": "System Manager"
-		},
-		{
-			"role": "Company Admin"
-		}
-	]
+ "content": null,
+ "creation": "2026-08-23 15:00:00.708907",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-08-25 19:03:28.510349",
+ "modified_by": "Administrator",
+ "module": "Omnexa Fixed Assets",
+ "name": "fixed-assets-executive-dashboard",
+ "owner": "Administrator",
+ "page_name": "fixed-assets-executive-dashboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Company Admin"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Executive Dashboard"
 }

@@ -1,0 +1,41 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-08-23 14:30:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"company",
+		"branch",
+		"event_time",
+		"event_type",
+		"source",
+		"entity_type",
+		"entity_name",
+		"device",
+		"user",
+		"message"
+	],
+	"fields": [
+		{"fieldname": "company", "fieldtype": "Link", "in_list_view": 1, "label": "Company", "options": "Company", "reqd": 1},
+		{"fieldname": "branch", "fieldtype": "Link", "in_list_view": 1, "label": "Branch", "options": "Branch"},
+		{"default": "Now", "fieldname": "event_time", "fieldtype": "Datetime", "in_list_view": 1, "label": "Event Time", "reqd": 1},
+		{"fieldname": "event_type", "fieldtype": "Select", "in_list_view": 1, "label": "Event Type", "options": "\nRFID Event\nManual Action\nSystem Automation\nAPI\nIntegration\nAI Recommendation\nUnauthorized Movement\nGateway Offline"},
+		{"fieldname": "source", "fieldtype": "Select", "label": "Source", "options": "\nRFID Event\nManual Action\nSystem Automation\nAPI\nIntegration\nAI Recommendation"},
+		{"fieldname": "entity_type", "fieldtype": "Data", "label": "Entity Type"},
+		{"fieldname": "entity_name", "fieldtype": "Data", "label": "Entity Name"},
+		{"fieldname": "device", "fieldtype": "Data", "label": "Device"},
+		{"fieldname": "user", "fieldtype": "Link", "label": "User", "options": "User"},
+		{"fieldname": "message", "fieldtype": "Small Text", "in_list_view": 1, "label": "Message"}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Hospitality Audit Event",
+	"permissions": [
+		{"create": 1, "delete": 1, "read": 1, "report": 1, "role": "System Manager", "write": 1},
+		{"create": 1, "delete": 0, "read": 1, "report": 1, "role": "Hotel Asset Admin", "write": 0},
+		{"create": 0, "delete": 0, "read": 1, "report": 1, "role": "Auditor", "write": 0}
+	],
+	"sort_field": "event_time",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

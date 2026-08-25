@@ -7,7 +7,7 @@ import os
 import frappe
 from frappe.utils import get_bench_path
 
-GLOBAL_LEADER_TARGET = 4.85
+GLOBAL_LEADER_TARGET = 5.0
 GAPS_TOTAL = 48
 APP = "omnexa_fixed_assets"
 

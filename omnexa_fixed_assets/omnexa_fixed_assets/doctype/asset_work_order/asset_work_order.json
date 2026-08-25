@@ -10,6 +10,7 @@
 		"naming_series",
 		"company",
 		"branch",
+		"core_work_order",
 		"asset",
 		"work_order_type",
 		"priority",
@@ -65,6 +66,13 @@
 			"label": "Branch",
 			"options": "Branch",
 			"in_list_view": 1
+		},
+		{
+			"description": "Linked ERPGenEx Maintenance Core work order (set by bridge; no cross-app Link).",
+			"fieldname": "core_work_order",
+			"fieldtype": "Data",
+			"label": "Core Work Order",
+			"read_only": 1
 		},
 		{
 			"fieldname": "asset",

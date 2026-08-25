@@ -249,3 +249,32 @@ def run_daily_hotel_asset_jobs():
 		create_warranty_expiry_alerts(lookahead_days=30)
 	except Exception:
 		frappe.log_error(frappe.get_traceback(), "Hotel daily asset jobs failed")
+	try:
+		from omnexa_fixed_assets.utils.linen.loss_detection import detect_missing_linen_items
+
+		companies = frappe.get_all("Company", pluck="name")
+		for company in companies:
+			detect_missing_linen_items(company)
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "Linen missing detection failed")
+	try:
+		from omnexa_fixed_assets.utils.intelligence.rules_engine import run_hospitality_intelligence
+
+		for company in frappe.get_all("Company", pluck="name"):
+			run_hospitality_intelligence(company)
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "Hospitality intelligence failed")
+
+
+def run_hourly_rfid_monitor_jobs():
+	"""Mark stale gateways/readers offline."""
+	if not is_scheduler_enabled():
+		return
+	if not site_has_any_hotel_assets_company():
+		return
+	try:
+		from omnexa_fixed_assets.utils.rfid.gateway_monitor import mark_stale_rfid_devices_offline
+
+		mark_stale_rfid_devices_offline()
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "RFID gateway monitor failed")

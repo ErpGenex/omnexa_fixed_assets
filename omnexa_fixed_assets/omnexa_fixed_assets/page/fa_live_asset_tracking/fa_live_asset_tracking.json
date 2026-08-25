@@ -1,0 +1,69 @@
+{
+ "content": null,
+ "creation": "2026-08-24 00:24:12.009839",
+ "docstatus": 0,
+ "doctype": "Page",
+ "icon": "map",
+ "idx": 0,
+ "modified": "2026-08-25 18:08:51.887668",
+ "modified_by": "Administrator",
+ "module": "Omnexa Fixed Assets",
+ "name": "fa-live-asset-tracking",
+ "owner": "Administrator",
+ "page_name": "fa-live-asset-tracking",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "Company Admin"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Hotel Asset Admin"
+  },
+  {
+   "role": "Hotel General Manager"
+  },
+  {
+   "role": "Hotel Branch Manager"
+  },
+  {
+   "role": "Engineering Manager"
+  },
+  {
+   "role": "Housekeeping Supervisor"
+  },
+  {
+   "role": "Hotel Housekeeping"
+  },
+  {
+   "role": "Hotel Front Desk"
+  },
+  {
+   "role": "Finance Asset Controller"
+  },
+  {
+   "role": "RFID Operator"
+  },
+  {
+   "role": "Auditor"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Live Asset Tracking"
+}

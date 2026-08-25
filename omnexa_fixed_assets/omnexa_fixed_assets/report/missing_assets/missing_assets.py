@@ -16,8 +16,11 @@ from omnexa_core.omnexa_core.report_print.report_query_filters import (
 
 
 def execute(filters=None):
-	filters = prepare_filters(filters)
+	from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
+
+	filters = merge_navbar_report_filters(prepare_filters(filters))
 	filters_dict = get_all_filters(filters, "Fixed Asset", date_field="creation", company=True, branch=True, extra_links={})
+	filters_dict["scan_status"] = ["in", ["Missing", "Mismatch"]]
 	data = frappe.get_all(
 		"Fixed Asset",
 		fields=['name', 'asset_name', 'hotel_property', 'hotel_room', 'scan_status', 'modified'],

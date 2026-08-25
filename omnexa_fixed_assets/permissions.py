@@ -158,3 +158,53 @@ def hotel_asset_inspection_query_conditions(user=None, **kwargs):
 
 def hotel_asset_transfer_query_conditions(user=None, **kwargs):
 	return _query_conditions_for("Hotel Asset Transfer", user)
+
+
+def rfid_gateway_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("RFID Gateway", user)
+
+
+def rfid_reader_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("RFID Reader", user)
+
+
+def linen_item_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Linen Item", user)
+
+
+def linen_movement_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Linen Movement", user)
+
+
+def linen_laundry_cycle_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Linen Laundry Cycle", user)
+
+
+def linen_issue_batch_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Linen Issue Batch", user)
+
+
+def linen_shortage_alert_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Linen Shortage Alert", user)
+
+
+def hospitality_audit_event_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Hospitality Audit Event", user)
+
+
+def hotel_floor_plan_query_conditions(user=None, **kwargs):
+	return _query_conditions_for("Hotel Floor Plan", user)
+
+
+def asset_lifecycle_wizard_session_query_conditions(user=None, **kwargs):
+	import frappe
+
+	user = user or frappe.session.user
+	if frappe.session.user == "Administrator" or "System Manager" in frappe.get_roles(user):
+		return ""
+	conditions = []
+	branch_cond = _query_conditions_for("Asset Lifecycle Wizard Session", user)
+	if branch_cond:
+		conditions.append(f"({branch_cond})")
+	conditions.append(f"`tabAsset Lifecycle Wizard Session`.owner_user = {frappe.db.escape(user)}")
+	return " AND ".join(conditions) if conditions else ""

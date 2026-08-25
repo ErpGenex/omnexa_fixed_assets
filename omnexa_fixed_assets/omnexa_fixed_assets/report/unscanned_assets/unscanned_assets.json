@@ -1,29 +1,80 @@
 {
  "add_total_row": 0,
+ "add_translate_data": 0,
  "columns": [],
  "creation": "2026-05-05 23:36:00",
+ "disable_prepared_report_automation": 0,
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Report",
+ "doctype_to_sync": [],
  "filters": [
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
-  {"fieldname": "as_of", "fieldtype": "Date", "label": "As Of", "width": "120px"},
-  {"default": "7", "fieldname": "min_gap_days", "fieldtype": "Int", "label": "Flag if no scan within (days)", "width": "220px"},
-  {"default": "1", "fieldname": "include_never_scanned", "fieldtype": "Check", "label": "Include assets never scanned"}
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "mandatory": 0,
+   "options": "Company",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "as_of",
+   "fieldtype": "Date",
+   "label": "As Of",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "default": "7",
+   "fieldname": "min_gap_days",
+   "fieldtype": "Int",
+   "label": "Flag if no scan within (days)",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "default": "1",
+   "fieldname": "include_never_scanned",
+   "fieldtype": "Check",
+   "label": "Include assets never scanned",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
  ],
+ "idx": 1,
  "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-25 18:20:24.675216",
+ "modified_by": "Administrator",
  "module": "Omnexa Fixed Assets",
  "name": "Unscanned Assets",
+ "prepared_report": 0,
  "ref_doctype": "Fixed Asset",
  "report_name": "Unscanned Assets",
  "report_type": "Script Report",
  "roles": [
-  {"role": "System Manager"},
-  {"role": "Hotel Asset Admin"},
-  {"role": "Engineering Manager"},
-  {"role": "Housekeeping Supervisor"},
-  {"role": "RFID Operator"},
-  {"role": "Finance Asset Controller"},
-  {"role": "Auditor"}
- ]
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Hotel Asset Admin"
+  },
+  {
+   "role": "Engineering Manager"
+  },
+  {
+   "role": "Housekeeping Supervisor"
+  },
+  {
+   "role": "RFID Operator"
+  },
+  {
+   "role": "Finance Asset Controller"
+  },
+  {
+   "role": "Auditor"
+  }
+ ],
+ "snapshot_report": 0,
+ "timeout": 0
 }

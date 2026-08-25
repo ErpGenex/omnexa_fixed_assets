@@ -1,16 +1,29 @@
 {
-	"doctype": "Page",
-	"module": "Omnexa Fixed Assets",
-	"name": "fixed-assets-operations-desk",
-	"page_name": "fixed-assets-operations-desk",
-	"standard": "Yes",
-	"title": "Operations Desk",
-	"roles": [
-		{
-			"role": "System Manager"
-		},
-		{
-			"role": "Company Admin"
-		}
-	]
+ "content": null,
+ "creation": "2026-08-23 15:00:00.642864",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-08-25 19:03:28.582695",
+ "modified_by": "Administrator",
+ "module": "Omnexa Fixed Assets",
+ "name": "fixed-assets-operations-desk",
+ "owner": "Administrator",
+ "page_name": "fixed-assets-operations-desk",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Company Admin"
+  },
+  {
+   "role": "Desk User"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Operations Desk"
 }

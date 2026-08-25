@@ -5,6 +5,7 @@ frappe.ui.form.on("Fixed Asset", {
 		frm.trigger("add_core_maintenance_buttons");
 		frm.trigger("bind_overview_media_gallery_hooks");
 		frm.trigger("render_overview_media_gallery");
+		frm.trigger("render_lifecycle_timeline");
 		setTimeout(() => frm.trigger("render_qr_code_image"), 50);
 		setTimeout(() => {
 			frm.trigger("bind_overview_media_gallery_hooks");
@@ -321,6 +322,39 @@ frappe.ui.form.on("Fixed Asset", {
 			);
 			d.show();
 		}
+	},
+	render_lifecycle_timeline(frm) {
+		if (frm.is_new()) return;
+		const field = frm.get_field("hotel_asset_section") || frm.get_field("eam_hierarchy_section");
+		const anchor = field?.$wrapper || frm.layout?.wrapper;
+		if (!anchor || !anchor.length) return;
+		let $box = anchor.closest(".form-layout").find(".omnexa-lifecycle-timeline");
+		if (!$box.length) {
+			$box = $(`<div class="omnexa-lifecycle-timeline form-section"></div>`);
+			anchor.closest(".form-section").after($box);
+		}
+		$box.html(`<div class="section-head">${__("Asset Lifecycle Timeline")}</div><div class="omnexa-lt-body text-muted">${__("Loading…")}</div>`);
+		frappe.call({
+			method: "omnexa_fixed_assets.api.get_asset_lifecycle_timeline",
+			args: { asset: frm.doc.name, limit: 25 },
+			callback(r) {
+				const events = (r.message && r.message.events) || [];
+				if (!events.length) {
+					$box.find(".omnexa-lt-body").html(`<p class="text-muted">${__("No lifecycle events yet.")}</p>`);
+					return;
+				}
+				const rows = events
+					.map(
+						(ev) => `<div class="omnexa-lt-row" style="padding:6px 0;border-bottom:1px solid var(--border-color);">
+							<div><strong>${frappe.utils.escape_html(ev.event_type || "")}</strong>
+							<span class="text-muted pull-right">${frappe.utils.escape_html(ev.date || "")}</span></div>
+							<div>${frappe.utils.escape_html(ev.title || "")}</div>
+						</div>`
+					)
+					.join("");
+				$box.find(".omnexa-lt-body").html(rows);
+			},
+		});
 	},
 });
 

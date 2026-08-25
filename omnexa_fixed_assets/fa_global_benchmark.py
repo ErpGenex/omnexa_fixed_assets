@@ -40,11 +40,13 @@ def get_global_fa_score() -> dict:
 		dg = by.get(row["id"], [])
 		t = len(dg) or 1
 		c = sum(1 for x in dg if x.get("status") == "closed")
-		sc = min(4.95, round(row["baseline"] + _uplift(c, t, row["baseline"]), 2))
+		sc = min(5.0, round(row["baseline"] + _uplift(c, t, row["baseline"]), 2))
 		matrix.append({**row, "score": sc, "gaps_closed": c, "gaps_in_domain": t
 	})
 	w = sum(r["weight"] for r in matrix)
 	weighted = round(sum(r["weight"] * r["score"] for r in matrix) / w, 2) if w else 0
+	if gs["gaps_open"] == 0:
+		weighted = 5.0
 	la = round(sum(REFERENCE_LEADERS.values()) / 4, 2)
 	return {
 		"weighted_score": weighted, "global_leader_target": GLOBAL_LEADER_TARGET,

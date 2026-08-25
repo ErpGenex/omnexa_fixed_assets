@@ -19,6 +19,26 @@ class AssetWorkOrder(Document):
 	def on_submit(self):
 		if self.status in ("Draft", "Planned"):
 			self.status = "Assigned" if self.assigned_to else "Planned"
+		self._sync_to_core_work_order()
+
+	def on_update_after_submit(self):
+		self._sync_to_core_work_order()
 
 	def on_cancel(self):
 		self.status = "Cancelled"
+		self._sync_to_core_work_order()
+
+	def _sync_to_core_work_order(self):
+		if not frappe.db.exists("DocType", "Core Work Order"):
+			return
+		from erpgenex_maintenance_core.utils.work_management import (
+			ensure_core_work_order_for_asset_wo,
+			sync_asset_work_order_to_core,
+		)
+
+		if self.core_work_order or frappe.db.exists(
+			"Core Work Order", {"legacy_asset_work_order": self.name}
+		):
+			sync_asset_work_order_to_core(self.name)
+		elif self.docstatus == 1:
+			ensure_core_work_order_for_asset_wo(self.name, auto_create=True)

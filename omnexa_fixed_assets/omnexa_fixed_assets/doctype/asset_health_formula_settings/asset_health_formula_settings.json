@@ -1,0 +1,35 @@
+{
+	"actions": [],
+	"creation": "2026-08-24 16:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"weight_condition",
+		"weight_reliability",
+		"weight_maintenance",
+		"weight_cost_efficiency",
+		"weight_sensor",
+		"column_break_1",
+		"weight_age",
+		"weight_inspection",
+		"weight_criticality"
+	],
+	"fields": [
+		{"default": "0.35", "fieldname": "weight_condition", "fieldtype": "Float", "label": "Condition Weight"},
+		{"default": "0.25", "fieldname": "weight_reliability", "fieldtype": "Float", "label": "Reliability Weight"},
+		{"default": "0.15", "fieldname": "weight_maintenance", "fieldtype": "Float", "label": "Maintenance Weight"},
+		{"default": "0.10", "fieldname": "weight_cost_efficiency", "fieldtype": "Float", "label": "Cost Efficiency Weight"},
+		{"default": "0.15", "fieldname": "weight_sensor", "fieldtype": "Float", "label": "Sensor Stability Weight"},
+		{"fieldname": "column_break_1", "fieldtype": "Column Break"},
+		{"default": "0", "fieldname": "weight_age", "fieldtype": "Float", "label": "Age Weight"},
+		{"default": "0", "fieldname": "weight_inspection", "fieldtype": "Float", "label": "Inspection Weight"},
+		{"default": "0", "fieldname": "weight_criticality", "fieldtype": "Float", "label": "Criticality Weight"}
+	],
+	"issingle": 1,
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset Health Formula Settings",
+	"permissions": [
+		{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+		{"role": "Accounts Manager", "read": 1, "write": 1, "create": 1}
+	]
+}

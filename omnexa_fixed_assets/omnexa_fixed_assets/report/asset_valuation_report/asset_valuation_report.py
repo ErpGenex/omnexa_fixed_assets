@@ -5,10 +5,11 @@ import frappe
 from frappe import _
 
 from omnexa_core.omnexa_core.utils.report_charts import auto_chart_for_columns
+from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
 
 
 def execute(filters=None):
-	filters = frappe._dict(filters or {})
+	filters = merge_navbar_report_filters(filters)
 	if not filters.get("company"):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 	conditions = ["company = %(company)s"]

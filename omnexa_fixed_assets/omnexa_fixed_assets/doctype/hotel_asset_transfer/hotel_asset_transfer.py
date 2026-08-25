@@ -6,12 +6,21 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import now_datetime
 
+from omnexa_fixed_assets.utils.hotel_field_defaults import (
+	sync_company_branch_from_hotel_property,
+	sync_hotel_fields_from_fixed_asset,
+)
 from omnexa_fixed_assets.utils.hotel_guard import enforce_hotel_feature_enabled
 
 
 class HotelAssetTransfer(Document):
 	def validate(self):
 		enforce_hotel_feature_enabled()
+		sync_hotel_fields_from_fixed_asset(
+			self,
+			property_field="from_hotel_property",
+			room_field="from_hotel_room",
+		)
 		if self.from_hotel_room and self.to_hotel_room and self.from_hotel_room == self.to_hotel_room:
 			frappe.throw(_("From room and To room cannot be the same."), title=_("Validation"))
 

@@ -5,12 +5,14 @@ import frappe
 from frappe import _
 from frappe.model.document import Document
 
+from omnexa_fixed_assets.utils.hotel_field_defaults import sync_hotel_fields_from_fixed_asset
 from omnexa_fixed_assets.utils.hotel_guard import enforce_hotel_feature_enabled
 
 
 class HotelAssetInspection(Document):
 	def validate(self):
 		enforce_hotel_feature_enabled()
+		sync_hotel_fields_from_fixed_asset(self)
 		asset = frappe.db.get_value("Fixed Asset", self.fixed_asset, ["company", "branch"], as_dict=True)
 		if not asset:
 			frappe.throw(_("Fixed Asset does not exist."), title=_("Fixed Asset"))

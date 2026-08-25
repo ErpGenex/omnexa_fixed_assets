@@ -25,7 +25,11 @@ add_to_apps_screen = [
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/omnexa_fixed_assets/css/omnexa_fixed_assets.css"
-app_include_js = "/assets/omnexa_fixed_assets/js/fixed_assets_desk_sidebar.js"
+app_include_js = [
+	"/assets/omnexa_fixed_assets/js/fixed_assets_desk_sidebar.js",
+	"/assets/omnexa_fixed_assets/js/hotel_auto_fields.js",
+	"/assets/omnexa_fixed_assets/js/fa_link_auto_fetch.js",
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/omnexa_fixed_assets/css/omnexa_fixed_assets.css"
@@ -39,7 +43,7 @@ app_include_js = "/assets/omnexa_fixed_assets/js/fixed_assets_desk_sidebar.js"
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
-# page_js = {"page" : "public/js/file.js"}
+# Page scripts live under omnexa_fixed_assets/page/<page_name>/; no page_js hook needed.
 
 # include js in doctype views
 doctype_js = {
@@ -158,7 +162,17 @@ permission_query_conditions = {
 	"Hotel Functional Area": "omnexa_fixed_assets.permissions.hotel_functional_area_query_conditions",
 	"RFID Scan Log": "omnexa_fixed_assets.permissions.rfid_scan_log_query_conditions",
 	"Hotel Asset Inspection": "omnexa_fixed_assets.permissions.hotel_asset_inspection_query_conditions",
-	"Hotel Asset Transfer": "omnexa_fixed_assets.permissions.hotel_asset_transfer_query_conditions"
+	"Hotel Asset Transfer": "omnexa_fixed_assets.permissions.hotel_asset_transfer_query_conditions",
+	"RFID Gateway": "omnexa_fixed_assets.permissions.rfid_gateway_query_conditions",
+	"RFID Reader": "omnexa_fixed_assets.permissions.rfid_reader_query_conditions",
+	"Linen Item": "omnexa_fixed_assets.permissions.linen_item_query_conditions",
+	"Linen Movement": "omnexa_fixed_assets.permissions.linen_movement_query_conditions",
+	"Linen Laundry Cycle": "omnexa_fixed_assets.permissions.linen_laundry_cycle_query_conditions",
+	"Linen Issue Batch": "omnexa_fixed_assets.permissions.linen_issue_batch_query_conditions",
+	"Linen Shortage Alert": "omnexa_fixed_assets.permissions.linen_shortage_alert_query_conditions",
+	"Hospitality Audit Event": "omnexa_fixed_assets.permissions.hospitality_audit_event_query_conditions",
+	"Hotel Floor Plan": "omnexa_fixed_assets.permissions.hotel_floor_plan_query_conditions",
+	"Asset Lifecycle Wizard Session": "omnexa_fixed_assets.permissions.asset_lifecycle_wizard_session_query_conditions",
 	}
 
 # has_permission = {
@@ -312,16 +326,64 @@ doc_events = {
 		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
 		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
 	},
+	"RFID Gateway": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"RFID Reader": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Linen Item": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Linen Movement": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Linen Laundry Cycle": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Linen Issue Batch": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Linen Shortage Alert": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Hospitality Audit Event": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Hotel Floor Plan": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
+	"Asset Lifecycle Wizard Session": {
+		"before_validate": "omnexa_fixed_assets.permissions.populate_company_branch_from_user_context",
+		"validate": "omnexa_fixed_assets.permissions.enforce_branch_access_for_doc"
+	},
 	"Company": {
 		"after_insert": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical",
-		"on_update": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical"}
-	}
+		"on_update": "omnexa_fixed_assets.install.company_on_save_sync_hotel_vertical",
+	},
+}
+
+from omnexa_fixed_assets.utils.fa_doc_autofill import patch_doc_events
+
+patch_doc_events(doc_events)
 
 # Scheduled Tasks
 # ---------------
 
 scheduler_events = {
-	"hourly": ["omnexa_fixed_assets.tasks.run_hourly_condition_monitoring_jobs"],
+	"hourly": [
+		"omnexa_fixed_assets.tasks.run_hourly_condition_monitoring_jobs",
+		"omnexa_fixed_assets.tasks.run_hourly_rfid_monitor_jobs",
+	],
 	"daily": [
 		"omnexa_fixed_assets.tasks.run_daily_reliability_jobs",
 		"omnexa_fixed_assets.tasks.run_daily_hotel_asset_jobs",
@@ -332,7 +394,7 @@ scheduler_events = {
 # Testing
 # -------
 
-# before_tests = "omnexa_fixed_assets.install.before_tests"
+before_tests = "omnexa_fixed_assets.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
@@ -410,4 +472,31 @@ override_doctype_dashboards = {
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
+
+fixtures = [
+	{
+		"dt": "Page",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"fa-hotel-assets-dashboard",
+					"fa-executive-dashboard",
+					"fa-asset-scan-pwa",
+					"fa-live-asset-tracking",
+					"fa-linen-dashboard",
+					"fa-hospitality-command-center",
+					"fa-global-hospitality-portfolio",
+					"fa-asset-wizards",
+					"fixed-assets-workcenter",
+					"fixed-assets-analytics-dashboard",
+					"fixed-assets-operations-desk",
+					"fixed-assets-finance-desk",
+					"fixed-assets-customer-portal",
+				],
+			]
+		],
+	},
+]
 

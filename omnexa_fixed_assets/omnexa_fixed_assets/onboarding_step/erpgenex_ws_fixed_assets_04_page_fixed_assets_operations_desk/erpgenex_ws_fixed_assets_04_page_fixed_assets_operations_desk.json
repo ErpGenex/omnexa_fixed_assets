@@ -1,0 +1,21 @@
+{
+ "action": "Go to Page",
+ "action_label": "Open",
+ "creation": "2026-08-24 00:14:08.668352",
+ "description": "Jump to the **Operations Desk** page.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-08-25 18:02:38.886585",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-fixed_assets-04-page-fixed_assets_operations_desk",
+ "owner": "Administrator",
+ "path": "fixed-assets-operations-desk",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Open Operations Desk",
+ "validate_action": 1
+}

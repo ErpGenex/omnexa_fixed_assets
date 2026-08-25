@@ -9,6 +9,46 @@ from omnexa_fixed_assets.utils.feature_flags import (
 	site_has_any_hotel_assets_company,
 )
 
+# Desk Page roles — must include All + Company Admin so ERP users are not blocked.
+HOSPITALITY_DESK_PAGE_ROLES = (
+	"System Manager",
+	"All",
+	"Desk User",
+	"Company Admin",
+	"Accounts Manager",
+	"Accounts User",
+	"Hotel Asset Admin",
+	"Hotel General Manager",
+	"Hotel Branch Manager",
+	"Engineering Manager",
+	"Housekeeping Supervisor",
+	"Hotel Housekeeping",
+	"Hotel Front Desk",
+	"Finance Asset Controller",
+	"RFID Operator",
+	"Auditor",
+)
+
+HOSPITALITY_DESK_PAGES = (
+	"fa-hotel-assets-dashboard",
+	"fa-live-asset-tracking",
+	"fa-linen-dashboard",
+	"fa-hospitality-command-center",
+	"fa-global-hospitality-portfolio",
+	"fa-asset-wizards",
+	"fa-executive-dashboard",
+	"fa-asset-scan-pwa",
+)
+
+FIXED_ASSETS_DESK_PAGES = (
+	"fixed-assets-workcenter",
+	"fixed-assets-executive-dashboard",
+	"fixed-assets-analytics-dashboard",
+	"fixed-assets-operations-desk",
+	"fixed-assets-finance-desk",
+	"fixed-assets-customer-portal",
+)
+
 SUPPORTED_FRAPPE_MAJOR = 15
 
 
@@ -41,9 +81,54 @@ def enforce_supported_frappe_version():
 		)
 
 
+def ensure_fixed_assets_workspace():
+	"""Sync Fixed Assets workspace so /app/fixed-assets resolves on desk."""
+	if getattr(frappe.flags, "in_test", False):
+		return
+	import os
+
+	from frappe.modules.import_file import import_file_by_path
+
+	json_path = os.path.join(
+		frappe.get_app_path("omnexa_fixed_assets"),
+		"omnexa_fixed_assets",
+		"workspace",
+		"fixed_assets",
+		"fixed_assets.json",
+	)
+	if os.path.exists(json_path):
+		import_file_by_path(json_path, force=True, ignore_version=True)
+
+	target_name = "Fixed Assets"
+	if not frappe.db.exists("Workspace", target_name) and frappe.db.exists("Workspace", "Fixed assets"):
+		try:
+			frappe.rename_doc("Workspace", "Fixed assets", target_name, force=True, ignore_permissions=True)
+		except Exception:
+			frappe.log_error(frappe.get_traceback(), "Omnexa: rename Fixed assets workspace")
+
+	if frappe.db.exists("Workspace", target_name):
+		frappe.db.set_value(
+			"Workspace",
+			target_name,
+			{"public": 1, "is_hidden": 0, "title": "Fixed assets"},
+			update_modified=False,
+		)
+	frappe.clear_cache(doctype="Workspace")
+
+
 def after_migrate():
 	"""Additive enterprise EAM extensions; safe on existing sites."""
+	try:
+		from omnexa_fixed_assets.utils.navbar_scope import ensure_fixed_assets_navbar_scope_fields
+
+		ensure_fixed_assets_navbar_scope_fields()
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "Omnexa FA: navbar scope fields")
 	ensure_enterprise_eam_custom_fields()
+	ensure_fixed_assets_workspace()
+	ensure_hotel_assets_dashboard_page()
+	ensure_tracking_pages()
+	ensure_rfid_offline_custom_fields()
 	refresh_hotel_vertical_from_company_activity()
 	from omnexa_fixed_assets.workspace_analytics import ensure_fixed_assets_workspace_analytics
 
@@ -216,6 +301,8 @@ def ensure_hotel_asset_management_custom_fields():
 				"fieldname": "hotel_zone",
 				"label": "Hotel Zone",
 				"fieldtype": "Data",
+				"fetch_from": "hotel_room.wing",
+				"fetch_if_empty": 1,
 				"insert_after": hotel_zone_insert_after
 	},
 			{
@@ -339,85 +426,265 @@ def ensure_hotel_asset_management_custom_fields():
 				"label": "Hotel Functional Area",
 				"fieldtype": "Link",
 				"options": "Hotel Functional Area",
+				"fetch_from": "hotel_room.hotel_functional_area",
+				"fetch_if_empty": 1,
 				"insert_after": "hotel_room"
 	},
 		)
 	create_custom_fields(custom_fields, update=True)
 
 
+def ensure_rfid_offline_custom_fields():
+	"""Offline sync metadata on RFID Scan Log (additive)."""
+	create_custom_fields(
+		{
+			"RFID Scan Log": [
+				{
+					"fieldname": "external_event_id",
+					"label": "External Event ID",
+					"fieldtype": "Data",
+					"insert_after": "notes",
+					"read_only": 1,
+					"unique": 1,
+				},
+				{
+					"fieldname": "sequence_number",
+					"label": "Sequence Number",
+					"fieldtype": "Int",
+					"insert_after": "external_event_id",
+					"read_only": 1,
+				},
+			]
+		},
+		update=True,
+	)
+
+
+def _sync_page_roles(page_name: str, roles: tuple[str, ...]) -> None:
+	if not frappe.db.exists("Page", page_name):
+		return
+	page = frappe.get_doc("Page", page_name)
+	page.roles = []
+	for role in roles:
+		if frappe.db.exists("Role", role):
+			page.append("roles", {"role": role})
+	page.save(ignore_permissions=True)
+
+
+def ensure_hospitality_desk_page_roles():
+	"""Align hospitality desk pages with the same role set (prevents Not permitted)."""
+	for page_name in HOSPITALITY_DESK_PAGES:
+		try:
+			_sync_page_roles(page_name, HOSPITALITY_DESK_PAGE_ROLES)
+		except Exception:
+			frappe.log_error(frappe.get_traceback(), f"Omnexa: page roles {page_name}")
+
+
+def ensure_fixed_assets_desk_page_roles():
+	roles = HOSPITALITY_DESK_PAGE_ROLES
+	for page_name in FIXED_ASSETS_DESK_PAGES:
+		try:
+			_sync_page_roles(page_name, roles)
+		except Exception:
+			frappe.log_error(frappe.get_traceback(), f"Omnexa: FA desk page roles {page_name}")
+
+
+def ensure_tracking_pages():
+	"""Import live map and linen dashboard pages."""
+	import os
+
+	from frappe.modules.import_file import import_file_by_path
+
+	base = os.path.join(frappe.get_app_path("omnexa_fixed_assets"), "omnexa_fixed_assets", "page")
+	for page_dir in (
+		"fa_live_asset_tracking",
+		"fa_linen_dashboard",
+		"fa_hospitality_command_center",
+		"fa_global_hospitality_portfolio",
+		"fa_asset_wizards",
+	):
+		json_path = os.path.join(base, page_dir, f"{page_dir}.json")
+		if os.path.exists(json_path):
+			import_file_by_path(json_path, force=True, ignore_version=True)
+	ensure_hospitality_desk_page_roles()
+	ensure_fixed_assets_desk_page_roles()
+
+
+def ensure_hotel_assets_dashboard_page():
+	"""Import/sync the hotel assets desk page (idempotent)."""
+	import os
+
+	from frappe.modules.import_file import import_file_by_path
+
+	json_path = os.path.join(
+		frappe.get_app_path("omnexa_fixed_assets"),
+		"omnexa_fixed_assets",
+		"page",
+		"fa_hotel_assets_dashboard",
+		"fa_hotel_assets_dashboard.json",
+	)
+	if os.path.exists(json_path):
+		import_file_by_path(json_path, force=True, ignore_version=True)
+	_sync_page_roles("fa-hotel-assets-dashboard", HOSPITALITY_DESK_PAGE_ROLES)
+
+
+def ensure_fixed_assets_workspace_menus():
+	"""Rebuild Fixed Assets sidebar + home content from the full workspace catalog."""
+	from omnexa_fixed_assets.workspace.fa_workspace import sync_fa_workspace_menu
+
+	try:
+		sync_fa_workspace_menu(save=True, rebuild=True)
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "Omnexa: ensure_fixed_assets_workspace_menus")
+	if site_has_any_hotel_assets_company():
+		ensure_hotel_workspace_links()
+
+
 def ensure_hotel_workspace_links():
-	"""Append hotel-only links to Fixed Assets workspace when feature is enabled."""
+	"""Append any hotel DocType/report links missing after workspace sync (no empty card breaks)."""
 	if not site_has_any_hotel_assets_company():
 		return
 	if not frappe.db.exists("Workspace", "Fixed Assets"):
 		return
 
+	from omnexa_fixed_assets.workspace.fa_workspace import HOTEL_WORKSPACE_SECTIONS
+
 	ws = frappe.get_doc("Workspace", "Fixed Assets")
 	existing = {(row.get("link_type"), row.get("link_to")) for row in (ws.links or []) if row.get("type") == "Link"}
-	existing_cards = {row.get("label") for row in (ws.links or []) if row.get("type") == "Card Break"}
+	changed = False
 
-	def add_card(label: str):
-		if label in existing_cards:
-			return
-		existing_cards.add(label)
+	def _target_exists(link_type: str, link_to: str) -> bool:
+		if link_type == "DocType":
+			return bool(frappe.db.exists("DocType", link_to))
+		if link_type == "Report":
+			return bool(frappe.db.exists("Report", link_to))
+		if link_type == "Page":
+			return bool(frappe.db.exists("Page", link_to))
+		return False
+
+	for card_label, items in HOTEL_WORKSPACE_SECTIONS:
+		missing = []
+		for link_type, link_to, label in items:
+			if not _target_exists(link_type, link_to):
+				continue
+			if (link_type, link_to) in existing:
+				continue
+			missing.append((link_type, link_to, label))
+		if not missing:
+			continue
 		ws.append(
 			"links",
-			{"type": "Card Break", "label": label, "hidden": 0, "onboard": 0, "link_count": 0
-	},
+			{"type": "Card Break", "label": card_label, "hidden": 0, "onboard": 0, "link_count": 0},
 		)
+		for link_type, link_to, label in missing:
+			ws.append(
+				"links",
+				{
+					"type": "Link",
+					"label": label,
+					"link_type": link_type,
+					"link_to": link_to,
+					"is_query_report": 1 if link_type == "Report" else 0,
+					"hidden": 0,
+					"onboard": 0,
+					"link_count": 0,
+				},
+			)
+			existing.add((link_type, link_to))
+			changed = True
 
-	def add_link(label: str, link_type: str, link_to: str, is_query_report: int = 0):
-		key = (link_type, link_to)
-		if key in existing:
-			return
-		existing.add(key)
+	if changed:
+		try:
+			ws.save(ignore_permissions=True)
+		except Exception:
+			frappe.log_error(frappe.get_traceback(), "Omnexa: ensure_hotel_workspace_links")
+
+
+HOTEL_DASHBOARD_SHORTCUT_LABEL = "Hotel Assets Dashboard"
+HOTEL_DASHBOARD_PAGE = "fa-hotel-assets-dashboard"
+
+
+def _ensure_hotel_dashboard_workspace_shortcut(ws) -> bool:
+	"""Prominent dashboard tile on Fixed Assets workspace home (Dashboards section)."""
+	import json
+
+	changed = False
+	shortcut_labels = {row.label for row in (ws.shortcuts or []) if row.label}
+	if HOTEL_DASHBOARD_SHORTCUT_LABEL not in shortcut_labels:
 		ws.append(
-			"links",
+			"shortcuts",
 			{
-				"type": "Link",
-				"label": label,
-				"link_type": link_type,
-				"link_to": link_to,
-				"is_query_report": is_query_report,
-				"hidden": 0,
-				"onboard": 0,
-				"link_count": 0
-	},
+				"label": HOTEL_DASHBOARD_SHORTCUT_LABEL,
+				"type": "Page",
+				"link_to": HOTEL_DASHBOARD_PAGE,
+				"icon": "hotel",
+				"color": "Orange",
+				"doc_view": "",
+			},
 		)
+		changed = True
 
-	add_card("Hotel Asset Management")
-	add_card("Hotel Setup")
-	add_link("Hotel Property", "DocType", "Hotel Property")
-	add_link("Hotel Functional Area", "DocType", "Hotel Functional Area")
-	add_link("Hotel Room", "DocType", "Hotel Room")
-	add_card("Hotel Operations")
-	add_link("RFID Scan Log", "DocType", "RFID Scan Log")
-	add_link("Hotel Asset Inspection", "DocType", "Hotel Asset Inspection")
-	add_link("Hotel Asset Transfer", "DocType", "Hotel Asset Transfer")
-	add_card("Hotel Maintenance & Quality")
-	add_link("Asset Work Order", "DocType", "Asset Work Order")
-	add_link("Fixed Asset Maintenance", "DocType", "Fixed Asset Maintenance")
-	add_link("Asset Failure Event", "DocType", "Asset Failure Event")
-	add_link("Fixed Asset Inspection", "DocType", "Fixed Asset Inspection")
-	add_link("Asset Alert", "DocType", "Asset Alert")
-	add_card("Hotel Finance & Forecasting")
-	add_link("Asset Valuation Report", "Report", "Asset Valuation Report", is_query_report=1)
-	add_link("Replacement Forecast Report", "Report", "Replacement Forecast Report", is_query_report=1)
-	add_link("Inspection Compliance Report", "Report", "Inspection Compliance Report", is_query_report=1)
-	add_link("Fixed Asset NBV by Category", "Report", "Fixed Asset NBV by Category", is_query_report=1)
-	add_link("Asset Health Report", "Report", "Asset Health Report", is_query_report=1)
-	add_card("Hotel Reports")
-	add_link("Assets by Room", "Report", "Assets by Room", is_query_report=1)
-	add_link("Hotel Assets by Floor", "Report", "Hotel Assets by Floor", is_query_report=1)
-	add_link("Hotel Operational Asset Status", "Report", "Hotel Operational Asset Status", is_query_report=1)
-	add_link("Hotel Inspection Summary", "Report", "Hotel Inspection Summary", is_query_report=1)
-	add_link("Missing Assets", "Report", "Missing Assets", is_query_report=1)
-	add_link("Last Seen Assets", "Report", "Last Seen Assets", is_query_report=1)
-	add_link("Unscanned Assets", "Report", "Unscanned Assets", is_query_report=1)
-	add_link("Hotel Movement History", "Report", "Hotel Movement History", is_query_report=1)
-	add_link("Hotel Asset Depreciation", "Report", "Hotel Asset Depreciation", is_query_report=1)
-	add_link("Warranty Expiring", "Report", "Warranty Expiring Assets", is_query_report=1)
-	ws.save(ignore_permissions=True)
+	# Sidebar link under 📊 Dashboards (with icon), not only at bottom of workspace.
+	if ("Page", HOTEL_DASHBOARD_PAGE) not in {
+		(row.link_type, row.link_to) for row in (ws.links or []) if row.type == "Link"
+	}:
+		insert_at = None
+		for idx, row in enumerate(ws.links or []):
+			if row.type == "Link" and row.link_to == "fa-asset-scan-pwa":
+				insert_at = idx + 1
+				break
+		link_row = {
+			"type": "Link",
+			"label": HOTEL_DASHBOARD_SHORTCUT_LABEL,
+			"link_type": "Page",
+			"link_to": HOTEL_DASHBOARD_PAGE,
+			"icon": "hotel",
+			"hidden": 0,
+			"is_query_report": 0,
+			"onboard": 0,
+			"link_count": 0,
+		}
+		ws.append("links", link_row)
+		changed = True
+	else:
+		for row in ws.links or []:
+			if row.type == "Link" and row.link_to == HOTEL_DASHBOARD_PAGE and not row.icon:
+				row.icon = "hotel"
+				changed = True
+
+	try:
+		blocks = json.loads(ws.content or "[]")
+	except json.JSONDecodeError:
+		blocks = []
+
+	content_labels = {
+		(block.get("data") or {}).get("shortcut_name")
+		for block in blocks
+		if block.get("type") == "shortcut" and (block.get("data") or {}).get("shortcut_name")
+	}
+	if HOTEL_DASHBOARD_SHORTCUT_LABEL not in content_labels:
+		hotel_block = {
+			"id": "fa-lnk-hotel-dashboard",
+			"type": "shortcut",
+			"data": {"shortcut_name": HOTEL_DASHBOARD_SHORTCUT_LABEL, "col": 4},
+		}
+		new_blocks = []
+		inserted = False
+		for block in blocks:
+			new_blocks.append(block)
+			if (
+				not inserted
+				and block.get("type") == "shortcut"
+				and (block.get("data") or {}).get("shortcut_name") == "Asset Scan PWA"
+			):
+				new_blocks.append(hotel_block)
+				inserted = True
+		if not inserted:
+			new_blocks = [hotel_block] + blocks
+		ws.content = json.dumps(new_blocks)
+		changed = True
+
+	return changed
 
 
 def ensure_hotel_roles():
@@ -523,7 +790,26 @@ def ensure_hotel_report_roles():
 			"Housekeeping Supervisor",
 			"Finance Asset Controller",
 			"Auditor",
-		]}
+		],
+		"Hotel Asset Register": [
+			"System Manager",
+			"Hotel Asset Admin",
+			"Finance Asset Controller",
+			"Auditor",
+		],
+		"Hotel NBV by Property": [
+			"System Manager",
+			"Hotel Asset Admin",
+			"Finance Asset Controller",
+			"Auditor",
+		],
+		"Hotel IAS 16 Disclosure Schedule": [
+			"System Manager",
+			"Hotel Asset Admin",
+			"Finance Asset Controller",
+			"Auditor",
+		],
+	}
 	for report_name, roles in report_roles.items():
 		if not frappe.db.exists("Report", report_name):
 			continue
@@ -536,18 +822,88 @@ def ensure_hotel_report_roles():
 		doc.save(ignore_permissions=True)
 
 
+def ensure_new_hotel_finance_reports():
+	"""Import hotel IAS / valuation reports (idempotent)."""
+	import os
+
+	from frappe.modules.import_file import import_file_by_path
+
+	base = os.path.join(frappe.get_app_path("omnexa_fixed_assets"), "omnexa_fixed_assets", "report")
+	for folder in (
+		"hotel_asset_register",
+		"hotel_nbv_by_property",
+		"hotel_ias_16_disclosure_schedule",
+	):
+		json_path = os.path.join(base, folder, f"{folder}.json")
+		if os.path.exists(json_path):
+			import_file_by_path(json_path, force=True, ignore_version=True)
+
+
+def _disable_phantom_reports():
+	"""Disable Script Report rows that have no Python implementation."""
+	import os
+
+	phantom = (
+		"Claim Settlement Analysis",
+		"Policy Renewal Forecast",
+		"Insurance Cost Analysis",
+		"Risk Exposure Report",
+	)
+	for name in phantom:
+		if not frappe.db.exists("Report", name):
+			continue
+		scrub = frappe.scrub(name)
+		py_path = os.path.join(
+			frappe.get_app_path("omnexa_fixed_assets"),
+			"omnexa_fixed_assets",
+			"report",
+			scrub,
+			f"{scrub}.py",
+		)
+		if not os.path.exists(py_path):
+			frappe.db.set_value("Report", name, "disabled", 1, update_modified=False)
+
+
+def _remove_phantom_workspace_report_links():
+	"""Drop workspace links to reports that were never implemented."""
+	ws_name = "Fixed assets"
+	if not frappe.db.exists("Workspace", ws_name):
+		return
+	phantom = {
+		"Claim Settlement Analysis",
+		"Policy Renewal Forecast",
+		"Insurance Cost Analysis",
+		"Risk Exposure Report",
+	}
+	ws = frappe.get_doc("Workspace", ws_name)
+	changed = False
+	for row in list(ws.links or []):
+		if row.link_type == "Report" and row.link_to in phantom and not frappe.db.exists("Report", row.link_to):
+			ws.links.remove(row)
+			changed = True
+	if changed:
+		ws.save(ignore_permissions=True)
+
+
 def refresh_hotel_vertical_from_company_activity():
 	"""Hotel DocType fields, roles, report visibility, and Fixed Assets workspace links."""
+	ensure_fixed_assets_workspace()
+	ensure_fixed_assets_workspace_menus()
+	ensure_hotel_assets_dashboard_page()
+	ensure_new_hotel_finance_reports()
+	_disable_phantom_reports()
+	_remove_phantom_workspace_report_links()
 	if not site_has_any_hotel_assets_company():
 		return
 	ensure_hotel_asset_management_custom_fields()
 	ensure_hotel_roles()
 	ensure_hotel_report_roles()
-	ensure_hotel_workspace_links()
 
 
 def company_on_save_sync_hotel_vertical(doc, method=None):
 	"""After Company activity includes Hotel Assets, expose hotel shortcuts on `/app/fixed-assets`."""
+	if getattr(frappe.flags, "in_test", False):
+		return
 	tracked = ("business_activity", "industry_sector", "production_demo_activity")
 	if method == "after_insert":
 		if not any((doc.get(f) or "").strip() == HOTEL_ASSETS_ACTIVITY_OPTION for f in tracked):
@@ -558,3 +914,9 @@ def company_on_save_sync_hotel_vertical(doc, method=None):
 	else:
 		return
 	refresh_hotel_vertical_from_company_activity()
+
+
+def before_tests():
+	from omnexa_core.omnexa_core.test_data import suppress_workflow_action_emails
+
+	suppress_workflow_action_emails()

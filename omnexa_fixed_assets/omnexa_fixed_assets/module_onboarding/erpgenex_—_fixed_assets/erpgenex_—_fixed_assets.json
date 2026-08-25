@@ -13,29 +13,29 @@
  "documentation_url": "https://frappe.io/framework",
  "idx": 0,
  "is_complete": 0,
- "modified": "2026-07-27 22:05:02.055773",
+ "modified": "2026-08-25 18:02:38.908463",
  "modified_by": "Administrator",
  "module": "Omnexa Fixed Assets",
  "name": "ERPGENEX \u2014 Fixed Assets",
  "owner": "Administrator",
  "steps": [
   {
-   "step": "ERPGENEX-WS-fixed_assets-01-page-fa_executive_dashboard"
+   "step": "ERPGENEX-WS-fixed_assets-01-page-fixed_assets_workcenter"
   },
   {
-   "step": "ERPGENEX-WS-fixed_assets-02-page-fa_asset_scan_pwa"
+   "step": "ERPGENEX-WS-fixed_assets-02-page-fa_executive_dashboard"
   },
   {
-   "step": "ERPGENEX-WS-fixed_assets-03-fixed_asset_category"
+   "step": "ERPGENEX-WS-fixed_assets-03-page-fixed_assets_analytics_dashboard"
   },
   {
-   "step": "ERPGENEX-WS-fixed_assets-04-fixed_asset"
+   "step": "ERPGENEX-WS-fixed_assets-04-page-fixed_assets_operations_desk"
   },
   {
    "step": "ERPGENEX-WS-fixed_assets-home"
   }
  ],
  "subtitle": "Guided setup for this workspace.",
- "success_message": "You are ready to work in Fixed Assets.",
- "title": "Fixed Assets"
+ "success_message": "You are ready to work in Fixed assets.",
+ "title": "Fixed assets"
 }

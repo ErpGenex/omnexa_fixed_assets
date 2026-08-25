@@ -8,11 +8,12 @@ from omnexa_core.omnexa_core.utils.report_charts import auto_chart_for_columns
 from frappe.utils import cint, getdate, today
 
 from omnexa_fixed_assets.utils.hotel_guard import enforce_hotel_feature_enabled
+from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
 
 
 def execute(filters=None):
 	enforce_hotel_feature_enabled()
-	filters = frappe._dict(filters or {})
+	filters = merge_navbar_report_filters(filters)
 	if not filters.get("company"):
 		frappe.throw(_("Company is required."), title=_("Filters"))
 
@@ -49,7 +50,7 @@ def execute(filters=None):
 		WHERE {' AND '.join(where)}
 		GROUP BY fa.name, fa.asset_name, fa.hotel_property, fa.hotel_room, fa.rfid_tag
 		HAVING {having_sql}
-		ORDER BY last_scan_time IS NULL DESC, days_since_scan DESC, fa.hotel_property, fa.hotel_room, fa.asset_name
+		ORDER BY MAX(r.scan_time) IS NULL DESC, days_since_scan DESC, fa.hotel_property, fa.hotel_room, fa.asset_name
 		""",
 		params,
 		as_dict=True,

@@ -16,6 +16,9 @@ from omnexa_core.omnexa_core.report_print.report_query_filters import (
 
 
 def execute(filters=None):
+	from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
+
+	filters = merge_navbar_report_filters(filters)
 	columns = [
 		{"label": _("Depreciation Entry"), "fieldname": "name", "fieldtype": "Link", "options": "Fixed Asset Depreciation Entry", "width": 170
 	},
@@ -45,9 +48,8 @@ def execute(filters=None):
 			d.journal_entry,
 			d.company,
 			d.branch
-		FROM `tabFixed Asset Depreciation Entry`
-		WHERE {' AND '.join(conditions)}
-		GROUP BY 1
+		FROM `tabFixed Asset Depreciation Entry` d
+		WHERE {" AND ".join(conditions)}
 		ORDER BY d.posting_date, d.name
 		""",
 		params,

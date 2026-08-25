@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "creation": "2026-08-23 14:00:00",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company"},
+  {"fieldname": "branch", "fieldtype": "Link", "label": "Branch", "options": "Branch"}
+ ],
+ "is_standard": "Yes",
+ "module": "Omnexa Fixed Assets",
+ "name": "Missing Linen",
+ "ref_doctype": "Linen Item",
+ "report_name": "Missing Linen",
+ "report_type": "Script Report",
+ "roles": [
+  {"role": "System Manager"},
+  {"role": "Hotel Asset Admin"},
+  {"role": "Housekeeping Supervisor"},
+  {"role": "Auditor"}
+ ]
+}

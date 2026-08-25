@@ -32,3 +32,10 @@ def after_migrate() -> None:
 		ensure_asset_insurance_on_fixed_assets_workspace()
 	except Exception:
 		frappe.log_error(frappe.get_traceback(), "omnexa_fixed_assets: asset insurance sidebar")
+
+	try:
+		from omnexa_fixed_assets.install import ensure_fixed_assets_workspace_menus
+
+		ensure_fixed_assets_workspace_menus()
+	except Exception:
+		frappe.log_error(frappe.get_traceback(), "omnexa_fixed_assets: workspace menus sync")

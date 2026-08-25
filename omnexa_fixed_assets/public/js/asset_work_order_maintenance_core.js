@@ -3,33 +3,39 @@ frappe.ui.form.on("Asset Work Order", {
 		if (frm.is_new()) return;
 		if (!frappe.boot?.versions?.["erpgenex_maintenance_core"]) return;
 
+		const open_core = (name) => frappe.set_route("Form", "Core Work Order", name);
+
+		if (frm.doc.core_work_order) {
+			frm.add_custom_button(
+				__("Open Core Work Order"),
+				() => open_core(frm.doc.core_work_order),
+				__("Maintenance Core")
+			);
+			return;
+		}
+
 		frm.add_custom_button(
-			__("Core Work Order"),
+			__("Create / Link Core Work Order"),
 			() => {
-				frappe.route_options = {
-					company: frm.doc.company,
-					branch: frm.doc.branch,
-					subject_doctype: "Fixed Asset",
-					subject_name: frm.doc.asset,
-					work_order_type: map_legacy_wo_type(frm.doc.work_order_type),
-					priority: frm.doc.priority || "Medium",
-					description: (frm.doc.description || "").slice(0, 280),
-					service_request: "",
-				};
-				frappe.new_doc("Core Work Order");
+				frappe.call({
+					method: "erpgenex_maintenance_core.utils.work_management.ensure_core_work_order_for_asset_wo_api",
+					args: { asset_work_order: frm.doc.name },
+					freeze: true,
+					callback(r) {
+						if (r.message?.ok && r.message.core_work_order) {
+							frappe.show_alert({
+								message: r.message.created
+									? __("Core Work Order created")
+									: __("Linked to existing Core Work Order"),
+								indicator: "green",
+							});
+							frm.reload_doc();
+							open_core(r.message.core_work_order);
+						}
+					},
+				});
 			},
 			__("Maintenance Core")
 		);
 	},
 });
-
-function map_legacy_wo_type(t) {
-	const m = {
-		Corrective: "Corrective",
-		Preventive: "Preventive",
-		Predictive: "Predictive",
-		"Inspection-Triggered": "Inspection",
-		Emergency: "Emergency",
-	};
-	return m[t] || "Corrective";
-}

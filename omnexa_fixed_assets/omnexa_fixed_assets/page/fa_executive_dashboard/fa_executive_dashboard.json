@@ -1,16 +1,68 @@
 {
-	"doctype": "Page",
-	"module": "Omnexa Fixed Assets",
-	"name": "fa-executive-dashboard",
-	"page_name": "fa-executive-dashboard",
-	"standard": "Yes",
-	"title": "Executive Dashboard",
-	"roles": [
-		{
-			"role": "System Manager"
-		},
-		{
-			"role": "All"
-		}
-	]
+ "content": null,
+ "creation": "2026-08-23 15:00:00.170274",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-08-25 18:08:52.444096",
+ "modified_by": "Administrator",
+ "module": "Omnexa Fixed Assets",
+ "name": "fa-executive-dashboard",
+ "owner": "Administrator",
+ "page_name": "fa-executive-dashboard",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "All"
+  },
+  {
+   "role": "Desk User"
+  },
+  {
+   "role": "Company Admin"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Hotel Asset Admin"
+  },
+  {
+   "role": "Hotel General Manager"
+  },
+  {
+   "role": "Hotel Branch Manager"
+  },
+  {
+   "role": "Engineering Manager"
+  },
+  {
+   "role": "Housekeeping Supervisor"
+  },
+  {
+   "role": "Hotel Housekeeping"
+  },
+  {
+   "role": "Hotel Front Desk"
+  },
+  {
+   "role": "Finance Asset Controller"
+  },
+  {
+   "role": "RFID Operator"
+  },
+  {
+   "role": "Auditor"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Executive Dashboard"
 }

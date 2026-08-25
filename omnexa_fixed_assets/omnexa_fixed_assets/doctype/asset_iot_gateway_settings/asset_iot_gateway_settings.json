@@ -1,0 +1,25 @@
+{
+	"actions": [],
+	"creation": "2026-08-24 16:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": ["api_key", "notes"],
+	"fields": [
+		{
+			"fieldname": "api_key",
+			"fieldtype": "Password",
+			"label": "Gateway API Key"
+		},
+		{
+			"fieldname": "notes",
+			"fieldtype": "Small Text",
+			"label": "Notes"
+		}
+	],
+	"issingle": 1,
+	"module": "Omnexa Fixed Assets",
+	"name": "Asset IoT Gateway Settings",
+	"permissions": [
+		{"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1}
+	]
+}

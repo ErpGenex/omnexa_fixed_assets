@@ -13,6 +13,8 @@ class TestFixedAssetCapitalization(FrappeTestCase):
 		sfx = frappe.generate_hash(length=4)
 		self.company = self._create_company(f"FA{sfx.upper()}")
 		self.branch = self._create_branch(self.company, f"B{sfx[:3]}", f"Branch {sfx}")
+		frappe.defaults.set_user_default("Company", self.company)
+		frappe.defaults.set_user_default("Branch", self.branch)
 		self._gl_asset = self._gl(f"FA{sfx}1", f"FA Asset {sfx}", company=self.company)
 		self._gl_accum = self._gl(f"FA{sfx}2", f"FA Accum {sfx}", company=self.company)
 		self._gl_exp = self._gl(f"FA{sfx}3", f"FA Exp {sfx}", company=self.company)

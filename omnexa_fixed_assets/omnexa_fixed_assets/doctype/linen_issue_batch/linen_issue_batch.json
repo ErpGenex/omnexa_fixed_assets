@@ -1,0 +1,53 @@
+{
+	"actions": [],
+	"autoname": "naming_series:",
+	"creation": "2026-08-23 14:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"tab_break_overview",
+		"naming_series",
+		"company",
+		"branch",
+		"posting_date",
+		"hotel_property",
+		"linen_type",
+		"department",
+		"tab_break_quantities",
+		"issued_quantity",
+		"returned_quantity",
+		"missing_quantity",
+		"status",
+		"notes"
+	],
+	"fields": [
+		{"fieldname": "tab_break_overview", "fieldtype": "Tab Break", "label": "Overview"},
+		{"fieldname": "tab_break_quantities", "fieldtype": "Tab Break", "label": "Quantities"},
+		{"default": "LIB-.#####", "fieldname": "naming_series", "fieldtype": "Select", "label": "Series", "options": "LIB-.#####", "reqd": 1},
+		{"fieldname": "company", "fieldtype": "Link", "in_list_view": 1, "label": "Company", "options": "Company", "reqd": 1},
+		{"fieldname": "branch", "fieldtype": "Link", "in_list_view": 1, "label": "Branch", "options": "Branch", "reqd": 1},
+		{"default": "Today", "fieldname": "posting_date", "fieldtype": "Date", "in_list_view": 1, "label": "Posting Date", "reqd": 1},
+		{"fieldname": "hotel_property", "fieldtype": "Link", "label": "Hotel Property", "options": "Hotel Property"},
+		{"fieldname": "linen_type", "fieldtype": "Select", "in_list_view": 1, "label": "Linen Type", "options": "\nBath Towel\nHand Towel\nFace Towel\nBath Mat\nBedsheet\nPillowcase\nDuvet\nBlanket\nMattress Protector\nStaff Uniform\nTable Linen\nKitchen Linen\nPool Towel\nSpa Linen", "reqd": 1},
+		{"fieldname": "department", "fieldtype": "Select", "label": "Department", "options": "\nHousekeeping\nFood & Beverage\nKitchen\nSpa\nPool\nLaundry\nOther"},
+		{"fieldname": "issued_quantity", "fieldtype": "Int", "in_list_view": 1, "label": "Issued Quantity", "reqd": 1},
+		{"fieldname": "returned_quantity", "fieldtype": "Int", "in_list_view": 1, "label": "Returned Quantity"},
+		{"fieldname": "missing_quantity", "fieldtype": "Int", "in_list_view": 1, "label": "Missing Quantity", "read_only": 1},
+		{"default": "Open", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "label": "Status", "options": "Open\nClosed"},
+		{"fieldname": "notes", "fieldtype": "Small Text", "label": "Notes"}
+	],
+	"is_submittable": 1,
+	"links": [],
+	"modified": "2026-08-23 14:00:00",
+	"module": "Omnexa Fixed Assets",
+	"name": "Linen Issue Batch",
+	"permissions": [
+		{"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "submit": 1, "write": 1},
+		{"create": 1, "delete": 0, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Hotel Asset Admin", "submit": 1, "write": 1},
+		{"create": 1, "delete": 0, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Housekeeping Supervisor", "submit": 1, "write": 1},
+		{"create": 0, "delete": 0, "email": 0, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Auditor", "write": 0}
+	],
+	"sort_field": "posting_date",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

@@ -12,10 +12,11 @@ from omnexa_core.omnexa_core.utils.report_charts import auto_chart_for_columns
 from frappe.utils import flt
 
 from omnexa_core.omnexa_core.branch_access import get_allowed_branches
+from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
 
 
 def execute(filters=None):
-	filters = frappe._dict(filters or {})
+	filters = merge_navbar_report_filters(filters)
 	if not filters.get("company"):
 		frappe.throw(_("Company is required"))
 
@@ -42,11 +43,10 @@ def execute(filters=None):
 			fa.category,
 			fa.branch,
 			fa.status,
-			fa.acquisition_date,
+			fa.capitalization_date AS acquisition_date,
 			COALESCE(fa.acquisition_cost, 0) AS acquisition_cost,
 			COALESCE(fa.accumulated_depreciation, 0) AS accumulated_depreciation,
-			COALESCE(fa.net_book_value, 0) AS net_book_value,
-			fa.disposal_date
+			COALESCE(fa.net_book_value, 0) AS net_book_value
 		FROM `tabFixed Asset` fa
 		WHERE {' AND '.join(conditions)}
 		ORDER BY fa.category, fa.asset_name
@@ -81,7 +81,5 @@ def _columns():
 		{"label": _("Accum. Depreciation"), "fieldname": "accumulated_depreciation", "fieldtype": "Currency", "width": 140
 	},
 		{"label": _("NBV"), "fieldname": "net_book_value", "fieldtype": "Currency", "width": 120
-	},
-		{"label": _("Disposal Date"), "fieldname": "disposal_date", "fieldtype": "Date", "width": 110
 	},
 	]

@@ -1,0 +1,45 @@
+{
+	"actions": [],
+	"autoname": "hash",
+	"creation": "2026-08-23 14:00:00",
+	"doctype": "DocType",
+	"engine": "InnoDB",
+	"field_order": [
+		"company",
+		"branch",
+		"alert_time",
+		"linen_type",
+		"hotel_property",
+		"issued_quantity",
+		"returned_quantity",
+		"missing_quantity",
+		"status",
+		"message",
+		"batch_reference"
+	],
+	"fields": [
+		{"fieldname": "company", "fieldtype": "Link", "in_list_view": 1, "label": "Company", "options": "Company", "reqd": 1},
+		{"fieldname": "branch", "fieldtype": "Link", "in_list_view": 1, "label": "Branch", "options": "Branch"},
+		{"default": "Now", "fieldname": "alert_time", "fieldtype": "Datetime", "in_list_view": 1, "label": "Alert Time", "reqd": 1},
+		{"fieldname": "linen_type", "fieldtype": "Select", "in_list_view": 1, "label": "Linen Type", "options": "\nBath Towel\nHand Towel\nFace Towel\nBath Mat\nBedsheet\nPillowcase\nDuvet\nBlanket\nMattress Protector\nStaff Uniform\nTable Linen\nKitchen Linen\nPool Towel\nSpa Linen"},
+		{"fieldname": "hotel_property", "fieldtype": "Link", "label": "Hotel Property", "options": "Hotel Property"},
+		{"fieldname": "issued_quantity", "fieldtype": "Int", "label": "Issued Quantity"},
+		{"fieldname": "returned_quantity", "fieldtype": "Int", "label": "Returned Quantity"},
+		{"fieldname": "missing_quantity", "fieldtype": "Int", "in_list_view": 1, "label": "Missing Quantity"},
+		{"default": "Open", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "label": "Status", "options": "Open\nAcknowledged\nClosed"},
+		{"fieldname": "message", "fieldtype": "Small Text", "label": "Message"},
+		{"fieldname": "batch_reference", "fieldtype": "Link", "label": "Linen Issue Batch", "options": "Linen Issue Batch"},
+		{"default": "Shortage", "fieldname": "alert_category", "fieldtype": "Select", "in_list_view": 1, "label": "Alert Category", "options": "Shortage\nReplacement Warning\nLoss Investigation"}
+	],
+	"module": "Omnexa Fixed Assets",
+	"name": "Linen Shortage Alert",
+	"permissions": [
+		{"create": 1, "delete": 1, "read": 1, "report": 1, "role": "System Manager", "write": 1},
+		{"create": 1, "delete": 0, "read": 1, "report": 1, "role": "Hotel Asset Admin", "write": 1},
+		{"create": 1, "delete": 0, "read": 1, "report": 1, "role": "Housekeeping Supervisor", "write": 1},
+		{"create": 0, "delete": 0, "read": 1, "report": 1, "role": "Auditor", "write": 0}
+	],
+	"sort_field": "alert_time",
+	"sort_order": "DESC",
+	"track_changes": 1
+}

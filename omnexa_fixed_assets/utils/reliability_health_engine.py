@@ -39,13 +39,24 @@ def compute_health_score(
 	maintenance_score: float,
 	cost_efficiency_score: float,
 	sensor_stability_score: float,
+	*,
+	age_score: float = 100.0,
+	inspection_score: float = 100.0,
+	criticality_factor: float = 100.0,
+	weights: dict | None = None,
 ) -> tuple[float, str]:
+	from omnexa_fixed_assets.utils.health_formula import get_health_weights
+
+	w = weights or get_health_weights()
 	score = (
-		flt(condition_score) * 0.35
-		+ flt(reliability_score) * 0.25
-		+ flt(maintenance_score) * 0.15
-		+ flt(cost_efficiency_score) * 0.10
-		+ flt(sensor_stability_score) * 0.15
+		flt(condition_score) * flt(w.get("weight_condition", 0.35))
+		+ flt(reliability_score) * flt(w.get("weight_reliability", 0.25))
+		+ flt(maintenance_score) * flt(w.get("weight_maintenance", 0.15))
+		+ flt(cost_efficiency_score) * flt(w.get("weight_cost_efficiency", 0.10))
+		+ flt(sensor_stability_score) * flt(w.get("weight_sensor", 0.15))
+		+ flt(age_score) * flt(w.get("weight_age", 0.0))
+		+ flt(inspection_score) * flt(w.get("weight_inspection", 0.0))
+		+ flt(criticality_factor) * flt(w.get("weight_criticality", 0.0))
 	)
 	score = max(0.0, min(100.0, score))
 	return score, classify_health_status(score)
@@ -105,19 +116,40 @@ def compute_reliability_from_window(total_failures: int, total_downtime: float, 
 
 
 def recompute_asset_reliability_and_health(asset_name: str) -> dict:
+	from omnexa_fixed_assets.utils.health_formula import (
+		criticality_score,
+		degradation_from_condition_state,
+	)
+
 	asset = frappe.get_doc("Fixed Asset", asset_name)
 	metrics = compute_reliability_metrics(asset.name)
 
-	condition_score = 100.0 - flt(asset.degradation_index or 0.0)
+	degradation = degradation_from_condition_state(asset.condition_state)
+	if flt(asset.degradation_index or 0) != degradation:
+		asset.db_set("degradation_index", degradation, update_modified=False)
+
+	condition_score = 100.0 - degradation
 	maintenance_score = max(0.0, min(100.0, 100.0 - flt(asset.maintenance_burden or 0.0)))
 	cost_efficiency_score = max(0.0, min(100.0, flt(asset.repair_efficiency or 0.0)))
 	sensor_stability_score = 100.0 if (asset.sensor_state or "Unknown") in ("Online", "Normal") else 60.0
+	age_score = 100.0
+	if flt(getattr(asset, "expected_life_years", 0) or 0) > 0 and getattr(asset, "purchase_date", None):
+		from frappe.utils import date_diff, getdate, today
+
+		age_years = date_diff(getdate(today()), getdate(asset.purchase_date)) / 365.25
+		age_score = max(0.0, 100.0 - (age_years / flt(asset.expected_life_years) * 100.0))
+
+	inspection_score = 100.0 if (asset.condition_state or "Normal") == "Normal" else 70.0
+
 	health_score, health_status = compute_health_score(
 		condition_score=condition_score,
 		reliability_score=metrics.reliability_score,
 		maintenance_score=maintenance_score,
 		cost_efficiency_score=cost_efficiency_score,
 		sensor_stability_score=sensor_stability_score,
+		age_score=age_score,
+		inspection_score=inspection_score,
+		criticality_factor=criticality_score(getattr(asset, "criticality", None)),
 	)
 
 	asset.db_set("mtbf", metrics.mtbf, update_modified=False)
@@ -164,13 +196,22 @@ def recompute_asset_reliability_and_health(asset_name: str) -> dict:
 	}
 	).insert(ignore_permissions=True)
 
-	return {
+	result = {
 		"ok": True,
 		"asset": asset.name,
 		"reliability_score": metrics.reliability_score,
 		"health_score": health_score,
-		"health_status": health_status
+		"health_status": health_status,
 	}
+
+	try:
+		from omnexa_fixed_assets.utils.health_rule_engine import evaluate_asset_health_rules
+
+		result["health_rules"] = evaluate_asset_health_rules(asset.name)
+	except Exception:
+		frappe.log_error(title=f"Health rules failed for {asset.name}", message=frappe.get_traceback())
+
+	return result
 
 
 def total_meter_readings(asset_name: str) -> int:

@@ -1,0 +1,2138 @@
+{
+ "charts": [
+  {
+   "chart_name": "FixedAssets \u00b7 Fixed Asset Acquisition Trend",
+   "label": "FixedAssets \u00b7 Fixed Asset Acquisition Trend"
+  },
+  {
+   "chart_name": "FixedAssets \u00b7 Fixed Asset Depreciation Ent Trend",
+   "label": "FixedAssets \u00b7 Fixed Asset Depreciation Ent Trend"
+  },
+  {
+   "chart_name": "FixedAssets \u00b7 Fixed Asset Disposal Trend",
+   "label": "FixedAssets \u00b7 Fixed Asset Disposal Trend"
+  },
+  {
+   "chart_name": "FixedAssets \u00b7 Fixed Asset Acquisition Vol",
+   "label": "FixedAssets \u00b7 Fixed Asset Acquisition Vol"
+  }
+ ],
+ "content": "[{\"id\":\"erpgenex-onboarding\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"ERPGENEX \\u2014 Fixed assets\",\"col\":12}},{\"id\":\"fa-title\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Fixed Assets</b></span>\",\"col\":12}},{\"id\":\"fa-sec-0\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcca Dashboards</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Assets Workcenter\",\"col\":4}},{\"id\":\"fa-lnk-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Executive Dashboard\",\"col\":4}},{\"id\":\"fa-lnk-2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Analytics Dashboard\",\"col\":4}},{\"id\":\"fa-lnk-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Operations Desk\",\"col\":4}},{\"id\":\"fa-lnk-4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Finance Desk\",\"col\":4}},{\"id\":\"fa-lnk-5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Assets Dashboard\",\"col\":4}},{\"id\":\"fa-lnk-6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hospitality Command Center\",\"col\":4}},{\"id\":\"fa-lnk-7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Global Hospitality Portfolio\",\"col\":4}},{\"id\":\"fa-lnk-8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Live Asset Tracking\",\"col\":4}},{\"id\":\"fa-lnk-9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Dashboard\",\"col\":4}},{\"id\":\"fa-lnk-10\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Lifecycle Wizards\",\"col\":4}},{\"id\":\"fa-lnk-11\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Scan PWA\",\"col\":4}},{\"id\":\"fa-lnk-12\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Portal\",\"col\":4}},{\"id\":\"fa-sp-1\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udccb Policy & register</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-13\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Category\",\"col\":4}},{\"id\":\"fa-lnk-14\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset\",\"col\":4}},{\"id\":\"fa-lnk-15\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Location\",\"col\":4}},{\"id\":\"fa-sp-2\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-2\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcb0 Recognition & depreciation</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-16\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Acquisition\",\"col\":4}},{\"id\":\"fa-lnk-17\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Depreciation Entry\",\"col\":4}},{\"id\":\"fa-lnk-18\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Revaluation\",\"col\":4}},{\"id\":\"fa-sp-3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-3\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udd04 Transfers & disposal</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-19\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Transfer\",\"col\":4}},{\"id\":\"fa-lnk-20\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Disposal\",\"col\":4}},{\"id\":\"fa-lnk-21\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Write-Off\",\"col\":4}},{\"id\":\"fa-sp-4\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udd27 Assurance</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-22\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Maintenance\",\"col\":4}},{\"id\":\"fa-lnk-23\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inspection\",\"col\":4}},{\"id\":\"fa-lnk-24\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Movement Log\",\"col\":4}},{\"id\":\"fa-sp-5\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-5\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Reports \\u00b7 Register</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-25\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Register\",\"col\":4}},{\"id\":\"fa-lnk-26\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Valuation\",\"col\":4}},{\"id\":\"fa-lnk-27\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Summary\",\"col\":4}},{\"id\":\"fa-sp-6\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Reports \\u00b7 Depreciation</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-28\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Depreciation Schedule\",\"col\":4}},{\"id\":\"fa-lnk-29\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"NBV by Category\",\"col\":4}},{\"id\":\"fa-lnk-30\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Movement\",\"col\":4}},{\"id\":\"fa-sp-7\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcb0 Finance</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-31\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Journal Entry\",\"col\":4}},{\"id\":\"fa-lnk-32\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"GL Account\",\"col\":4}},{\"id\":\"fa-sp-8\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83c\\udfe8 Hotel Setup</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-33\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Property\",\"col\":4}},{\"id\":\"fa-lnk-34\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Functional Area\",\"col\":4}},{\"id\":\"fa-lnk-35\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Room\",\"col\":4}},{\"id\":\"fa-lnk-36\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Floor Plan\",\"col\":4}},{\"id\":\"fa-sp-9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83c\\udfe8 Hotel Operations</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-37\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"RFID Gateway\",\"col\":4}},{\"id\":\"fa-lnk-38\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"RFID Reader\",\"col\":4}},{\"id\":\"fa-lnk-39\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"RFID Scan Log\",\"col\":4}},{\"id\":\"fa-lnk-40\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Asset Inspection\",\"col\":4}},{\"id\":\"fa-lnk-41\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Asset Transfer\",\"col\":4}},{\"id\":\"fa-lnk-42\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hospitality Audit Event\",\"col\":4}},{\"id\":\"fa-lnk-43\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Wizard Sessions\",\"col\":4}},{\"id\":\"fa-sp-10\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-10\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udecf\\ufe0f Linen Management</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-44\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Item\",\"col\":4}},{\"id\":\"fa-lnk-45\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Movement\",\"col\":4}},{\"id\":\"fa-lnk-46\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Laundry Cycle\",\"col\":4}},{\"id\":\"fa-lnk-47\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Issue Batch\",\"col\":4}},{\"id\":\"fa-lnk-48\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Linen Shortage Alert\",\"col\":4}},{\"id\":\"fa-lnk-49\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Missing Linen\",\"col\":4}},{\"id\":\"fa-sp-11\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-11\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udd27 Hotel Maintenance & Quality</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-50\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Work Order\",\"col\":4}},{\"id\":\"fa-lnk-51\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Failure Event\",\"col\":4}},{\"id\":\"fa-lnk-52\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Alert\",\"col\":4}},{\"id\":\"fa-sp-12\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-12\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Hotel Finance & Forecasting</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-53\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Replacement Forecast Report\",\"col\":4}},{\"id\":\"fa-lnk-54\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Inspection Compliance Report\",\"col\":4}},{\"id\":\"fa-lnk-55\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Health Report\",\"col\":4}},{\"id\":\"fa-sp-13\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-13\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Hotel Reports</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-56\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Assets by Room\",\"col\":4}},{\"id\":\"fa-lnk-57\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Assets by Floor\",\"col\":4}},{\"id\":\"fa-lnk-58\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Operational Asset Status\",\"col\":4}},{\"id\":\"fa-lnk-59\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Inspection Summary\",\"col\":4}},{\"id\":\"fa-lnk-60\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Missing Assets\",\"col\":4}},{\"id\":\"fa-lnk-61\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Last Seen Assets\",\"col\":4}},{\"id\":\"fa-lnk-62\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Unscanned Assets\",\"col\":4}},{\"id\":\"fa-lnk-63\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Movement History\",\"col\":4}},{\"id\":\"fa-lnk-64\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Asset Depreciation\",\"col\":4}},{\"id\":\"fa-lnk-65\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Warranty Expiring\",\"col\":4}},{\"id\":\"fa-sp-14\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-14\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udccb Module operations \\u00b7 1</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-66\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Condition Snapshot\",\"col\":4}},{\"id\":\"fa-lnk-67\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Health Rule\",\"col\":4}},{\"id\":\"fa-lnk-68\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Inspection\",\"col\":4}},{\"id\":\"fa-lnk-69\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Inspection Template\",\"col\":4}},{\"id\":\"fa-lnk-70\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Meter Reading\",\"col\":4}},{\"id\":\"fa-lnk-71\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Recommendation\",\"col\":4}},{\"id\":\"fa-lnk-72\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Relationship\",\"col\":4}},{\"id\":\"fa-lnk-73\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Reliability Trend\",\"col\":4}},{\"id\":\"fa-sp-15\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-15\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udccb Module operations \\u00b7 2</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-74\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Risk Matrix\",\"col\":4}},{\"id\":\"fa-lnk-75\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Threshold Profile\",\"col\":4}},{\"id\":\"fa-lnk-76\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Auto Depreciation Policy\",\"col\":4}},{\"id\":\"fa-lnk-77\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Depreciation Method\",\"col\":4}},{\"id\":\"fa-lnk-78\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Status\",\"col\":4}},{\"id\":\"fa-lnk-79\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Functional Location\",\"col\":4}},{\"id\":\"fa-lnk-80\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Claim\",\"col\":4}},{\"id\":\"fa-lnk-81\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Company\",\"col\":4}},{\"id\":\"fa-sp-16\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-16\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udccb Module operations \\u00b7 3</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-82\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Coverage Type\",\"col\":4}},{\"id\":\"fa-lnk-83\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Incident\",\"col\":4}},{\"id\":\"fa-lnk-84\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Policy\",\"col\":4}},{\"id\":\"fa-lnk-85\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Renewal\",\"col\":4}},{\"id\":\"fa-lnk-86\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Maintenance Strategy\",\"col\":4}},{\"id\":\"fa-sp-17\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-17\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Module reports \\u00b7 1</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-87\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Disposal Report\",\"col\":4}},{\"id\":\"fa-lnk-88\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Insurance Register\",\"col\":4}},{\"id\":\"fa-lnk-89\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Maintenance Report\",\"col\":4}},{\"id\":\"fa-lnk-90\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Risk Register\",\"col\":4}},{\"id\":\"fa-lnk-91\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Claim Settlement Analysis\",\"col\":4}},{\"id\":\"fa-lnk-92\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Claims Register\",\"col\":4}},{\"id\":\"fa-sp-18\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-18\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Module reports \\u00b7 2</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-93\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expiring Policies Report\",\"col\":4}},{\"id\":\"fa-lnk-94\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Failure Analysis Report\",\"col\":4}},{\"id\":\"fa-lnk-95\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fixed Asset Depreciation Posting Summary\",\"col\":4}},{\"id\":\"fa-lnk-96\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel Asset Register\",\"col\":4}},{\"id\":\"fa-lnk-97\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel IAS 16 Disclosure Schedule\",\"col\":4}},{\"id\":\"fa-lnk-98\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hotel NBV by Property\",\"col\":4}},{\"id\":\"fa-sp-19\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-sec-19\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Module reports \\u00b7 3</b></span>\",\"col\":12}},{\"id\":\"fa-lnk-99\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IAS 16 Disclosure Schedule\",\"col\":4}},{\"id\":\"fa-lnk-100\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Insurance Cost Analysis\",\"col\":4}},{\"id\":\"fa-lnk-101\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Policy Renewal Forecast\",\"col\":4}},{\"id\":\"fa-lnk-102\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Reliability Report\",\"col\":4}},{\"id\":\"fa-lnk-103\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Risk Exposure Report\",\"col\":4}},{\"id\":\"fa-lnk-104\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Uninsured Assets Report\",\"col\":4}},{\"id\":\"fa-kpi-sp\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-kpi-h\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcca KPIs</b></span>\",\"col\":12}},{\"id\":\"fa-nc-0\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Assets in register\",\"col\":4}},{\"id\":\"fa-nc-1\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Assets in use\",\"col\":4}},{\"id\":\"fa-nc-2\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Assets under maintenance\",\"col\":4}},{\"id\":\"fa-nc-3\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Disposed assets\",\"col\":4}},{\"id\":\"fa-nc-4\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Depreciation runs\",\"col\":4}},{\"id\":\"fa-nc-5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset disposals\",\"col\":4}},{\"id\":\"fa-nc-6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Alert\",\"col\":4}},{\"id\":\"fa-nc-7\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Condition Snapshot\",\"col\":4}},{\"id\":\"fa-nc-8\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Failure Event\",\"col\":4}},{\"id\":\"fa-nc-9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Health Rule\",\"col\":4}},{\"id\":\"fa-nc-10\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Inspection\",\"col\":4}},{\"id\":\"fa-nc-11\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Asset Inspection Template\",\"col\":4}},{\"id\":\"fa-ch-sp\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"fa-ch-h\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\"><b>\\ud83d\\udcc8 Charts</b></span>\",\"col\":12}},{\"id\":\"fa-ch-0\",\"type\":\"chart\",\"data\":{\"chart_name\":\"FixedAssets \\u00b7 Fixed Asset Acquisition Trend\",\"col\":4}},{\"id\":\"fa-ch-1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"FixedAssets \\u00b7 Fixed Asset Depreciation Ent Trend\",\"col\":4}},{\"id\":\"fa-ch-2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"FixedAssets \\u00b7 Fixed Asset Disposal Trend\",\"col\":4}},{\"id\":\"fa-ch-3\",\"type\":\"chart\",\"data\":{\"chart_name\":\"FixedAssets \\u00b7 Fixed Asset Acquisition Vol\",\"col\":4}}]",
+ "creation": "2026-08-25 18:20:23.607713",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "folder-normal",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Fixed assets",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcca Dashboards",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Assets Workcenter",
+   "link_count": 0,
+   "link_to": "fixed-assets-workcenter",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Executive Dashboard",
+   "link_count": 0,
+   "link_to": "fa-executive-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Analytics Dashboard",
+   "link_count": 0,
+   "link_to": "fixed-assets-analytics-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Operations Desk",
+   "link_count": 0,
+   "link_to": "fixed-assets-operations-desk",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Finance Desk",
+   "link_count": 0,
+   "link_to": "fixed-assets-finance-desk",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Assets Dashboard",
+   "link_count": 0,
+   "link_to": "fa-hotel-assets-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hospitality Command Center",
+   "link_count": 0,
+   "link_to": "fa-hospitality-command-center",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Global Hospitality Portfolio",
+   "link_count": 0,
+   "link_to": "fa-global-hospitality-portfolio",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Live Asset Tracking",
+   "link_count": 0,
+   "link_to": "fa-live-asset-tracking",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Dashboard",
+   "link_count": 0,
+   "link_to": "fa-linen-dashboard",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Lifecycle Wizards",
+   "link_count": 0,
+   "link_to": "fa-asset-wizards",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Scan PWA",
+   "link_count": 0,
+   "link_to": "fa-asset-scan-pwa",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Portal",
+   "link_count": 0,
+   "link_to": "fixed-assets-customer-portal",
+   "link_type": "Page",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udccb Policy & register",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Category",
+   "link_count": 0,
+   "link_to": "Fixed Asset Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Asset",
+   "link_count": 0,
+   "link_to": "Fixed Asset",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Location",
+   "link_count": 0,
+   "link_to": "Fixed Asset Location",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcb0 Recognition & depreciation",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Acquisition",
+   "link_count": 0,
+   "link_to": "Fixed Asset Acquisition",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Depreciation Entry",
+   "link_count": 0,
+   "link_to": "Fixed Asset Depreciation Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Revaluation",
+   "link_count": 0,
+   "link_to": "Fixed Asset Revaluation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udd04 Transfers & disposal",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transfer",
+   "link_count": 0,
+   "link_to": "Fixed Asset Transfer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Disposal",
+   "link_count": 0,
+   "link_to": "Fixed Asset Disposal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Write-Off",
+   "link_count": 0,
+   "link_to": "Fixed Asset Write-Off",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udd27 Assurance",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance",
+   "link_count": 0,
+   "link_to": "Fixed Asset Maintenance",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Inspection",
+   "link_count": 0,
+   "link_to": "Fixed Asset Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Movement Log",
+   "link_count": 0,
+   "link_to": "Fixed Asset Movement Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Reports \u00b7 Register",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Register",
+   "link_count": 0,
+   "link_to": "Asset Register Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Valuation",
+   "link_count": 0,
+   "link_to": "Asset Valuation Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Summary",
+   "link_count": 0,
+   "link_to": "Fixed Asset Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Reports \u00b7 Depreciation",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Depreciation Schedule",
+   "link_count": 0,
+   "link_to": "Asset Depreciation Schedule",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "NBV by Category",
+   "link_count": 0,
+   "link_to": "Fixed Asset NBV by Category",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Movement",
+   "link_count": 0,
+   "link_to": "Asset Movement Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Movement Log",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcb0 Finance",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Journal Entry",
+   "link_count": 0,
+   "link_to": "Journal Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "GL Account",
+   "link_count": 0,
+   "link_to": "GL Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83c\udfe8 Hotel Setup",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Property",
+   "link_count": 0,
+   "link_to": "Hotel Property",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Functional Area",
+   "link_count": 0,
+   "link_to": "Hotel Functional Area",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Room",
+   "link_count": 0,
+   "link_to": "Hotel Room",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Floor Plan",
+   "link_count": 0,
+   "link_to": "Hotel Floor Plan",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83c\udfe8 Hotel Operations",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RFID Gateway",
+   "link_count": 0,
+   "link_to": "RFID Gateway",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RFID Reader",
+   "link_count": 0,
+   "link_to": "RFID Reader",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "RFID Scan Log",
+   "link_count": 0,
+   "link_to": "RFID Scan Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Asset Inspection",
+   "link_count": 0,
+   "link_to": "Hotel Asset Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hotel Asset Transfer",
+   "link_count": 0,
+   "link_to": "Hotel Asset Transfer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Hospitality Audit Event",
+   "link_count": 0,
+   "link_to": "Hospitality Audit Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Wizard Sessions",
+   "link_count": 0,
+   "link_to": "Asset Lifecycle Wizard Session",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udecf\ufe0f Linen Management",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Item",
+   "link_count": 0,
+   "link_to": "Linen Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Movement",
+   "link_count": 0,
+   "link_to": "Linen Movement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Laundry Cycle",
+   "link_count": 0,
+   "link_to": "Linen Laundry Cycle",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Issue Batch",
+   "link_count": 0,
+   "link_to": "Linen Issue Batch",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Linen Shortage Alert",
+   "link_count": 0,
+   "link_to": "Linen Shortage Alert",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Missing Linen",
+   "link_count": 0,
+   "link_to": "Missing Linen",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Linen Item",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udd27 Hotel Maintenance & Quality",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Work Order",
+   "link_count": 0,
+   "link_to": "Asset Work Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Failure Event",
+   "link_count": 0,
+   "link_to": "Asset Failure Event",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Alert",
+   "link_count": 0,
+   "link_to": "Asset Alert",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Hotel Finance & Forecasting",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Replacement Forecast Report",
+   "link_count": 0,
+   "link_to": "Replacement Forecast Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Inspection Compliance Report",
+   "link_count": 0,
+   "link_to": "Inspection Compliance Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Health Report",
+   "link_count": 0,
+   "link_to": "Asset Health Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Hotel Reports",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Assets by Room",
+   "link_count": 0,
+   "link_to": "Assets by Room",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Assets by Floor",
+   "link_count": 0,
+   "link_to": "Hotel Assets by Floor",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Operational Asset Status",
+   "link_count": 0,
+   "link_to": "Hotel Operational Asset Status",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Inspection Summary",
+   "link_count": 0,
+   "link_to": "Hotel Inspection Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Hotel Asset Inspection",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Missing Assets",
+   "link_count": 0,
+   "link_to": "Missing Assets",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Last Seen Assets",
+   "link_count": 0,
+   "link_to": "Last Seen Assets",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "RFID Scan Log",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Unscanned Assets",
+   "link_count": 0,
+   "link_to": "Unscanned Assets",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Movement History",
+   "link_count": 0,
+   "link_to": "Hotel Movement History",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Hotel Asset Transfer",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Asset Depreciation",
+   "link_count": 0,
+   "link_to": "Hotel Asset Depreciation",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Warranty Expiring",
+   "link_count": 0,
+   "link_to": "Warranty Expiring Assets",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udccb Module operations \u00b7 1",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Condition Snapshot",
+   "link_count": 0,
+   "link_to": "Asset Condition Snapshot",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Health Rule",
+   "link_count": 0,
+   "link_to": "Asset Health Rule",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Inspection",
+   "link_count": 0,
+   "link_to": "Asset Inspection",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Inspection Template",
+   "link_count": 0,
+   "link_to": "Asset Inspection Template",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Meter Reading",
+   "link_count": 0,
+   "link_to": "Asset Meter Reading",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Recommendation",
+   "link_count": 0,
+   "link_to": "Asset Recommendation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Relationship",
+   "link_count": 0,
+   "link_to": "Asset Relationship",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Reliability Trend",
+   "link_count": 0,
+   "link_to": "Asset Reliability Trend",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udccb Module operations \u00b7 2",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Risk Matrix",
+   "link_count": 0,
+   "link_to": "Asset Risk Matrix",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Threshold Profile",
+   "link_count": 0,
+   "link_to": "Asset Threshold Profile",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Asset Auto Depreciation Policy",
+   "link_count": 0,
+   "link_to": "Fixed Asset Auto Depreciation Policy",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Asset Depreciation Method",
+   "link_count": 0,
+   "link_to": "Fixed Asset Depreciation Method",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fixed Asset Status",
+   "link_count": 0,
+   "link_to": "Fixed Asset Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Functional Location",
+   "link_count": 0,
+   "link_to": "Functional Location",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Claim",
+   "link_count": 0,
+   "link_to": "Insurance Claim",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Company",
+   "link_count": 0,
+   "link_to": "Insurance Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udccb Module operations \u00b7 3",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Coverage Type",
+   "link_count": 0,
+   "link_to": "Insurance Coverage Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Incident",
+   "link_count": 0,
+   "link_to": "Insurance Incident",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Policy",
+   "link_count": 0,
+   "link_to": "Insurance Policy",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Insurance Renewal",
+   "link_count": 0,
+   "link_to": "Insurance Renewal",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Maintenance Strategy",
+   "link_count": 0,
+   "link_to": "Maintenance Strategy",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Module reports \u00b7 1",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Disposal Report",
+   "link_count": 0,
+   "link_to": "Asset Disposal Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Disposal",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Insurance Register",
+   "link_count": 0,
+   "link_to": "Asset Insurance Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Maintenance Report",
+   "link_count": 0,
+   "link_to": "Asset Maintenance Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Maintenance",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Asset Risk Register",
+   "link_count": 0,
+   "link_to": "Asset Risk Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Claim Settlement Analysis",
+   "link_count": 0,
+   "link_to": "Claim Settlement Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Claims Register",
+   "link_count": 0,
+   "link_to": "Claims Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Module reports \u00b7 2",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Expiring Policies Report",
+   "link_count": 0,
+   "link_to": "Expiring Policies Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Failure Analysis Report",
+   "link_count": 0,
+   "link_to": "Failure Analysis Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Asset Failure Event",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Fixed Asset Depreciation Posting Summary",
+   "link_count": 0,
+   "link_to": "Fixed Asset Depreciation Posting Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel Asset Register",
+   "link_count": 0,
+   "link_to": "Hotel Asset Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel IAS 16 Disclosure Schedule",
+   "link_count": 0,
+   "link_to": "Hotel IAS 16 Disclosure Schedule",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hotel NBV by Property",
+   "link_count": 0,
+   "link_to": "Hotel NBV by Property",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\ud83d\udcc8 Module reports \u00b7 3",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "IAS 16 Disclosure Schedule",
+   "link_count": 0,
+   "link_to": "IAS 16 Disclosure Schedule",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Insurance Cost Analysis",
+   "link_count": 0,
+   "link_to": "Insurance Cost Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Policy Renewal Forecast",
+   "link_count": 0,
+   "link_to": "Policy Renewal Forecast",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Reliability Report",
+   "link_count": 0,
+   "link_to": "Reliability Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Asset Reliability Trend",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Risk Exposure Report",
+   "link_count": 0,
+   "link_to": "Risk Exposure Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Uninsured Assets Report",
+   "link_count": 0,
+   "link_to": "Uninsured Assets Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-25 18:20:23.946674",
+ "modified_by": "Administrator",
+ "module": "Omnexa Fixed Assets",
+ "name": "Fixed assets",
+ "number_cards": [
+  {
+   "label": "Assets in register",
+   "number_card_name": "Assets in register"
+  },
+  {
+   "label": "Assets in use",
+   "number_card_name": "Assets in use"
+  },
+  {
+   "label": "Assets under maintenance",
+   "number_card_name": "Assets under maintenance"
+  },
+  {
+   "label": "Disposed assets",
+   "number_card_name": "Disposed assets"
+  },
+  {
+   "label": "Depreciation runs",
+   "number_card_name": "Depreciation runs"
+  },
+  {
+   "label": "Asset disposals",
+   "number_card_name": "Asset disposals"
+  },
+  {
+   "label": "Asset Alert",
+   "number_card_name": "Asset Alert"
+  },
+  {
+   "label": "Asset Condition Snapshot",
+   "number_card_name": "Asset Condition Snapshot"
+  },
+  {
+   "label": "Asset Failure Event",
+   "number_card_name": "Asset Failure Event"
+  },
+  {
+   "label": "Asset Health Rule",
+   "number_card_name": "Asset Health Rule"
+  },
+  {
+   "label": "Asset Inspection",
+   "number_card_name": "Asset Inspection"
+  },
+  {
+   "label": "Asset Inspection Template",
+   "number_card_name": "Asset Inspection Template"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "ERP",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 2.14,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Fixed Assets Workcenter",
+   "link_to": "fixed-assets-workcenter",
+   "type": "Page"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Executive Dashboard",
+   "link_to": "fa-executive-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Analytics Dashboard",
+   "link_to": "fixed-assets-analytics-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Operations Desk",
+   "link_to": "fixed-assets-operations-desk",
+   "type": "Page"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Finance Desk",
+   "link_to": "fixed-assets-finance-desk",
+   "type": "Page"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Hotel Assets Dashboard",
+   "link_to": "fa-hotel-assets-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "",
+   "label": "Hospitality Command Center",
+   "link_to": "fa-hospitality-command-center",
+   "type": "Page"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Global Hospitality Portfolio",
+   "link_to": "fa-global-hospitality-portfolio",
+   "type": "Page"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "",
+   "label": "Live Asset Tracking",
+   "link_to": "fa-live-asset-tracking",
+   "type": "Page"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Linen Dashboard",
+   "link_to": "fa-linen-dashboard",
+   "type": "Page"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Asset Lifecycle Wizards",
+   "link_to": "fa-asset-wizards",
+   "type": "Page"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Asset Scan PWA",
+   "link_to": "fa-asset-scan-pwa",
+   "type": "Page"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Customer Portal",
+   "link_to": "fixed-assets-customer-portal",
+   "type": "Page"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Category",
+   "link_to": "Fixed Asset Category",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Fixed Asset",
+   "link_to": "Fixed Asset",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Location",
+   "link_to": "Fixed Asset Location",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Acquisition",
+   "link_to": "Fixed Asset Acquisition",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Depreciation Entry",
+   "link_to": "Fixed Asset Depreciation Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Revaluation",
+   "link_to": "Fixed Asset Revaluation",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Transfer",
+   "link_to": "Fixed Asset Transfer",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Disposal",
+   "link_to": "Fixed Asset Disposal",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Write-Off",
+   "link_to": "Fixed Asset Write-Off",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Maintenance",
+   "link_to": "Fixed Asset Maintenance",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Inspection",
+   "link_to": "Fixed Asset Inspection",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Movement Log",
+   "link_to": "Fixed Asset Movement Log",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Journal Entry",
+   "link_to": "Journal Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "GL Account",
+   "link_to": "GL Account",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Hotel Property",
+   "link_to": "Hotel Property",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Hotel Functional Area",
+   "link_to": "Hotel Functional Area",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Hotel Room",
+   "link_to": "Hotel Room",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Hotel Floor Plan",
+   "link_to": "Hotel Floor Plan",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "RFID Gateway",
+   "link_to": "RFID Gateway",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "RFID Reader",
+   "link_to": "RFID Reader",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "RFID Scan Log",
+   "link_to": "RFID Scan Log",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Hotel Asset Inspection",
+   "link_to": "Hotel Asset Inspection",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Hotel Asset Transfer",
+   "link_to": "Hotel Asset Transfer",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Hospitality Audit Event",
+   "link_to": "Hospitality Audit Event",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Wizard Sessions",
+   "link_to": "Asset Lifecycle Wizard Session",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Linen Item",
+   "link_to": "Linen Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Linen Movement",
+   "link_to": "Linen Movement",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Linen Laundry Cycle",
+   "link_to": "Linen Laundry Cycle",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Linen Issue Batch",
+   "link_to": "Linen Issue Batch",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Linen Shortage Alert",
+   "link_to": "Linen Shortage Alert",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Asset Work Order",
+   "link_to": "Asset Work Order",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Asset Failure Event",
+   "link_to": "Asset Failure Event",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Asset Alert",
+   "link_to": "Asset Alert",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Asset Condition Snapshot",
+   "link_to": "Asset Condition Snapshot",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Asset Health Rule",
+   "link_to": "Asset Health Rule",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Asset Inspection",
+   "link_to": "Asset Inspection",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Asset Inspection Template",
+   "link_to": "Asset Inspection Template",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Asset Meter Reading",
+   "link_to": "Asset Meter Reading",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Asset Recommendation",
+   "link_to": "Asset Recommendation",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Asset Relationship",
+   "link_to": "Asset Relationship",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Asset Reliability Trend",
+   "link_to": "Asset Reliability Trend",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Asset Risk Matrix",
+   "link_to": "Asset Risk Matrix",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Asset Threshold Profile",
+   "link_to": "Asset Threshold Profile",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Fixed Asset Auto Depreciation Policy",
+   "link_to": "Fixed Asset Auto Depreciation Policy",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Fixed Asset Depreciation Method",
+   "link_to": "Fixed Asset Depreciation Method",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "label": "Fixed Asset Status",
+   "link_to": "Fixed Asset Status",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Functional Location",
+   "link_to": "Functional Location",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Insurance Claim",
+   "link_to": "Insurance Claim",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Insurance Company",
+   "link_to": "Insurance Company",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Insurance Coverage Type",
+   "link_to": "Insurance Coverage Type",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Insurance Incident",
+   "link_to": "Insurance Incident",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Insurance Policy",
+   "link_to": "Insurance Policy",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Insurance Renewal",
+   "link_to": "Insurance Renewal",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Maintenance Strategy",
+   "link_to": "Maintenance Strategy",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Asset Register",
+   "link_to": "Asset Register Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Valuation",
+   "link_to": "Asset Valuation Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "",
+   "label": "Summary",
+   "link_to": "Fixed Asset Summary",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Depreciation Schedule",
+   "link_to": "Asset Depreciation Schedule",
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "",
+   "label": "NBV by Category",
+   "link_to": "Fixed Asset NBV by Category",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Movement",
+   "link_to": "Asset Movement Report",
+   "report_ref_doctype": "Fixed Asset Movement Log",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Missing Linen",
+   "link_to": "Missing Linen",
+   "report_ref_doctype": "Linen Item",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Replacement Forecast Report",
+   "link_to": "Replacement Forecast Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Inspection Compliance Report",
+   "link_to": "Inspection Compliance Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Asset Health Report",
+   "link_to": "Asset Health Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Assets by Room",
+   "link_to": "Assets by Room",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "",
+   "label": "Hotel Assets by Floor",
+   "link_to": "Hotel Assets by Floor",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Hotel Operational Asset Status",
+   "link_to": "Hotel Operational Asset Status",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "",
+   "label": "Hotel Inspection Summary",
+   "link_to": "Hotel Inspection Summary",
+   "report_ref_doctype": "Hotel Asset Inspection",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Missing Assets",
+   "link_to": "Missing Assets",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Last Seen Assets",
+   "link_to": "Last Seen Assets",
+   "report_ref_doctype": "RFID Scan Log",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Unscanned Assets",
+   "link_to": "Unscanned Assets",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Hotel Movement History",
+   "link_to": "Hotel Movement History",
+   "report_ref_doctype": "Hotel Asset Transfer",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Hotel Asset Depreciation",
+   "link_to": "Hotel Asset Depreciation",
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Warranty Expiring",
+   "link_to": "Warranty Expiring Assets",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "",
+   "label": "Asset Disposal Report",
+   "link_to": "Asset Disposal Report",
+   "report_ref_doctype": "Fixed Asset Disposal",
+   "type": "Report"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Asset Insurance Register",
+   "link_to": "Asset Insurance Register",
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Report"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "",
+   "label": "Asset Maintenance Report",
+   "link_to": "Asset Maintenance Report",
+   "report_ref_doctype": "Fixed Asset Maintenance",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Asset Risk Register",
+   "link_to": "Asset Risk Register",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Claim Settlement Analysis",
+   "link_to": "Claim Settlement Analysis",
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Claims Register",
+   "link_to": "Claims Register",
+   "report_ref_doctype": "Insurance Claim",
+   "type": "Report"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Expiring Policies Report",
+   "link_to": "Expiring Policies Report",
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Failure Analysis Report",
+   "link_to": "Failure Analysis Report",
+   "report_ref_doctype": "Asset Failure Event",
+   "type": "Report"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Fixed Asset Depreciation Posting Summary",
+   "link_to": "Fixed Asset Depreciation Posting Summary",
+   "report_ref_doctype": "Fixed Asset Depreciation Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "",
+   "label": "Hotel Asset Register",
+   "link_to": "Hotel Asset Register",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "",
+   "label": "Hotel IAS 16 Disclosure Schedule",
+   "link_to": "Hotel IAS 16 Disclosure Schedule",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "",
+   "label": "Hotel NBV by Property",
+   "link_to": "Hotel NBV by Property",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "IAS 16 Disclosure Schedule",
+   "link_to": "IAS 16 Disclosure Schedule",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Insurance Cost Analysis",
+   "link_to": "Insurance Cost Analysis",
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Policy Renewal Forecast",
+   "link_to": "Policy Renewal Forecast",
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Report"
+  },
+  {
+   "color": "Red",
+   "doc_view": "",
+   "label": "Reliability Report",
+   "link_to": "Reliability Report",
+   "report_ref_doctype": "Asset Reliability Trend",
+   "type": "Report"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "",
+   "label": "Risk Exposure Report",
+   "link_to": "Risk Exposure Report",
+   "report_ref_doctype": "Insurance Policy",
+   "type": "Report"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Uninsured Assets Report",
+   "link_to": "Uninsured Assets Report",
+   "report_ref_doctype": "Fixed Asset",
+   "type": "Report"
+  }
+ ],
+ "title": "Fixed assets"
+}

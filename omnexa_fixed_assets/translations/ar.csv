@@ -1,577 +1,577 @@
 Accounting,المحاسبة
-Accum. Depreciation,Accum. Depreciation
-Accumulated Depreciation,Accumulated Depreciation
-Accumulated depreciation,Accumulated depreciation
-Accumulated depreciation account,Accumulated depreciation حساب
-Acquisition Cost,Acquisition تكلفة
-Acquisition cost,Acquisition تكلفة
-Acquisition Date,Acquisition تاريخ
-Acquisition documents over time,Acquisition مستندات over time
+Accum. Depreciation,مجمع الإهلاك
+Accumulated Depreciation,مجمع الإهلاك
+Accumulated depreciation,مجمع الإهلاك
+Accumulated depreciation account,حساب مجمع الإهلاك
+Acquisition Cost,تكلفة الاقتناء
+Acquisition cost,تكلفة الاقتناء
+Acquisition Date,تاريخ الاقتناء
+Acquisition documents over time,مستندات الاقتناء عبر الزمن
 Action,إجراء
-Action Payload,إجراء Payload
-Action Type,إجراء نوع
-Active Policies,نشط Policies
-Actual Cost,Actual تكلفة
+Action Payload,حمولة الإجراء
+Action Type,نوع الإجراء
+Active Policies,السياسات النشطة
+Actual Cost,التكلفة الفعلية
 Address,العنوان
-Alert name is required.,Alert اسم is required.
-Alert Time,Alert Time
-Alert Type,Alert نوع
-Allow Photo,Allow Photo
-Allow Signature,Allow Signature
-Amended From,Amended From
-Amount,مبلغ
-Amount exceeds remaining depreciable balance ({0}).,مبلغ exceeds remaining depreciable رصيد ({ 0 }).
-Amount must be positive.,مبلغ must be positive.
+Alert name is required.,اسم التنبيه مطلوب.
+Alert Time,وقت التنبيه
+Alert Type,نوع التنبيه
+Allow Photo,السماح بالصورة
+Allow Signature,السماح بالتوقيع
+Amended From,معدّل من
+Amount,المبلغ
+Amount exceeds remaining depreciable balance ({0}).,المبلغ يتجاوز الرصيد القابل للإهلاك المتبقي ({0}).
+Amount must be positive.,يجب أن يكون المبلغ موجباً.
 Analytics,التحليلات
-Annual Premium,Annual Premium
-Approval,موافقة
-Area Code,Area كود
-Area Code must be unique per hotel property.,Area كود must be unique per hotel property.
-Area Name,Area اسم
-Area Type,Area نوع
-As Of,As Of
-As Of Date,As Of تاريخ
-Asset,Asset
-Asset account,Asset حساب
-Asset Alert,Asset Alert
-Asset Condition Snapshot,Asset Condition لقطة
-Asset cost in books at validation time.,Asset تكلفة in books at تحقق time.
-Asset Count,Asset عدد
-Asset does not exist.,Asset does not exist.
-Asset Failure Event,Asset Failure Event
-Asset has no gross book value to derecognize.,Asset has no gross book value إلى derecognize.
-Asset Health Report,Asset صحة تقرير
-Asset Health Rule,Asset صحة Rule
-Asset Inspection,Asset Inspection
-Asset Inspection Template,Asset Inspection Template
-Asset Inspection Template Line,Asset Inspection Template Line
+Annual Premium,القسط السنوي
+Approval,الموافقة
+Area Code,رمز المنطقة
+Area Code must be unique per hotel property.,يجب أن يكون رمز المنطقة فريداً لكل عقار فندقي.
+Area Name,اسم المنطقة
+Area Type,نوع المنطقة
+As Of,حتى
+As Of Date,تاريخ الحالة
+Asset,أصل
+Asset account,حساب الأصل
+Asset Alert,تنبيه الأصل
+Asset Condition Snapshot,لقطة حالة الأصل
+Asset cost in books at validation time.,تكلفة الأصل في الدفاتر وقت التحقق.
+Asset Count,عدد الأصول
+Asset does not exist.,الأصل غير موجود.
+Asset Failure Event,حدث عطل الأصل
+Asset has no gross book value to derecognize.,لا توجد قيمة دفترية إجمالية للأصل لإلغاء الاعتراف بها.
+Asset Health Report,تقرير صحة الأصول
+Asset Health Rule,قاعدة صحة الأصل
+Asset Inspection,فحص الأصل
+Asset Inspection Template,قالب فحص الأصل
+Asset Inspection Template Line,سطر قالب فحص الأصل
 Asset Insurance,تأمين الأصول
 Asset insurance,تأمين الأصول
-Asset Insurance Register,Asset Insurance Register
-Asset is already disposed.,Asset is already disposed.
-Asset is required.,Asset is required.
-Asset Media Attachment,Asset Media Attachment
-Asset Meter Reading,Asset Meter Reading
-Asset must belong to the same company and branch.,Asset must belong إلى the same شركة و فرع.
-Asset name,Asset اسم
-Asset Name,Asset اسم
-Asset Owner,Asset Owner
-Asset Recommendation,Asset Recommendation
-Asset Relationship,Asset Relationship
-Asset Reliability Trend,Asset Reliability اتجاه
-Asset Risk Matrix,Asset مخاطر مصفوفة
-Asset Risk Register,Asset مخاطر Register
-Asset Threshold Profile,Asset Threshold ملف
-Asset uses cost model; revaluation is optional under IAS 16 revaluation model.,Asset uses تكلفة model; revaluation is optional under IAS 16 revaluation model.
-Asset Work Order,Asset Work Order
-Assets,أصول
-Assets by category,أصول حسب فئة
-Assets by lifecycle status,أصول حسب lifecycle حالة
-Assigned To,Assigned إلى
-Attached,Attached
-Attachment,Attachment
-Auto Depreciation,Auto Depreciation
-Auto-numbered asset code (equals document name).,Auto - numbered asset كود (equals مستند اسم).
-Automated depreciation entries support cost model only.,Automated depreciation entries support تكلفة model only.
-Availability %,Availability%
-Barcode,Barcode
-Barcode Image,Barcode Image
+Asset Insurance Register,سجل تأمين الأصول
+Asset is already disposed.,تم التخلص من الأصل مسبقاً.
+Asset is required.,الأصل مطلوب.
+Asset Media Attachment,مرفق وسائط الأصل
+Asset Meter Reading,قراءة عداد الأصل
+Asset must belong to the same company and branch.,يجب أن ينتمي الأصل إلى نفس الشركة والفرع.
+Asset name,اسم الأصل
+Asset Name,اسم الأصل
+Asset Owner,مالك الأصل
+Asset Recommendation,توصية الأصل
+Asset Relationship,علاقة الأصل
+Asset Reliability Trend,اتجاه موثوقية الأصل
+Asset Risk Matrix,مصفوفة مخاطر الأصول
+Asset Risk Register,سجل مخاطر الأصول
+Asset Threshold Profile,ملف عتبات الأصل
+Asset uses cost model; revaluation is optional under IAS 16 revaluation model.,يستخدم الأصل نموذج التكلفة؛ إعادة التقييم اختيارية بموجب نموذج إعادة التقييم في IAS 16.
+Asset Work Order,أمر عمل الأصل
+Assets,الأصول
+Assets by category,الأصول حسب الفئة
+Assets by lifecycle status,الأصول حسب حالة دورة الحياة
+Assigned To,مُسند إلى
+Attached,مرفق
+Attachment,مرفق
+Auto Depreciation,الإهلاك التلقائي
+Auto-numbered asset code (equals document name).,رمز أصل مرقم تلقائياً (يساوي اسم المستند).
+Automated depreciation entries support cost model only.,قيود الإهلاك الآلية تدعم نموذج التكلفة فقط.
+Availability %,نسبة التوفر %
+Barcode,الباركود
+Barcode Image,صورة الباركود
 Branch,الفرع
-Branch belongs to a different company.,فرع belongs إلى a different شركة.
-Branch does not belong to this company.,فرع does not belong إلى this شركة.
-Branch filter (optional),فرع filter (optional)
-Branch is required — hotel demo is branch-scoped only.,فرع is required — hotel demo is فرع - scoped only.
-Branch {0} does not exist.,فرع { 0 } does not exist.
-Brand,Brand
-Cannot capitalize a disposed asset.,Cannot capitalize a disposed asset.
-Cannot post depreciation for this asset status.,Cannot post depreciation لـ this asset حالة.
-Capacity (guests),Capacity (guests)
-Capital Risk,Capital مخاطر
-Capitalization,Capitalization
-Capitalization amount,Capitalization مبلغ
-Capitalization amount must be positive.,Capitalization مبلغ must be positive.
-Capitalization date,Capitalization تاريخ
-Capitalization journal entry,Capitalization يومية قيد
-Capitalize the asset before depreciation.,Capitalize the asset before depreciation.
-Capitalized cost (Dr on acquisition),Capitalized تكلفة (Dr on acquisition)
-Caption,Caption
-Carrying amount,Carrying مبلغ
-Carrying Amount,Carrying مبلغ
-Cash / bank account,نقدية بنك حساب
+Branch belongs to a different company.,الفرع ينتمي إلى شركة مختلفة.
+Branch does not belong to this company.,الفرع لا ينتمي إلى هذه الشركة.
+Branch filter (optional),تصفية الفرع (اختياري)
+Branch is required — hotel demo is branch-scoped only.,الفرع مطلوب — العرض التجريبي للفندق مقيد بالفرع فقط.
+Branch {0} does not exist.,الفرع {0} غير موجود.
+Brand,العلامة التجارية
+Cannot capitalize a disposed asset.,لا يمكن رسملة أصل تم التخلص منه.
+Cannot post depreciation for this asset status.,لا يمكن ترحيل الإهلاك لهذه حالة الأصل.
+Capacity (guests),السعة (ضيوف)
+Capital Risk,مخاطر رأس المال
+Capitalization,الرسملة
+Capitalization amount,مبلغ الرسملة
+Capitalization amount must be positive.,يجب أن يكون مبلغ الرسملة موجباً.
+Capitalization date,تاريخ الرسملة
+Capitalization journal entry,قيد يومية الرسملة
+Capitalize the asset before depreciation.,قم برسملة الأصل قبل الإهلاك.
+Capitalized cost (Dr on acquisition),التكلفة المرسّمة (مدين عند الاقتناء)
+Caption,التسمية التوضيحية
+Carrying amount,القيمة الدفترية
+Carrying Amount,القيمة الدفترية
+Cash / bank account,حساب النقد / البنك
 Category,الفئة
-Category Code,فئة كود
-Category does not exist.,فئة does not exist.
-Category must belong to the same company.,فئة must belong إلى the same شركة.
-Category Name,فئة اسم
-Cause,Cause
-Check Item,فحص صنف
-City / address or geographic label,City عنوان or geographic label
-Claim Amount,Claim مبلغ
-Claim Date,Claim تاريخ
-Claim Status,Claim حالة
-Claims by status,Claims حسب حالة
-Claims filed trend,Claims filed اتجاه
-Claims Register,Claims Register
-Classification Code,Classification كود
-Click to open,Click إلى مفتوح
-Close,Close
+Category Code,رمز الفئة
+Category does not exist.,الفئة غير موجودة.
+Category must belong to the same company.,يجب أن تنتمي الفئة إلى نفس الشركة.
+Category Name,اسم الفئة
+Cause,السبب
+Check Item,بند الفحص
+City / address or geographic label,المدينة / العنوان أو التسمية الجغرافية
+Claim Amount,مبلغ المطالبة
+Claim Date,تاريخ المطالبة
+Claim Status,حالة المطالبة
+Claims by status,المطالبات حسب الحالة
+Claims filed trend,اتجاه تقديم المطالبات
+Claims Register,سجل المطالبات
+Classification Code,رمز التصنيف
+Click to open,انقر للفتح
+Close,إغلاق
 Company,الشركة
-Company filter is required.,شركة filter is required.
-Company is required,شركة is required
-Company is required.,شركة is required.
-Company must match the selected Insurance Policy.,شركة must match the selected Insurance سياسة.
-Company Name,شركة اسم
-Company {0} has no default currency; cannot post Journal Entry.,شركة { 0 } has no افتراضي currency; cannot post يومية قيد.
-Comparison Operator,Comparison Operator
-Completion Date,Completion تاريخ
+Company filter is required.,تصفية الشركة مطلوبة.
+Company is required,الشركة مطلوبة
+Company is required.,الشركة مطلوبة.
+Company must match the selected Insurance Policy.,يجب أن تطابق الشركة بوليصة التأمين المحددة.
+Company Name,اسم الشركة
+Company {0} has no default currency; cannot post Journal Entry.,الشركة {0} ليس لها عملة افتراضية؛ لا يمكن ترحيل قيد اليومية.
+Comparison Operator,عامل المقارنة
+Completion Date,تاريخ الإنجاز
 Compliance,الامتثال
-Compliance Basis,امتثال Basis
-Compliance Reference,امتثال Reference
-Condition,Condition
-Condition Expression,Condition Expression
-Condition Rating (1-5),Condition Rating (1 - 5)
-Condition State,Condition State
-Conditional Branch Rule,Conditional فرع Rule
-Confidence,Confidence
-Confidence Score,Confidence درجة
-Contact Person,اتصال Person
-Contra-asset (Cr on depreciation),Contra - asset (Cr on depreciation)
-Core Work Order,أساسي Work Order
-Cost,تكلفة
-Cost & dates,تكلفة & dates
-Cost Amount,تكلفة مبلغ
-Country,Country
-Coverage period,Coverage period
-Coverage Type,Coverage نوع
-Create at least one Branch for company {0}.,Create at least one فرع لـ شركة { 0 }.
-Credit account (cash / payables),ائتمان حساب (نقدية payables)
-Credit account cannot be the same as the asset GL account.,ائتمان حساب cannot be the same as the asset GL حساب.
-Credit account must be a leaf account.,ائتمان حساب must be a leaf حساب.
-Credit account must be a leaf GL account for this company.,ائتمان حساب must be a leaf GL حساب لـ this شركة.
-"Credit for gain, debit for loss (balancing line).","ائتمان لـ gain, debit لـ loss (balancing line)."
-Critical Threshold,Critical Threshold
-Criticality,Criticality
-Currency,Currency
-Custodian,Custodian
-Days ahead cannot be negative.,Days ahead cannot be negative.
-Days Remaining,Days Remaining
-Days Since,Days Since
-Days to Expiry,Days إلى Expiry
-Declining balance annual rate %,Declining رصيد annual معدل%
-Default declining balance rate % (annual),افتراضي declining رصيد معدل% (annual)
-Default depreciation,افتراضي depreciation
-Default depreciation (IAS 16),افتراضي depreciation (IAS 16)
-Default depreciation method,افتراضي depreciation method
-Default GL accounts (IAS 16),افتراضي GL حسابات (IAS 16)
-Default total units (UoP),افتراضي إجمالي units (Uo P)
-Default useful life (months),افتراضي useful life (months)
-Default useful life must be at least 1 month.,افتراضي useful life must be at least 1 month.
-Degradation Index,Degradation Index
-Depreciable amount,Depreciable مبلغ
-Depreciation,Depreciation
-Depreciation amount,Depreciation مبلغ
-Depreciation Amount,Depreciation مبلغ
-Depreciation amount must be positive.,Depreciation مبلغ must be positive.
-Depreciation book,Depreciation book
-Depreciation Entry,Depreciation قيد
-Depreciation expense,Depreciation مصروف
-Depreciation expense account,Depreciation مصروف حساب
-Depreciation method,Depreciation method
-Depreciation start date,Depreciation بداية تاريخ
-Depreciation start date cannot be before capitalization date.,Depreciation بداية تاريخ cannot be before capitalization تاريخ.
-Depreciation {0} — {1},Depreciation { 0 } — { 1 }
-Derecognition {0} — {1},Derecognition { 0 } — { 1 }
+Compliance Basis,أساس الامتثال
+Compliance Reference,مرجع الامتثال
+Condition,الحالة
+Condition Expression,تعبير الحالة
+Condition Rating (1-5),تقييم الحالة (1-5)
+Condition State,حالة الأصل
+Conditional Branch Rule,قاعدة فرع شرطية
+Confidence,الثقة
+Confidence Score,درجة الثقة
+Contact Person,جهة الاتصال
+Contra-asset (Cr on depreciation),حساب مقابل للأصل (دائن عند الإهلاك)
+Core Work Order,أمر العمل الأساسي
+Cost,التكلفة
+Cost & dates,التكلفة والتواريخ
+Cost Amount,مبلغ التكلفة
+Country,الدولة
+Coverage period,فترة التغطية
+Coverage Type,نوع التغطية
+Create at least one Branch for company {0}.,أنشئ فرعاً واحداً على الأقل للشركة {0}.
+Credit account (cash / payables),حساب الدائن (نقد / ذمم دائنة)
+Credit account cannot be the same as the asset GL account.,لا يمكن أن يكون حساب الدائن هو نفس حساب الأصل في الأستاذ العام.
+Credit account must be a leaf account.,يجب أن يكون حساب الدائن حساباً فرعياً.
+Credit account must be a leaf GL account for this company.,يجب أن يكون حساب الدائن حساباً فرعياً في الأستاذ العام لهذه الشركة.
+"Credit for gain, debit for loss (balancing line).",دائن للربح، مدين للخسارة (سطر الموازنة).
+Critical Threshold,العتبة الحرجة
+Criticality,الأهمية
+Currency,العملة
+Custodian,أمين العهدة
+Days ahead cannot be negative.,لا يمكن أن تكون الأيام المتبقية سالبة.
+Days Remaining,الأيام المتبقية
+Days Since,الأيام منذ
+Days to Expiry,أيام حتى الانتهاء
+Declining balance annual rate %,معدل الرصيد المتناقص السنوي %
+Default declining balance rate % (annual),معدل الرصيد المتناقص الافتراضي % (سنوي)
+Default depreciation,الإهلاك الافتراضي
+Default depreciation (IAS 16),الإهلاك الافتراضي (IAS 16)
+Default depreciation method,طريقة الإهلاك الافتراضية
+Default GL accounts (IAS 16),حسابات الأستاذ العام الافتراضية (IAS 16)
+Default total units (UoP),إجمالي الوحدات الافتراضي (UoP)
+Default useful life (months),العمر الإنتاجي الافتراضي (بالأشهر)
+Default useful life must be at least 1 month.,يجب أن يكون العمر الإنتاجي الافتراضي شهراً واحداً على الأقل.
+Degradation Index,مؤشر التدهور
+Depreciable amount,المبلغ القابل للإهلاك
+Depreciation,الإهلاك
+Depreciation amount,مبلغ الإهلاك
+Depreciation Amount,مبلغ الإهلاك
+Depreciation amount must be positive.,يجب أن يكون مبلغ الإهلاك موجباً.
+Depreciation book,دفتر الإهلاك
+Depreciation Entry,قيد الإهلاك
+Depreciation expense,مصروف الإهلاك
+Depreciation expense account,حساب مصروف الإهلاك
+Depreciation method,طريقة الإهلاك
+Depreciation start date,تاريخ بدء الإهلاك
+Depreciation start date cannot be before capitalization date.,لا يمكن أن يكون تاريخ بدء الإهلاك قبل تاريخ الرسملة.
+Depreciation {0} — {1},إهلاك {0} — {1}
+Derecognition {0} — {1},إلغاء الاعتراف {0} — {1}
 Description,الوصف
 Details,التفاصيل
-Disposal,Disposal
-Disposal date,Disposal تاريخ
-Disposal Date,Disposal تاريخ
-Disposal Reason Code,Disposal Reason كود
-Docstatus,Docstatus
-Downtime (h),Downtime (h)
-Downtime Hours,Downtime Hours
-Duplicate,Duplicate
-EAM Intelligence,EAM ذكاء
+Disposal,التخلص
+Disposal date,تاريخ التخلص
+Disposal Date,تاريخ التخلص
+Disposal Reason Code,رمز سبب التخلص
+Docstatus,حالة المستند
+Downtime (h),وقت التوقف (س)
+Downtime Hours,ساعات التوقف
+Duplicate,مكرر
+EAM Intelligence,ذكاء إدارة الأصول
 Email,البريد الإلكتروني
-Enable monthly auto depreciation,Enable monthly auto depreciation
-Enabled,Enabled
+Enable monthly auto depreciation,تفعيل الإهلاك الشهري التلقائي
+Enabled,مفعّل
 End Date,تاريخ الانتهاء
-End Date cannot be before Start Date.,نهاية تاريخ cannot be before بداية تاريخ.
-Engineering Attention,هندسة Attention
-Estimated Cost,Estimated تكلفة
-Event Time,Event Time
-Executed at,Executed at
-Execution Window,Execution Window
-Expiring Policies Report,Expiring Policies تقرير
-fa-executive-dashboard,fa - تنفيذي - لوحة معلومات
-Failure Analysis Report,Failure Analysis تقرير
-Failure Count,Failure عدد
-Failure Freq,Failure Freq
-Failure Frequency,Failure Frequency
-File,File
-Filters,Filters
-Fixed Asset,ثابتة Asset
-Fixed Asset Acquisition,ثابتة Asset Acquisition
-Fixed asset acquisition {0} — {1},ثابتة asset acquisition { 0 } — { 1 }
-Fixed Asset Auto Depreciation Policy,ثابتة Asset Auto Depreciation سياسة
-Fixed Asset Category,ثابتة Asset فئة
-Fixed Asset Depreciation Entry,ثابتة Asset Depreciation قيد
-Fixed Asset Depreciation Method,ثابتة Asset Depreciation Method
-Fixed Asset Disposal,ثابتة Asset Disposal
-Fixed Asset does not exist.,ثابتة Asset does not exist.
-Fixed Asset Inspection,ثابتة Asset Inspection
-Fixed Asset Location,ثابتة Asset Location
-Fixed Asset Maintenance,ثابتة Asset Maintenance
-Fixed Asset Movement Log,ثابتة Asset Movement سجل
-Fixed Asset must belong to the same company.,ثابتة Asset must belong إلى the same شركة.
-Fixed Asset Revaluation,ثابتة Asset Revaluation
-Fixed Asset Status,ثابتة Asset حالة
-Fixed Asset Transfer,ثابتة Asset Transfer
-Fixed Asset Write-Off,ثابتة Asset Write - Off
+End Date cannot be before Start Date.,لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء.
+Engineering Attention,يتطلب اهتمام الهندسة
+Estimated Cost,التكلفة المقدرة
+Event Time,وقت الحدث
+Executed at,نُفّذ في
+Execution Window,نافذة التنفيذ
+Expiring Policies Report,تقرير السياسات المنتهية
+fa-executive-dashboard,لوحة معلومات التنفيذيين للأصول
+Failure Analysis Report,تقرير تحليل الأعطال
+Failure Count,عدد الأعطال
+Failure Freq,تكرار الأعطال
+Failure Frequency,تكرار الأعطال
+File,ملف
+Filters,عوامل التصفية
+Fixed Asset,أصل ثابت
+Fixed Asset Acquisition,اقتناء أصل ثابت
+Fixed asset acquisition {0} — {1},اقتناء أصل ثابت {0} — {1}
+Fixed Asset Auto Depreciation Policy,سياسة الإهلاك التلقائي للأصول الثابتة
+Fixed Asset Category,فئة الأصول الثابتة
+Fixed Asset Depreciation Entry,قيد إهلاك أصل ثابت
+Fixed Asset Depreciation Method,طريقة إهلاك الأصول الثابتة
+Fixed Asset Disposal,التخلص من أصل ثابت
+Fixed Asset does not exist.,الأصل الثابت غير موجود.
+Fixed Asset Inspection,فحص الأصل الثابت
+Fixed Asset Location,موقع الأصل الثابت
+Fixed Asset Maintenance,صيانة الأصل الثابت
+Fixed Asset Movement Log,سجل حركة الأصل الثابت
+Fixed Asset must belong to the same company.,يجب أن ينتمي الأصل الثابت إلى نفس الشركة.
+Fixed Asset Revaluation,إعادة تقييم أصل ثابت
+Fixed Asset Status,حالة الأصل الثابت
+Fixed Asset Transfer,نقل أصل ثابت
+Fixed Asset Write-Off,شطب أصل ثابت
 Fixed Assets,الأصول الثابتة
-Fixed Assets Workcenter,ثابتة أصول Workcenter
-fixed-assets-analytics-dashboard,ثابتة - أصول - تحليلات - لوحة معلومات
-fixed-assets-customer-portal,ثابتة - أصول - عميل - بوابة
-fixed-assets-executive-dashboard,ثابتة - أصول - تنفيذي - لوحة معلومات
-fixed-assets-finance-desk,ثابتة - أصول - مالية - desk
-fixed-assets-operations-desk,ثابتة - أصول - عمليات - desk
-Floor,Floor
-For units-of-production method only.,لـ units - of - production method only.
-From Date and To Date are required.,From تاريخ و إلى تاريخ are required.
-From Hotel Property,From Hotel Property
-From Hotel Room,From Hotel Room
-From Location,From Location
-From Property,From Property
-From Room,From Room
-From room and To room cannot be the same.,From room و إلى room cannot be the same.
-Functional Area,Functional Area
-Functional Area must belong to the same hotel property.,Functional Area must belong إلى the same hotel property.
-Functional Location,Functional Location
-Functional Location Name,Functional Location اسم
-Gain / Loss,Gain Loss
-Gain or loss,Gain or loss
-Gain or loss on disposal (P&L),Gain or loss on disposal (P & L)
-Gallery,Gallery
-Generate / Refresh Codes,Generate Refresh Codes
-GL,GL
-GL & hierarchy,GL & hierarchy
-GL Account,GL حساب
-GL Account {0} does not exist.,GL حساب { 0 } does not exist.
-GL Accounts,GL حسابات
-GL accounts,GL حسابات
-GL accounts (override),GL حسابات (override)
-Gross carrying amount,Gross carrying مبلغ
-Gross less accumulated depreciation before derecognition.,Gross less accumulated depreciation before derecognition.
-Health Score,صحة درجة
-Health Status,صحة حالة
-Hierarchy,Hierarchy
-Hotel Asset Inspection,Hotel Asset Inspection
-Hotel Asset Transfer,Hotel Asset Transfer
-Hotel asset warranty expires on {0} ({1}),Hotel asset warranty expires on { 0 } ({ 1 })
-Hotel Assets & Inspections,Hotel أصول & Inspections
-Hotel Functional Area,Hotel Functional Area
-Hotel Property,Hotel Property
-Hotel Property does not exist.,Hotel Property does not exist.
-Hotel Property must belong to the same company.,Hotel Property must belong إلى the same شركة.
-Hotel Property must use the same branch.,Hotel Property must use the same فرع.
-Hotel Room,Hotel Room
-Hotel Structure,Hotel Structure
-Hotel vertical,Hotel vertical
-Hotel-linked assets,Hotel - linked أصول
-Hotel-linked assets by property,Hotel - linked أصول حسب property
-Housekeeping Attention,Housekeeping Attention
+Fixed Assets Workcenter,مركز عمل الأصول الثابتة
+fixed-assets-analytics-dashboard,لوحة تحليلات الأصول الثابتة
+fixed-assets-customer-portal,بوابة عميل الأصول الثابتة
+fixed-assets-executive-dashboard,لوحة التنفيذيين للأصول الثابتة
+fixed-assets-finance-desk,مكتب مالية الأصول الثابتة
+fixed-assets-operations-desk,مكتب عمليات الأصول الثابتة
+Floor,الطابق
+For units-of-production method only.,لطريقة وحدات الإنتاج فقط.
+From Date and To Date are required.,تاريخ البداية وتاريخ النهاية مطلوبان.
+From Hotel Property,من عقار فندقي
+From Hotel Room,من غرفة فندق
+From Location,من الموقع
+From Property,من العقار
+From Room,من الغرفة
+From room and To room cannot be the same.,لا يمكن أن تكون غرفة المصدر وغرفة الوجهة متطابقتين.
+Functional Area,المنطقة الوظيفية
+Functional Area must belong to the same hotel property.,يجب أن تنتمي المنطقة الوظيفية إلى نفس العقار الفندقي.
+Functional Location,الموقع الوظيفي
+Functional Location Name,اسم الموقع الوظيفي
+Gain / Loss,ربح / خسارة
+Gain or loss,ربح أو خسارة
+Gain or loss on disposal (P&L),ربح أو خسارة عند التخلص (الأرباح والخسائر)
+Gallery,المعرض
+Generate / Refresh Codes,إنشاء / تحديث الرموز
+GL,الأستاذ العام
+GL & hierarchy,الأستاذ العام والتسلسل الهرمي
+GL Account,حساب الأستاذ العام
+GL Account {0} does not exist.,حساب الأستاذ العام {0} غير موجود.
+GL Accounts,حسابات الأستاذ العام
+GL accounts,حسابات الأستاذ العام
+GL accounts (override),حسابات الأستاذ العام (تجاوز)
+Gross carrying amount,القيمة الدفترية الإجمالية
+Gross less accumulated depreciation before derecognition.,الإجمالي ناقص مجمع الإهلاك قبل إلغاء الاعتراف.
+Health Score,درجة الصحة
+Health Status,حالة الصحة
+Hierarchy,التسلسل الهرمي
+Hotel Asset Inspection,فحص أصل فندقي
+Hotel Asset Transfer,نقل أصل فندقي
+Hotel asset warranty expires on {0} ({1}),تنتهي ضمان الأصل الفندقي في {0} ({1})
+Hotel Assets & Inspections,أصول الفنادق والفحوصات
+Hotel Functional Area,المنطقة الوظيفية الفندقية
+Hotel Property,عقار فندقي
+Hotel Property does not exist.,العقار الفندقي غير موجود.
+Hotel Property must belong to the same company.,يجب أن ينتمي العقار الفندقي إلى نفس الشركة.
+Hotel Property must use the same branch.,يجب أن يستخدم العقار الفندقي نفس الفرع.
+Hotel Room,غرفة فندق
+Hotel Structure,هيكل الفندق
+Hotel vertical,القطاع الفندقي
+Hotel-linked assets,الأصول المرتبطة بالفندق
+Hotel-linked assets by property,الأصول المرتبطة بالفندق حسب العقار
+Housekeeping Attention,يتطلب اهتمام التدبير المنزلي
 IAS 16,IAS 16
-IAS 16 / IFRS,IAS 16 IFRS
-Identification,Identification
-Identification (no inventory link),Identification (no inventory link)
-"If set, only this branch is processed; otherwise all company branches.","If set, only this فرع is processed; otherwise all شركة branches."
-IFRS & cost,IFRS & تكلفة
-Impact,Impact
-Impact Score,Impact درجة
-Incident Date,Incident تاريخ
-Inspection Compliance Report,Inspection امتثال تقرير
-Inspection Date,Inspection تاريخ
-Inspection Due,Inspection استحقاق
-Inspections,Inspections
-Inspector,Inspector
-Inspector sign-off,Inspector sign - off
-Insurance Claim,Insurance Claim
-Insurance Claims,Insurance Claims
-Insurance Company,Insurance شركة
-Insurance Coverage Type,Insurance Coverage نوع
-Insurance Incident,Insurance Incident
-Insurance Policy,Insurance سياسة
-Insurance Renewal,Insurance Renewal
-Internal Code,Internal كود
-Internal Code must match the Asset ID.,Internal كود must match the Asset معرف.
-Invalid company.,Invalid شركة.
-Is Active,Is نشط
-Is Group,Is Group
-Items,Items
+IAS 16 / IFRS,IAS 16 / IFRS
+Identification,التعريف
+Identification (no inventory link),التعريف (بدون ربط بالمخزون)
+"If set, only this branch is processed; otherwise all company branches.",إذا تم التحديد، يُعالج هذا الفرع فقط؛ وإلا تُعالج جميع فروع الشركة.
+IFRS & cost,IFRS والتكلفة
+Impact,الأثر
+Impact Score,درجة الأثر
+Incident Date,تاريخ الحادث
+Inspection Compliance Report,تقرير امتثال الفحوصات
+Inspection Date,تاريخ الفحص
+Inspection Due,موعد الفحص
+Inspections,الفحوصات
+Inspector,المفتش
+Inspector sign-off,توقيع المفتش
+Insurance Claim,مطالبة تأمين
+Insurance Claims,مطالبات التأمين
+Insurance Company,شركة التأمين
+Insurance Coverage Type,نوع تغطية التأمين
+Insurance Incident,حادث تأمين
+Insurance Policy,بوليصة التأمين
+Insurance Renewal,تجديد التأمين
+Internal Code,الرمز الداخلي
+Internal Code must match the Asset ID.,يجب أن يطابق الرمز الداخلي معرف الأصل.
+Invalid company.,شركة غير صالحة.
+Is Active,نشط
+Is Group,مجموعة
+Items,الأصناف
 Journal Entry,قيد يومية
-Last depreciation posting,Last depreciation posting
-Last Inspection,Last Inspection
-Last Location,Last Location
-Last run,Last run
-Last run at,Last run at
-Last run message,Last run message
-Last run status,Last run حالة
-Last Scan,Last Scan
-Last Seen Time,Last Seen Time
-Last target posting date,Last target posting تاريخ
-Last Update,Last تحديث
-Leaf categories should define all three; used when creating assets unless overridden on the asset.,Leaf categories should define all three; used when creating أصول unless overridden on the asset.
-Leaf category requires {0}.,Leaf فئة requires { 0 }.
-Left,Left
-Lifecycle Stage,Lifecycle Stage
-Load omnexa_core vertical portal desk,Load omnexa أساسي vertical بوابة desk
-Load omnexa_core vertical workcenter kit,Load omnexa أساسي vertical workcenter kit
-Location,Location
-Location Name,Location اسم
-Location Path,Location Path
-Location Type,Location نوع
-Login required,Login required
-Maintenance,Maintenance
-Maintenance Burden,Maintenance Burden
-Maintenance Core,Maintenance أساسي
-Maintenance Strategy,Maintenance Strategy
-Maintenance Type,Maintenance نوع
-Mandatory,Mandatory
-Master data,Master بيانات
-Max assets per run,أقصى أصول per run
-Max assets per run must be at least 1.,أقصى أصول per run must be at least 1.
-Maximum Value,Maximum Value
-Measurement model,Measurement model
-Media,Media
-Media Type,Media نوع
-Message,Message
-Meter Type,Meter نوع
-Method Name,Method اسم
-Method Type,Method نوع
-Minimum Value,Minimum Value
-Missing Scan,Missing Scan
-Movement Type,Movement نوع
-MTBF (h),MTBF (h)
-MTBF (hours),MTBF (hours)
-MTTR (h),MTTR (h)
-MTTR (hours),MTTR (hours)
-NBV,NBV
-Net Book Value,Net Book Value
-New End Date,جديد نهاية تاريخ
-New Insurance Policy,جديد Insurance سياسة
-New policies trend,جديد policies اتجاه
-NFC identifier,NFC identifier
-NFC tag UID or NDEF payload reference (mobile readiness).,NFC tag UID or NDEF payload reference (mobile readiness).
-No leaf Fixed Asset Category with GL accounts found for company {0}.,No leaf ثابتة Asset فئة with GL حسابات found لـ شركة { 0 }.
-No photos or documents yet. Use the sidebar Attachments or add rows under Media Files (Hotel tab).,No photos or مستندات yet. Use the sidebar Attachments or إضافة rows under Media Files (Hotel tab).
-No QR payload,No QR payload
-No suitable leaf GL account for acquisition credit (exclude asset accounts) for company {0}.,No suitable leaf GL حساب لـ acquisition ائتمان (exclude asset حسابات) لـ شركة { 0 }.
-Notes,Notes
-Number of Floors,رقم of Floors
-Old Parent,Old Parent
-Omnexa Fixed Assets,Omnexa ثابتة أصول
-Only capitalized assets can be derecognized.,Only capitalized أصول can be derecognized.
-Only System Manager can run this action.,Only النظام مدير can run this إجراء.
-Open asset alerts,مفتوح asset alerts
-Open Claims,مفتوح Claims
-Operational Status,تشغيلي حالة
+Last depreciation posting,آخر ترحيل إهلاك
+Last Inspection,آخر فحص
+Last Location,آخر موقع
+Last run,آخر تشغيل
+Last run at,آخر تشغيل في
+Last run message,رسالة آخر تشغيل
+Last run status,حالة آخر تشغيل
+Last Scan,آخر مسح
+Last Seen Time,وقت آخر رؤية
+Last target posting date,آخر تاريخ ترحيل مستهدف
+Last Update,آخر تحديث
+Leaf categories should define all three; used when creating assets unless overridden on the asset.,يجب أن تحدد الفئات الفرعية الحسابات الثلاثة؛ تُستخدم عند إنشاء الأصول ما لم يتم تجاوزها على الأصل.
+Leaf category requires {0}.,الفئة الفرعية تتطلب {0}.
+Left,يسار
+Lifecycle Stage,مرحلة دورة الحياة
+Load omnexa_core vertical portal desk,تحميل بوابة القطاع من omnexa_core
+Load omnexa_core vertical workcenter kit,تحميل مجموعة مركز عمل القطاع من omnexa_core
+Location,الموقع
+Location Name,اسم الموقع
+Location Path,مسار الموقع
+Location Type,نوع الموقع
+Login required,تسجيل الدخول مطلوب
+Maintenance,الصيانة
+Maintenance Burden,عبء الصيانة
+Maintenance Core,نواة الصيانة
+Maintenance Strategy,استراتيجية الصيانة
+Maintenance Type,نوع الصيانة
+Mandatory,إلزامي
+Master data,البيانات الرئيسية
+Max assets per run,الحد الأقصى للأصول لكل تشغيل
+Max assets per run must be at least 1.,يجب أن يكون الحد الأقصى للأصول لكل تشغيل 1 على الأقل.
+Maximum Value,القيمة القصوى
+Measurement model,نموذج القياس
+Media,الوسائط
+Media Type,نوع الوسائط
+Message,الرسالة
+Meter Type,نوع العداد
+Method Name,اسم الطريقة
+Method Type,نوع الطريقة
+Minimum Value,القيمة الدنيا
+Missing Scan,مسح مفقود
+Movement Type,نوع الحركة
+MTBF (h),متوسط الوقت بين الأعطال (س)
+MTBF (hours),متوسط الوقت بين الأعطال (ساعات)
+MTTR (h),متوسط وقت الإصلاح (س)
+MTTR (hours),متوسط وقت الإصلاح (ساعات)
+NBV,صافي القيمة الدفترية
+Net Book Value,صافي القيمة الدفترية
+New End Date,تاريخ انتهاء جديد
+New Insurance Policy,بوليصة تأمين جديدة
+New policies trend,اتجاه السياسات الجديدة
+NFC identifier,معرف NFC
+NFC tag UID or NDEF payload reference (mobile readiness).,معرف وسم NFC أو مرجع حمولة NDEF (جاهزية الجوال).
+No leaf Fixed Asset Category with GL accounts found for company {0}.,لم يُعثر على فئة أصول ثابتة فرعية بحسابات أستاذ عام للشركة {0}.
+No photos or documents yet. Use the sidebar Attachments or add rows under Media Files (Hotel tab).,لا توجد صور أو مستندات بعد. استخدم المرفقات في الشريط الجانبي أو أضف صفوفاً تحت ملفات الوسائط (تبويب الفندق).
+No QR payload,لا توجد حمولة QR
+No suitable leaf GL account for acquisition credit (exclude asset accounts) for company {0}.,لا يوجد حساب أستاذ عام فرعي مناسب لدائن الاقتناء (باستثناء حسابات الأصول) للشركة {0}.
+Notes,ملاحظات
+Number of Floors,عدد الطوابق
+Old Parent,الأب السابق
+Omnexa Fixed Assets,أومنكسا — الأصول الثابتة
+Only capitalized assets can be derecognized.,يمكن إلغاء الاعتراف بالأصول المرسّمة فقط.
+Only System Manager can run this action.,مدير النظام فقط يمكنه تنفيذ هذا الإجراء.
+Open asset alerts,تنبيهات الأصول المفتوحة
+Open Claims,المطالبات المفتوحة
+Operational Status,الحالة التشغيلية
 Operations,العمليات
-Optional defaults copied to new assets in this category (can be overridden per asset).,Optional defaults copied إلى جديد أصول in this فئة (can be overridden per asset).
+Optional defaults copied to new assets in this category (can be overridden per asset).,القيم الافتراضية الاختيارية تُنسخ إلى الأصول الجديدة في هذه الفئة (يمكن تجاوزها لكل أصل).
 Overview,نظرة عامة
-Parent asset cannot be the same asset.,Parent asset cannot be the same asset.
-Parent asset does not exist.,Parent asset does not exist.
-Parent asset must belong to the same company.,Parent asset must belong إلى the same شركة.
-Parent Category,Parent فئة
-Parent category must belong to the same company.,Parent فئة must belong إلى the same شركة.
-Parent Location,Parent Location
-"Pass company=\""...\"" or set a default Company.","Pass شركة = \ ""... \ "" or set a افتراضي شركة."
-Payload JSON,Payload JSON
-Period (YYYY-MM),Period (YYYY - MM)
-Phone,Phone
-Photo / attachment,Photo attachment
-Photos & documents,Photos & مستندات
-Planned End,Planned نهاية
-Planned End cannot be before Planned Start.,Planned نهاية cannot be before Planned بداية.
-Planned Start,Planned بداية
-Policies by coverage,Policies حسب coverage
-Policies by status,Policies حسب حالة
-Policy name is required.,سياسة اسم is required.
-Policy Number,سياسة رقم
-Policy Reference,سياسة Reference
-Policy Status,سياسة حالة
-Posted depreciation trend,مرحل depreciation اتجاه
-Posting,Posting
-Posting date,Posting تاريخ
-Posting Date,Posting تاريخ
-Posting date cannot be before depreciation start date on the asset.,Posting تاريخ cannot be before depreciation بداية تاريخ on the asset.
-Posting Reference,Posting Reference
-Postings,Postings
-Preview,Preview
-Previous asset status,Previous asset حالة
-Priority,Priority
-Probability Score,Probability درجة
-Problem,Problem
-Proceeds,Proceeds
-Proceeds & GL,Proceeds & GL
-Proceeds (cash),Proceeds (نقدية)
-Procurement link,Procurement link
-Procurement Reference,Procurement Reference
-Profile Name,ملف اسم
-Profit and loss expense (Dr on depreciation),Profit و loss مصروف (Dr on depreciation)
-Property Name,Property اسم
-Property Type,Property نوع
-Purchase Order,شراء Order
-QR Code,QR كود
-QR Code Image,QR كود Image
-QR payload,QR payload
-Quality Score,جودة درجة
-Reader,Reader
-Reader Device,Reader Device
-Reading Time,Reading Time
-Reason,Reason
-Rebuild QR Image,Rebuild QR Image
-Recommendation,Recommendation
-Recommendation Date,Recommendation تاريخ
-Recommendations,Recommendations
-Recurrence,Recurrence
-Reference DocType,Reference Doc نوع
-Reference Doctype,Reference Doctype
-Reference Name,Reference اسم
-Related Asset,Related Asset
-Relationship Type,Relationship نوع
-Reliability %,Reliability%
-Reliability Report,Reliability تقرير
-Reliability Score,Reliability درجة
-Remarks,Remarks
-Renewal Date,Renewal تاريخ
-Replacement Forecast Report,Replacement Forecast تقرير
-Replacement Projection,Replacement Projection
-Replacement Recommendation,Replacement Recommendation
-Requires Work Order,Requires Work Order
-Residual value,Residual value
-Residual value cannot exceed acquisition cost.,Residual value cannot exceed acquisition تكلفة.
-Resolution,Resolution
-Resolution Notes,Resolution Notes
-Response Type,Response نوع
-Result,Result
-Result action,Result إجراء
-Result Action,Result إجراء
-Results & evidence,Results & دليل
-Revalued Amount,Revalued مبلغ
-Revalued amount is close to current net book value.,Revalued مبلغ is close إلى current net book value.
-Revalued Amount must be positive,Revalued مبلغ must be positive
+Parent asset cannot be the same asset.,لا يمكن أن يكون الأصل الأب هو نفس الأصل.
+Parent asset does not exist.,الأصل الأب غير موجود.
+Parent asset must belong to the same company.,يجب أن ينتمي الأصل الأب إلى نفس الشركة.
+Parent Category,الفئة الأب
+Parent category must belong to the same company.,يجب أن تنتمي الفئة الأب إلى نفس الشركة.
+Parent Location,الموقع الأب
+"Pass company=\""...\"" or set a default Company.","Pass company=\""...\"" or set a default Company."
+Payload JSON,حمولة JSON
+Period (YYYY-MM),الفترة (YYYY-MM)
+Phone,الهاتف
+Photo / attachment,صورة / مرفق
+Photos & documents,الصور والمستندات
+Planned End,النهاية المخططة
+Planned End cannot be before Planned Start.,لا يمكن أن تكون النهاية المخططة قبل البداية المخططة.
+Planned Start,البداية المخططة
+Policies by coverage,السياسات حسب التغطية
+Policies by status,السياسات حسب الحالة
+Policy name is required.,اسم السياسة مطلوب.
+Policy Number,رقم السياسة
+Policy Reference,مرجع السياسة
+Policy Status,حالة السياسة
+Posted depreciation trend,اتجاه الإهلاك المرحّل
+Posting,الترحيل
+Posting date,تاريخ الترحيل
+Posting Date,تاريخ الترحيل
+Posting date cannot be before depreciation start date on the asset.,لا يمكن أن يكون تاريخ الترحيل قبل تاريخ بدء الإهلاك على الأصل.
+Posting Reference,مرجع الترحيل
+Postings,الترحيلات
+Preview,معاينة
+Previous asset status,حالة الأصل السابقة
+Priority,الأولوية
+Probability Score,درجة الاحتمال
+Problem,المشكلة
+Proceeds,العائد
+Proceeds & GL,العائد والأستاذ العام
+Proceeds (cash),العائد (نقد)
+Procurement link,رابط المشتريات
+Procurement Reference,مرجع المشتريات
+Profile Name,اسم الملف
+Profit and loss expense (Dr on depreciation),مصروف الأرباح والخسائر (مدين عند الإهلاك)
+Property Name,اسم العقار
+Property Type,نوع العقار
+Purchase Order,أمر شراء
+QR Code,رمز QR
+QR Code Image,صورة رمز QR
+QR payload,حمولة QR
+Quality Score,درجة الجودة
+Reader,القارئ
+Reader Device,جهاز القارئ
+Reading Time,وقت القراءة
+Reason,السبب
+Rebuild QR Image,إعادة بناء صورة QR
+Recommendation,التوصية
+Recommendation Date,تاريخ التوصية
+Recommendations,التوصيات
+Recurrence,التكرار
+Reference DocType,نوع المستند المرجعي
+Reference Doctype,نوع المستند المرجعي
+Reference Name,الاسم المرجعي
+Related Asset,أصل مرتبط
+Relationship Type,نوع العلاقة
+Reliability %,الموثوقية %
+Reliability Report,تقرير الموثوقية
+Reliability Score,درجة الموثوقية
+Remarks,ملاحظات
+Renewal Date,تاريخ التجديد
+Replacement Forecast Report,تقرير توقع الاستبدال
+Replacement Projection,توقع الاستبدال
+Replacement Recommendation,توصية الاستبدال
+Requires Work Order,يتطلب أمر عمل
+Residual value,القيمة المتبقية
+Residual value cannot exceed acquisition cost.,لا يمكن أن تتجاوز القيمة المتبقية تكلفة الاقتناء.
+Resolution,الحل
+Resolution Notes,ملاحظات الحل
+Response Type,نوع الاستجابة
+Result,النتيجة
+Result action,إجراء النتيجة
+Result Action,إجراء النتيجة
+Results & evidence,النتائج والأدلة
+Revalued Amount,المبلغ المعاد تقييمه
+Revalued amount is close to current net book value.,المبلغ المعاد تقييمه قريب من صافي القيمة الدفترية الحالية.
+Revalued Amount must be positive,يجب أن يكون المبلغ المعاد تقييمه موجباً
 RFID,RFID
-RFID Scan Log,RFID Scan سجل
-RFID Tag,RFID Tag
-Right,Right
-Risk Level,مخاطر Level
-Risk Score,مخاطر درجة
-Room Assets,Room أصول
-Room Number,Room رقم
-Room Type,Room نوع
-Rule Name,Rule اسم
-Run,Run
-Run Monthly Depreciation,Run Monthly Depreciation
-Run Now,Run Now
-Running depreciation batch...,Running depreciation batch...
-Running total of units posted via depreciation entries (UoP).,Running إجمالي of units مرحل via depreciation entries (Uo P).
-Safety cap per monthly run.,Safety cap per monthly run.
-Save the document to show photos and attachments here.,Save the مستند إلى show photos و attachments here.
-Scan Mismatch,Scan Mismatch
-Scan Result,Scan Result
-Scan Status,Scan حالة
-Scan Time,Scan Time
-Schedule & costs,Schedule & costs
-Score,درجة
-Select a leaf category with GL accounts.,Select a leaf فئة with GL حسابات.
-Serial Number,Serial رقم
-Serial number or physical tag on the asset label.,Serial رقم or physical tag on the asset label.
-Series,Series
-Service Provider,خدمة Provider
-Set a depreciation method on the asset.,Set a depreciation method on the asset.
-Set a positive annual rate for declining balance depreciation.,Set a positive annual معدل لـ declining رصيد depreciation.
-Set a positive default declining balance annual rate %.,Set a positive افتراضي declining رصيد annual معدل%.
-Set by capitalization posting; may be zero until acquisition is submitted.,Set حسب capitalization posting; may be zero until acquisition is submitted.
-Set default total estimated units for units-of-production.,Set افتراضي إجمالي estimated units لـ units - of - production.
-"Set this company's Business Activity / Industry to Hotel Assets, or enable the site hotel flag.","Set this شركة ' s أعمال نشاط Industry إلى Hotel أصول, or enable the موقع hotel flag."
-Set {0} on the asset or category.,Set { 0 } on the asset or فئة.
-Severity,Severity
-Signal Strength,Signal Strength
-SLA Due,SLA استحقاق
-SLA Hours,SLA Hours
-Snapshot Time,لقطة Time
-Source,Source
-Source of funding: e.g. bank or accounts payable (Cr on acquisition).,Source of funding: e. g. بنك or حسابات payable (Cr on acquisition).
-Stable identifier for mobile scan APIs (e.g. FA name or UUID).,Stable identifier لـ mobile scan APIs (e. g. FA اسم or UUID).
-Star Classification,Star Classification
-Start Date,بداية تاريخ
+RFID Scan Log,سجل مسح RFID
+RFID Tag,وسم RFID
+Right,يمين
+Risk Level,مستوى المخاطر
+Risk Score,درجة المخاطر
+Room Assets,أصول الغرفة
+Room Number,رقم الغرفة
+Room Type,نوع الغرفة
+Rule Name,اسم القاعدة
+Run,تشغيل
+Run Monthly Depreciation,تشغيل الإهلاك الشهري
+Run Now,تشغيل الآن
+Running depreciation batch...,جاري تشغيل دفعة الإهلاك...
+Running total of units posted via depreciation entries (UoP).,الإجمالي التراكمي للوحدات المرحّلة عبر قيود الإهلاك (UoP).
+Safety cap per monthly run.,حد أمان لكل تشغيل شهري.
+Save the document to show photos and attachments here.,احفظ المستند لعرض الصور والمرفقات هنا.
+Scan Mismatch,عدم تطابق المسح
+Scan Result,نتيجة المسح
+Scan Status,حالة المسح
+Scan Time,وقت المسح
+Schedule & costs,الجدولة والتكاليف
+Score,الدرجة
+Select a leaf category with GL accounts.,اختر فئة فرعية بحسابات أستاذ عام.
+Serial Number,الرقم التسلسلي
+Serial number or physical tag on the asset label.,الرقم التسلسلي أو الوسم الفعلي على بطاقة الأصل.
+Series,السلسلة
+Service Provider,مزود الخدمة
+Set a depreciation method on the asset.,عيّن طريقة إهلاك على الأصل.
+Set a positive annual rate for declining balance depreciation.,عيّن معدلاً سنوياً موجباً لإهلاك الرصيد المتناقص.
+Set a positive default declining balance annual rate %.,عيّن معدل رصيد متناقص سنوي افتراضي موجب %.
+Set by capitalization posting; may be zero until acquisition is submitted.,يُعيّن عند ترحيل الرسملة؛ قد يكون صفراً حتى يُعتمد الاقتناء.
+Set default total estimated units for units-of-production.,عيّن إجمالي الوحدات المقدرة الافتراضي لوحدات الإنتاج.
+"Set this company's Business Activity / Industry to Hotel Assets, or enable the site hotel flag.",عيّن نشاط/قطاع الشركة إلى أصول الفنادق، أو فعّل علامة الفندق على الموقع.
+Set {0} on the asset or category.,عيّن {0} على الأصل أو الفئة.
+Severity,الخطورة
+Signal Strength,قوة الإشارة
+SLA Due,موعد SLA
+SLA Hours,ساعات SLA
+Snapshot Time,وقت اللقطة
+Source,المصدر
+Source of funding: e.g. bank or accounts payable (Cr on acquisition).,مصدر التمويل: مثلاً البنك أو الذمم الدائنة (دائن عند الاقتناء).
+Stable identifier for mobile scan APIs (e.g. FA name or UUID).,معرف ثابت لواجهات مسح الجوال (مثلاً اسم الأصل أو UUID).
+Star Classification,تصنيف النجوم
+Start Date,تاريخ البدء
 Status,الحالة
-Status Name,حالة اسم
-Stock item,Stock صنف
-Strategy Name,Strategy اسم
-Strategy Type,Strategy نوع
-Submit entries automatically,اعتماد entries automatically
-Submit only after workflow status is Approved.,اعتماد only after سير العمل حالة is معتمد.
-Submitted Policies,Submitted Policies
-Suggested (IAS 16),Suggested (IAS 16)
-Supplier Reference,مورد Reference
-System suggestion for this period; adjust posting date or units (UoP) and match your policy.,النظام suggestion لـ this period; adjust posting تاريخ or units (Uo P) و match your سياسة.
-Template Name,Template اسم
-This asset is already capitalized.,This asset is already capitalized.
-This policy is disabled.,This سياسة is disabled.
+Status Name,اسم الحالة
+Stock item,صنف مخزني
+Strategy Name,اسم الاستراتيجية
+Strategy Type,نوع الاستراتيجية
+Submit entries automatically,اعتماد القيود تلقائياً
+Submit only after workflow status is Approved.,الاعتماد فقط بعد أن تكون حالة سير العمل «معتمد».
+Submitted Policies,السياسات المعتمدة
+Suggested (IAS 16),مقترح (IAS 16)
+Supplier Reference,مرجع المورد
+System suggestion for this period; adjust posting date or units (UoP) and match your policy.,اقتراح النظام لهذه الفترة؛ عدّل تاريخ الترحيل أو الوحدات (UoP) وفق سياستك.
+Template Name,اسم القالب
+This asset is already capitalized.,تمت رسملة هذا الأصل مسبقاً.
+This policy is disabled.,هذه السياسة معطّلة.
 Title,العنوان
-To Hotel Property,إلى Hotel Property
-To Hotel Room,إلى Hotel Room
-To Location,إلى Location
-To Property,إلى Property
-To Room,إلى Room
-Total active assets,إجمالي نشط أصول
-Total Assets,إجمالي أصول
-Total estimated units (UoP),إجمالي estimated units (Uo P)
-Total estimated units is required for units-of-production depreciation.,إجمالي estimated units is required لـ units - of - production depreciation.
-Total net book value,إجمالي net book value
-Total Rooms,إجمالي Rooms
-Tracking,Tracking
-Transfer,Transfer
-Transfer Owner,Transfer Owner
+To Hotel Property,إلى عقار فندقي
+To Hotel Room,إلى غرفة فندق
+To Location,إلى الموقع
+To Property,إلى العقار
+To Room,إلى الغرفة
+Total active assets,إجمالي الأصول النشطة
+Total Assets,إجمالي الأصول
+Total estimated units (UoP),إجمالي الوحدات المقدرة (UoP)
+Total estimated units is required for units-of-production depreciation.,إجمالي الوحدات المقدرة مطلوب لإهلاك وحدات الإنتاج.
+Total net book value,إجمالي صافي القيمة الدفترية
+Total Rooms,إجمالي الغرف
+Tracking,التتبع
+Transfer,النقل
+Transfer Owner,مالك النقل
 Type,النوع
-Typed name or reference; use attachment for captured signature image.,Typed اسم or reference; use attachment لـ captured signature image.
-Unable to generate QR code,Unable إلى generate QR كود
-Uninsured Assets Report,Uninsured أصول تقرير
-Unit,Unit
-Units depreciated to date,Units depreciated إلى تاريخ
-Units this run (UoP),Units this run (Uo P)
-Uploaded By,Uploaded حسب
-Useful life (months),Useful life (months)
-Useful life in months is required for straight-line depreciation.,Useful life in months is required لـ straight - line depreciation.
+Typed name or reference; use attachment for captured signature image.,الاسم المكتوب أو المرجع؛ استخدم مرفقاً لصورة التوقيع الملتقطة.
+Unable to generate QR code,تعذّر إنشاء رمز QR
+Uninsured Assets Report,تقرير الأصول غير المؤمّنة
+Unit,الوحدة
+Units depreciated to date,الوحدات المُهلكَة حتى التاريخ
+Units this run (UoP),وحدات هذا التشغيل (UoP)
+Uploaded By,رُفع بواسطة
+Useful life (months),العمر الإنتاجي (بالأشهر)
+Useful life in months is required for straight-line depreciation.,العمر الإنتاجي بالأشهر مطلوب للإهلاك بطريقة القسط الثابت.
 Validation,التحقق
-Valuation Basis,Valuation Basis
-Value,Value
-Verification date,Verification تاريخ
-Verified by,Verified حسب
-Video,Video
-Warning Threshold,Warning Threshold
-Warranty,Warranty
-Warranty & supply chain,Warranty & supply chain
-Warranty end,Warranty نهاية
-Warranty End Date,Warranty نهاية تاريخ
-Warranty reference / policy,Warranty reference سياسة
-Warranty start,Warranty بداية
-Warranty Supplier,Warranty مورد
-Warranty terms / coverage,Warranty terms coverage
-Warranty vendor,Warranty vendor
-Wing / Zone,Wing Zone
-Work Order Type,Work Order نوع
-Workflow status,سير العمل حالة
-Workspace {0} not found.,مساحة العمل { 0 } not found.
-Write-Off Amount,Write - Off مبلغ
-Write-Off Reason,Write - Off Reason
-{0} must be unique. Existing asset: {1},{ 0 } must be unique. Existing asset: { 1 }
-{0}: account must belong to the same company.,{ 0 }: حساب must belong إلى the same شركة.
-{0}: invalid account for company.,{ 0 }: invalid حساب لـ شركة.
-{0}: invalid GL account.,{ 0 }: invalid GL حساب.
-{0}: must be a leaf account.,{ 0 }: must be a leaf حساب.
-أصول الفنادق — تجريبي,—
-إنشاء 50 أصلًا (غرف + مناطق إدارية + حركات),50 ً (+ +)
+Valuation Basis,أساس التقييم
+Value,القيمة
+Verification date,تاريخ التحقق
+Verified by,تحقق بواسطة
+Video,فيديو
+Warning Threshold,عتبة التحذير
+Warranty,الضمان
+Warranty & supply chain,الضمان وسلسلة التوريد
+Warranty end,نهاية الضمان
+Warranty End Date,تاريخ نهاية الضمان
+Warranty reference / policy,مرجع / بوليصة الضمان
+Warranty start,بداية الضمان
+Warranty Supplier,مورد الضمان
+Warranty terms / coverage,شروط / تغطية الضمان
+Warranty vendor,بائع الضمان
+Wing / Zone,الجناح / المنطقة
+Work Order Type,نوع أمر العمل
+Workflow status,حالة سير العمل
+Workspace {0} not found.,مساحة العمل {0} غير موجودة.
+Write-Off Amount,مبلغ الشطب
+Write-Off Reason,سبب الشطب
+{0} must be unique. Existing asset: {1},{0} يجب أن يكون فريداً. الأصل الموجود: {1}
+{0}: account must belong to the same company.,{0}: يجب أن ينتمي الحساب إلى نفس الشركة.
+{0}: invalid account for company.,{0}: حساب غير صالح للشركة.
+{0}: invalid GL account.,{0}: حساب أستاذ عام غير صالح.
+{0}: must be a leaf account.,{0}: يجب أن يكون حساباً فرعياً.
+أصول الفنادق — تجريبي,أصول الفنادق — تجريبي
+إنشاء 50 أصلًا (غرف + مناطق إدارية + حركات),إنشاء 50 أصلًا (غرف + مناطق إدارية + حركات)
 تم,تم
-جاري إنشاء البيانات التجريبية...,...
+جاري إنشاء البيانات التجريبية...,جاري إنشاء البيانات التجريبية...

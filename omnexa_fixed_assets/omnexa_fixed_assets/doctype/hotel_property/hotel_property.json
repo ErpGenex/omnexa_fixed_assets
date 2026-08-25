@@ -52,13 +52,15 @@
 		{
 			"fieldname": "brand",
 			"fieldtype": "Data",
-			"label": "Brand"
+			"label": "Brand",
+			"read_only": 1
 		},
 		{
 			"fieldname": "location",
 			"fieldtype": "Data",
 			"label": "Location",
-			"description": "City / address or geographic label"
+			"description": "City / address or geographic label",
+			"read_only": 1
 		},
 		{
 			"fieldname": "property_type",

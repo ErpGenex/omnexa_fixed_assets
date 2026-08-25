@@ -44,6 +44,7 @@
 		{
 			"fieldname": "company",
 			"fieldtype": "Link",
+			"fetch_from": "fixed_asset.company",
 			"label": "Company",
 			"options": "Company",
 			"reqd": 1,
@@ -52,6 +53,7 @@
 		{
 			"fieldname": "branch",
 			"fieldtype": "Link",
+			"fetch_from": "fixed_asset.branch",
 			"label": "Branch",
 			"options": "Branch",
 			"reqd": 1,
@@ -104,6 +106,7 @@
 		{
 			"fieldname": "asset_owner",
 			"fieldtype": "Link",
+			"fetch_from": "fixed_asset.asset_owner",
 			"label": "Asset Owner",
 			"options": "User"
 		},

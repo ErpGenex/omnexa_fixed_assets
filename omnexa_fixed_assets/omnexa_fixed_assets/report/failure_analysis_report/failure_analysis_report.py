@@ -2,10 +2,11 @@ import frappe
 from frappe import _
 
 from omnexa_core.omnexa_core.utils.report_charts import auto_chart_for_columns
+from omnexa_fixed_assets.utils.report_filters import merge_navbar_report_filters
 
 
 def execute(filters=None):
-	filters = frappe._dict(filters or {})
+	filters = merge_navbar_report_filters(filters)
 	conditions = ["fe.company=%(company)s"]
 	if filters.get("branch"):
 		conditions.append("fe.branch=%(branch)s")

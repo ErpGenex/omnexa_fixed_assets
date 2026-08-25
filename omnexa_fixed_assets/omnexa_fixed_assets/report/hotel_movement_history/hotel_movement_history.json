@@ -1,28 +1,76 @@
 {
  "add_total_row": 0,
+ "add_translate_data": 0,
  "columns": [],
  "creation": "2026-05-05 23:35:00",
+ "disable_prepared_report_automation": 0,
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Report",
+ "doctype_to_sync": [],
  "filters": [
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
-  {"fieldname": "from_date", "fieldtype": "Date", "label": "From Date", "width": "120px"},
-  {"fieldname": "to_date", "fieldtype": "Date", "label": "To Date", "width": "120px"},
-  {"fieldname": "fixed_asset", "fieldtype": "Link", "label": "Fixed Asset", "options": "Fixed Asset", "width": "180px"}
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "mandatory": 0,
+   "options": "Company",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "fixed_asset",
+   "fieldtype": "Link",
+   "label": "Fixed Asset",
+   "mandatory": 0,
+   "options": "Fixed Asset",
+   "wildcard_filter": 0
+  }
  ],
+ "idx": 1,
  "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-25 18:20:24.707302",
+ "modified_by": "Administrator",
  "module": "Omnexa Fixed Assets",
  "name": "Hotel Movement History",
+ "prepared_report": 0,
  "ref_doctype": "Hotel Asset Transfer",
  "report_name": "Hotel Movement History",
  "report_type": "Script Report",
  "roles": [
-  {"role": "System Manager"},
-  {"role": "Hotel Asset Admin"},
-  {"role": "Engineering Manager"},
-  {"role": "Housekeeping Supervisor"},
-  {"role": "Finance Asset Controller"},
-  {"role": "Auditor"}
- ]
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Hotel Asset Admin"
+  },
+  {
+   "role": "Engineering Manager"
+  },
+  {
+   "role": "Housekeeping Supervisor"
+  },
+  {
+   "role": "Finance Asset Controller"
+  },
+  {
+   "role": "Auditor"
+  }
+ ],
+ "snapshot_report": 0,
+ "timeout": 0
 }

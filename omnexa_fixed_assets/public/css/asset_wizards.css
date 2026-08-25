@@ -1,0 +1,41 @@
+.omnexa-wiz-catalog .wiz-card {
+	cursor: pointer;
+	transition: box-shadow 0.15s ease, border-color 0.15s ease;
+	min-height: 120px;
+}
+.omnexa-wiz-catalog .wiz-card:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	border-color: var(--primary);
+}
+.omnexa-wiz-progress .step-dot {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 2px solid var(--border-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 11px;
+	background: var(--card-bg);
+}
+.omnexa-wiz-progress .step-dot.active {
+	border-color: var(--primary);
+	background: var(--primary);
+	color: #fff;
+}
+.omnexa-wiz-progress .step-dot.done {
+	border-color: var(--green-500);
+	background: var(--green-500);
+	color: #fff;
+}
+.omnexa-wiz-step-form .form-group {
+	margin-bottom: 12px;
+}
+.omnexa-wiz-review pre {
+	background: var(--control-bg);
+	padding: 12px;
+	border-radius: 6px;
+	max-height: 320px;
+	overflow: auto;
+	font-size: 12px;
+}

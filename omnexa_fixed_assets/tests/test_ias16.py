@@ -36,6 +36,8 @@ class TestIAS16Posting(FrappeTestCase):
 		sfx = frappe.generate_hash(length=4)
 		self.company = self._create_company(f"IF{sfx.upper()}")
 		self.branch = self._create_branch(self.company, f"I{sfx[:3]}", f"Br {sfx}")
+		frappe.defaults.set_user_default("Company", self.company)
+		frappe.defaults.set_user_default("Branch", self.branch)
 		self._gl_asset = self._gl(f"IF{sfx}1", f"IF Ast {sfx}")
 		self._gl_accum = self._gl(f"IF{sfx}2", f"IF Acu {sfx}")
 		self._gl_exp = self._gl(f"IF{sfx}3", f"IF Exp {sfx}")

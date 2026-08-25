@@ -1,26 +1,62 @@
 {
  "add_total_row": 0,
+ "add_translate_data": 0,
  "columns": [],
  "creation": "2026-05-05 22:35:00",
+ "disable_prepared_report_automation": 0,
  "disabled": 0,
  "docstatus": 0,
  "doctype": "Report",
+ "doctype_to_sync": [],
  "filters": [
-  {"fieldname": "company", "fieldtype": "Link", "label": "Company", "options": "Company", "reqd": 1, "width": "180px"},
-  {"fieldname": "hotel_property", "fieldtype": "Link", "label": "Hotel Property", "options": "Hotel Property", "width": "220px"}
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "mandatory": 0,
+   "options": "Company",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "hotel_property",
+   "fieldtype": "Link",
+   "label": "Hotel Property",
+   "mandatory": 0,
+   "options": "Hotel Property",
+   "wildcard_filter": 0
+  }
  ],
+ "idx": 0,
  "is_standard": "Yes",
+ "letter_head": null,
+ "modified": "2026-08-25 18:20:24.585982",
+ "modified_by": "Administrator",
  "module": "Omnexa Fixed Assets",
  "name": "Assets by Room",
+ "prepared_report": 0,
  "ref_doctype": "Fixed Asset",
  "report_name": "Assets by Room",
  "report_type": "Script Report",
  "roles": [
-  {"role": "System Manager"},
-  {"role": "Hotel Asset Admin"},
-  {"role": "Engineering Manager"},
-  {"role": "Housekeeping Supervisor"},
-  {"role": "Finance Asset Controller"},
-  {"role": "Auditor"}
- ]
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Hotel Asset Admin"
+  },
+  {
+   "role": "Engineering Manager"
+  },
+  {
+   "role": "Housekeeping Supervisor"
+  },
+  {
+   "role": "Finance Asset Controller"
+  },
+  {
+   "role": "Auditor"
+  }
+ ],
+ "snapshot_report": 0,
+ "timeout": 0
 }

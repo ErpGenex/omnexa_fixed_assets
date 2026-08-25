@@ -170,7 +170,11 @@ class FixedAsset(Document):
 				)
 
 	def _validate_tracking_identifiers(self):
-		for fieldname, label in (("barcode", _("Barcode")), ("qr_payload", _("QR payload"))):
+		for fieldname, label in (
+			("barcode", _("Barcode")),
+			("qr_payload", _("QR payload")),
+			("rfid_tag", _("RFID Tag")),
+		):
 			value = (self.get(fieldname) or "").strip()
 			if not value:
 				continue

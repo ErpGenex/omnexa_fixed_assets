@@ -20,7 +20,125 @@ WORKSPACE_NAME = "Fixed Assets"
 
 _SHORTCUT_COLORS = ("Blue", "Green", "Orange", "Red", "Cyan", "Purple", "Teal", "Pink", "Yellow")
 
-WORKSPACE_SECTIONS: list[tuple[str, list[WorkspaceLink]]] = [('📊 Dashboards', [('Page', 'fa-executive-dashboard', 'Executive Dashboard'), ('Page', 'fa-asset-scan-pwa', 'Asset Scan PWA')]), ('📋 Policy & register', [('DocType', 'Fixed Asset Category', 'Category'), ('DocType', 'Fixed Asset', 'Fixed Asset'), ('DocType', 'Fixed Asset Location', 'Location')]), ('💰 Recognition & depreciation', [('DocType', 'Fixed Asset Acquisition', 'Acquisition'), ('DocType', 'Fixed Asset Depreciation Entry', 'Depreciation Entry'), ('DocType', 'Fixed Asset Revaluation', 'Revaluation')]), ('🔄 Transfers & disposal', [('DocType', 'Fixed Asset Transfer', 'Transfer'), ('DocType', 'Fixed Asset Disposal', 'Disposal'), ('DocType', 'Fixed Asset Write-Off', 'Write-Off')]), ('🔧 Assurance', [('DocType', 'Fixed Asset Maintenance', 'Maintenance'), ('DocType', 'Fixed Asset Inspection', 'Inspection'), ('DocType', 'Fixed Asset Movement Log', 'Movement Log')]), ('📈 Reports · Register', [('Report', 'Asset Register Report', 'Asset Register'), ('Report', 'Asset Valuation Report', 'Valuation'), ('Report', 'Fixed Asset Summary', 'Summary')]), ('📈 Reports · Depreciation', [('Report', 'Asset Depreciation Schedule', 'Depreciation Schedule'), ('Report', 'Fixed Asset NBV by Category', 'NBV by Category'), ('Report', 'Asset Movement Report', 'Movement')]), ('💰 Finance', [('DocType', 'Journal Entry', 'Journal Entry'), ('DocType', 'GL Account', 'GL Account')])]
+_DASHBOARD_PAGES: list[WorkspaceLink] = [
+	("Page", "fixed-assets-workcenter", "Fixed Assets Workcenter"),
+	("Page", "fa-executive-dashboard", "Executive Dashboard"),
+	("Page", "fixed-assets-analytics-dashboard", "Analytics Dashboard"),
+	("Page", "fixed-assets-operations-desk", "Operations Desk"),
+	("Page", "fixed-assets-finance-desk", "Finance Desk"),
+	("Page", "fa-hotel-assets-dashboard", "Hotel Assets Dashboard"),
+	("Page", "fa-hospitality-command-center", "Hospitality Command Center"),
+	("Page", "fa-global-hospitality-portfolio", "Global Hospitality Portfolio"),
+	("Page", "fa-live-asset-tracking", "Live Asset Tracking"),
+	("Page", "fa-linen-dashboard", "Linen Dashboard"),
+	("Page", "fa-asset-wizards", "Asset Lifecycle Wizards"),
+	("Page", "fa-asset-scan-pwa", "Asset Scan PWA"),
+	("Page", "fixed-assets-customer-portal", "Customer Portal"),
+]
+
+_HOTEL_SETUP: list[WorkspaceLink] = [
+	("DocType", "Hotel Property", "Hotel Property"),
+	("DocType", "Hotel Functional Area", "Hotel Functional Area"),
+	("DocType", "Hotel Room", "Hotel Room"),
+	("DocType", "Hotel Floor Plan", "Hotel Floor Plan"),
+]
+
+_HOTEL_OPERATIONS: list[WorkspaceLink] = [
+	("DocType", "RFID Gateway", "RFID Gateway"),
+	("DocType", "RFID Reader", "RFID Reader"),
+	("DocType", "RFID Scan Log", "RFID Scan Log"),
+	("DocType", "Hotel Asset Inspection", "Hotel Asset Inspection"),
+	("DocType", "Hotel Asset Transfer", "Hotel Asset Transfer"),
+	("DocType", "Hospitality Audit Event", "Hospitality Audit Event"),
+	("DocType", "Asset Lifecycle Wizard Session", "Wizard Sessions"),
+]
+
+_LINEN_MANAGEMENT: list[WorkspaceLink] = [
+	("DocType", "Linen Item", "Linen Item"),
+	("DocType", "Linen Movement", "Linen Movement"),
+	("DocType", "Linen Laundry Cycle", "Linen Laundry Cycle"),
+	("DocType", "Linen Issue Batch", "Linen Issue Batch"),
+	("DocType", "Linen Shortage Alert", "Linen Shortage Alert"),
+	("Report", "Missing Linen", "Missing Linen"),
+]
+
+_HOTEL_MAINTENANCE: list[WorkspaceLink] = [
+	("DocType", "Asset Work Order", "Asset Work Order"),
+	("DocType", "Fixed Asset Maintenance", "Fixed Asset Maintenance"),
+	("DocType", "Asset Failure Event", "Asset Failure Event"),
+	("DocType", "Fixed Asset Inspection", "Fixed Asset Inspection"),
+	("DocType", "Asset Alert", "Asset Alert"),
+]
+
+_HOTEL_FINANCE_REPORTS: list[WorkspaceLink] = [
+	("Report", "Asset Valuation Report", "Asset Valuation Report"),
+	("Report", "Replacement Forecast Report", "Replacement Forecast Report"),
+	("Report", "Inspection Compliance Report", "Inspection Compliance Report"),
+	("Report", "Fixed Asset NBV by Category", "Fixed Asset NBV by Category"),
+	("Report", "Asset Health Report", "Asset Health Report"),
+]
+
+_HOTEL_REPORTS: list[WorkspaceLink] = [
+	("Report", "Assets by Room", "Assets by Room"),
+	("Report", "Hotel Assets by Floor", "Hotel Assets by Floor"),
+	("Report", "Hotel Operational Asset Status", "Hotel Operational Asset Status"),
+	("Report", "Hotel Inspection Summary", "Hotel Inspection Summary"),
+	("Report", "Missing Assets", "Missing Assets"),
+	("Report", "Last Seen Assets", "Last Seen Assets"),
+	("Report", "Unscanned Assets", "Unscanned Assets"),
+	("Report", "Hotel Movement History", "Hotel Movement History"),
+	("Report", "Hotel Asset Depreciation", "Hotel Asset Depreciation"),
+	("Report", "Warranty Expiring Assets", "Warranty Expiring"),
+]
+
+# Exported for install.py — hotel DocType/report sections (pages live under Dashboards).
+HOTEL_WORKSPACE_SECTIONS: list[tuple[str, list[WorkspaceLink]]] = [
+	("🏨 Hotel Setup", _HOTEL_SETUP),
+	("🏨 Hotel Operations", _HOTEL_OPERATIONS),
+	("🛏️ Linen Management", _LINEN_MANAGEMENT),
+	("🔧 Hotel Maintenance & Quality", _HOTEL_MAINTENANCE),
+	("📈 Hotel Finance & Forecasting", _HOTEL_FINANCE_REPORTS),
+	("📈 Hotel Reports", _HOTEL_REPORTS),
+]
+
+WORKSPACE_SECTIONS: list[tuple[str, list[WorkspaceLink]]] = [
+	("📊 Dashboards", _DASHBOARD_PAGES),
+	("📋 Policy & register", [
+		("DocType", "Fixed Asset Category", "Category"),
+		("DocType", "Fixed Asset", "Fixed Asset"),
+		("DocType", "Fixed Asset Location", "Location"),
+	]),
+	("💰 Recognition & depreciation", [
+		("DocType", "Fixed Asset Acquisition", "Acquisition"),
+		("DocType", "Fixed Asset Depreciation Entry", "Depreciation Entry"),
+		("DocType", "Fixed Asset Revaluation", "Revaluation"),
+	]),
+	("🔄 Transfers & disposal", [
+		("DocType", "Fixed Asset Transfer", "Transfer"),
+		("DocType", "Fixed Asset Disposal", "Disposal"),
+		("DocType", "Fixed Asset Write-Off", "Write-Off"),
+	]),
+	("🔧 Assurance", [
+		("DocType", "Fixed Asset Maintenance", "Maintenance"),
+		("DocType", "Fixed Asset Inspection", "Inspection"),
+		("DocType", "Fixed Asset Movement Log", "Movement Log"),
+	]),
+	("📈 Reports · Register", [
+		("Report", "Asset Register Report", "Asset Register"),
+		("Report", "Asset Valuation Report", "Valuation"),
+		("Report", "Fixed Asset Summary", "Summary"),
+	]),
+	("📈 Reports · Depreciation", [
+		("Report", "Asset Depreciation Schedule", "Depreciation Schedule"),
+		("Report", "Fixed Asset NBV by Category", "NBV by Category"),
+		("Report", "Asset Movement Report", "Movement"),
+	]),
+	("💰 Finance", [
+		("DocType", "Journal Entry", "Journal Entry"),
+		("DocType", "GL Account", "GL Account"),
+	]),
+	*HOTEL_WORKSPACE_SECTIONS,
+]
 
 _REMOVED_SECTIONS = [
 	(

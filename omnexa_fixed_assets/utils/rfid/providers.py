@@ -12,13 +12,14 @@ class GenericRFIDAdapter(RFIDAdapter):
 	name = "generic"
 
 	def normalize_scan(self, payload: dict[str, Any]) -> RFIDScanPayload:
+		tag = payload.get("rfid_tag") or payload.get("epc") or payload.get("uid")
 		return RFIDScanPayload(
 			asset=str(payload.get("asset") or ""),
 			reader_device=payload.get("reader_device"),
 			location_text=payload.get("location_text"),
 			signal_strength=_to_float(payload.get("signal_strength")),
 			scan_result=str(payload.get("scan_result") or "Seen"),
-			rfid_tag=payload.get("rfid_tag"),
+			rfid_tag=tag,
 		)
 
 

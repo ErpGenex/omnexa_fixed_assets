@@ -74,3 +74,12 @@ def execute():
 			cwo.subject_name = aw.asset
 
 		cwo.insert(ignore_permissions=True)
+
+		if frappe.db.has_column("Asset Work Order", "core_work_order"):
+			frappe.db.set_value(
+				"Asset Work Order",
+				aw.name,
+				"core_work_order",
+				cwo.name,
+				update_modified=False,
+			)

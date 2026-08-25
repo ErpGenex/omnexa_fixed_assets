@@ -1,0 +1,21 @@
+{
+ "action": "Go to Page",
+ "action_label": "Open",
+ "creation": "2026-08-24 00:14:08.659275",
+ "description": "Jump to the **Fixed Assets Workcenter** page.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2026-08-25 18:02:38.868579",
+ "modified_by": "Administrator",
+ "name": "ERPGENEX-WS-fixed_assets-01-page-fixed_assets_workcenter",
+ "owner": "Administrator",
+ "path": "fixed-assets-workcenter",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Open Fixed Assets Workcenter",
+ "validate_action": 1
+}
