@@ -1,577 +1,1280 @@
+1 Star,بند واجهة
+2 Star,بند واجهة
+3 Star,بند واجهة
+4 Star,بند واجهة
+5 Star,بند واجهة
+5 Star Deluxe,بند واجهة
+<,<
+<=,<=
+>,>
+>=,>=
+Accepted,مقبول
 Accounting,المحاسبة
-Accum. Depreciation,مجمع الإهلاك
-Accumulated Depreciation,مجمع الإهلاك
-Accumulated depreciation,مجمع الإهلاك
-Accumulated depreciation account,حساب مجمع الإهلاك
-Acquisition Cost,تكلفة الاقتناء
-Acquisition cost,تكلفة الاقتناء
-Acquisition Date,تاريخ الاقتناء
-Acquisition documents over time,مستندات الاقتناء عبر الزمن
+Accounts Manager,بند واجهة
+Accounts Payable,الذمم الدائنة
+Accounts Receivable,الذمم المدينة
+Accounts User,بند واجهة
+Accum. Depreciation,بند واجهة
+Accumulated Depreciation,بند واجهة
+Accumulated depreciation,بند واجهة
+Accumulated depreciation account,بند واجهة
+Acknowledged,مُقرّ به
+acquired,بند واجهة
+Acquisition,بند واجهة
+Acquisition Cost,بند واجهة
+Acquisition cost,بند واجهة
+Acquisition Date,بند واجهة
+Acquisition documents over time,بند واجهة
 Action,إجراء
-Action Payload,حمولة الإجراء
-Action Type,نوع الإجراء
-Active Policies,السياسات النشطة
-Actual Cost,التكلفة الفعلية
+Action Payload,بند واجهة
+Action Type,إجراء النوع
+Actions,إجراءات
+Active,نشط
+Actual Cost,بند واجهة
+add_asset,بند واجهة
 Address,العنوان
-Alert name is required.,اسم التنبيه مطلوب.
-Alert Time,وقت التنبيه
-Alert Type,نوع التنبيه
-Allow Photo,السماح بالصورة
-Allow Signature,السماح بالتوقيع
+Administrator,المسؤول
+Age Weight,بند واجهة
+Agriculture,الزراعة
+AI & Intelligence,الذكاء الاصطناعي والتحليلات
+AI Recommendation,AI التوصية
+Alert,تنبيه
+Alert Category,تنبيه الفئة
+Alert name is required.,تنبيه الاسم is مطلوب .
+Alert Time,بند واجهة
+Alert Type,تنبيه النوع
+All,الكل
+All activities,كل الأنشطة
+All branches,كل الفروع
+Allow Photo,بند واجهة
+Allow Signature,بند واجهة
+ALM,إدارة الأصول والخصوم
+Already completed.,بند واجهة
 Amended From,معدّل من
 Amount,المبلغ
-Amount exceeds remaining depreciable balance ({0}).,المبلغ يتجاوز الرصيد القابل للإهلاك المتبقي ({0}).
-Amount must be positive.,يجب أن يكون المبلغ موجباً.
-Analytics,التحليلات
-Annual Premium,القسط السنوي
-Approval,الموافقة
-Area Code,رمز المنطقة
-Area Code must be unique per hotel property.,يجب أن يكون رمز المنطقة فريداً لكل عقار فندقي.
-Area Name,اسم المنطقة
-Area Type,نوع المنطقة
+Amount exceeds remaining depreciable balance ({0}).,بند واجهة
+Amount must be positive.,يجب أن المبلغ بند واجهة.
+Analytics Dashboard,لوحة التحليلات
+Annual percentage applied to carrying amount (monthly = annual / 12). Used when method is Declining Balance.,بند واجهة / بند واجهة
+Annual Premium,بند واجهة
+Antenna ID,ID — بند واجهة
+API,واجهة API
+API Token,API — بند واجهة
+Approval,موافقة
+Approved,معتمد
+Area Code,بند واجهة
+Area Code must be unique per hotel property.,يجب أن بند واجهة بند واجهة.
+Area Name,بند واجهة
+Area Type,بند واجهة
 As Of,حتى
-As Of Date,تاريخ الحالة
-Asset,أصل
-Asset account,حساب الأصل
-Asset Alert,تنبيه الأصل
-Asset Condition Snapshot,لقطة حالة الأصل
-Asset cost in books at validation time.,تكلفة الأصل في الدفاتر وقت التحقق.
-Asset Count,عدد الأصول
-Asset does not exist.,الأصل غير موجود.
-Asset Failure Event,حدث عطل الأصل
-Asset has no gross book value to derecognize.,لا توجد قيمة دفترية إجمالية للأصل لإلغاء الاعتراف بها.
-Asset Health Report,تقرير صحة الأصول
-Asset Health Rule,قاعدة صحة الأصل
-Asset Inspection,فحص الأصل
-Asset Inspection Template,قالب فحص الأصل
-Asset Inspection Template Line,سطر قالب فحص الأصل
+As Of Date,As Of التاريخ
+Asset,بند واجهة
+Asset account,بند واجهة
+Asset Alert,بند واجهة
+Asset Condition Snapshot,بند واجهة
+Asset cost in books at validation time.,بند واجهة
+Asset Count,بند واجهة
+Asset Depreciation Schedule,بند واجهة
+Asset Disposal Report,تقرير بند واجهة
+Asset does not exist.,بند واجهة
+Asset Failure Event,بند واجهة
+Asset has no gross book value to derecognize.,بند واجهة
+Asset Health Formula Settings,إعدادات بند واجهة
+Asset Health Report,تقرير بند واجهة
+Asset Health Rule,بند واجهة
+Asset Inspection,بند واجهة
+Asset Inspection Template,بند واجهة
+Asset Inspection Template Line,بند واجهة
 Asset Insurance,تأمين الأصول
-Asset insurance,تأمين الأصول
 Asset Insurance Register,سجل تأمين الأصول
-Asset is already disposed.,تم التخلص من الأصل مسبقاً.
-Asset is required.,الأصل مطلوب.
-Asset Media Attachment,مرفق وسائط الأصل
-Asset Meter Reading,قراءة عداد الأصل
-Asset must belong to the same company and branch.,يجب أن ينتمي الأصل إلى نفس الشركة والفرع.
-Asset name,اسم الأصل
-Asset Name,اسم الأصل
-Asset Owner,مالك الأصل
-Asset Recommendation,توصية الأصل
-Asset Relationship,علاقة الأصل
-Asset Reliability Trend,اتجاه موثوقية الأصل
-Asset Risk Matrix,مصفوفة مخاطر الأصول
-Asset Risk Register,سجل مخاطر الأصول
-Asset Threshold Profile,ملف عتبات الأصل
-Asset uses cost model; revaluation is optional under IAS 16 revaluation model.,يستخدم الأصل نموذج التكلفة؛ إعادة التقييم اختيارية بموجب نموذج إعادة التقييم في IAS 16.
-Asset Work Order,أمر عمل الأصل
-Assets,الأصول
-Assets by category,الأصول حسب الفئة
-Assets by lifecycle status,الأصول حسب حالة دورة الحياة
+Asset IoT Gateway Settings,إعدادات IoT — بند واجهة
+Asset is already disposed.,بند واجهة
+Asset is required.,بند واجهة
+Asset Level,بند واجهة
+Asset Lifecycle Wizard Session,بند واجهة
+Asset Lifecycle Wizards,بند واجهة
+Asset Maintenance Report,تقرير بند واجهة
+Asset Media & Attachments,بند واجهة و مرفقات
+Asset Media Attachment,بند واجهة
+Asset Meter Reading,بند واجهة
+Asset Meter Reading DocType is not installed,بند واجهة
+Asset Movement Report,تقرير بند واجهة
+Asset must belong to the same company and branch.,يجب أن بند واجهة ينتمي إلى نفس الشركة و الفرع.
+Asset Name,بند واجهة
+Asset name,بند واجهة
+Asset not found.,بند واجهة
+Asset not seen via RFID for {0}+ days — missing risk.,RFID — بند واجهة — مفقود مخاطر .
+Asset Owner,بند واجهة
+Asset Path,بند واجهة
+Asset Recommendation,بند واجهة
+Asset Register Report,تقرير سجل بند واجهة
+Asset Relationship,بند واجهة
+Asset Reliability Trend,بند واجهة
+Asset Risk Matrix,بند واجهة
+Asset Risk Register,سجل بند واجهة
+Asset Threshold Profile,بند واجهة
+Asset uses cost model; revaluation is optional under IAS 16 revaluation model.,بند واجهة
+Asset Valuation Report,تقرير بند واجهة
+Asset Work Order,بند واجهة
+Asset {0} does not exist.,بند واجهة
+"Asset, linen RFID tag, or identifier is required.",RFID — بند واجهة
+Assets,بند واجهة
+Assets by category,بند واجهة
+Assets by lifecycle status,بند واجهة
+Assets by Room,بند واجهة
+Assigned,بند واجهة
 Assigned To,مُسند إلى
-Attached,مرفق
-Attachment,مرفق
-Auto Depreciation,الإهلاك التلقائي
-Auto-numbered asset code (equals document name).,رمز أصل مرقم تلقائياً (يساوي اسم المستند).
-Automated depreciation entries support cost model only.,قيود الإهلاك الآلية تدعم نموذج التكلفة فقط.
-Availability %,نسبة التوفر %
-Barcode,الباركود
-Barcode Image,صورة الباركود
+Assigned To Me,المُسند إليّ
+Attachments,المرفقات
+Audit,التدقيق
+Audit reconciliation wizard,بند واجهة
+audit_reconciliation,بند واجهة
+Auditor,بند واجهة
+Auto Depreciation,بند واجهة
+Auto-numbered asset code (equals document name).,بند واجهة
+Automated depreciation entries support cost model only.,بند واجهة
+Availability %,بند واجهة
+Available,متاح
+Back of House,بند واجهة
+Balance Sheet,الميزانية العمومية
+Bank Unmatched Statement Lines,بنود كشف بنك غير مطابقة
+Barcode,بند واجهة
+Barcode Image,بند واجهة
+Bath Mat,بند واجهة
+Bath Towel,بند واجهة
+Bedsheet,بند واجهة
+Billing & collections,الفوترة والتحصيل
+Blanket,بند واجهة
+Bookings & registration,الحجوزات والتسجيل
+Boolean,بند واجهة
+BOQ,جدول الكميات
 Branch,الفرع
-Branch belongs to a different company.,الفرع ينتمي إلى شركة مختلفة.
-Branch does not belong to this company.,الفرع لا ينتمي إلى هذه الشركة.
-Branch filter (optional),تصفية الفرع (اختياري)
-Branch is required — hotel demo is branch-scoped only.,الفرع مطلوب — العرض التجريبي للفندق مقيد بالفرع فقط.
+Branch belongs to a different company.,الفرع ينتمي لشركة أخرى.
+Branch does not belong to this company.,بند واجهة
+Branch filter (optional),بند واجهة
+Branch is required — hotel demo is branch-scoped only.,الفرع is مطلوب — بند واجهة
 Branch {0} does not exist.,الفرع {0} غير موجود.
-Brand,العلامة التجارية
-Cannot capitalize a disposed asset.,لا يمكن رسملة أصل تم التخلص منه.
-Cannot post depreciation for this asset status.,لا يمكن ترحيل الإهلاك لهذه حالة الأصل.
-Capacity (guests),السعة (ضيوف)
-Capital Risk,مخاطر رأس المال
-Capitalization,الرسملة
-Capitalization amount,مبلغ الرسملة
-Capitalization amount must be positive.,يجب أن يكون مبلغ الرسملة موجباً.
-Capitalization date,تاريخ الرسملة
-Capitalization journal entry,قيد يومية الرسملة
-Capitalize the asset before depreciation.,قم برسملة الأصل قبل الإهلاك.
-Capitalized cost (Dr on acquisition),التكلفة المرسّمة (مدين عند الاقتناء)
-Caption,التسمية التوضيحية
-Carrying amount,القيمة الدفترية
-Carrying Amount,القيمة الدفترية
-Cash / bank account,حساب النقد / البنك
+Brand,بند واجهة
+Budget & cost control,الميزانية وضبط التكلفة
+Buy,المشتريات
+CAM & recoveries,المصاريف المشتركة والاستردادات
+CAM Budget,ميزانية المصاريف المشتركة
+Campaign ROI,عائد الحملة
+Cancel,إلغاء
+Cancelled,ملغى
+Cannot cancel a completed wizard.,بند واجهة
+Cannot capitalize a disposed asset.,بند واجهة
+Cannot edit a {0} wizard session.,بند واجهة
+Cannot post depreciation for this asset status.,بند واجهة
+Capacity (guests),بند واجهة
+Capacity Warning,السعة تحذير
+Capital Risk,بند واجهة
+Capitalization,بند واجهة
+Capitalization amount,بند واجهة
+Capitalization amount must be positive.,يجب أن بند واجهة بند واجهة.
+Capitalization date,بند واجهة
+Capitalization journal entry,بند واجهة
+Capitalize the asset before depreciation.,بند واجهة
+Capitalized cost (Dr on acquisition),بند واجهة
+Caption,بند واجهة
+Car Rental,تأجير السيارات
+Card Break,قسم
+Carrying Amount,بند واجهة
+Carrying amount,بند واجهة
+Carrying amount (IAS 16.67–72),بند واجهة
+Cash / bank account,نقدي / بند واجهة
 Category,الفئة
-Category Code,رمز الفئة
-Category does not exist.,الفئة غير موجودة.
-Category must belong to the same company.,يجب أن تنتمي الفئة إلى نفس الشركة.
-Category Name,اسم الفئة
-Cause,السبب
-Check Item,بند الفحص
-City / address or geographic label,المدينة / العنوان أو التسمية الجغرافية
+Category Code,الفئة الرمز
+Category does not exist.,بند واجهة
+Category must belong to the same company.,يجب أن الفئة ينتمي إلى نفس الشركة.
+Category Name,الفئة الاسم
+Cause,بند واجهة
+chainway,بند واجهة
+Chart,مخطط
+Chart of Accounts,دليل الحسابات
+Check Item,بند واجهة
+City / address or geographic label,المدينة / بند واجهة
 Claim Amount,مبلغ المطالبة
-Claim Date,تاريخ المطالبة
-Claim Status,حالة المطالبة
-Claims by status,المطالبات حسب الحالة
-Claims filed trend,اتجاه تقديم المطالبات
+Claim Date,بند واجهة
+Claim Status,بند واجهة
 Claims Register,سجل المطالبات
 Classification Code,رمز التصنيف
-Click to open,انقر للفتح
-Close,إغلاق
+Clean Storage,بند واجهة
+Closed,مغلق
+Collected,مجمّع
+Color,بند واجهة
+Commission Accrual,استحقاق العمولات
+Commission Schedule,جدول العمولات
 Company,الشركة
-Company filter is required.,تصفية الشركة مطلوبة.
-Company is required,الشركة مطلوبة
-Company is required.,الشركة مطلوبة.
-Company must match the selected Insurance Policy.,يجب أن تطابق الشركة بوليصة التأمين المحددة.
-Company Name,اسم الشركة
-Company {0} has no default currency; cannot post Journal Entry.,الشركة {0} ليس لها عملة افتراضية؛ لا يمكن ترحيل قيد اليومية.
-Comparison Operator,عامل المقارنة
-Completion Date,تاريخ الإنجاز
-Compliance,الامتثال
-Compliance Basis,أساس الامتثال
-Compliance Reference,مرجع الامتثال
-Condition,الحالة
-Condition Expression,تعبير الحالة
-Condition Rating (1-5),تقييم الحالة (1-5)
-Condition State,حالة الأصل
-Conditional Branch Rule,قاعدة فرع شرطية
+Company and floor are required.,بند واجهة
+Company filter is required.,الشركة تصفية is مطلوب .
+Company is required,الشركة is مطلوب
+Company is required.,الشركة is مطلوب.
+Company must match the selected Insurance Policy.,يجب أن الشركة بند واجهة.
+Company Name,الشركة الاسم
+Company {0} has no default currency; cannot post Journal Entry.,بند واجهة
+Comparison Operator,بند واجهة
+Completed,مكتمل
+completed,مكتمل
+Completed At,مكتمل At
+Completion Date,بند واجهة
+Compliance,امتثال
+Compliance Basis,بند واجهة
+Compliance checks complete,اكتملت فحوصات الامتثال
+Compliance Exceptions,استثناءات الامتثال
+Compliance Exceptions (IFRS),استثناءات الامتثال (IFRS)
+Compliance Exceptions (Tax),استثناءات الامتثال (ضريبي)
+Compliance Exceptions Dashboard,لوحة استثناءات الامتثال
+Compliance Reference,امتثال المرجع
+Compliance Reports,تقارير الامتثال
+Condition,بند واجهة
+Condition Expression,بند واجهة
+Condition Rating (1-5),بند واجهة
+Condition review wizard,بند واجهة
+Condition State,بند واجهة
+Condition Weight,بند واجهة
+Conditional Branch Rule,بند واجهة
 Confidence,الثقة
-Confidence Score,درجة الثقة
-Contact Person,جهة الاتصال
-Contra-asset (Cr on depreciation),حساب مقابل للأصل (دائن عند الإهلاك)
-Core Work Order,أمر العمل الأساسي
+Confidence Score,بند واجهة
+Connected To,بند واجهة
+Construction,المقاولات
+Construction & Engineering,المقاولات والهندسة
+Consumer Finance,التمويل الاستهلاكي
+Contact Person,بند واجهة
+Contra-asset (Cr on depreciation),بند واجهة
+Convention Center,بند واجهة
+Core ERP,ERP الأساسي
+Core Work Order,النواة عمل أمر
+Corrective,بند واجهة
 Cost,التكلفة
-Cost & dates,التكلفة والتواريخ
-Cost Amount,مبلغ التكلفة
+Cost & dates,التكلفة و بند واجهة
+Cost Amount,التكلفة المبلغ
+Cost Center,مركز التكلفة
+Cost Efficiency Weight,بند واجهة
+Cost Model,بند واجهة
 Country,الدولة
-Coverage period,فترة التغطية
-Coverage Type,نوع التغطية
-Create at least one Branch for company {0}.,أنشئ فرعاً واحداً على الأقل للشركة {0}.
-Credit account (cash / payables),حساب الدائن (نقد / ذمم دائنة)
-Credit account cannot be the same as the asset GL account.,لا يمكن أن يكون حساب الدائن هو نفس حساب الأصل في الأستاذ العام.
-Credit account must be a leaf account.,يجب أن يكون حساب الدائن حساباً فرعياً.
-Credit account must be a leaf GL account for this company.,يجب أن يكون حساب الدائن حساباً فرعياً في الأستاذ العام لهذه الشركة.
-"Credit for gain, debit for loss (balancing line).",دائن للربح، مدين للخسارة (سطر الموازنة).
-Critical Threshold,العتبة الحرجة
-Criticality,الأهمية
+Coverage period,بند واجهة
+Coverage Type,بند واجهة
+Create,إنشاء
+Create Alert,أنشئ تنبيه
+Create at least one Branch for company {0}.,بند واجهة
+Create Inspection,بند واجهة
+Create or review your first **Fixed Asset Category** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Fixed Asset Depreciation Method** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Fixed Asset Location** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Fixed Asset Status** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Fixed Asset** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Insurance Claim** record from this workspace.,أنشئ أو راجع أول سجل **بند واجهة** من مساحة العمل هذه.
+Create or review your first **Insurance Policy** record from this workspace.,أنشئ أو راجع أول سجل **تأمين سياسة** من مساحة العمل هذه.
+Create Work Order,أنشئ عمل أمر
+Credit account (cash / payables),بند واجهة / بند واجهة
+Credit account cannot be the same as the asset GL account.,GL — بند واجهة
+Credit account must be a leaf account.,يجب أن بند واجهة بند واجهة.
+Credit account must be a leaf GL account for this company.,يجب أن بند واجهة GL — بند واجهة.
+Credit Engine,محرك الائتمان
+"Credit for gain, debit for loss (balancing line).",بند واجهة
+Credit Risk,مخاطر الائتمان
+Critical,حرج
+Critical Failure,بند واجهة
+Critical Threshold,بند واجهة
+Criticality,بند واجهة
+Criticality Weight,بند واجهة
+CRM,إدارة العملاء
+Cross-module operations,عمليات متكاملة
 Currency,العملة
-Custodian,أمين العهدة
-Days ahead cannot be negative.,لا يمكن أن تكون الأيام المتبقية سالبة.
-Days Remaining,الأيام المتبقية
-Days Since,الأيام منذ
-Days to Expiry,أيام حتى الانتهاء
-Declining balance annual rate %,معدل الرصيد المتناقص السنوي %
-Default declining balance rate % (annual),معدل الرصيد المتناقص الافتراضي % (سنوي)
-Default depreciation,الإهلاك الافتراضي
-Default depreciation (IAS 16),الإهلاك الافتراضي (IAS 16)
-Default depreciation method,طريقة الإهلاك الافتراضية
-Default GL accounts (IAS 16),حسابات الأستاذ العام الافتراضية (IAS 16)
-Default total units (UoP),إجمالي الوحدات الافتراضي (UoP)
-Default useful life (months),العمر الإنتاجي الافتراضي (بالأشهر)
-Default useful life must be at least 1 month.,يجب أن يكون العمر الإنتاجي الافتراضي شهراً واحداً على الأقل.
-Degradation Index,مؤشر التدهور
-Depreciable amount,المبلغ القابل للإهلاك
-Depreciation,الإهلاك
-Depreciation amount,مبلغ الإهلاك
-Depreciation Amount,مبلغ الإهلاك
-Depreciation amount must be positive.,يجب أن يكون مبلغ الإهلاك موجباً.
-Depreciation book,دفتر الإهلاك
-Depreciation Entry,قيد الإهلاك
-Depreciation expense,مصروف الإهلاك
-Depreciation expense account,حساب مصروف الإهلاك
-Depreciation method,طريقة الإهلاك
-Depreciation start date,تاريخ بدء الإهلاك
-Depreciation start date cannot be before capitalization date.,لا يمكن أن يكون تاريخ بدء الإهلاك قبل تاريخ الرسملة.
-Depreciation {0} — {1},إهلاك {0} — {1}
-Derecognition {0} — {1},إلغاء الاعتراف {0} — {1}
+Current Location,بند واجهة
+Current Step,بند واجهة
+Custodian,بند واجهة
+Custom,مخصص
+Custom Documents,المستندات المخصصة
+Customer,العميل
+Customer Portal,العميل بوابة
+Cycle Date,بند واجهة
+Cycle Number,بند واجهة
+Damage Count,بند واجهة
+Damaged,بند واجهة
+Dashboard,لوحة معلومات
+Days ahead cannot be negative.,بند واجهة
+Days Remaining,بند واجهة
+Days Since,بند واجهة
+Days to Expiry,بند واجهة
+Declining Balance,بند واجهة
+Declining balance annual rate %,بند واجهة
+Default declining balance rate % (annual),بند واجهة
+Default depreciation,بند واجهة
+Default depreciation (IAS 16),بند واجهة
+Default depreciation method,بند واجهة
+Default GL accounts (IAS 16),GL — بند واجهة
+Default Location,بند واجهة
+Default total units (UoP),بند واجهة
+Default useful life (months),بند واجهة
+Default useful life must be at least 1 month.,يجب أن بند واجهة بند واجهة.
+Degradation Index,بند واجهة
+Degraded,بند واجهة
+Delete,حذف
+Deluxe,بند واجهة
+Department,بند واجهة
+Depends On,بند واجهة
+Depreciable amount,بند واجهة
+Depreciation,بند واجهة
+depreciation,بند واجهة
+Depreciation Amount,بند واجهة
+Depreciation amount,بند واجهة
+Depreciation amount must be positive.,يجب أن بند واجهة بند واجهة.
+Depreciation book,بند واجهة
+Depreciation Entry,بند واجهة
+Depreciation expense,بند واجهة
+Depreciation expense account,بند واجهة
+Depreciation method,بند واجهة
+Depreciation start date,بند واجهة
+Depreciation start date cannot be before capitalization date.,بند واجهة
+Depreciation {0} — {1},بند واجهة — {1}
+Derecognition {0} — {1},بند واجهة — {1}
 Description,الوصف
+Design & quantities (BOQ),التصميم والكميات (جدول الكميات)
+Desk,المكتب
+Desk User,المكتب مستخدم
 Details,التفاصيل
-Disposal,التخلص
-Disposal date,تاريخ التخلص
-Disposal Date,تاريخ التخلص
-Disposal Reason Code,رمز سبب التخلص
-Docstatus,حالة المستند
-Downtime (h),وقت التوقف (س)
-Downtime Hours,ساعات التوقف
-Duplicate,مكرر
-EAM Intelligence,ذكاء إدارة الأصول
+Development Budget,ميزانية التطوير
+Development Project,مشروع تطوير
+Development Project Register,سجل مشاريع التطوير
+Development project register,سجل مشاريع التطوير
+Device,بند واجهة
+Digital Channel,رقمي قناة
+Dirty,بند واجهة
+Disposal,بند واجهة
+disposal,بند واجهة
+Disposal Date,بند واجهة
+Disposal date,بند واجهة
+Disposal Reason Code,بند واجهة
+Dispose,بند واجهة
+Disposed,بند واجهة
+disposed,بند واجهة
+Docstatus,بند واجهة
+Document,مستند
+Documents & Integration,المستندات والتكامل
+Done,منجز
+Downtime (h),بند واجهة
+Downtime (hours),بند واجهة
+Downtime Hours,بند واجهة
+Draft,مسودة
+draft,مسودة
+Duplicate,نسخ
+Duplicate linen read suppressed.,بند واجهة
+Duplicate read suppressed.,بند واجهة
+Duvet,بند واجهة
+E-Invoice,الفاتورة الإلكترونية
+Edit,تعديل
+Education,التعليم
 Email,البريد الإلكتروني
-Enable monthly auto depreciation,تفعيل الإهلاك الشهري التلقائي
+Emergency,بند واجهة
+Enable monthly auto depreciation,بند واجهة
 Enabled,مفعّل
-End Date,تاريخ الانتهاء
-End Date cannot be before Start Date.,لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء.
-Engineering Attention,يتطلب اهتمام الهندسة
-Estimated Cost,التكلفة المقدرة
-Event Time,وقت الحدث
-Executed at,نُفّذ في
-Execution Window,نافذة التنفيذ
-Expiring Policies Report,تقرير السياسات المنتهية
-fa-executive-dashboard,لوحة معلومات التنفيذيين للأصول
-Failure Analysis Report,تقرير تحليل الأعطال
-Failure Count,عدد الأعطال
-Failure Freq,تكرار الأعطال
-Failure Frequency,تكرار الأعطال
+End Date,النهاية التاريخ
+End Date cannot be before Start Date.,بند واجهة
+Energy,بند واجهة
+Engineering Attention,بند واجهة
+Engineering Consulting,الاستشارات الهندسية
+Engineering Manager,بند واجهة
+Engineering Status,بند واجهة
+Engineering Zone,بند واجهة
+Enterprise Hierarchy,بند واجهة
+Entity Name,بند واجهة
+Entity Type,بند واجهة
+Erpgenex Property Mgmt,إدارة العقارات
+Erpgenex Realestate Dev,التطوير العقاري
+Erpgenex Realestate Sales,التسويق العقاري
+ERPGENEX — Core ERP,ERPGENEX — ERP الأساسي
+ERPGENEX — Dashboard,ERPGENEX — لوحة المعلومات
+Error Message,خطأ رسالة
+Escalate,بند واجهة
+Escalation Rule,قاعدة تصعيد الإيجار
+Estimated Cost,بند واجهة
+Event,حدث
+Event Time,بند واجهة
+Event Type,حدث النوع
+events must be a JSON list.,يجب أن بند واجهة be JSON قائمة.
+Excellent,بند واجهة
+Executed at,بند واجهة
+Execution Window,بند واجهة
+Executive Dashboard,لوحة المدير التنفيذية
+Expected Life Cycles,بند واجهة
+Expired,منتهي
+Expiring Policies Report,تقرير بند واجهة
+Explore this workspace,استكشف مساحة العمل
+External Event ID,ID — بند واجهة
+Extreme,بند واجهة
+Face Towel,بند واجهة
+Factoring,التخصيم
+Fail,بند واجهة
+Failed,فشل
+Failure Analysis Report,تقرير بند واجهة
+Failure Count,بند واجهة
+Failure Freq,بند واجهة
+Failure Frequency,بند واجهة
+Failure Spike,بند واجهة
+Fair,بند واجهة
+Field PWA,تطبيق الميدان
 File,ملف
-Filters,عوامل التصفية
-Fixed Asset,أصل ثابت
-Fixed Asset Acquisition,اقتناء أصل ثابت
-Fixed asset acquisition {0} — {1},اقتناء أصل ثابت {0} — {1}
-Fixed Asset Auto Depreciation Policy,سياسة الإهلاك التلقائي للأصول الثابتة
-Fixed Asset Category,فئة الأصول الثابتة
-Fixed Asset Depreciation Entry,قيد إهلاك أصل ثابت
-Fixed Asset Depreciation Method,طريقة إهلاك الأصول الثابتة
-Fixed Asset Disposal,التخلص من أصل ثابت
-Fixed Asset does not exist.,الأصل الثابت غير موجود.
-Fixed Asset Inspection,فحص الأصل الثابت
-Fixed Asset Location,موقع الأصل الثابت
-Fixed Asset Maintenance,صيانة الأصل الثابت
-Fixed Asset Movement Log,سجل حركة الأصل الثابت
-Fixed Asset must belong to the same company.,يجب أن ينتمي الأصل الثابت إلى نفس الشركة.
-Fixed Asset Revaluation,إعادة تقييم أصل ثابت
-Fixed Asset Status,حالة الأصل الثابت
-Fixed Asset Transfer,نقل أصل ثابت
-Fixed Asset Write-Off,شطب أصل ثابت
+Filters,المرشحات
+Finance Asset Controller,بند واجهة
+Finance Control Exceptions,استثناءات الضوابط المالية
+Finance Control Violations,مخالفات الضوابط المالية
+Finance Controls,الضوابط المالية
+Finance Desk,بند واجهة
+Finance Engine,محرك التمويل
+Finance Group,المجموعة المالية
+Finance SoD Blocks,حظر فصل المهام (SoD)
+Finance Workcenter,مركز عمل المالية
+First Time,بند واجهة
+Fixed,بند واجهة
+Fixed Asset,بند واجهة
+Fixed Asset Acquisition,بند واجهة
+Fixed asset acquisition {0} — {1},بند واجهة — {1}
+Fixed Asset Auto Depreciation Policy,بند واجهة
+Fixed Asset Category,بند واجهة
+Fixed Asset Depreciation Entry,بند واجهة
+Fixed Asset Depreciation Method,بند واجهة
+Fixed Asset Depreciation Posting Summary,ملخص بند واجهة
+Fixed Asset Disposal,بند واجهة
+Fixed Asset does not exist.,بند واجهة
+Fixed Asset Inspection,بند واجهة
+Fixed Asset Location,بند واجهة
+Fixed Asset Maintenance,بند واجهة
+Fixed Asset Movement Log,بند واجهة
+Fixed Asset must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+Fixed Asset NBV by Category,بند واجهة
+Fixed Asset Revaluation,بند واجهة
+Fixed Asset Status,بند واجهة
+Fixed Asset Summary,ملخص بند واجهة
+Fixed Asset Transfer,بند واجهة
+Fixed Asset Write-Off,بند واجهة
 Fixed Assets,الأصول الثابتة
-Fixed Assets Workcenter,مركز عمل الأصول الثابتة
-fixed-assets-analytics-dashboard,لوحة تحليلات الأصول الثابتة
-fixed-assets-customer-portal,بوابة عميل الأصول الثابتة
-fixed-assets-executive-dashboard,لوحة التنفيذيين للأصول الثابتة
-fixed-assets-finance-desk,مكتب مالية الأصول الثابتة
-fixed-assets-operations-desk,مكتب عمليات الأصول الثابتة
-Floor,الطابق
-For units-of-production method only.,لطريقة وحدات الإنتاج فقط.
-From Date and To Date are required.,تاريخ البداية وتاريخ النهاية مطلوبان.
-From Hotel Property,من عقار فندقي
-From Hotel Room,من غرفة فندق
+Fixed assets,بند واجهة
+Fixed Assets Workcenter,بند واجهة
+Floor,بند واجهة
+Floor Label,بند واجهة
+Floor Plan,بند واجهة
+Floor Plan Image,بند واجهة
+Food & Beverage,طعام و بند واجهة
+For units-of-production method only.,بند واجهة
+Form,نموذج
+From Date and To Date are required.,بند واجهة
+From Hotel Property,بند واجهة
+From Hotel Room,بند واجهة
 From Location,من الموقع
-From Property,من العقار
-From Room,من الغرفة
-From room and To room cannot be the same.,لا يمكن أن تكون غرفة المصدر وغرفة الوجهة متطابقتين.
-Functional Area,المنطقة الوظيفية
-Functional Area must belong to the same hotel property.,يجب أن تنتمي المنطقة الوظيفية إلى نفس العقار الفندقي.
-Functional Location,الموقع الوظيفي
-Functional Location Name,اسم الموقع الوظيفي
-Gain / Loss,ربح / خسارة
-Gain or loss,ربح أو خسارة
-Gain or loss on disposal (P&L),ربح أو خسارة عند التخلص (الأرباح والخسائر)
-Gallery,المعرض
-Generate / Refresh Codes,إنشاء / تحديث الرموز
+From Property,من عقار
+From Room,بند واجهة
+From room and To room cannot be the same.,بند واجهة
+fully_depreciated,بند واجهة
+Functional Area,بند واجهة
+Functional Area must belong to the same hotel property.,يجب أن بند واجهة بند واجهة.
+Functional Location,بند واجهة
+Functional Location Name,بند واجهة
+Further,المزيد
+Gain / Loss,بند واجهة / بند واجهة
+Gain or loss,بند واجهة
+Gain or loss on disposal (P&L),بند واجهة
+Gallery,بند واجهة
+Gate,بند واجهة
+Gateway API Key,API — بند واجهة
+Gateway ID,ID — بند واجهة
+Gateway ID and API token are required.,ID API — بند واجهة
+Gateway Name,بند واجهة
+Gateway Offline,بند واجهة
+Gateway rate limit exceeded.,بند واجهة
+General Ledger,دفتر الأستاذ العام
+generic,بند واجهة
+Get started with Fixed Asset,بند واجهة
+Get started with Fixed Asset Category,بند واجهة
+Get started with Fixed Asset Depreciation Method,بند واجهة
+Get started with Fixed Asset Location,بند واجهة
+Get started with Fixed Asset Status,بند واجهة
+Get started with Insurance Claim,بند واجهة
+Get started with Insurance Policy,بند واجهة
 GL,الأستاذ العام
-GL & hierarchy,الأستاذ العام والتسلسل الهرمي
-GL Account,حساب الأستاذ العام
-GL Account {0} does not exist.,حساب الأستاذ العام {0} غير موجود.
-GL Accounts,حسابات الأستاذ العام
-GL accounts,حسابات الأستاذ العام
-GL accounts (override),حسابات الأستاذ العام (تجاوز)
-Gross carrying amount,القيمة الدفترية الإجمالية
-Gross less accumulated depreciation before derecognition.,الإجمالي ناقص مجمع الإهلاك قبل إلغاء الاعتراف.
-Health Score,درجة الصحة
-Health Status,حالة الصحة
-Hierarchy,التسلسل الهرمي
-Hotel Asset Inspection,فحص أصل فندقي
-Hotel Asset Transfer,نقل أصل فندقي
-Hotel asset warranty expires on {0} ({1}),تنتهي ضمان الأصل الفندقي في {0} ({1})
-Hotel Assets & Inspections,أصول الفنادق والفحوصات
-Hotel Functional Area,المنطقة الوظيفية الفندقية
-Hotel Property,عقار فندقي
-Hotel Property does not exist.,العقار الفندقي غير موجود.
-Hotel Property must belong to the same company.,يجب أن ينتمي العقار الفندقي إلى نفس الشركة.
-Hotel Property must use the same branch.,يجب أن يستخدم العقار الفندقي نفس الفرع.
-Hotel Room,غرفة فندق
-Hotel Structure,هيكل الفندق
-Hotel vertical,القطاع الفندقي
-Hotel-linked assets,الأصول المرتبطة بالفندق
-Hotel-linked assets by property,الأصول المرتبطة بالفندق حسب العقار
-Housekeeping Attention,يتطلب اهتمام التدبير المنزلي
-IAS 16,IAS 16
-IAS 16 / IFRS,IAS 16 / IFRS
-Identification,التعريف
-Identification (no inventory link),التعريف (بدون ربط بالمخزون)
-"If set, only this branch is processed; otherwise all company branches.",إذا تم التحديد، يُعالج هذا الفرع فقط؛ وإلا تُعالج جميع فروع الشركة.
-IFRS & cost,IFRS والتكلفة
-Impact,الأثر
-Impact Score,درجة الأثر
-Incident Date,تاريخ الحادث
-Inspection Compliance Report,تقرير امتثال الفحوصات
-Inspection Date,تاريخ الفحص
-Inspection Due,موعد الفحص
-Inspections,الفحوصات
-Inspector,المفتش
-Inspector sign-off,توقيع المفتش
-Insurance Claim,مطالبة تأمين
-Insurance Claims,مطالبات التأمين
-Insurance Company,شركة التأمين
-Insurance Coverage Type,نوع تغطية التأمين
-Insurance Incident,حادث تأمين
-Insurance Policy,بوليصة التأمين
-Insurance Renewal,تجديد التأمين
-Internal Code,الرمز الداخلي
-Internal Code must match the Asset ID.,يجب أن يطابق الرمز الداخلي معرف الأصل.
-Invalid company.,شركة غير صالحة.
-Is Active,نشط
-Is Group,مجموعة
-Items,الأصناف
+GL & hierarchy,GL و بند واجهة
+GL Account,حساب GL
+GL Account {0} does not exist.,GL — بند واجهة
+GL Accounts,GL — بند واجهة
+GL accounts,GL — بند واجهة
+GL accounts (override),GL — بند واجهة
+Global Defaults,الإعدادات العامة
+Global Hospitality Portfolio,بند واجهة
+Good,بند واجهة
+Governance,الحوكمة
+Governance Overview,نظرة عامة على الحوكمة
+Gross Carrying Amount,بند واجهة
+Gross carrying amount,بند واجهة
+Gross less accumulated depreciation before derecognition.,بند واجهة
+Guest,زائر
+Guest Rooms,بند واجهة
+Hand Towel,بند واجهة
+Handheld,بند واجهة
+Handover & defects (snagging),التسليم والعيوب
+Handover Package,حزمة التسليم
+Health,بند واجهة
+Health Score,بند واجهة
+Health Status,بند واجهة
+Healthcare,الرعاية الصحية
+Help,مساعدة
+Hierarchy,بند واجهة
+High,مرتفع
+Home,الرئيسية
+Hospitality Audit Event,بند واجهة
+Hospitality Command Center,بند واجهة
+Hotel,بند واجهة
+Hotel Asset Admin,بند واجهة
+Hotel Asset Depreciation,بند واجهة
+Hotel Asset Inspection,بند واجهة
+Hotel Asset Management,بند واجهة
+Hotel Asset Operations,بند واجهة
+Hotel Asset Register,سجل بند واجهة
+Hotel Asset Transfer,بند واجهة
+Hotel asset warranty expires on {0} ({1}),بند واجهة
+Hotel Assets & Inspections,بند واجهة و بند واجهة
+Hotel Assets by Floor,بند واجهة
+Hotel Assets Dashboard,لوحة بند واجهة
+Hotel Floor Plan,بند واجهة
+Hotel Functional Area,بند واجهة
+Hotel IAS 16 Disclosure Schedule,بند واجهة
+Hotel Inspection Summary,ملخص بند واجهة
+Hotel Movement History,بند واجهة
+Hotel NBV by Property,بند واجهة
+Hotel Operational Asset Status,بند واجهة
+Hotel Property,بند واجهة
+Hotel Property does not exist.,بند واجهة
+Hotel Property must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+Hotel Property must use the same branch.,يجب أن بند واجهة الاستخدام نفس الفرع.
+Hotel Room,بند واجهة
+Hotel Structure,بند واجهة
+Hotel vertical,بند واجهة
+Hotel Zone,بند واجهة
+Hotel-linked assets,بند واجهة
+Hotel-linked assets by property,بند واجهة
+Housekeeping,بند واجهة
+Housekeeping Attention,بند واجهة
+Housekeeping Status,بند واجهة
+Housekeeping Supervisor,بند واجهة
+HR,الموارد البشرية
+IAS 16,بند واجهة
+IAS 16 / IFRS,بند واجهة / IFRS
+IAS 16 Disclosure Schedule,بند واجهة
+"IAS 16.30–31 — After recognition, measure at cost or revalued amount. Revaluation ledger is not automated in this version.",بند واجهة — بند واجهة
+IAS 16.43 — Choose a systematic basis when the asset is ready for use; None until policy is applied.,بند واجهة — بند واجهة
+IAS 16.43–59 — Systematic allocation of depreciable amount over useful life.,بند واجهة — بند واجهة
+IAS 16.53 — Cost less residual value (cost model).,بند واجهة — بند واجهة
+IAS 16.56 — Total expected production units for units-of-production method.,بند واجهة — بند واجهة
+"IAS 16.6 — Estimated amount currently obtainable from disposal less costs, if asset were already of age and condition at end of useful life.",بند واجهة — بند واجهة
+IAS 16.6 — Under cost model: cost less accumulated depreciation and impairment (impairment not automated here).,بند واجهة — بند واجهة
+IAS 16.72 — Consideration received.,بند واجهة — بند واجهة
+Identification,بند واجهة
+Identification (no inventory link),بند واجهة
+"If set, only this branch is processed; otherwise all company branches.",بند واجهة
+IFRS,IFRS
+IFRS & cost,IFRS و التكلفة
+IFRS 16 Liability,التزام الإيجار IFRS 16
+Image,صورة
+Image Count,بند واجهة
+Impact,بند واجهة
+Impact Score,بند واجهة
+impinj,بند واجهة
+In Progress,قيد التنفيذ
+In Use,قيد الاستخدام
+in_progress,بند واجهة
+in_use,في الاستخدام
+Incident Date,بند واجهة
+Incomplete wizard data.,بند واجهة
+Industry Solutions,حلول القطاعات
+Initial inspection via Add Asset Wizard,بند واجهة
+Insights,رؤى وتحليلات
+Inspect,بند واجهة
+Inspection,بند واجهة
+inspection,بند واجهة
+Inspection Compliance Report,تقرير بند واجهة
+Inspection Date,بند واجهة
+Inspection Due,بند واجهة
+Inspection Failure,بند واجهة
+Inspection Frequency (Days),بند واجهة
+Inspection Pending,بند واجهة
+Inspection Weight,بند واجهة
+Inspection-Triggered,بند واجهة
+Inspections,بند واجهة
+Inspector,بند واجهة
+Inspector sign-off,بند واجهة
+Insurance Claim,بند واجهة
+Insurance Company,تأمين الشركة
+Insurance Coverage Type,بند واجهة
+Insurance Incident,بند واجهة
+Insurance Policy,تأمين سياسة
+Insurance Renewal,بند واجهة
+Integration,تكامل
+Internal Code,بند واجهة
+Internal Code must match the Asset ID.,يجب أن بند واجهة ID — بند واجهة.
+Invalid company.,بند واجهة
+Invalid gateway credentials.,بند واجهة
+Invalid IoT gateway API key,IoT API — بند واجهة
+Invalid step payload JSON.,JSON — بند واجهة
+Invalid wizard step.,بند واجهة
+Inventory & development context,المخزون وسياق التطوير
+Inventory KPI Dashboard,لوحة مؤشرات المخزون
+Inventory KPIs,مؤشرات المخزون
+Inventory Low Stock Items,أصناف منخفضة المخزون
+Inventory Reorder Needed,أصناف تحتاج إعادة طلب
+Inventory Scan Count,بند واجهة
+Inventory Stock Items,أصناف المخزون
+IP Address,IP العنوان
+Is Active,Is نشط
+Is Group,بند واجهة
+Issue,بند واجهة
+Issued,بند واجهة
+Issued Quantity,بند واجهة
+Item,الصنف
+Items,بند واجهة
 Journal Entry,قيد يومية
-Last depreciation posting,آخر ترحيل إهلاك
-Last Inspection,آخر فحص
-Last Location,آخر موقع
-Last run,آخر تشغيل
-Last run at,آخر تشغيل في
-Last run message,رسالة آخر تشغيل
-Last run status,حالة آخر تشغيل
-Last Scan,آخر مسح
-Last Seen Time,وقت آخر رؤية
-Last target posting date,آخر تاريخ ترحيل مستهدف
-Last Update,آخر تحديث
-Leaf categories should define all three; used when creating assets unless overridden on the asset.,يجب أن تحدد الفئات الفرعية الحسابات الثلاثة؛ تُستخدم عند إنشاء الأصول ما لم يتم تجاوزها على الأصل.
-Leaf category requires {0}.,الفئة الفرعية تتطلب {0}.
-Left,يسار
-Lifecycle Stage,مرحلة دورة الحياة
-Load omnexa_core vertical portal desk,تحميل بوابة القطاع من omnexa_core
-Load omnexa_core vertical workcenter kit,تحميل مجموعة مركز عمل القطاع من omnexa_core
+Jump to the **Analytics Dashboard** page.,انتقل إلى صفحة **لوحة التحليلات**.
+Jump to the **Asset Scan PWA** page.,انتقل إلى صفحة **PWA — بند واجهة**.
+Jump to the **Executive Dashboard** page.,انتقل إلى صفحة **لوحة المدير التنفيذية**.
+Jump to the **Fixed Assets Workcenter** page.,انتقل إلى صفحة **بند واجهة**.
+Jump to the **Operations Desk** page.,انتقل إلى صفحة **بند واجهة**.
+Kitchen,بند واجهة
+Kitchen Linen,بند واجهة
+Land & project charter,الأرض وميثاق المشروع
+Land Parcel,قطعة أرض
+Language,اللغة
+Last depreciation posting,بند واجهة
+Last Inspection,بند واجهة
+Last Inventory Scan,بند واجهة
+Last Laundry Cycle,بند واجهة
+Last Location,بند واجهة
+Last Month,الشهر الماضي
+Last Reader,بند واجهة
+Last run,بند واجهة
+Last run at,بند واجهة
+Last run message,بند واجهة
+Last run status,بند واجهة
+Last Scan,بند واجهة
+Last Seen,بند واجهة
+Last Seen Assets,بند واجهة
+Last Seen At,بند واجهة
+Last Seen Time,بند واجهة
+Last target posting date,بند واجهة
+Last Update,بند واجهة
+Last Week,الأسبوع الماضي
+Laundry,بند واجهة
+Laundry cycle #{0},بند واجهة
+Laundry Vendor,بند واجهة
+Lead acquisition & qualification,اكتساب العملاء وتأهيلهم
+Leaf categories should define all three; used when creating assets unless overridden on the asset.,بند واجهة
+Leaf category requires {0}.,يتطلب بند واجهة {0}.
+Leasing & occupancy (IFRS 16 / IPSAS rent),التأجير والإشغال (IFRS 16 / IPSAS)
+Leasing Finance,التمويل التأجيري
+Leasing Mandate,تفويض تأجير
+Left,بند واجهة
+Lifecycle,بند واجهة
+Lifecycle Cost,بند واجهة
+Lifecycle Cost Intelligence,بند واجهة
+Lifecycle Stage,بند واجهة
+Linen Dashboard,لوحة بند واجهة
+Linen Issue Batch,بند واجهة
+Linen Item,بند واجهة
+Linen item not found for RFID tag.,RFID — بند واجهة
+Linen Laundry Cycle,بند واجهة
+Linen Movement,بند واجهة
+Linen Name,بند واجهة
+Linen Shortage Alert,بند واجهة
+"LINEN SHORTAGE: {0} {1} missing (issued {2}, returned {3}).",بند واجهة
+Linen Type,بند واجهة
+Linen {0} has {1} wash cycles remaining.,بند واجهة
+Linen {0}: {1} wash cycles remaining — plan replacement.,بند واجهة — بند واجهة
+Linked ERPGenEx Maintenance Core work order (set by bridge; no cross-app Link).,بند واجهة
+List,قائمة
+Live Asset Tracking,بند واجهة
+Load,بند واجهة
+Lobby,بند واجهة
+Local,محلي
 Location,الموقع
-Location Name,اسم الموقع
-Location Path,مسار الموقع
-Location Type,نوع الموقع
+Location correction wizard,بند واجهة
+Location Name,الموقع الاسم
+Location Path,بند واجهة
+Location Type,الموقع النوع
+location_correction,بند واجهة
+Login,تسجيل الدخول
 Login required,تسجيل الدخول مطلوب
-Maintenance,الصيانة
-Maintenance Burden,عبء الصيانة
-Maintenance Core,نواة الصيانة
-Maintenance Strategy,استراتيجية الصيانة
-Maintenance Type,نوع الصيانة
-Mandatory,إلزامي
-Master data,البيانات الرئيسية
-Max assets per run,الحد الأقصى للأصول لكل تشغيل
-Max assets per run must be at least 1.,يجب أن يكون الحد الأقصى للأصول لكل تشغيل 1 على الأقل.
-Maximum Value,القيمة القصوى
-Measurement model,نموذج القياس
-Media,الوسائط
-Media Type,نوع الوسائط
-Message,الرسالة
-Meter Type,نوع العداد
-Method Name,اسم الطريقة
-Method Type,نوع الطريقة
-Minimum Value,القيمة الدنيا
-Missing Scan,مسح مفقود
-Movement Type,نوع الحركة
-MTBF (h),متوسط الوقت بين الأعطال (س)
-MTBF (hours),متوسط الوقت بين الأعطال (ساعات)
-MTTR (h),متوسط وقت الإصلاح (س)
-MTTR (hours),متوسط وقت الإصلاح (ساعات)
-NBV,صافي القيمة الدفترية
-Net Book Value,صافي القيمة الدفترية
-New End Date,تاريخ انتهاء جديد
-New Insurance Policy,بوليصة تأمين جديدة
-New policies trend,اتجاه السياسات الجديدة
-NFC identifier,معرف NFC
-NFC tag UID or NDEF payload reference (mobile readiness).,معرف وسم NFC أو مرجع حمولة NDEF (جاهزية الجوال).
-No leaf Fixed Asset Category with GL accounts found for company {0}.,لم يُعثر على فئة أصول ثابتة فرعية بحسابات أستاذ عام للشركة {0}.
-No photos or documents yet. Use the sidebar Attachments or add rows under Media Files (Hotel tab).,لا توجد صور أو مستندات بعد. استخدم المرفقات في الشريط الجانبي أو أضف صفوفاً تحت ملفات الوسائط (تبويب الفندق).
-No QR payload,لا توجد حمولة QR
-No suitable leaf GL account for acquisition credit (exclude asset accounts) for company {0}.,لا يوجد حساب أستاذ عام فرعي مناسب لدائن الاقتناء (باستثناء حسابات الأصول) للشركة {0}.
+Logout,تسجيل الخروج
+Loss Investigation,بند واجهة
+Low,منخفض
+Maintenance,صيانة
+maintenance,صيانة
+Maintenance Burden,بند واجهة
+Maintenance Cost to Date,صيانة التكلفة إلى التاريخ
+Maintenance Events,بند واجهة
+Maintenance Strategy,بند واجهة
+Maintenance Type,صيانة النوع
+Maintenance Weight,بند واجهة
+Maintenance — service requests,الصيانة — طلبات الخدمة
+maintenance_return,صيانة ارجع
+maintenance_send,بند واجهة
+Major Issue,بند واجهة
+Management Agreement,اتفاقية إدارة
+Mandatory,بند واجهة
+Manual Action,يدوي إجراء
+Manufacturing,التصنيع
+Mattress Protector,بند واجهة
+Max assets per run,بند واجهة
+Max assets per run must be at least 1.,يجب أن بند واجهة بند واجهة.
+Maximum Value,بند واجهة
+Measurement model,بند واجهة
+"Media Files (Images, Videos, Documents)",بند واجهة
+Media Type,بند واجهة
+Medium,متوسط
+Menu,القائمة
+Message,رسالة
+Meter Type,بند واجهة
+meter_type is required,بند واجهة
+Method Name,بند واجهة
+Method Type,بند واجهة
+Minimum Value,بند واجهة
+Minor Issue,بند واجهة
+Mismatch,بند واجهة
+Missing,مفقود
+Missing Asset,بند واجهة
+Missing Assets,بند واجهة
+Missing Linen,بند واجهة
+Missing Quantity,مفقود الكمية
+Missing Scan,بند واجهة
+Mixed Use,بند واجهة
+Mobile,الجوال
+Moderate,متوسط
+Monitor,بند واجهة
+Monitoring,بند واجهة
+Monitoring Enabled,بند واجهة
+Month End,بند واجهة
+Month Start,بند واجهة
+Mortgage Finance,التمويل العقاري
+Movement Time,بند واجهة
+Movement Type,بند واجهة
+MTBF (h),بند واجهة
+MTBF (hours),بند واجهة
+MTTR (h),بند واجهة
+MTTR (hours),بند واجهة
+My work,عملي
+Name,الاسم
+NBV,بند واجهة
+Net Book Value,بند واجهة
+Network Path,بند واجهة
+New,جديد
+New End Date,جديد النهاية التاريخ
+NFC identifier,NFC — بند واجهة
+NFC tag UID or NDEF payload reference (mobile readiness).,NFC — بند واجهة
+No asset or linen found for RFID tag.,RFID — بند واجهة
+No branch found for company {0}.,بند واجهة
+No Data,بند واجهة
+No leaf Fixed Asset Category with GL accounts found for company {0}.,GL — بند واجهة
+No suitable leaf GL account for acquisition credit (exclude asset accounts) for company {0}.,GL — بند واجهة
+None,لا شيء
+Normal,بند واجهة
+Not permitted.,بند واجهة
+Not Scanned,بند واجهة
 Notes,ملاحظات
-Number of Floors,عدد الطوابق
-Old Parent,الأب السابق
-Omnexa Fixed Assets,أومنكسا — الأصول الثابتة
-Only capitalized assets can be derecognized.,يمكن إلغاء الاعتراف بالأصول المرسّمة فقط.
-Only System Manager can run this action.,مدير النظام فقط يمكنه تنفيذ هذا الإجراء.
-Open asset alerts,تنبيهات الأصول المفتوحة
-Open Claims,المطالبات المفتوحة
-Operational Status,الحالة التشغيلية
-Operations,العمليات
-Optional defaults copied to new assets in this category (can be overridden per asset).,القيم الافتراضية الاختيارية تُنسخ إلى الأصول الجديدة في هذه الفئة (يمكن تجاوزها لكل أصل).
+Notifications,الإشعارات
+Number Card,بطاقة رقمية
+Number of Floors,بند واجهة
+Numeric,بند واجهة
+Occupancy,الإشغال
+Occupied,مشغول
+Office,بند واجهة
+Offline,بند واجهة
+Offline event already synced.,بند واجهة
+Old Parent,بند واجهة
+Omnexa Accounting Settings,إعدادات محاسبة Omnexa
+Omnexa Marketplace Settings,إعدادات سوق Omnexa
+Omnexa Purchase Settings,إعدادات مشتريات Omnexa
+Omnexa Sales Settings,إعدادات مبيعات Omnexa
+Omnexa Settings,إعدادات Omnexa
+Omnexa Stock Settings,إعدادات مخزون Omnexa
+Online,بند واجهة
+Only capitalized assets can be derecognized.,بند واجهة
+Only System Manager can run this action.,بند واجهة
+Open,مفتوح
+open,فتح
+Open Analytics Dashboard,لوحة فتح التحليلات
+Open asset alerts,بند واجهة
+Open Asset Scan PWA,PWA — بند واجهة
+Open Executive Dashboard,لوحة بند واجهة
+Open Fixed Assets Workcenter,بند واجهة
+Open Operations Desk,بند واجهة
+Open report Compliance Exceptions Dashboard,فتح تقرير لوحة استثناءات الامتثال
+Open report Expiring Policies Report,فتح تقرير تقرير بند واجهة
+Open report Uninsured Assets Report,فتح تقرير تقرير بند واجهة
+Open Work Order,فتح عمل أمر
+Operating Cycles,بند واجهة
+Operating Scenarios,سيناريوهات التشغيل
+Operational,بند واجهة
+Operational Monitoring,بند واجهة
+Operational Risk,المخاطر التشغيلية
+Operational Status,بند واجهة
+Operations,بند واجهة
+Operations Desk,بند واجهة
+Optional defaults copied to new assets in this category (can be overridden per asset).,بند واجهة
+Other,أخرى
+Out of Service,بند واجهة
+Overdue,متأخر
 Overview,نظرة عامة
-Parent asset cannot be the same asset.,لا يمكن أن يكون الأصل الأب هو نفس الأصل.
-Parent asset does not exist.,الأصل الأب غير موجود.
-Parent asset must belong to the same company.,يجب أن ينتمي الأصل الأب إلى نفس الشركة.
-Parent Category,الفئة الأب
-Parent category must belong to the same company.,يجب أن تنتمي الفئة الأب إلى نفس الشركة.
-Parent Location,الموقع الأب
-"Pass company=\""...\"" or set a default Company.","Pass company=\""...\"" or set a default Company."
-Payload JSON,حمولة JSON
-Period (YYYY-MM),الفترة (YYYY-MM)
+Owner,المالك
+Owner reporting & trust accounting,تقارير الملاك والحسابات الائتمانية
+Owner Statement,كشف حساب المالك
+Parallel depreciation ledger (SAP FI-AA multi-book). Default Local — existing assets unchanged.,بند واجهة — بند واجهة
+Parent Asset,بند واجهة
+Parent asset cannot be the same asset.,بند واجهة
+Parent asset does not exist.,بند واجهة
+Parent asset must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+Parent Category,بند واجهة
+Parent category must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+Parent Location,بند واجهة
+Parent-Child,بند واجهة
+Parking,بند واجهة
+Partial Shutdown,بند واجهة
+Pass,بند واجهة
+Pattern Drift,بند واجهة
+Payload JSON,JSON — بند واجهة
+Payment Entry,سند قبض/صرف
+Payment Plan Item,بند خطة السداد
+Pending,قيد الانتظار
+Pending Approval,قيد الانتظار موافقة
+Pending Review,قيد الانتظار مراجعة
+Period (YYYY-MM),بند واجهة
+Permit Milestone,معلم التصريح
 Phone,الهاتف
-Photo / attachment,صورة / مرفق
-Photos & documents,الصور والمستندات
-Planned End,النهاية المخططة
-Planned End cannot be before Planned Start.,لا يمكن أن تكون النهاية المخططة قبل البداية المخططة.
-Planned Start,البداية المخططة
-Policies by coverage,السياسات حسب التغطية
-Policies by status,السياسات حسب الحالة
-Policy name is required.,اسم السياسة مطلوب.
-Policy Number,رقم السياسة
-Policy Reference,مرجع السياسة
-Policy Status,حالة السياسة
-Posted depreciation trend,اتجاه الإهلاك المرحّل
-Posting,الترحيل
+Photo,بند واجهة
+Photo / attachment,بند واجهة / مرفق
+Photos & documents,بند واجهة و المستندات
+Pillowcase,بند واجهة
+Planned,مخطط
+planned,مخطط
+Planned End,مخطط النهاية
+Planned End cannot be before Planned Start.,بند واجهة
+Planned Start,مخطط بدء
+Plant,بند واجهة
+Platform & Administration,المنصة والإدارة
+PMC Lease Liability Schedule,جدول التزام الإيجار IFRS 16
+PMC Leasing Mandate,تفويض تأجير
+PMC Management Agreement,اتفاقية إدارة
+PMC Management Fee Summary,ملخص رسوم الإدارة
+PMC Occupancy Summary,ملخص الإشغال
+PMC Owner Statement,كشف حساب المالك
+PMC Owner Statement Register,سجل كشوف الملاك
+PMC Property,عقار
+PMC Property Unit,وحدة عقارية
+PMC Rent Aging,أعمار الإيجارات
+PMC Rent Billing Register,سجل فوترة الإيجار
+PMC Rent Roll,سجل الإيجارات
+PMC Rental Contract Register,سجل عقود الإيجار
+Policy name is required.,سياسة الاسم is مطلوب .
+Policy Number,سياسة الرقم
+Policy Reference,مرجع الوثيقة
+Policy Status,سياسة الحالة
+Pool,بند واجهة
+Pool Towel,بند واجهة
+Poor,بند واجهة
+Portfolio & asset registry,المحفظة وسجل الأصول
+Posted depreciation trend,بند واجهة
+Posting,ترحيل
+Posting Date,ترحيل التاريخ
 Posting date,تاريخ الترحيل
-Posting Date,تاريخ الترحيل
-Posting date cannot be before depreciation start date on the asset.,لا يمكن أن يكون تاريخ الترحيل قبل تاريخ بدء الإهلاك على الأصل.
-Posting Reference,مرجع الترحيل
-Postings,الترحيلات
-Preview,معاينة
-Previous asset status,حالة الأصل السابقة
+Posting date cannot be before depreciation start date on the asset.,بند واجهة
+Posting Reference,ترحيل المرجع
+Postings,بند واجهة
+Predictive,بند واجهة
+Predictive maintenance for {0},بند واجهة
+Pressure,بند واجهة
+Preventive,بند واجهة
+Previous asset status,بند واجهة
 Priority,الأولوية
-Probability Score,درجة الاحتمال
-Problem,المشكلة
-Proceeds,العائد
-Proceeds & GL,العائد والأستاذ العام
-Proceeds (cash),العائد (نقد)
-Procurement link,رابط المشتريات
-Procurement Reference,مرجع المشتريات
-Profile Name,اسم الملف
-Profit and loss expense (Dr on depreciation),مصروف الأرباح والخسائر (مدين عند الإهلاك)
-Property Name,اسم العقار
-Property Type,نوع العقار
-Purchase Order,أمر شراء
-QR Code,رمز QR
-QR Code Image,صورة رمز QR
-QR payload,حمولة QR
-Quality Score,درجة الجودة
-Reader,القارئ
-Reader Device,جهاز القارئ
-Reading Time,وقت القراءة
+Probability Score,بند واجهة
+Problem,بند واجهة
+Proceeds,بند واجهة
+Proceeds & GL,بند واجهة و GL
+Proceeds (cash),بند واجهة
+Processing,قيد المعالجة
+Procurement link,المشتريات رابط
+Procurement Reference,المشتريات المرجع
+Profile,الملف الشخصي
+Profile Name,الملف الشخصي الاسم
+Profit and Loss,الأرباح والخسائر
+Profit and loss expense (Dr on depreciation),بند واجهة
+Project EV,القيمة المكتسبة للمشروع
+Projects & Services,المشاريع والخدمات
+Projects PM,إدارة المشاريع
+Property,عقار
+Property Management,إدارة العقارات
+Property Name,عقار الاسم
+Property Sales Booking Register,سجل حجوزات البيع
+Property Sales Lead,عميل مبيعات عقارية
+Property Type,عقار النوع
+"Property, plant and equipment — cost or revaluation model; depreciate depreciable amount over useful life.",بند واجهة — بند واجهة
+Provide revalued amount or condition assessment.,بند واجهة
+Provide SVG content or attach a floor plan image.,بند واجهة
+Provider,مزود
+Purchase Date,شراء التاريخ
+Purchase Invoice,فاتورة شراء
+Purchase Order,شراء أمر
+Purchase Register,سجل المشتريات
+Purchased,بند واجهة
+QR Code,QR الرمز
+QR Code Image,QR الرمز صورة
+QR payload,بند واجهة
+Quality Result,الجودة النتيجة
+Quality Score,بند واجهة
+Quantities,بند واجهة
+Rapid Degradation,بند واجهة
+RE BOQ,جدول كميات التطوير
+RE Development,التطوير العقاري
+RE Handover Package,حزمة التسليم
+RE Marketing,التسويق العقاري
+RE Permit Milestone,معلم التصريح
+RE Project EV,القيمة المكتسبة للمشروع
+RE Subcontract Commitment,التزام مقاول باطن
+RE Unit Inventory,مخزون وحدات التطوير
+RE unit inventory (sales),مخزون وحدات البيع
+RE Unit Inventory Overview,نظرة عامة على مخزون الوحدات
+Reader,بند واجهة
+Reader Device,بند واجهة
+Reader ID,ID — بند واجهة
+Reader Name,بند واجهة
+Reader Type,بند واجهة
+Reading Time,بند واجهة
+Ready,بند واجهة
+Real Estate,العقارات
 Reason,السبب
-Rebuild QR Image,إعادة بناء صورة QR
+Reclassified,بند واجهة
+Recommend Shutdown,بند واجهة
 Recommendation,التوصية
-Recommendation Date,تاريخ التوصية
-Recommendations,التوصيات
-Recurrence,التكرار
+Recommendation Date,التوصية التاريخ
+Recommendations,بند واجهة
+Recurrence,تكرار
+Redundant,بند واجهة
 Reference DocType,نوع المستند المرجعي
-Reference Doctype,نوع المستند المرجعي
-Reference Name,الاسم المرجعي
-Related Asset,أصل مرتبط
-Relationship Type,نوع العلاقة
-Reliability %,الموثوقية %
-Reliability Report,تقرير الموثوقية
-Reliability Score,درجة الموثوقية
+Reference Doctype,المرجع نوع المستند
+Reference Name,المرجع الاسم
+Refresh,تحديث
+Registration,بند واجهة
+Rejected,مرفوض
+Related Asset,بند واجهة
+Relationship Type,بند واجهة
+Reliability %,بند واجهة
+Reliability & Health,بند واجهة و بند واجهة
+Reliability Report,تقرير بند واجهة
+Reliability Score,بند واجهة
+Reliability Weight,بند واجهة
+Reload,إعادة تحميل
 Remarks,ملاحظات
-Renewal Date,تاريخ التجديد
-Replacement Forecast Report,تقرير توقع الاستبدال
-Replacement Projection,توقع الاستبدال
-Replacement Recommendation,توصية الاستبدال
-Requires Work Order,يتطلب أمر عمل
-Residual value,القيمة المتبقية
-Residual value cannot exceed acquisition cost.,لا يمكن أن تتجاوز القيمة المتبقية تكلفة الاقتناء.
-Resolution,الحل
-Resolution Notes,ملاحظات الحل
-Response Type,نوع الاستجابة
+Renewal Date,بند واجهة
+Rent Aging,أعمار الإيجارات
+Rent billing register,سجل فوترة الإيجار
+Rent Billing Run,تشغيل فوترة الإيجار
+Rent Roll,سجل الإيجارات
+Rental Contract,عقد إيجار
+Rental contract register,سجل عقود الإيجار
+Repair,بند واجهة
+Repair Efficiency,بند واجهة
+Repeated,بند واجهة
+Replace,بند واجهة
+Replacement candidate: low NBV ratio or poor health.,بند واجهة
+Replacement Forecast Report,تقرير بند واجهة
+Replacement Projection,بند واجهة
+Replacement Recommendation,بند واجهة
+Replacement Warning,بند واجهة
+Report,تقرير
+Requested,بند واجهة
+Requires Work Order,يتطلب عمل أمر
+Reservation register,سجل الحجوزات
+Reservations & unit holds,الحجوزات وحجز الوحدات
+Residual value,بند واجهة
+Residual value cannot exceed acquisition cost.,بند واجهة
+Resolution,بند واجهة
+Resolution Notes,بند واجهة
+Resort,بند واجهة
+Response Type,بند واجهة
+Restaurant,المطاعم
 Result,النتيجة
-Result action,إجراء النتيجة
-Result Action,إجراء النتيجة
-Results & evidence,النتائج والأدلة
-Revalued Amount,المبلغ المعاد تقييمه
-Revalued amount is close to current net book value.,المبلغ المعاد تقييمه قريب من صافي القيمة الدفترية الحالية.
-Revalued Amount must be positive,يجب أن يكون المبلغ المعاد تقييمه موجباً
+Result Action,النتيجة إجراء
+Result action,النتيجة إجراء
+Result Detail,بند واجهة
+Result DocType,النتيجة نوع المستند
+Result Name,النتيجة الاسم
+Results & evidence,بند واجهة و دليل
+Retire,بند واجهة
+Return,ارجع
+Return from maintenance wizard,ارجع من صيانة معالج
+"Return here for shortcuts, charts, and lists for **Asset Insurance**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **تأمين الأصول**.
+"Return here for shortcuts, charts, and lists for **Audit & Compliance**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **التدقيق والامتثال**.
+"Return here for shortcuts, charts, and lists for **Core ERP**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **ERP الأساسي**.
+"Return here for shortcuts, charts, and lists for **Fixed assets**.",ارجع هنا للاختصارات والمخططات والقوائم لـ **بند واجهة**.
+Returned Quantity,بند واجهة
+Returned quantity cannot exceed issued quantity.,بند واجهة
+revaluation,بند واجهة
+Revaluation Model,بند واجهة
+Revalued Amount,بند واجهة
+Revalued amount is close to current net book value.,بند واجهة
+Revalued Amount must be positive,بند واجهة
 RFID,RFID
-RFID Scan Log,سجل مسح RFID
-RFID Tag,وسم RFID
-Right,يمين
-Risk Level,مستوى المخاطر
-Risk Score,درجة المخاطر
-Room Assets,أصول الغرفة
-Room Number,رقم الغرفة
-Room Type,نوع الغرفة
+RFID assignment,RFID — بند واجهة
+RFID detected asset at {0},RFID — بند واجهة
+RFID Event,RFID حدث
+RFID Gateway,RFID — بند واجهة
+RFID movement: {0} → {1},RFID — بند واجهة
+RFID Operator,RFID — بند واجهة
+RFID Reader,RFID — بند واجهة
+RFID Scan,RFID — بند واجهة
+RFID scan at {0},RFID — بند واجهة
+RFID Scan Log,RFID — بند واجهة
+RFID Tag,RFID — بند واجهة
+RFID Tag already assigned to Fixed Asset {0},RFID — بند واجهة
+RFID tag is required.,RFID — بند واجهة
+RFID Tag must be unique. Existing linen: {0},RFID — بند واجهة
+rfid_assignment,بند واجهة
+Right,بند واجهة
+Risk Level,بند واجهة
+Risk Score,بند واجهة
+Room,بند واجهة
+Room Assets,بند واجهة
+Room Number,بند واجهة
+Room Type,بند واجهة
 Rule Name,اسم القاعدة
-Run,تشغيل
-Run Monthly Depreciation,تشغيل الإهلاك الشهري
-Run Now,تشغيل الآن
-Running depreciation batch...,جاري تشغيل دفعة الإهلاك...
-Running total of units posted via depreciation entries (UoP).,الإجمالي التراكمي للوحدات المرحّلة عبر قيود الإهلاك (UoP).
-Safety cap per monthly run.,حد أمان لكل تشغيل شهري.
-Save the document to show photos and attachments here.,احفظ المستند لعرض الصور والمرفقات هنا.
-Scan Mismatch,عدم تطابق المسح
-Scan Result,نتيجة المسح
-Scan Status,حالة المسح
-Scan Time,وقت المسح
-Schedule & costs,الجدولة والتكاليف
-Score,الدرجة
-Select a leaf category with GL accounts.,اختر فئة فرعية بحسابات أستاذ عام.
-Serial Number,الرقم التسلسلي
-Serial number or physical tag on the asset label.,الرقم التسلسلي أو الوسم الفعلي على بطاقة الأصل.
-Series,السلسلة
-Service Provider,مزود الخدمة
-Set a depreciation method on the asset.,عيّن طريقة إهلاك على الأصل.
-Set a positive annual rate for declining balance depreciation.,عيّن معدلاً سنوياً موجباً لإهلاك الرصيد المتناقص.
-Set a positive default declining balance annual rate %.,عيّن معدل رصيد متناقص سنوي افتراضي موجب %.
-Set by capitalization posting; may be zero until acquisition is submitted.,يُعيّن عند ترحيل الرسملة؛ قد يكون صفراً حتى يُعتمد الاقتناء.
-Set default total estimated units for units-of-production.,عيّن إجمالي الوحدات المقدرة الافتراضي لوحدات الإنتاج.
-"Set this company's Business Activity / Industry to Hotel Assets, or enable the site hotel flag.",عيّن نشاط/قطاع الشركة إلى أصول الفنادق، أو فعّل علامة الفندق على الموقع.
-Set {0} on the asset or category.,عيّن {0} على الأصل أو الفئة.
-Severity,الخطورة
-Signal Strength,قوة الإشارة
-SLA Due,موعد SLA
-SLA Hours,ساعات SLA
-Snapshot Time,وقت اللقطة
+Running total of units posted via depreciation entries (UoP).,بند واجهة
+Runtime,بند واجهة
+Runtime Hours,بند واجهة
+Safety cap per monthly run.,بند واجهة
+Safety Critical,السلامة حرج
+Sales Booking,حجز بيع
+Sales booking register,سجل حجوزات البيع
+Sales Commission Accrual,استحقاق عمولات المبيعات
+Sales Commission Schedule,جدول عمولات المبيعات
+Sales Invoice,فاتورة مبيعات
+Sales Lead,عميل محتمل
+Sales Portal,بوابة المبيعات
+Sales Register,سجل المبيعات
+Save,حفظ
+Scan Mismatch,بند واجهة
+Scan Result,بند واجهة
+Scan Status,بند واجهة
+Scan Time,بند واجهة
+Schedule & costs,الجدول و بند واجهة
+Score,بند واجهة
+Search or type a command,ابحث أو اكتب أمرًا
+Search or type a command ({0}),ابحث أو اكتب أمرًا ({0})
+Seen,بند واجهة
+Select a company in the desk navbar to view this dashboard.,بند واجهة
+Select a leaf category with GL accounts.,GL — بند واجهة
+Sell,المبيعات
+Sensor Silence,بند واجهة
+Sensor Stability Weight,بند واجهة
+Sensor State,بند واجهة
+Sequence Number,بند واجهة
+Serial Number,بند واجهة
+Serial number or physical tag on the asset label.,بند واجهة
+Series,سلسلة
+Service Area,بند واجهة
+Service Provider,بند واجهة
+Serviced Apartments,بند واجهة
+Services,الخدمات
+Set a depreciation method on the asset.,بند واجهة
+Set a positive annual rate for declining balance depreciation.,بند واجهة
+Set a positive default declining balance annual rate %.,بند واجهة
+Set by capitalization posting; may be zero until acquisition is submitted.,بند واجهة
+Set default total estimated units for units-of-production.,بند واجهة
+Set {0} on the asset or category.,بند واجهة
+Settings,الإعدادات
+Settled,مسوّى
+Severity,الشدة
+Shortage,بند واجهة
+Shortcut,اختصار
+Shutdown,بند واجهة
+Signal Strength,بند واجهة
+Signature,التوقيع
+Silent,بند واجهة
+Site,الموقع
+Size,بند واجهة
+SLA Breach,SLA — بند واجهة
+SLA Due,SLA — بند واجهة
+SLA Hours,SLA — بند واجهة
+SME Microfinance,التمويل متناهي الصغر
+SME Retail Finance,تمويل المنشآت والتجزئة
+Snapshot Time,بند واجهة
 Source,المصدر
-Source of funding: e.g. bank or accounts payable (Cr on acquisition).,مصدر التمويل: مثلاً البنك أو الذمم الدائنة (دائن عند الاقتناء).
-Stable identifier for mobile scan APIs (e.g. FA name or UUID).,معرف ثابت لواجهات مسح الجوال (مثلاً اسم الأصل أو UUID).
-Star Classification,تصنيف النجوم
+Source of funding: e.g. bank or accounts payable (Cr on acquisition).,بند واجهة
+Spa,بند واجهة
+Spa Linen,بند واجهة
+Stable identifier for mobile scan APIs (e.g. FA name or UUID).,UUID — بند واجهة
+Staff Uniform,بند واجهة
+Standard,بند واجهة
+Star Classification,بند واجهة
 Start Date,تاريخ البدء
 Status,الحالة
-Status Name,اسم الحالة
-Stock item,صنف مخزني
-Strategy Name,اسم الاستراتيجية
-Strategy Type,نوع الاستراتيجية
-Submit entries automatically,اعتماد القيود تلقائياً
-Submit only after workflow status is Approved.,الاعتماد فقط بعد أن تكون حالة سير العمل «معتمد».
-Submitted Policies,السياسات المعتمدة
-Suggested (IAS 16),مقترح (IAS 16)
-Supplier Reference,مرجع المورد
-System suggestion for this period; adjust posting date or units (UoP) and match your policy.,اقتراح النظام لهذه الفترة؛ عدّل تاريخ الترحيل أو الوحدات (UoP) وفق سياستك.
+Status Name,الحالة الاسم
+Step Data (JSON),JSON — بند واجهة
+Stock,المخزون
+Stock item,مخزون الصنف
+Straight Line,بند واجهة
+Strategy,بند واجهة
+Strategy Name,بند واجهة
+Strategy Type,بند واجهة
+Subcontract,مقاول باطن
+Submit,إرسال
+Submit entries automatically,بند واجهة
+Submit only after workflow status is Approved.,بند واجهة
+Submitted,مُرسل
+Success,نجاح
+Suggested (IAS 16),بند واجهة
+Suite,بند واجهة
+Supplier,المورد
+Supplier Reference,المورد المرجع
+Supporting Attachment,مرفق داعم
+SVG Content,بند واجهة
+Swimming Pool,بند واجهة
+System Automation,بند واجهة
+System Group,بند واجهة
+System Manager,مدير النظام
+System suggestion for this period; adjust posting date or units (UoP) and match your policy.,بند واجهة
+Table Linen,بند واجهة
+Tagged,بند واجهة
+tagged,بند واجهة
+Task List,قائمة المهام
+Tax,بند واجهة
+Temperature,بند واجهة
 Template Name,اسم القالب
-This asset is already capitalized.,تمت رسملة هذا الأصل مسبقاً.
-This policy is disabled.,هذه السياسة معطّلة.
+Text,بند واجهة
+This asset is already capitalized.,بند واجهة
+This Month,هذا الشهر
+This policy is disabled.,هذا سياسة is معطّل .
+This Week,هذا الأسبوع
+Threshold Breach,بند واجهة
+Timezone,المنطقة الزمنية
 Title,العنوان
-To Hotel Property,إلى عقار فندقي
-To Hotel Room,إلى غرفة فندق
+To Hotel Property,بند واجهة
+To Hotel Room,بند واجهة
 To Location,إلى الموقع
-To Property,إلى العقار
-To Room,إلى الغرفة
-Total active assets,إجمالي الأصول النشطة
-Total Assets,إجمالي الأصول
-Total estimated units (UoP),إجمالي الوحدات المقدرة (UoP)
-Total estimated units is required for units-of-production depreciation.,إجمالي الوحدات المقدرة مطلوب لإهلاك وحدات الإنتاج.
-Total net book value,إجمالي صافي القيمة الدفترية
-Total Rooms,إجمالي الغرف
-Tracking,التتبع
-Transfer,النقل
-Transfer Owner,مالك النقل
+To Property,إلى عقار
+To Room,بند واجهة
+Today,اليوم
+ToDo,مهمة
+Token Last Rotated,بند واجهة
+Total active assets,بند واجهة
+Total Assets,بند واجهة
+Total Attachments,الإجمالي مرفقات
+Total estimated units (UoP),بند واجهة
+Total estimated units is required for units-of-production depreciation.,بند واجهة
+Total net book value,بند واجهة
+Total Rooms,بند واجهة
+Tourism,السياحة
+Tracking,بند واجهة
+Trading,التجارة
+Trading & Manufacturing,التجارة والتصنيع
+Transfer,بند واجهة
+transfer,بند واجهة
+Transfer Owner,بند واجهة
+transferred,بند واجهة
+Trial Balance,ميزان المراجعة
 Type,النوع
-Typed name or reference; use attachment for captured signature image.,الاسم المكتوب أو المرجع؛ استخدم مرفقاً لصورة التوقيع الملتقطة.
-Unable to generate QR code,تعذّر إنشاء رمز QR
-Uninsured Assets Report,تقرير الأصول غير المؤمّنة
-Unit,الوحدة
-Units depreciated to date,الوحدات المُهلكَة حتى التاريخ
-Units this run (UoP),وحدات هذا التشغيل (UoP)
-Uploaded By,رُفع بواسطة
-Useful life (months),العمر الإنتاجي (بالأشهر)
-Useful life in months is required for straight-line depreciation.,العمر الإنتاجي بالأشهر مطلوب للإهلاك بطريقة القسط الثابت.
-Validation,التحقق
-Valuation Basis,أساس التقييم
-Value,القيمة
-Verification date,تاريخ التحقق
-Verified by,تحقق بواسطة
-Video,فيديو
-Warning Threshold,عتبة التحذير
+Typed name or reference; use attachment for captured signature image.,بند واجهة
+Unable to process RFID scan.,RFID — بند واجهة
+Unauthorized Movement,بند واجهة
+Under Review,قيد المراجعة
+under_maintenance,بند واجهة
+Uninsured Assets Report,تقرير بند واجهة
+Unit,وحدة
+Unit Inventory,مخزون الوحدات
+Unit inventory & sales readiness,مخزون الوحدات وجاهزية البيع
+Unit inventory overview,نظرة عامة على مخزون الوحدات
+Unit Reservation,حجز وحدة
+Unit Reservation Register,سجل حجز الوحدات
+Units depreciated to date,بند واجهة
+Units of Production,بند واجهة
+Units this run (UoP),بند واجهة
+Unknown,غير معروف
+Unknown asset,بند واجهة
+Unknown RFID gateway.,RFID — بند واجهة
+Unknown wizard type.,غير معروف معالج النوع .
+Unknown wizard type: {0},غير معروف معالج النوع : { 0 }
+Unrated,بند واجهة
+Unscanned Assets,بند واجهة
+Unusual movement: {0} RFID moves in {1} minutes.,RFID — بند واجهة
+Update,تحديث
+Uploaded By,بند واجهة
+Uptime (hours),بند واجهة
+Usage Count,بند واجهة
+Useful life (months),بند واجهة
+Useful life in months is required for straight-line depreciation.,بند واجهة
+User,مستخدم
+Utilization,بند واجهة
+Validation,بند واجهة
+Valuation Basis,بند واجهة
+Value,بند واجهة
+Vehicle Finance,تمويل المركبات
+Verification date,بند واجهة
+Verified by,بند واجهة
+Vibration,بند واجهة
+Video,بند واجهة
+Warehouse,المستودع
+Warning Threshold,بند واجهة
 Warranty,الضمان
-Warranty & supply chain,الضمان وسلسلة التوريد
-Warranty end,نهاية الضمان
-Warranty End Date,تاريخ نهاية الضمان
-Warranty reference / policy,مرجع / بوليصة الضمان
-Warranty start,بداية الضمان
-Warranty Supplier,مورد الضمان
-Warranty terms / coverage,شروط / تغطية الضمان
-Warranty vendor,بائع الضمان
-Wing / Zone,الجناح / المنطقة
-Work Order Type,نوع أمر العمل
-Workflow status,حالة سير العمل
-Workspace {0} not found.,مساحة العمل {0} غير موجودة.
-Write-Off Amount,مبلغ الشطب
-Write-Off Reason,سبب الشطب
-{0} must be unique. Existing asset: {1},{0} يجب أن يكون فريداً. الأصل الموجود: {1}
-{0}: account must belong to the same company.,{0}: يجب أن ينتمي الحساب إلى نفس الشركة.
-{0}: invalid account for company.,{0}: حساب غير صالح للشركة.
-{0}: invalid GL account.,{0}: حساب أستاذ عام غير صالح.
-{0}: must be a leaf account.,{0}: يجب أن يكون حساباً فرعياً.
-أصول الفنادق — تجريبي,أصول الفنادق — تجريبي
-إنشاء 50 أصلًا (غرف + مناطق إدارية + حركات),إنشاء 50 أصلًا (غرف + مناطق إدارية + حركات)
-تم,تم
-جاري إنشاء البيانات التجريبية...,جاري إنشاء البيانات التجريبية...
+Warranty & supply chain,الضمان و بند واجهة
+Warranty end,الضمان النهاية
+Warranty End Date,الضمان النهاية التاريخ
+Warranty Expiring Assets,بند واجهة
+Warranty reference / policy,الضمان مرجع / سياسة
+Warranty start,الضمان بدء
+Warranty Supplier,الضمان المورد
+Warranty terms / coverage,بند واجهة / بند واجهة
+Warranty vendor,بند واجهة
+Warranty Warning,الضمان تحذير
+Wash Count,بند واجهة
+Washed,بند واجهة
+Watch,بند واجهة
+Wing / Zone,بند واجهة / بند واجهة
+Wizard Data,بند واجهة
+Wizard executor not implemented.,بند واجهة
+Wizard session was cancelled.,بند واجهة
+Wizard Type,معالج النوع
+Work Order Type,عمل أمر النوع
+Workflow status,بند واجهة
+Workspace,مساحة العمل
+Workspace {0} not found.,بند واجهة
+Workspaces,مساحات العمل
+Write-Off Amount,بند واجهة
+Write-Off Reason,بند واجهة
+Yesterday,أمس
+You are ready to work in Core ERP.,أنت جاهز للعمل في ERP الأساسي.
+zebra,بند واجهة
+Zone,بند واجهة
+{0} is required.,{0} is مطلوب.
+{0} must be unique. Existing asset: {1},بند واجهة
+{0}: account must belong to the same company.,يجب أن بند واجهة ينتمي إلى نفس الشركة.
+{0}: invalid account for company.,بند واجهة
+{0}: invalid GL account.,GL — بند واجهة
+{0}: must be a leaf account.,يجب أن {0}: بند واجهة.
+✅ Handover,✅ التسليم
+🎯 CRM,🎯 إدارة العملاء
+🏗️ Projects,🏗️ المشاريع
+🏢 Organization,🏢 التنظيم والإعداد
+🏢 Organization & Setup,🏢 التنظيم والإعداد
+🏢 Portfolio,🏢 المحفظة العقارية
+👥 HR & Users,👥 الموارد البشرية والمستخدمون
+💰 Billing · Finance · ERP,💰 الفوترة · المالية · ERP
+💰 Commissions,💰 العمولات
+💰 Finance & ERP,💰 المالية · ERP
+💰 Owner & CAM,💰 المالك والمصاريف المشتركة
+📈 Reports,📈 التقارير
+📊 Analytics,📊 التحليلات
+📊 Dashboards,📊 لوحات المعلومات
+📊 Dashboards & Portals,📊 لوحات المعلومات والبوابات
+📊 Dashboards & portals,📊 لوحات المعلومات والبوابات
+📋 Commercial,📋 التجاري
+📋 Leasing,📋 التأجير
+📋 Operations,📋 العمليات
+📐 BOQ & inventory,📐 جدول الكميات والمخزون
+📦 Inventory & Supply,📦 المخزون والتوريد
+🔗 Integration,🔗 التكامل
+🚚 Field operations,🚚 العمليات الميدانية
+🛡️ Compliance,🛡️ الامتثال

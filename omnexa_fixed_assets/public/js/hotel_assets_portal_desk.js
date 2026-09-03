@@ -62,7 +62,9 @@ frappe.provide("omnexa_fixed_assets.hotel_portal");
 				const label = t(item.label_ar, item.label_en);
 				const $btn = $(`
 					<a class="oj-pharma-ops-link" href="${frappe.utils.escape_html(item.route)}">
-						<span class="oj-sidebar-icon">${item.icon || "📄"}</span>
+						${(window.omnexa_core && omnexa_core.vertical_portal && omnexa_core.vertical_portal.renderPortalIcon)
+							? omnexa_core.vertical_portal.renderPortalIcon(item, "oj-sidebar-icon")
+							: `<span class="oj-sidebar-icon">${frappe.utils.escape_html(item.icon || "▫️")}</span>`}
 						<span>${frappe.utils.escape_html(label)}</span>
 					</a>`);
 				$btn.on("click", (e) => {
